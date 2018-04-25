@@ -55,6 +55,7 @@ class RegionEdit extends Component<Props, State> {
 			error,
 			warning
 		} = this.props
+
 		return (
 			<div>
 				<Helmet>
@@ -110,6 +111,7 @@ class RegionEdit extends Component<Props, State> {
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
+
 												action: 'save'
 											})
 										)}

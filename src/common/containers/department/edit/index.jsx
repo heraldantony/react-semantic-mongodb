@@ -21,7 +21,12 @@ import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { DEPARTMENT_GET, DEPARTMENT_SAVE } from 'actions/department'
+import {
+	DEPARTMENT_GET,
+	DEPARTMENT_SAVE,
+	DEPARTMENT_SET_LOCATION,
+	DEPARTMENT_ADD_EMPLOYEE
+} from 'actions/department'
 import { createStructuredSelector } from 'reselect'
 
 import LocationModalSearch from 'containers/location/modal_search'
@@ -59,6 +64,13 @@ class DepartmentEdit extends Component<Props, State> {
 			error,
 			warning
 		} = this.props
+
+		const location = this.props.departmentProps.department.location
+		var setLocation = this.props.setLocation.bind(this)
+
+		const employee = this.props.departmentProps.department.employee
+		var addEmployee = this.props.addEmployee.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -105,9 +117,19 @@ class DepartmentEdit extends Component<Props, State> {
 					<Grid.Row centered>
 						<Grid.Column width={16}>
 							<Form>
+								<div style={{ textAlign: 'left' }}>
+									{location &&
+                    location['_id'] && (
+										<Link to={'/viewLocation/' + location['_id']}>{}</Link>
+									)}
+								</div>
+
 								<div style={{ textAlign: 'right' }}>
 									<LocationModalSearch
 										trigger={<Button>Set Location</Button>}
+										title="Set Location"
+										buttonLabel="Set Location"
+										buttonAction={setLocation}
 										closeIcon
 									>
 										<Header icon="archive" content="Set Location" />
@@ -123,9 +145,23 @@ class DepartmentEdit extends Component<Props, State> {
 											</Button>
 										</Modal.Actions>
 									</LocationModalSearch>
+								</div>
 
+								<div style={{ textAlign: 'left' }}>
+									{employee &&
+                    employee['_id'] && (
+										<Link to={'/viewEmployee/' + employee['_id']}>
+											{employee['firstName'] + '    ' + employee['lastName']}
+										</Link>
+									)}
+								</div>
+
+								<div style={{ textAlign: 'right' }}>
 									<EmployeeModalSearch
 										trigger={<Button>Add Employee</Button>}
+										title="Add Employee"
+										buttonLabel="Add Employee"
+										buttonAction={addEmployee}
 										closeIcon
 									>
 										<Header icon="archive" content="Add Employee" />
@@ -152,6 +188,11 @@ class DepartmentEdit extends Component<Props, State> {
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
+
+												location: location,
+
+												employee: employee,
+
 												action: 'save'
 											})
 										)}
@@ -175,6 +216,16 @@ const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
 		return dispatch(DEPARTMENT_SAVE(data))
+	},
+
+	setLocation (location) {
+		console.log('setLocation')
+		DEPARTMENT_SET_LOCATION(location, dispatch)
+	},
+
+	addEmployee (employee) {
+		console.log('addEmployee')
+		DEPARTMENT_ADD_EMPLOYEE(employee, dispatch)
 	}
 })
 

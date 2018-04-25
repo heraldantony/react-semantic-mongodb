@@ -59,16 +59,18 @@ router.get('/:departmentId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		DepartmentModel.findById(req.params.departmentId, function (
-			error,
-			department
-		) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(department)
-		})
+		DepartmentModel.findById(req.params.departmentId)
+			.populate('location')
+
+			.populate('employees')
+
+			.exec(function (error, department) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(department)
+			})
 	}
 })
 
@@ -80,22 +82,42 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { departmentName } = req.body
-	DepartmentModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var department = {
+		_id: new mongoose.Types.ObjectId(),
 
-			departmentName: departmentName
-		},
-		(createErr, newDepartment) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		departmentName: departmentName
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newDepartment)
-			}
+	if (req.body.hasOwnProperty('location')) {
+		department.location = req.body.location['_id']
+	}
+
+	if (req.body.hasOwnProperty('employees')) {
+		department.employees = req.body.employees.map(employee => {
+			return employee['_id']
+		})
+	}
+
+	DepartmentModel.create(department, (createErr, newDepartment) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			DepartmentModel.findById(newDepartment['_id'])
+				.populate('location')
+
+				.populate('employees')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:departmentId', (req, res, next) => {
 	if (!req.params.departmentId) {
@@ -116,12 +138,33 @@ router.put('/:departmentId', (req, res, next) => {
 			department.departmentName = req.body.departmentName
 		}
 
+		if (req.body.hasOwnProperty('location')) {
+			department.location = req.body.location['_id']
+		}
+
+		if (req.body.hasOwnProperty('employees')) {
+			department.employees = req.body.employees.map(employee => {
+				return employee['_id']
+			})
+		}
+
 		department.save(function (saveError, savedDepartment) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedDepartment)
+			DepartmentModel.findById(savedDepartment['_id'])
+				.populate('location')
+
+				.populate('employees')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -144,12 +187,33 @@ router.patch('/:departmentId', (req, res, next) => {
 			department.departmentName = req.body.departmentName
 		}
 
+		if (req.body.hasOwnProperty('location')) {
+			department.location = req.body.location['_id']
+		}
+
+		if (req.body.hasOwnProperty('employees')) {
+			department.employees = req.body.employees.map(employee => {
+				return employee['_id']
+			})
+		}
+
 		department.save(function (saveError, savedDepartment) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedDepartment)
+			DepartmentModel.findById(savedDepartment['_id'])
+				.populate('location')
+
+				.populate('employees')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

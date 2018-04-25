@@ -25,6 +25,8 @@ export const JOB_SAVE_FAIL = 'JOB_SAVE_FAIL'
 export const JOB_UPDATE_SUCCESS = 'JOB_UPDATE_SUCCESS'
 export const JOB_UPDATE_FAIL = 'JOB_UPDATE_FAIL'
 
+export const JOB_ADD_TASK_SUCCESS = 'JOB_ADD_TASK_SUCCESS'
+
 export type JOB_SEARCH_SUCCESS_TYPE = {
   type: JOB_SEARCH_SUCCESS,
   payload: [Object]
@@ -69,6 +71,11 @@ export type JOB_UPDATE_FAIL_TYPE = {
   type: JOB_UPDATE_FAIL,
   payload: { errors: Object }
 };
+
+export const JOB_ADD_TASK_SUCCESS_TYPE = {
+	type: JOB_ADD_TASK_SUCCESS,
+	payload: Object
+}
 
 /**
   Awral is not recommended for production usage now
@@ -194,3 +201,7 @@ const awralJobUpdate = awral.of({
 })
 
 export const JOB_UPDATE = awralJobUpdate(jobUpdateAPI)('JOB_UPDATE')
+
+export const JOB_ADD_TASK = (task, dispatch) => {
+	dispatch({ type: JOB_ADD_TASK_SUCCESS, task })
+}

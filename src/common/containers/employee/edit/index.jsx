@@ -21,7 +21,11 @@ import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { EMPLOYEE_GET, EMPLOYEE_SAVE } from 'actions/employee'
+import {
+	EMPLOYEE_GET,
+	EMPLOYEE_SAVE,
+	EMPLOYEE_ADD_JOB
+} from 'actions/employee'
 import { createStructuredSelector } from 'reselect'
 
 import JobModalSearch from 'containers/job/modal_search'
@@ -105,6 +109,10 @@ class EmployeeEdit extends Component<Props, State> {
 			error,
 			warning
 		} = this.props
+
+		const job = this.props.employeeProps.employee.job
+		var addJob = this.props.addJob.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -151,8 +159,23 @@ class EmployeeEdit extends Component<Props, State> {
 					<Grid.Row centered>
 						<Grid.Column width={16}>
 							<Form>
+								<div style={{ textAlign: 'left' }}>
+									{job &&
+                    job['_id'] && (
+										<Link to={'/viewJob/' + job['_id']}>
+											{job['jobTitle']}
+										</Link>
+									)}
+								</div>
+
 								<div style={{ textAlign: 'right' }}>
-									<JobModalSearch trigger={<Button>Add Job</Button>} closeIcon>
+									<JobModalSearch
+										trigger={<Button>Add Job</Button>}
+										title="Add Job"
+										buttonLabel="Add Job"
+										buttonAction={addJob}
+										closeIcon
+									>
 										<Header icon="archive" content="Add Job" />
 										<Modal.Content>
 											<p>Add Job</p>
@@ -177,6 +200,9 @@ class EmployeeEdit extends Component<Props, State> {
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
+
+												job: job,
+
 												action: 'save'
 											})
 										)}
@@ -200,6 +226,11 @@ const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
 		return dispatch(EMPLOYEE_SAVE(data))
+	},
+
+	addJob (job) {
+		console.log('addJob')
+		EMPLOYEE_ADD_JOB(job, dispatch)
 	}
 })
 

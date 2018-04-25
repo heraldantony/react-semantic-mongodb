@@ -21,7 +21,7 @@ import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { COUNTRY_GET, COUNTRY_SAVE } from 'actions/country'
+import { COUNTRY_GET, COUNTRY_SAVE, COUNTRY_SET_REGION } from 'actions/country'
 import { createStructuredSelector } from 'reselect'
 
 import RegionModalSearch from 'containers/region/modal_search'
@@ -57,6 +57,10 @@ class CountryEdit extends Component<Props, State> {
 			error,
 			warning
 		} = this.props
+
+		const region = this.props.countryProps.country.region
+		var setRegion = this.props.setRegion.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -103,9 +107,21 @@ class CountryEdit extends Component<Props, State> {
 					<Grid.Row centered>
 						<Grid.Column width={16}>
 							<Form>
+								<div style={{ textAlign: 'left' }}>
+									{region &&
+                    region['_id'] && (
+										<Link to={'/viewRegion/' + region['_id']}>
+											{region['regionName']}
+										</Link>
+									)}
+								</div>
+
 								<div style={{ textAlign: 'right' }}>
 									<RegionModalSearch
 										trigger={<Button>Set Region</Button>}
+										title="Set Region"
+										buttonLabel="Set Region"
+										buttonAction={setRegion}
 										closeIcon
 									>
 										<Header icon="archive" content="Set Region" />
@@ -132,6 +148,9 @@ class CountryEdit extends Component<Props, State> {
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
+
+												region: region,
+
 												action: 'save'
 											})
 										)}
@@ -155,6 +174,11 @@ const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
 		return dispatch(COUNTRY_SAVE(data))
+	},
+
+	setRegion (region) {
+		console.log('setRegion')
+		COUNTRY_SET_REGION(region, dispatch)
 	}
 })
 

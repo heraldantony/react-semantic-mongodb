@@ -59,13 +59,16 @@ router.get('/:locationId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		LocationModel.findById(req.params.locationId, function (error, location) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(location)
-		})
+		LocationModel.findById(req.params.locationId)
+			.populate('country')
+
+			.exec(function (error, location) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(location)
+			})
 	}
 })
 
@@ -85,28 +88,40 @@ router.post('/', (req, res, next) => {
 
 		stateProvince
 	} = req.body
-	LocationModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var location = {
+		_id: new mongoose.Types.ObjectId(),
 
-			streetAddress: streetAddress,
+		streetAddress: streetAddress,
 
-			postalCode: postalCode,
+		postalCode: postalCode,
 
-			city: city,
+		city: city,
 
-			stateProvince: stateProvince
-		},
-		(createErr, newLocation) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		stateProvince: stateProvince
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newLocation)
-			}
+	if (req.body.hasOwnProperty('country')) {
+		location.country = req.body.country['_id']
+	}
+
+	LocationModel.create(location, (createErr, newLocation) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			LocationModel.findById(newLocation['_id'])
+				.populate('country')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:locationId', (req, res, next) => {
 	if (!req.params.locationId) {
@@ -136,12 +151,25 @@ router.put('/:locationId', (req, res, next) => {
 			location.stateProvince = req.body.stateProvince
 		}
 
+		if (req.body.hasOwnProperty('country')) {
+			location.country = req.body.country['_id']
+		}
+
 		location.save(function (saveError, savedLocation) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedLocation)
+			LocationModel.findById(savedLocation['_id'])
+				.populate('country')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -173,12 +201,25 @@ router.patch('/:locationId', (req, res, next) => {
 			location.stateProvince = req.body.stateProvince
 		}
 
+		if (req.body.hasOwnProperty('country')) {
+			location.country = req.body.country['_id']
+		}
+
 		location.save(function (saveError, savedLocation) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedLocation)
+			LocationModel.findById(savedLocation['_id'])
+				.populate('country')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

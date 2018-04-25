@@ -138,6 +138,17 @@ function routingFnCreator (
 			}
 		},
 		{
+			path: '/links',
+			exact: true,
+			tag: Route,
+			component: AsyncLinks,
+			meta: {
+				name: 'Links',
+				icon: 'bookmark',
+				sidebarVisible: true
+			}
+		},
+		{
 			path: '/auth',
 			exact: true,
 			tag: Route,

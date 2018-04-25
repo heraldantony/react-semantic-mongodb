@@ -34,7 +34,7 @@ router.post('/', (req: express$Request, res: express$Response) => {
 		if (err) {
 			// return next(err)
 			console.log(err)
-			res.json({
+			return res.json({
 				status: 'failure',
 				message: 'Could not query the database, system error.'
 			})
@@ -49,12 +49,12 @@ router.post('/', (req: express$Request, res: express$Response) => {
 			.toArray(function (err, docs) {
 				if (err) {
 					// return next(err)
-					res.json({
+					return res.json({
 						status: 'failure',
 						message: 'Could not query the database, system error.'
 					})
 				} else if (docs.length < 1) {
-					res.json({
+					return res.json({
 						status: 'failure',
 						message: 'Invalid credentials.'
 					})
@@ -68,7 +68,7 @@ router.post('/', (req: express$Request, res: express$Response) => {
 						(jwterr, token) => {
 							if (jwterr) {
 								// return next(jwterr)
-								res.json({
+								return res.json({
 									status: 'failure',
 									message: 'Could not create the token, system error.'
 								})
@@ -76,7 +76,7 @@ router.post('/', (req: express$Request, res: express$Response) => {
 								console.log(
 									chalk.yellow(`Generated token for user: ${username}`)
 								)
-								res.json({
+								return res.json({
 									username: username,
 									token: token
 								})

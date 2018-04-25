@@ -11,7 +11,8 @@ import {
 	LOCATION_SAVE_SUCCESS,
 	LOCATION_SAVE_FAIL,
 	LOCATION_UPDATE_SUCCESS,
-	LOCATION_UPDATE_FAIL
+	LOCATION_UPDATE_FAIL,
+	LOCATION_SET_COUNTRY_SUCCESS
 } from 'actions/location'
 
 import { APPLICATION_INIT } from 'actions/common'
@@ -26,7 +27,8 @@ import type {
 	LOCATION_SAVE_SUCCESS_TYPE,
 	LOCATION_SAVE_FAIL_TYPE,
 	LOCATION_UPDATE_SUCCESS_TYPE,
-	LOCATION_UPDATE_FAIL_TYPE
+	LOCATION_UPDATE_FAIL_TYPE,
+	LOCATION_SET_COUNTRY_SUCCESS_TYPE
 } from 'actions/location'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
@@ -62,7 +64,8 @@ type Action =
   | LOCATION_SAVE_SUCCESS_TYPE
   | LOCATION_SAVE_FAIL_TYPE
   | LOCATION_UPDATE_SUCCESS_TYPE
-  | LOCATION_UPDATE_FAIL_TYPE;
+  | LOCATION_UPDATE_FAIL_TYPE
+  | LOCATION_SET_COUNTRY_SUCCESS_TYPE;
 
 export const initialState = {
 	search: '',
@@ -114,6 +117,16 @@ export function location (state = initialState, action: Action): State {
 	}
 	case LOCATION_UPDATE_FAIL: {
 		return { ...state, error: action.error }
+	}
+
+	case LOCATION_SET_COUNTRY_SUCCESS: {
+		return {
+			...state,
+			location: {
+				...state.location,
+				country: action.country
+			}
+		}
 	}
 
 	default:

@@ -11,7 +11,9 @@ import {
 	DEPARTMENT_SAVE_SUCCESS,
 	DEPARTMENT_SAVE_FAIL,
 	DEPARTMENT_UPDATE_SUCCESS,
-	DEPARTMENT_UPDATE_FAIL
+	DEPARTMENT_UPDATE_FAIL,
+	DEPARTMENT_SET_LOCATION_SUCCESS,
+	DEPARTMENT_ADD_EMPLOYEE_SUCCESS
 } from 'actions/department'
 
 import { APPLICATION_INIT } from 'actions/common'
@@ -26,7 +28,9 @@ import type {
 	DEPARTMENT_SAVE_SUCCESS_TYPE,
 	DEPARTMENT_SAVE_FAIL_TYPE,
 	DEPARTMENT_UPDATE_SUCCESS_TYPE,
-	DEPARTMENT_UPDATE_FAIL_TYPE
+	DEPARTMENT_UPDATE_FAIL_TYPE,
+	DEPARTMENT_SET_LOCATION_SUCCESS_TYPE,
+	DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE
 } from 'actions/department'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
@@ -56,7 +60,9 @@ type Action =
   | DEPARTMENT_SAVE_SUCCESS_TYPE
   | DEPARTMENT_SAVE_FAIL_TYPE
   | DEPARTMENT_UPDATE_SUCCESS_TYPE
-  | DEPARTMENT_UPDATE_FAIL_TYPE;
+  | DEPARTMENT_UPDATE_FAIL_TYPE
+  | DEPARTMENT_SET_LOCATION_SUCCESS_TYPE
+  | DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE;
 
 export const initialState = {
 	search: '',
@@ -108,6 +114,26 @@ export function department (state = initialState, action: Action): State {
 	}
 	case DEPARTMENT_UPDATE_FAIL: {
 		return { ...state, error: action.error }
+	}
+
+	case DEPARTMENT_SET_LOCATION_SUCCESS: {
+		return {
+			...state,
+			department: {
+				...state.department,
+				location: action.location
+			}
+		}
+	}
+
+	case DEPARTMENT_ADD_EMPLOYEE_SUCCESS: {
+		return {
+			...state,
+			department: {
+				...state.department,
+				employee: action.employee
+			}
+		}
 	}
 
 	default:

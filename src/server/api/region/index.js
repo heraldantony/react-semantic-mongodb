@@ -59,13 +59,14 @@ router.get('/:regionId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		RegionModel.findById(req.params.regionId, function (error, region) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(region)
-		})
+		RegionModel.findById(req.params.regionId)
+			.exec(function (error, region) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(region)
+			})
 	}
 })
 
@@ -77,22 +78,28 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { regionName } = req.body
-	RegionModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var region = {
+		_id: new mongoose.Types.ObjectId(),
 
-			regionName: regionName
-		},
-		(createErr, newRegion) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		regionName: regionName
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newRegion)
-			}
+	RegionModel.create(region, (createErr, newRegion) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			RegionModel.findById(newRegion['_id'])
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:regionId', (req, res, next) => {
 	if (!req.params.regionId) {
@@ -115,7 +122,14 @@ router.put('/:regionId', (req, res, next) => {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedRegion)
+			RegionModel.findById(savedRegion['_id'])
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -140,7 +154,14 @@ router.patch('/:regionId', (req, res, next) => {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedRegion)
+			RegionModel.findById(savedRegion['_id'])
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

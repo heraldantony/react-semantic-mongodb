@@ -5,7 +5,8 @@ var Schema = mongoose.Schema
 var departmentSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	departmentName: String,
+	departmentName: { type: String, index: true },
+
 	location: { type: Schema.Types.ObjectId, ref: 'Location' },
 	employees: [{ type: Schema.Types.ObjectId, ref: 'Employee' }]
 })
@@ -13,10 +14,6 @@ var departmentSchema = Schema({
 departmentSchema.query.byDepartmentName = function (departmentName) {
 	return this.find({ departmentName: new RegExp(departmentName, 'i') })
 }
-
-departmentSchema.index({
-	departmentName: 'text'
-})
 
 departmentSchema.plugin(mongoosePaginate)
 

@@ -11,7 +11,8 @@ import {
 	EMPLOYEE_SAVE_SUCCESS,
 	EMPLOYEE_SAVE_FAIL,
 	EMPLOYEE_UPDATE_SUCCESS,
-	EMPLOYEE_UPDATE_FAIL
+	EMPLOYEE_UPDATE_FAIL,
+	EMPLOYEE_ADD_JOB_SUCCESS
 } from 'actions/employee'
 
 import { APPLICATION_INIT } from 'actions/common'
@@ -26,7 +27,8 @@ import type {
 	EMPLOYEE_SAVE_SUCCESS_TYPE,
 	EMPLOYEE_SAVE_FAIL_TYPE,
 	EMPLOYEE_UPDATE_SUCCESS_TYPE,
-	EMPLOYEE_UPDATE_FAIL_TYPE
+	EMPLOYEE_UPDATE_FAIL_TYPE,
+	EMPLOYEE_ADD_JOB_SUCCESS_TYPE
 } from 'actions/employee'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
@@ -68,7 +70,8 @@ type Action =
   | EMPLOYEE_SAVE_SUCCESS_TYPE
   | EMPLOYEE_SAVE_FAIL_TYPE
   | EMPLOYEE_UPDATE_SUCCESS_TYPE
-  | EMPLOYEE_UPDATE_FAIL_TYPE;
+  | EMPLOYEE_UPDATE_FAIL_TYPE
+  | EMPLOYEE_ADD_JOB_SUCCESS_TYPE;
 
 export const initialState = {
 	search: '',
@@ -120,6 +123,16 @@ export function employee (state = initialState, action: Action): State {
 	}
 	case EMPLOYEE_UPDATE_FAIL: {
 		return { ...state, error: action.error }
+	}
+
+	case EMPLOYEE_ADD_JOB_SUCCESS: {
+		return {
+			...state,
+			employee: {
+				...state.employee,
+				job: action.job
+			}
+		}
 	}
 
 	default:

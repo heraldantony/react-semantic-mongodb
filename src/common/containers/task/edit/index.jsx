@@ -21,7 +21,7 @@ import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { TASK_GET, TASK_SAVE } from 'actions/task'
+import { TASK_GET, TASK_SAVE, TASK_ADD_JOB } from 'actions/task'
 import { createStructuredSelector } from 'reselect'
 
 import JobModalSearch from 'containers/job/modal_search'
@@ -62,6 +62,10 @@ class TaskEdit extends Component<Props, State> {
 			error,
 			warning
 		} = this.props
+
+		const job = this.props.taskProps.task.job
+		var addJob = this.props.addJob.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -108,8 +112,23 @@ class TaskEdit extends Component<Props, State> {
 					<Grid.Row centered>
 						<Grid.Column width={16}>
 							<Form>
+								<div style={{ textAlign: 'left' }}>
+									{job &&
+                    job['_id'] && (
+										<Link to={'/viewJob/' + job['_id']}>
+											{job['jobTitle']}
+										</Link>
+									)}
+								</div>
+
 								<div style={{ textAlign: 'right' }}>
-									<JobModalSearch trigger={<Button>Add Job</Button>} closeIcon>
+									<JobModalSearch
+										trigger={<Button>Add Job</Button>}
+										title="Add Job"
+										buttonLabel="Add Job"
+										buttonAction={addJob}
+										closeIcon
+									>
 										<Header icon="archive" content="Add Job" />
 										<Modal.Content>
 											<p>Add Job</p>
@@ -134,6 +153,9 @@ class TaskEdit extends Component<Props, State> {
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
+
+												job: job,
+
 												action: 'save'
 											})
 										)}
@@ -157,6 +179,11 @@ const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
 		return dispatch(TASK_SAVE(data))
+	},
+
+	addJob (job) {
+		console.log('addJob')
+		TASK_ADD_JOB(job, dispatch)
 	}
 })
 

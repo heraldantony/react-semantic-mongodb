@@ -11,7 +11,8 @@ import {
 	TASK_SAVE_SUCCESS,
 	TASK_SAVE_FAIL,
 	TASK_UPDATE_SUCCESS,
-	TASK_UPDATE_FAIL
+	TASK_UPDATE_FAIL,
+	TASK_ADD_JOB_SUCCESS
 } from 'actions/task'
 
 import { APPLICATION_INIT } from 'actions/common'
@@ -26,7 +27,8 @@ import type {
 	TASK_SAVE_SUCCESS_TYPE,
 	TASK_SAVE_FAIL_TYPE,
 	TASK_UPDATE_SUCCESS_TYPE,
-	TASK_UPDATE_FAIL_TYPE
+	TASK_UPDATE_FAIL_TYPE,
+	TASK_ADD_JOB_SUCCESS_TYPE
 } from 'actions/task'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
@@ -58,7 +60,8 @@ type Action =
   | TASK_SAVE_SUCCESS_TYPE
   | TASK_SAVE_FAIL_TYPE
   | TASK_UPDATE_SUCCESS_TYPE
-  | TASK_UPDATE_FAIL_TYPE;
+  | TASK_UPDATE_FAIL_TYPE
+  | TASK_ADD_JOB_SUCCESS_TYPE;
 
 export const initialState = {
 	search: '',
@@ -110,6 +113,16 @@ export function task (state = initialState, action: Action): State {
 	}
 	case TASK_UPDATE_FAIL: {
 		return { ...state, error: action.error }
+	}
+
+	case TASK_ADD_JOB_SUCCESS: {
+		return {
+			...state,
+			task: {
+				...state.task,
+				job: action.job
+			}
+		}
 	}
 
 	default:

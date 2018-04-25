@@ -5,17 +5,14 @@ var Schema = mongoose.Schema
 var countrySchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	countryName: String,
+	countryName: { type: String, index: true },
+
 	region: { type: Schema.Types.ObjectId, ref: 'Region' }
 })
 
 countrySchema.query.byCountryName = function (countryName) {
 	return this.find({ countryName: new RegExp(countryName, 'i') })
 }
-
-countrySchema.index({
-	countryName: 'text'
-})
 
 countrySchema.plugin(mongoosePaginate)
 

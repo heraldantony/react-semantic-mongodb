@@ -25,6 +25,12 @@ export const DEPARTMENT_SAVE_FAIL = 'DEPARTMENT_SAVE_FAIL'
 export const DEPARTMENT_UPDATE_SUCCESS = 'DEPARTMENT_UPDATE_SUCCESS'
 export const DEPARTMENT_UPDATE_FAIL = 'DEPARTMENT_UPDATE_FAIL'
 
+export const DEPARTMENT_SET_LOCATION_SUCCESS =
+  'DEPARTMENT_SET_LOCATION_SUCCESS'
+
+export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS =
+  'DEPARTMENT_ADD_EMPLOYEE_SUCCESS'
+
 export type DEPARTMENT_SEARCH_SUCCESS_TYPE = {
   type: DEPARTMENT_SEARCH_SUCCESS,
   payload: [Object]
@@ -69,6 +75,16 @@ export type DEPARTMENT_UPDATE_FAIL_TYPE = {
   type: DEPARTMENT_UPDATE_FAIL,
   payload: { errors: Object }
 };
+
+export const DEPARTMENT_SET_LOCATION_SUCCESS_TYPE = {
+	type: DEPARTMENT_SET_LOCATION_SUCCESS,
+	payload: Object
+}
+
+export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE = {
+	type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS,
+	payload: Object
+}
 
 /**
   Awral is not recommended for production usage now
@@ -204,3 +220,11 @@ const awralDepartmentUpdate = awral.of({
 export const DEPARTMENT_UPDATE = awralDepartmentUpdate(departmentUpdateAPI)(
 	'DEPARTMENT_UPDATE'
 )
+
+export const DEPARTMENT_SET_LOCATION = (location, dispatch) => {
+	dispatch({ type: DEPARTMENT_SET_LOCATION_SUCCESS, location })
+}
+
+export const DEPARTMENT_ADD_EMPLOYEE = (employee, dispatch) => {
+	dispatch({ type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS, employee })
+}

@@ -5,16 +5,12 @@ var Schema = mongoose.Schema
 var regionSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	regionName: String
+	regionName: { type: String, index: true }
 })
 
 regionSchema.query.byRegionName = function (regionName) {
 	return this.find({ regionName: new RegExp(regionName, 'i') })
 }
-
-regionSchema.index({
-	regionName: 'text'
-})
 
 regionSchema.plugin(mongoosePaginate)
 

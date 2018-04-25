@@ -15,16 +15,6 @@ npm-debug.log.*
 /.awcache/*
 
 ######################
-# jhipster
-######################
-/.jhipster/
-.yo-rc.json
-emp.json
-/dist/
-/.vs/
-*.bak
-
-######################
 # SASS
 ######################
 .sass-cache/

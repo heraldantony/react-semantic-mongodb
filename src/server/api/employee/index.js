@@ -59,13 +59,17 @@ router.get('/:employeeId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		EmployeeModel.findById(req.params.employeeId, function (error, employee) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(employee)
-		})
+		EmployeeModel.findById(req.params.employeeId)
+
+			.populate('jobs')
+
+			.exec(function (error, employee) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(employee)
+			})
 	}
 })
 
@@ -91,34 +95,49 @@ router.post('/', (req, res, next) => {
 
 		commissionPct
 	} = req.body
-	EmployeeModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var employee = {
+		_id: new mongoose.Types.ObjectId(),
 
-			firstName: firstName,
+		firstName: firstName,
 
-			lastName: lastName,
+		lastName: lastName,
 
-			email: email,
+		email: email,
 
-			phoneNumber: phoneNumber,
+		phoneNumber: phoneNumber,
 
-			hireDate: hireDate,
+		hireDate: hireDate,
 
-			salary: salary,
+		salary: salary,
 
-			commissionPct: commissionPct
-		},
-		(createErr, newEmployee) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		commissionPct: commissionPct
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newEmployee)
-			}
+	if (req.body.hasOwnProperty('jobs')) {
+		employee.jobs = req.body.jobs.map(job => {
+			return job['_id']
+		})
+	}
+
+	EmployeeModel.create(employee, (createErr, newEmployee) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			EmployeeModel.findById(newEmployee['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:employeeId', (req, res, next) => {
 	if (!req.params.employeeId) {
@@ -160,12 +179,28 @@ router.put('/:employeeId', (req, res, next) => {
 			employee.commissionPct = req.body.commissionPct
 		}
 
+		if (req.body.hasOwnProperty('jobs')) {
+			employee.jobs = req.body.jobs.map(job => {
+				return job['_id']
+			})
+		}
+
 		employee.save(function (saveError, savedEmployee) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedEmployee)
+			EmployeeModel.findById(savedEmployee['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -209,12 +244,28 @@ router.patch('/:employeeId', (req, res, next) => {
 			employee.commissionPct = req.body.commissionPct
 		}
 
+		if (req.body.hasOwnProperty('jobs')) {
+			employee.jobs = req.body.jobs.map(job => {
+				return job['_id']
+			})
+		}
+
 		employee.save(function (saveError, savedEmployee) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedEmployee)
+			EmployeeModel.findById(savedEmployee['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

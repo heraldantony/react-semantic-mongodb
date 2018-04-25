@@ -5,9 +5,9 @@ var Schema = mongoose.Schema
 var taskSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	title: String,
+	title: { type: String, index: true },
 
-	description: String,
+	description: { type: String, index: true },
 
 	jobs: [{ type: Schema.Types.ObjectId, ref: 'Job' }]
 })
@@ -19,11 +19,6 @@ taskSchema.query.byTitle = function (title) {
 taskSchema.query.byDescription = function (description) {
 	return this.find({ description: new RegExp(description, 'i') })
 }
-
-taskSchema.index({
-	title: 'text',
-	description: 'text'
-})
 
 taskSchema.plugin(mongoosePaginate)
 

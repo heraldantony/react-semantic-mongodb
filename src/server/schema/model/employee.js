@@ -5,13 +5,13 @@ var Schema = mongoose.Schema
 var employeeSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	firstName: String,
+	firstName: { type: String, index: true },
 
-	lastName: String,
+	lastName: { type: String, index: true },
 
-	email: String,
+	email: { type: String, index: true },
 
-	phoneNumber: String,
+	phoneNumber: { type: String, index: true },
 
 	hireDate: Date,
 
@@ -37,13 +37,6 @@ employeeSchema.query.byEmail = function (email) {
 employeeSchema.query.byPhoneNumber = function (phoneNumber) {
 	return this.find({ phoneNumber: new RegExp(phoneNumber, 'i') })
 }
-
-employeeSchema.index({
-	firstName: 'text',
-	lastName: 'text',
-	email: 'text',
-	phoneNumber: 'text'
-})
 
 employeeSchema.plugin(mongoosePaginate)
 

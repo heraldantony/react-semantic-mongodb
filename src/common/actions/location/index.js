@@ -25,6 +25,8 @@ export const LOCATION_SAVE_FAIL = 'LOCATION_SAVE_FAIL'
 export const LOCATION_UPDATE_SUCCESS = 'LOCATION_UPDATE_SUCCESS'
 export const LOCATION_UPDATE_FAIL = 'LOCATION_UPDATE_FAIL'
 
+export const LOCATION_SET_COUNTRY_SUCCESS = 'LOCATION_SET_COUNTRY_SUCCESS'
+
 export type LOCATION_SEARCH_SUCCESS_TYPE = {
   type: LOCATION_SEARCH_SUCCESS,
   payload: [Object]
@@ -69,6 +71,11 @@ export type LOCATION_UPDATE_FAIL_TYPE = {
   type: LOCATION_UPDATE_FAIL,
   payload: { errors: Object }
 };
+
+export const LOCATION_SET_COUNTRY_SUCCESS_TYPE = {
+	type: LOCATION_SET_COUNTRY_SUCCESS,
+	payload: Object
+}
 
 /**
   Awral is not recommended for production usage now
@@ -200,3 +207,7 @@ const awralLocationUpdate = awral.of({
 export const LOCATION_UPDATE = awralLocationUpdate(locationUpdateAPI)(
 	'LOCATION_UPDATE'
 )
+
+export const LOCATION_SET_COUNTRY = (country, dispatch) => {
+	dispatch({ type: LOCATION_SET_COUNTRY_SUCCESS, country })
+}

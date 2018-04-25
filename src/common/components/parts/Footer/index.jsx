@@ -2,8 +2,8 @@
  * @flow
  */
 import React from 'react'
-import {Grid, Header, Icon} from 'semantic-ui-react'
-import {StyledFooter, StyledFooterInner} from './style'
+import { Grid, Header, Icon } from 'semantic-ui-react'
+import { StyledFooter, StyledFooterInner } from './style'
 
 const Footer = () => {
 	return (
@@ -16,9 +16,8 @@ const Footer = () => {
 								<Header as="h3" inverted>
 									<Icon name="github" />
 									<Header.Content>
-
 										<Header.Subheader>
-											React - Semantic UI - Mongo DB Responsive Web App.
+                      React Semantic MongoDB App
 										</Header.Subheader>
 									</Header.Content>
 								</Header>

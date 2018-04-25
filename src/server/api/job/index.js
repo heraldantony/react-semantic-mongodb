@@ -59,13 +59,17 @@ router.get('/:jobId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		JobModel.findById(req.params.jobId, function (error, job) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(job)
-		})
+		JobModel.findById(req.params.jobId)
+
+			.populate('tasks')
+
+			.exec(function (error, job) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(job)
+			})
 	}
 })
 
@@ -83,26 +87,41 @@ router.post('/', (req, res, next) => {
 
 		maxSalary
 	} = req.body
-	JobModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var job = {
+		_id: new mongoose.Types.ObjectId(),
 
-			jobTitle: jobTitle,
+		jobTitle: jobTitle,
 
-			minSalary: minSalary,
+		minSalary: minSalary,
 
-			maxSalary: maxSalary
-		},
-		(createErr, newJob) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		maxSalary: maxSalary
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newJob)
-			}
+	if (req.body.hasOwnProperty('tasks')) {
+		job.tasks = req.body.tasks.map(task => {
+			return task['_id']
+		})
+	}
+
+	JobModel.create(job, (createErr, newJob) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			JobModel.findById(newJob['_id'])
+
+				.populate('tasks')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:jobId', (req, res, next) => {
 	if (!req.params.jobId) {
@@ -128,12 +147,28 @@ router.put('/:jobId', (req, res, next) => {
 			job.maxSalary = req.body.maxSalary
 		}
 
+		if (req.body.hasOwnProperty('tasks')) {
+			job.tasks = req.body.tasks.map(task => {
+				return task['_id']
+			})
+		}
+
 		job.save(function (saveError, savedJob) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedJob)
+			JobModel.findById(savedJob['_id'])
+
+				.populate('tasks')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -161,12 +196,28 @@ router.patch('/:jobId', (req, res, next) => {
 			job.maxSalary = req.body.maxSalary
 		}
 
+		if (req.body.hasOwnProperty('tasks')) {
+			job.tasks = req.body.tasks.map(task => {
+				return task['_id']
+			})
+		}
+
 		job.save(function (saveError, savedJob) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedJob)
+			JobModel.findById(savedJob['_id'])
+
+				.populate('tasks')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

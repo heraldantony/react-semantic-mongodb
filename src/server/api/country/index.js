@@ -59,13 +59,16 @@ router.get('/:countryId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		CountryModel.findById(req.params.countryId, function (error, country) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(country)
-		})
+		CountryModel.findById(req.params.countryId)
+			.populate('region')
+
+			.exec(function (error, country) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(country)
+			})
 	}
 })
 
@@ -77,22 +80,34 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { countryName } = req.body
-	CountryModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var country = {
+		_id: new mongoose.Types.ObjectId(),
 
-			countryName: countryName
-		},
-		(createErr, newCountry) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		countryName: countryName
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newCountry)
-			}
+	if (req.body.hasOwnProperty('region')) {
+		country.region = req.body.region['_id']
+	}
+
+	CountryModel.create(country, (createErr, newCountry) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			CountryModel.findById(newCountry['_id'])
+				.populate('region')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:countryId', (req, res, next) => {
 	if (!req.params.countryId) {
@@ -110,12 +125,25 @@ router.put('/:countryId', (req, res, next) => {
 			country.countryName = req.body.countryName
 		}
 
+		if (req.body.hasOwnProperty('region')) {
+			country.region = req.body.region['_id']
+		}
+
 		country.save(function (saveError, savedCountry) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedCountry)
+			CountryModel.findById(savedCountry['_id'])
+				.populate('region')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -135,12 +163,25 @@ router.patch('/:countryId', (req, res, next) => {
 			country.countryName = req.body.countryName
 		}
 
+		if (req.body.hasOwnProperty('region')) {
+			country.region = req.body.region['_id']
+		}
+
 		country.save(function (saveError, savedCountry) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedCountry)
+			CountryModel.findById(savedCountry['_id'])
+				.populate('region')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

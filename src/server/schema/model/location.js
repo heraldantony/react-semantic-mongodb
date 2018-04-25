@@ -5,13 +5,14 @@ var Schema = mongoose.Schema
 var locationSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	streetAddress: String,
+	streetAddress: { type: String, index: true },
 
-	postalCode: String,
+	postalCode: { type: String, index: true },
 
-	city: String,
+	city: { type: String, index: true },
 
-	stateProvince: String,
+	stateProvince: { type: String, index: true },
+
 	country: { type: Schema.Types.ObjectId, ref: 'Country' }
 })
 
@@ -30,13 +31,6 @@ locationSchema.query.byCity = function (city) {
 locationSchema.query.byStateProvince = function (stateProvince) {
 	return this.find({ stateProvince: new RegExp(stateProvince, 'i') })
 }
-
-locationSchema.index({
-	streetAddress: 'text',
-	postalCode: 'text',
-	city: 'text',
-	stateProvince: 'text'
-})
 
 locationSchema.plugin(mongoosePaginate)
 

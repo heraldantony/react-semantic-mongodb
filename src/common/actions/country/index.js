@@ -25,6 +25,8 @@ export const COUNTRY_SAVE_FAIL = 'COUNTRY_SAVE_FAIL'
 export const COUNTRY_UPDATE_SUCCESS = 'COUNTRY_UPDATE_SUCCESS'
 export const COUNTRY_UPDATE_FAIL = 'COUNTRY_UPDATE_FAIL'
 
+export const COUNTRY_SET_REGION_SUCCESS = 'COUNTRY_SET_REGION_SUCCESS'
+
 export type COUNTRY_SEARCH_SUCCESS_TYPE = {
   type: COUNTRY_SEARCH_SUCCESS,
   payload: [Object]
@@ -69,6 +71,11 @@ export type COUNTRY_UPDATE_FAIL_TYPE = {
   type: COUNTRY_UPDATE_FAIL,
   payload: { errors: Object }
 };
+
+export const COUNTRY_SET_REGION_SUCCESS_TYPE = {
+	type: COUNTRY_SET_REGION_SUCCESS,
+	payload: Object
+}
 
 /**
   Awral is not recommended for production usage now
@@ -198,3 +205,7 @@ const awralCountryUpdate = awral.of({
 export const COUNTRY_UPDATE = awralCountryUpdate(countryUpdateAPI)(
 	'COUNTRY_UPDATE'
 )
+
+export const COUNTRY_SET_REGION = (region, dispatch) => {
+	dispatch({ type: COUNTRY_SET_REGION_SUCCESS, region })
+}

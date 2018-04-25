@@ -5,7 +5,7 @@ var Schema = mongoose.Schema
 var jobSchema = Schema({
 	_id: Schema.Types.ObjectId,
 
-	jobTitle: String,
+	jobTitle: { type: String, index: true },
 
 	minSalary: Number,
 
@@ -17,10 +17,6 @@ var jobSchema = Schema({
 jobSchema.query.byJobTitle = function (jobTitle) {
 	return this.find({ jobTitle: new RegExp(jobTitle, 'i') })
 }
-
-jobSchema.index({
-	jobTitle: 'text'
-})
 
 jobSchema.plugin(mongoosePaginate)
 

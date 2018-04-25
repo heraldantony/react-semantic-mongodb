@@ -59,13 +59,17 @@ router.get('/:taskId', function (req, res) {
 			return res.send(result)
 		})
 	} else {
-		TaskModel.findById(req.params.taskId, function (error, task) {
-			if (error) {
-				console.log(chalk.red(error))
-				return res.status(400).send(error)
-			}
-			return res.send(task)
-		})
+		TaskModel.findById(req.params.taskId)
+
+			.populate('jobs')
+
+			.exec(function (error, task) {
+				if (error) {
+					console.log(chalk.red(error))
+					return res.status(400).send(error)
+				}
+				return res.send(task)
+			})
 	}
 })
 
@@ -81,24 +85,39 @@ router.post('/', (req, res, next) => {
 
 		description
 	} = req.body
-	TaskModel.create(
-		{
-			_id: new mongoose.Types.ObjectId(),
+	var task = {
+		_id: new mongoose.Types.ObjectId(),
 
-			title: title,
+		title: title,
 
-			description: description
-		},
-		(createErr, newTask) => {
-			if (createErr) {
-				console.log(chalk.red(createErr))
+		description: description
+	}
 
-				return res.status(400).send({ status: 'error', message: createErr })
-			} else {
-				return res.json(newTask)
-			}
+	if (req.body.hasOwnProperty('jobs')) {
+		task.jobs = req.body.jobs.map(job => {
+			return job['_id']
+		})
+	}
+
+	TaskModel.create(task, (createErr, newTask) => {
+		if (createErr) {
+			console.log(chalk.red(createErr))
+
+			return res.status(400).send({ status: 'error', message: createErr })
+		} else {
+			TaskModel.findById(newTask['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, ne) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(ne)
+				})
 		}
-	)
+	})
 })
 router.put('/:taskId', (req, res, next) => {
 	if (!req.params.taskId) {
@@ -120,12 +139,28 @@ router.put('/:taskId', (req, res, next) => {
 			task.description = req.body.description
 		}
 
+		if (req.body.hasOwnProperty('jobs')) {
+			task.jobs = req.body.jobs.map(job => {
+				return job['_id']
+			})
+		}
+
 		task.save(function (saveError, savedTask) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedTask)
+			TaskModel.findById(savedTask['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })
@@ -149,12 +184,28 @@ router.patch('/:taskId', (req, res, next) => {
 			task.description = req.body.description
 		}
 
+		if (req.body.hasOwnProperty('jobs')) {
+			task.jobs = req.body.jobs.map(job => {
+				return job['_id']
+			})
+		}
+
 		task.save(function (saveError, savedTask) {
 			if (saveError) {
 				console.log(chalk.red(saveError))
 				return res.status(400).send(saveError)
 			}
-			res.send(savedTask)
+			TaskModel.findById(savedTask['_id'])
+
+				.populate('jobs')
+
+				.exec(function (err, se) {
+					if (err) {
+						console.log(chalk.red(err))
+						return res.status(400).send(err)
+					}
+					return res.json(se)
+				})
 		})
 	})
 })

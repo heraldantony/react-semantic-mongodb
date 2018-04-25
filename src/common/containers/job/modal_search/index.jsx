@@ -23,6 +23,7 @@ import { JOB_SEARCH } from 'actions/job'
 import { createStructuredSelector } from 'reselect'
 import { makeSelectSearchJob } from 'selectors/job'
 import ModalSearch from 'components/search/ModalSearch'
+import { PAGE_SIZE, PAGE_RANGE_DISPLAYED } from 'common/constants'
 
 const tableFields = [
 	{ headerName: 'Job Title', fieldName: 'jobTitle' },
@@ -48,21 +49,33 @@ const fixedProps = {
 	itemNameCaps: 'Job'
 }
 class Search extends Component {
+	constructor (props) {
+		super(props)
+		this.state = {
+			activePage: 1,
+			pageSize: PAGE_SIZE,
+			totalItemsCount: 0,
+			searchString: ''
+		}
+	}
 	render () {
+		var handlePageChange = this.props.handlePageChange.bind(this)
+		var search = this.props.search.bind(this)
 		const props = {
-			...this.props,
 			...fixedProps,
 			buttonIconName: 'object group',
 			title: 'Set Job Parent',
-			buttonLabel: 'Set as Parent',
-			buttonAction: this.props.setParent
+			...this.props,
+			handlePageChange,
+			search
 		}
 		return <ModalSearch {...props} />
 	}
 }
 Search.propTypes = {
 	setParent: PropTypes.func,
-	search: PropTypes.func
+	search: PropTypes.func,
+	handlePageChange: PropTypes.func
 }
 
 const mapStateToProps = state =>
@@ -74,10 +87,22 @@ const mapDispatchToProps = dispatch => ({
 	async search (data) {
 		// if(data.action == "search") {}
 		console.log(data)
+		this.setState({ searchString: data.search })
 		return dispatch(JOB_SEARCH(data))
 	},
 	setParent (parent) {
 		console.log('parent=', parent)
+	},
+	handlePageChange (pageNumber) {
+		console.log(`active page is ${pageNumber}`)
+		this.setState({ activePage: pageNumber })
+		return dispatch(
+			JOB_SEARCH({
+				search: this.state.searchString,
+				pageNumber: pageNumber,
+				pageSize: this.state.pageSize
+			})
+		)
 	}
 })
 
