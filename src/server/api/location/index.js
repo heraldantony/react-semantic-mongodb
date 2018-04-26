@@ -88,7 +88,7 @@ router.post('/', (req, res, next) => {
 
 		stateProvince
 	} = req.body
-	var location = {
+	var locationObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		streetAddress: streetAddress,
@@ -101,10 +101,10 @@ router.post('/', (req, res, next) => {
 	}
 
 	if (req.body.hasOwnProperty('country')) {
-		location.country = req.body.country['_id']
+		locationObj.country = req.body.country['_id']
 	}
 
-	LocationModel.create(location, (createErr, newLocation) => {
+	LocationModel.create(locationObj, (createErr, newLocation) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

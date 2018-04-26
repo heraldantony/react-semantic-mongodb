@@ -87,7 +87,7 @@ router.post('/', (req, res, next) => {
 
 		maxSalary
 	} = req.body
-	var job = {
+	var jobObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		jobTitle: jobTitle,
@@ -98,12 +98,12 @@ router.post('/', (req, res, next) => {
 	}
 
 	if (req.body.hasOwnProperty('tasks')) {
-		job.tasks = req.body.tasks.map(task => {
+		jobObj.tasks = req.body.tasks.map(task => {
 			return task['_id']
 		})
 	}
 
-	JobModel.create(job, (createErr, newJob) => {
+	JobModel.create(jobObj, (createErr, newJob) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

@@ -82,23 +82,23 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { departmentName } = req.body
-	var department = {
+	var departmentObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		departmentName: departmentName
 	}
 
 	if (req.body.hasOwnProperty('location')) {
-		department.location = req.body.location['_id']
+		departmentObj.location = req.body.location['_id']
 	}
 
 	if (req.body.hasOwnProperty('employees')) {
-		department.employees = req.body.employees.map(employee => {
+		departmentObj.employees = req.body.employees.map(employee => {
 			return employee['_id']
 		})
 	}
 
-	DepartmentModel.create(department, (createErr, newDepartment) => {
+	DepartmentModel.create(departmentObj, (createErr, newDepartment) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

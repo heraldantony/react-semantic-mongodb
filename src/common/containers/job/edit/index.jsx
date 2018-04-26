@@ -71,7 +71,7 @@ class JobEdit extends Component<Props, State> {
 			warning
 		} = this.props
 
-		const task = this.props.jobProps.job.task
+		const tasks = this.props.jobProps.job.tasks
 		var addTask = this.props.addTask.bind(this)
 
 		return (
@@ -121,12 +121,19 @@ class JobEdit extends Component<Props, State> {
 						<Grid.Column width={16}>
 							<Form>
 								<div style={{ textAlign: 'left' }}>
-									{task &&
-                    task['_id'] && (
-										<Link to={'/viewTask/' + task['_id']}>
-											{task['title']}
-										</Link>
-									)}
+									{tasks &&
+                    tasks.length > 0 &&
+                    tasks.map((entity, idx) => {
+                    	return (
+                    		<Button
+                    			as={Link}
+                    			key={entity['_id'] + idx}
+                    			to={'/viewTask/' + entity['_id']}
+                    		>
+                    			{entity['title']}
+                    		</Button>
+                    	)
+                    })}
 								</div>
 
 								<div style={{ textAlign: 'right' }}>
@@ -162,7 +169,7 @@ class JobEdit extends Component<Props, State> {
 											this.props.save({
 												...values,
 
-												task: task,
+												tasks: tasks,
 
 												action: 'save'
 											})

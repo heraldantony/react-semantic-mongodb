@@ -1,5 +1,5 @@
 # react-semantic-mongodb
-A non-trivial app using react, semantic ui, node, express, and mongodb, that does CRUD and can add one-to-many, many-to-many relationships between entities.
+A non-trivial app using react, semantic ui, node, express, and mongodb, that does CRUD with one-to-one, one-to-many, many-to-many relationships between entities.
 
 ## Suicrux
 https://github.com/Metnew/suicrux

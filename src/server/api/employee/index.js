@@ -95,7 +95,7 @@ router.post('/', (req, res, next) => {
 
 		commissionPct
 	} = req.body
-	var employee = {
+	var employeeObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		firstName: firstName,
@@ -114,12 +114,12 @@ router.post('/', (req, res, next) => {
 	}
 
 	if (req.body.hasOwnProperty('jobs')) {
-		employee.jobs = req.body.jobs.map(job => {
+		employeeObj.jobs = req.body.jobs.map(job => {
 			return job['_id']
 		})
 	}
 
-	EmployeeModel.create(employee, (createErr, newEmployee) => {
+	EmployeeModel.create(employeeObj, (createErr, newEmployee) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

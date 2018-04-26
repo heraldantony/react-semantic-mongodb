@@ -138,9 +138,9 @@ class LocationEdit extends Component<Props, State> {
 								<div style={{ textAlign: 'left' }}>
 									{country &&
                     country['_id'] && (
-										<Link to={'/viewCountry/' + country['_id']}>
+										<Button as={Link} to={'/viewCountry/' + country['_id']}>
 											{country['countryName']}
-										</Link>
+										</Button>
 									)}
 								</div>
 

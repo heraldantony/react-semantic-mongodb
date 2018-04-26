@@ -85,7 +85,7 @@ router.post('/', (req, res, next) => {
 
 		description
 	} = req.body
-	var task = {
+	var taskObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		title: title,
@@ -94,12 +94,12 @@ router.post('/', (req, res, next) => {
 	}
 
 	if (req.body.hasOwnProperty('jobs')) {
-		task.jobs = req.body.jobs.map(job => {
+		taskObj.jobs = req.body.jobs.map(job => {
 			return job['_id']
 		})
 	}
 
-	TaskModel.create(task, (createErr, newTask) => {
+	TaskModel.create(taskObj, (createErr, newTask) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

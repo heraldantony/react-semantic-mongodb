@@ -80,17 +80,17 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { countryName } = req.body
-	var country = {
+	var countryObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		countryName: countryName
 	}
 
 	if (req.body.hasOwnProperty('region')) {
-		country.region = req.body.region['_id']
+		countryObj.region = req.body.region['_id']
 	}
 
-	CountryModel.create(country, (createErr, newCountry) => {
+	CountryModel.create(countryObj, (createErr, newCountry) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

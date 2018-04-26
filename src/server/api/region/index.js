@@ -78,13 +78,13 @@ router.post('/', (req, res, next) => {
 		})
 	}
 	const { regionName } = req.body
-	var region = {
+	var regionObj = {
 		_id: new mongoose.Types.ObjectId(),
 
 		regionName: regionName
 	}
 
-	RegionModel.create(region, (createErr, newRegion) => {
+	RegionModel.create(regionObj, (createErr, newRegion) => {
 		if (createErr) {
 			console.log(chalk.red(createErr))
 

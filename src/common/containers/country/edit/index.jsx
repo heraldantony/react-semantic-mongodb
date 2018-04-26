@@ -110,9 +110,9 @@ class CountryEdit extends Component<Props, State> {
 								<div style={{ textAlign: 'left' }}>
 									{region &&
                     region['_id'] && (
-										<Link to={'/viewRegion/' + region['_id']}>
+										<Button as={Link} to={'/viewRegion/' + region['_id']}>
 											{region['regionName']}
-										</Link>
+										</Button>
 									)}
 								</div>
 

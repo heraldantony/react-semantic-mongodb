@@ -122,7 +122,7 @@ export function job (state = initialState, action: Action): State {
 			...state,
 			job: {
 				...state.job,
-				task: action.task
+				tasks: [...state.job.tasks, action.task]
 			}
 		}
 	}

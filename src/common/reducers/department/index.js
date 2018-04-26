@@ -131,7 +131,7 @@ export function department (state = initialState, action: Action): State {
 			...state,
 			department: {
 				...state.department,
-				employee: action.employee
+				employees: [...state.department.employees, action.employee]
 			}
 		}
 	}

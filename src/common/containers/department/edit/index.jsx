@@ -68,7 +68,7 @@ class DepartmentEdit extends Component<Props, State> {
 		const location = this.props.departmentProps.department.location
 		var setLocation = this.props.setLocation.bind(this)
 
-		const employee = this.props.departmentProps.department.employee
+		const employees = this.props.departmentProps.department.employees
 		var addEmployee = this.props.addEmployee.bind(this)
 
 		return (
@@ -120,7 +120,9 @@ class DepartmentEdit extends Component<Props, State> {
 								<div style={{ textAlign: 'left' }}>
 									{location &&
                     location['_id'] && (
-										<Link to={'/viewLocation/' + location['_id']}>{}</Link>
+										<Button as={Link} to={'/viewLocation/' + location['_id']}>
+											{}
+										</Button>
 									)}
 								</div>
 
@@ -148,12 +150,19 @@ class DepartmentEdit extends Component<Props, State> {
 								</div>
 
 								<div style={{ textAlign: 'left' }}>
-									{employee &&
-                    employee['_id'] && (
-										<Link to={'/viewEmployee/' + employee['_id']}>
-											{employee['firstName'] + '    ' + employee['lastName']}
-										</Link>
-									)}
+									{employees &&
+                    employees.length > 0 &&
+                    employees.map((entity, idx) => {
+                    	return (
+                    		<Button
+                    			as={Link}
+                    			key={entity['_id'] + idx}
+                    			to={'/viewEmployee/' + entity['_id']}
+                    		>
+                    			{entity['firstName'] + '    ' + entity['lastName']}
+                    		</Button>
+                    	)
+                    })}
 								</div>
 
 								<div style={{ textAlign: 'right' }}>
@@ -191,7 +200,7 @@ class DepartmentEdit extends Component<Props, State> {
 
 												location: location,
 
-												employee: employee,
+												employees: employees,
 
 												action: 'save'
 											})
