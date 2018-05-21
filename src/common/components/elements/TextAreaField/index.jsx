@@ -19,12 +19,7 @@ const TextAreaField = ({
 }: any) => (
 	<Form.Field error={!!(touched && error)} required={required}>
 		<label htmlFor={rest.id || rest.name || ''}>{label}</label>
-		<TextArea
-			label={labelText}
-			required={required}
-			{...input}
-			{...rest}
-		/>
+		<TextArea label={labelText} required={required} {...input} {...rest} />
 		{touched && error ? (
 			<Label basic color="red" pointing>
 				{error}

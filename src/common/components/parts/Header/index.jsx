@@ -2,36 +2,31 @@
  * @flow
  */
 import React from 'react'
-import {connect} from 'react-redux'
-import {Icon} from 'semantic-ui-react'
-import {withRouter, matchPath} from 'react-router'
+import { connect } from 'react-redux'
+import { Icon } from 'semantic-ui-react'
+import { withRouter, matchPath } from 'react-router'
 import _ from 'lodash'
-import {TOGGLE_SIDEBAR} from 'actions/layout'
-import {
-	StyledHeader,
-	HeaderInner,
-	Navicon,
-	PageTitle
-} from './style'
-import {Spacer} from 'styles/base'
-import {getMetaRoutes} from 'routing'
-import {getAuthState, getLayoutMobileStatuses} from 'selectors'
+import { TOGGLE_SIDEBAR } from 'actions/layout'
+import { StyledHeader, HeaderInner, Navicon, PageTitle } from './style'
+import { Spacer } from 'styles/base'
+import { getMetaRoutes } from 'routing'
+import { getAuthState, getLayoutMobileStatuses } from 'selectors'
 import Headroom from 'react-headroom'
 
 type Props = {
-	title: string,
-	toggleSidebar: () => void,
-	isLoggedIn: boolean,
-	isMobile: boolean
-}
+  title: string,
+  toggleSidebar: () => void,
+  isLoggedIn: boolean,
+  isMobile: boolean
+};
 
-const Header = ({title, toggleSidebar, isLoggedIn, isMobile}: Props) => {
+const Header = ({ title, toggleSidebar, isLoggedIn, isMobile }: Props) => {
 	return (
 		<Headroom>
 			<StyledHeader>
 				<HeaderInner>
 					{isLoggedIn &&
-						isMobile && (
+            isMobile && (
 						<Navicon onClick={toggleSidebar}>
 							<Icon name="content" />
 						</Navicon>
@@ -45,11 +40,12 @@ const Header = ({title, toggleSidebar, isLoggedIn, isMobile}: Props) => {
 }
 
 const mapStateToProps = (state, props) => {
-	const {location: {pathname}} = props
-	const currentRoute = _.find(getMetaRoutes(), a => matchPath(pathname, a)) || {}
+	const { location: { pathname } } = props
+	const currentRoute =
+    _.find(getMetaRoutes(), a => matchPath(pathname, a)) || {}
 	const title = currentRoute.meta.name
-	const {isLoggedIn} = getAuthState(state)
-	const {isMobile} = getLayoutMobileStatuses(state)
+	const { isLoggedIn } = getAuthState(state)
+	const { isMobile } = getLayoutMobileStatuses(state)
 	return {
 		title,
 		isLoggedIn,

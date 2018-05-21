@@ -112,7 +112,7 @@ class ModalSearch extends Component {
 									<Pagination
 										activePage={activePage}
 										itemsCountPerPage={pageSize}
-										totalItemsCount={totalItemsCount}
+										totalItemsCount={totalItemsCount || 0}
 										pageRangeDisplayed={PAGE_RANGE_DISPLAYED}
 										onChange={handlePageChange}
 									/>

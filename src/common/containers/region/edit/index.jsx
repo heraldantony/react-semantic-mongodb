@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,45 +18,63 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { REGION_GET, REGION_SAVE } from 'actions/region'
+import { getRegion, saveRegion } from 'common/actions/region'
 import { createStructuredSelector } from 'reselect'
 
 import {
 	makeSelectRegion,
 	makeSelectRegionInitialValues
-} from 'selectors/region'
+} from 'common/selectors/region'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveRegion as saveRegionSaga } from './saga'
+import { getRegion as getRegionSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Region Name',
-		name: 'regionName',
-		label: 'Region Name',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	}
-]
 class RegionEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(REGION_GET(this.props.match.params.id))
+			this.props.dispatch(getRegion(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Region Name',
+				name: 'regionName',
+				label: 'Region Name',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		return (
@@ -103,11 +124,12 @@ class RegionEdit extends Component<Props, State> {
 						<Grid.Column width={16}>
 							<Form>
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -134,10 +156,22 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(REGION_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				saveRegion(data, 'REGION_EDIT_FORM', { resolve, reject })
+			)
+		})
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveRegionSaga = injectSaga({
+	key: 'saveRegion',
+	saga: saveRegionSaga
+})
+const withGetRegionSaga = injectSaga({ key: 'getRegion', saga: getRegionSaga })
+
+export default compose(withSaveRegionSaga, withGetRegionSaga, withConnect)(
 	reduxForm({ form: 'REGION_EDIT_FORM', enableReinitialize: true })(RegionEdit)
 )

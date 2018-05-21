@@ -2,32 +2,32 @@
 import { fromJS } from 'immutable'
 
 import {
-	REGION_SEARCH_SUCCESS,
-	REGION_SEARCH_FAIL,
-	REGION_GET_SUCCESS,
-	REGION_GET_FAIL,
 	REGION_ADD_SUCCESS,
 	REGION_ADD_FAIL,
 	REGION_SAVE_SUCCESS,
 	REGION_SAVE_FAIL,
 	REGION_UPDATE_SUCCESS,
-	REGION_UPDATE_FAIL
-} from 'actions/region'
+	REGION_UPDATE_FAIL,
+	REGION_SEARCH_SUCCESS,
+	REGION_SEARCH_FAIL,
+	REGION_GET_SUCCESS,
+	REGION_GET_FAIL
+} from 'common/actions/region'
 
 import { APPLICATION_INIT } from 'actions/common'
 
 import type {
-	REGION_SEARCH_SUCCESS_TYPE,
-	REGION_SEARCH_FAIL_TYPE,
-	REGION_GET_SUCCESS_TYPE,
-	REGION_GET_FAIL_TYPE,
 	REGION_ADD_SUCCESS_TYPE,
 	REGION_ADD_FAIL_TYPE,
 	REGION_SAVE_SUCCESS_TYPE,
 	REGION_SAVE_FAIL_TYPE,
 	REGION_UPDATE_SUCCESS_TYPE,
-	REGION_UPDATE_FAIL_TYPE
-} from 'actions/region'
+	REGION_UPDATE_FAIL_TYPE,
+	REGION_SEARCH_SUCCESS_TYPE,
+	REGION_SEARCH_FAIL_TYPE,
+	REGION_GET_SUCCESS_TYPE,
+	REGION_GET_FAIL_TYPE
+} from 'common/actions/region'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
 export type Region = {
@@ -47,16 +47,16 @@ export type State = {
 
 type Action =
   | APPLICATION_INIT_TYPE
-  | REGION_SEARCH_SUCCESS_TYPE
-  | REGION_SEARCH_FAIL_TYPE
-  | REGION_GET_SUCCESS_TYPE
-  | REGION_GET_FAIL_TYPE
   | REGION_ADD_SUCCESS_TYPE
   | REGION_ADD_FAIL_TYPE
   | REGION_SAVE_SUCCESS_TYPE
   | REGION_SAVE_FAIL_TYPE
   | REGION_UPDATE_SUCCESS_TYPE
-  | REGION_UPDATE_FAIL_TYPE;
+  | REGION_UPDATE_FAIL_TYPE
+  | REGION_SEARCH_SUCCESS_TYPE
+  | REGION_SEARCH_FAIL_TYPE
+  | REGION_GET_SUCCESS_TYPE
+  | REGION_GET_FAIL_TYPE;
 
 export const initialState = {
 	search: '',
@@ -74,20 +74,6 @@ export function region (state = initialState, action: Action): State {
 	switch (action.type) {
 	case APPLICATION_INIT:
 		return { ...initialState, ...state }
-
-	case REGION_SEARCH_SUCCESS: {
-		return { ...state, regions: action.payload.docs }
-	}
-	case REGION_SEARCH_FAIL: {
-		return { ...state, error: action.error }
-	}
-
-	case REGION_GET_SUCCESS: {
-		return { ...state, region: action.payload }
-	}
-	case REGION_GET_FAIL: {
-		return { ...state, error: action.error }
-	}
 
 	case REGION_ADD_SUCCESS: {
 		return { ...state, region: action.payload }
@@ -107,6 +93,20 @@ export function region (state = initialState, action: Action): State {
 		return { ...state, region: action.payload }
 	}
 	case REGION_UPDATE_FAIL: {
+		return { ...state, error: action.error }
+	}
+
+	case REGION_SEARCH_SUCCESS: {
+		return { ...state, regions: action.payload.docs }
+	}
+	case REGION_SEARCH_FAIL: {
+		return { ...state, error: action.error }
+	}
+
+	case REGION_GET_SUCCESS: {
+		return { ...state, region: action.payload }
+	}
+	case REGION_GET_FAIL: {
 		return { ...state, error: action.error }
 	}
 

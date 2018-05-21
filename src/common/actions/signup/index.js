@@ -1,8 +1,8 @@
 // @flow
-import { awral } from 'actions/utils'
 import { signupAPI } from 'api/SignupSvc'
 import { SubmissionError } from 'redux-form'
 
+export const SIGNUP = 'SIGNUP'
 export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS'
 export const SIGNUP_FAIL = 'SIGNUP_FAIL'
 
@@ -16,31 +16,45 @@ export type SIGNUP_FAIL_TYPE = {
 };
 
 /**
-  Awral is not recommended for production usage now
-  But it can make your work with actions even simpler.
-  NOTE: I strongly recommend you check Awral's sources!
-  Awral is 910 bytes gzipped!
-  {@link https://github.com/Metnew/awral}
-*/
-const awralSignup = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: SIGNUP_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: SIGNUP_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: SIGNUP_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+ * New user signup
+ *
+ * @param  {object} signupFormData Signup form data (username and password)
+ *
+ * @return {object} An action object with type SIGNUP
+ */
+export function signup (signupFormData, form, promise) {
+	return {
+		type: SIGNUP,
+		payload: signupFormData,
+		form,
+		promise
 	}
-})
+}
 
-export const SIGNUP = awralSignup(signupAPI)('SIGNUP')
+/**
+ * Dispatched when signup succeeds
+ *
+ * @param  {object} user  The User object
+ *
+ * @return {object} An action object with type SIGNUP_SUCCESS
+ */
+export function signupSuccess (user) {
+	return {
+		type: SIGNUP_SUCCESS,
+		payload: user
+	}
+}
+
+/**
+ * Dispatched when signup fails
+ *
+ * @param  {object} error  The error object
+ *
+ * @return {object} An action object with type SIGNUP_FAIL
+ */
+export function signupFail (error) {
+	return {
+		type: SIGNUP_FAIL,
+		payload: error
+	}
+}

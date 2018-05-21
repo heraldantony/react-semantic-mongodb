@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,60 +18,81 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { JOB_GET, JOB_SAVE, JOB_ADD_TASK } from 'actions/job'
+import { getJob, saveJob, addTask as addTaskAction } from 'common/actions/job'
 import { createStructuredSelector } from 'reselect'
 
 import TaskModalSearch from 'containers/task/modal_search'
 
-import { makeSelectJob, makeSelectJobInitialValues } from 'selectors/job'
+import {
+	makeSelectJob,
+	makeSelectJobInitialValues
+} from 'common/selectors/job'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveJob as saveJobSaga } from './saga'
+import { getJob as getJobSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Job Title',
-		name: 'jobTitle',
-		label: 'Job Title',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'Min Salary',
-		name: 'minSalary',
-		label: 'Min Salary',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'Max Salary',
-		name: 'maxSalary',
-		label: 'Max Salary',
-
-		component: InputField
-	}
-]
 class JobEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(JOB_GET(this.props.match.params.id))
+			this.props.dispatch(getJob(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Job Title',
+				name: 'jobTitle',
+				label: 'Job Title',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Min Salary',
+				name: 'minSalary',
+				label: 'Min Salary',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Max Salary',
+				name: 'maxSalary',
+				label: 'Max Salary',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const tasks = this.props.jobProps.job.tasks
@@ -160,11 +184,12 @@ class JobEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -193,15 +218,22 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(JOB_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(saveJob(data, 'JOB_EDIT_FORM', { resolve, reject }))
+		})
 	},
 
 	addTask (task) {
 		console.log('addTask')
-		JOB_ADD_TASK(task, dispatch)
+		return dispatch(addTaskAction(task))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveJobSaga = injectSaga({ key: 'saveJob', saga: saveJobSaga })
+const withGetJobSaga = injectSaga({ key: 'getJob', saga: getJobSaga })
+
+export default compose(withSaveJobSaga, withGetJobSaga, withConnect)(
 	reduxForm({ form: 'JOB_EDIT_FORM', enableReinitialize: true })(JobEdit)
 )

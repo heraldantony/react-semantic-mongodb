@@ -1,6 +1,6 @@
 // @flow
 import { createSelector } from 'reselect'
-import type { State as CountryState } from 'reducers/country'
+import type { State as CountryState } from 'common/reducers/country'
 
 import _ from 'lodash'
 

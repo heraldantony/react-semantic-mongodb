@@ -1,54 +1,34 @@
 // @flow
-import { awral } from 'actions/utils'
+/*
+ * Constants and actions for entity Department
+ * Action constants and corresponding types
+ *
+*/
 
-import {
-	departmentSearchAPI,
-	departmentGetAPI,
-	departmentAddAPI,
-	departmentSaveAPI,
-	departmentUpdateAPI
-} from 'api/DepartmentSvc'
-import { SubmissionError, reset } from 'redux-form'
+export const DEPARTMENT_ADD = 'department/add'
+export const DEPARTMENT_ADD_SUCCESS = 'department/add/SUCCESS'
+export const DEPARTMENT_ADD_FAIL = 'department/add/FAIL'
 
-export const DEPARTMENT_SEARCH_SUCCESS = 'DEPARTMENT_SEARCH_SUCCESS'
-export const DEPARTMENT_SEARCH_FAIL = 'DEPARTMENT_SEARCH_FAIL'
+export const DEPARTMENT_SAVE = 'department/save'
+export const DEPARTMENT_SAVE_SUCCESS = 'department/save/SUCCESS'
+export const DEPARTMENT_SAVE_FAIL = 'department/save/FAIL'
 
-export const DEPARTMENT_GET_SUCCESS = 'DEPARTMENT_GET_SUCCESS'
-export const DEPARTMENT_GET_FAIL = 'DEPARTMENT_GET_FAIL'
+export const DEPARTMENT_UPDATE = 'department/update'
+export const DEPARTMENT_UPDATE_SUCCESS = 'department/update/SUCCESS'
+export const DEPARTMENT_UPDATE_FAIL = 'department/update/FAIL'
 
-export const DEPARTMENT_ADD_SUCCESS = 'DEPARTMENT_ADD_SUCCESS'
-export const DEPARTMENT_ADD_FAIL = 'DEPARTMENT_ADD_FAIL'
+export const DEPARTMENT_GET = 'department/get'
+export const DEPARTMENT_GET_SUCCESS = 'department/get/SUCCESS'
+export const DEPARTMENT_GET_FAIL = 'department/get/FAIL'
 
-export const DEPARTMENT_SAVE_SUCCESS = 'DEPARTMENT_SAVE_SUCCESS'
-export const DEPARTMENT_SAVE_FAIL = 'DEPARTMENT_SAVE_FAIL'
+export const DEPARTMENT_SEARCH = 'department/search'
+export const DEPARTMENT_SEARCH_SUCCESS = 'department/search/SUCCESS'
+export const DEPARTMENT_SEARCH_FAIL = 'department/search/FAIL'
 
-export const DEPARTMENT_UPDATE_SUCCESS = 'DEPARTMENT_UPDATE_SUCCESS'
-export const DEPARTMENT_UPDATE_FAIL = 'DEPARTMENT_UPDATE_FAIL'
-
-export const DEPARTMENT_SET_LOCATION_SUCCESS =
-  'DEPARTMENT_SET_LOCATION_SUCCESS'
-
-export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS =
-  'DEPARTMENT_ADD_EMPLOYEE_SUCCESS'
-
-export type DEPARTMENT_SEARCH_SUCCESS_TYPE = {
-  type: DEPARTMENT_SEARCH_SUCCESS,
-  payload: [Object]
-};
-export type DEPARTMENT_SEARCH_FAIL_TYPE = {
-  type: DEPARTMENT_SEARCH_FAIL,
-  payload: { errors: Object }
-};
-
-export type DEPARTMENT_GET_SUCCESS_TYPE = {
-  type: DEPARTMENT_GET_SUCCESS,
+export type DEPARTMENT_ADD_TYPE = {
+  type: DEPARTMENT_ADD,
   payload: Object
 };
-export type DEPARTMENT_GET_FAIL_TYPE = {
-  type: DEPARTMENT_GET_FAIL,
-  payload: { errors: Object }
-};
-
 export type DEPARTMENT_ADD_SUCCESS_TYPE = {
   type: DEPARTMENT_ADD_SUCCESS,
   payload: Object
@@ -58,6 +38,10 @@ export type DEPARTMENT_ADD_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
+export type DEPARTMENT_SAVE_TYPE = {
+  type: DEPARTMENT_SAVE,
+  payload: Object
+};
 export type DEPARTMENT_SAVE_SUCCESS_TYPE = {
   type: DEPARTMENT_SAVE_SUCCESS,
   payload: Object
@@ -67,6 +51,10 @@ export type DEPARTMENT_SAVE_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
+export type DEPARTMENT_UPDATE_TYPE = {
+  type: DEPARTMENT_UPDATE,
+  payload: Object
+};
 export type DEPARTMENT_UPDATE_SUCCESS_TYPE = {
   type: DEPARTMENT_UPDATE_SUCCESS,
   payload: Object
@@ -75,6 +63,38 @@ export type DEPARTMENT_UPDATE_FAIL_TYPE = {
   type: DEPARTMENT_UPDATE_FAIL,
   payload: { errors: Object }
 };
+
+export type DEPARTMENT_GET_TYPE = {
+  type: DEPARTMENT_GET,
+  payload: Object
+};
+export type DEPARTMENT_GET_SUCCESS_TYPE = {
+  type: DEPARTMENT_GET_SUCCESS,
+  payload: Object
+};
+export type DEPARTMENT_GET_FAIL_TYPE = {
+  type: DEPARTMENT_GET_FAIL,
+  payload: { errors: Object }
+};
+
+export type DEPARTMENT_SEARCH_TYPE = {
+  type: DEPARTMENT_SEARCH,
+  payload: Object
+};
+export type DEPARTMENT_SEARCH_SUCCESS_TYPE = {
+  type: DEPARTMENT_SEARCH_SUCCESS,
+  payload: [Object]
+};
+export type DEPARTMENT_SEARCH_FAIL_TYPE = {
+  type: DEPARTMENT_SEARCH_FAIL,
+  payload: { errors: Object }
+};
+
+export const DEPARTMENT_SET_LOCATION_SUCCESS =
+  'department/Set_Location/SUCCESS'
+
+export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS =
+  'department/Add_Employee/SUCCESS'
 
 export const DEPARTMENT_SET_LOCATION_SUCCESS_TYPE = {
 	type: DEPARTMENT_SET_LOCATION_SUCCESS,
@@ -87,144 +107,251 @@ export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE = {
 }
 
 /**
-  Awral is not recommended for production usage now
-  But it can make your work with actions even simpler.
-  NOTE: I strongly recommend you check Awral's sources!
-  Awral is 910 bytes gzipped!
-  {@link https://github.com/Metnew/awral}
-*/
-
-const awralDepartmentSearch = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: DEPARTMENT_SEARCH_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: DEPARTMENT_SEARCH_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: DEPARTMENT_SEARCH_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+ * Add Department
+ *
+ * @param  {object} department  The Department object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type DEPARTMENT_ADD
+ */
+export function addDepartment (department, form, promise) {
+	return {
+		type: DEPARTMENT_ADD,
+		payload: department,
+		form,
+		promise
 	}
-})
-
-export const DEPARTMENT_SEARCH = awralDepartmentSearch(departmentSearchAPI)(
-	'DEPARTMENT_SEARCH'
-)
-
-const awralDepartmentGet = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: DEPARTMENT_GET_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: DEPARTMENT_GET_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: DEPARTMENT_GET_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
-	}
-})
-
-export const DEPARTMENT_GET = awralDepartmentGet(departmentGetAPI)(
-	'DEPARTMENT_GET'
-)
-
-const awralDepartmentAdd = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: DEPARTMENT_ADD_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: DEPARTMENT_ADD_SUCCESS, payload })
-
-			dispatch(reset('ADD_FORM'))
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: DEPARTMENT_ADD_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
-	}
-})
-
-export const DEPARTMENT_ADD = awralDepartmentAdd(departmentAddAPI)(
-	'DEPARTMENT_ADD'
-)
-
-const awralDepartmentSave = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: DEPARTMENT_SAVE_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: DEPARTMENT_SAVE_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: DEPARTMENT_SAVE_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
-	}
-})
-
-export const DEPARTMENT_SAVE = awralDepartmentSave(departmentSaveAPI)(
-	'DEPARTMENT_SAVE'
-)
-
-const awralDepartmentUpdate = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: DEPARTMENT_UPDATE_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: DEPARTMENT_UPDATE_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: DEPARTMENT_UPDATE_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
-	}
-})
-
-export const DEPARTMENT_UPDATE = awralDepartmentUpdate(departmentUpdateAPI)(
-	'DEPARTMENT_UPDATE'
-)
-
-export const DEPARTMENT_SET_LOCATION = (location, dispatch) => {
-	dispatch({ type: DEPARTMENT_SET_LOCATION_SUCCESS, location })
 }
 
-export const DEPARTMENT_ADD_EMPLOYEE = (employee, dispatch) => {
-	dispatch({ type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS, employee })
+/**
+ * Dispatched when Add Department succeeds
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_ADD_SUCCESS
+ */
+export function addDepartmentSuccess (department) {
+	return {
+		type: DEPARTMENT_ADD_SUCCESS,
+		payload: department
+	}
+}
+
+/**
+ * Dispatched when Add Department fails
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_ADD_FAIL
+ */
+export function addDepartmentFail (error) {
+	return {
+		type: DEPARTMENT_ADD_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Save Department
+ *
+ * @param  {object} department  The Department object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type DEPARTMENT_SAVE
+ */
+export function saveDepartment (department, form, promise) {
+	return {
+		type: DEPARTMENT_SAVE,
+		payload: department,
+		form,
+		promise
+	}
+}
+
+/**
+ * Dispatched when Save Department succeeds
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_SAVE_SUCCESS
+ */
+export function saveDepartmentSuccess (department) {
+	return {
+		type: DEPARTMENT_SAVE_SUCCESS,
+		payload: department
+	}
+}
+
+/**
+ * Dispatched when Save Department fails
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_SAVE_FAIL
+ */
+export function saveDepartmentFail (error) {
+	return {
+		type: DEPARTMENT_SAVE_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Update Department
+ *
+ * @param  {object} department  The Department object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type DEPARTMENT_UPDATE
+ */
+export function updateDepartment (department, form, promise) {
+	return {
+		type: DEPARTMENT_UPDATE,
+		payload: department,
+		form,
+		promise
+	}
+}
+
+/**
+ * Dispatched when Update Department succeeds
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_UPDATE_SUCCESS
+ */
+export function updateDepartmentSuccess (department) {
+	return {
+		type: DEPARTMENT_UPDATE_SUCCESS,
+		payload: department
+	}
+}
+
+/**
+ * Dispatched when Update Department fails
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_UPDATE_FAIL
+ */
+export function updateDepartmentFail (error) {
+	return {
+		type: DEPARTMENT_UPDATE_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Get Department
+ *
+ * @param  {string} departmentId  Id of  Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_GET
+ */
+export function getDepartment (departmentId) {
+	return {
+		type: DEPARTMENT_GET,
+		payload: departmentId
+	}
+}
+
+/**
+ * Dispatched when Get Department succeeds
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_GET_SUCCESS
+ */
+export function getDepartmentSuccess (department) {
+	return {
+		type: DEPARTMENT_GET_SUCCESS,
+		payload: department
+	}
+}
+
+/**
+ * Dispatched when Get Department fails
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_GET_FAIL
+ */
+export function getDepartmentFail (error) {
+	return {
+		type: DEPARTMENT_GET_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Search Department
+ *
+ * @param  {string} searchString   The search string
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type DEPARTMENT_SEARCH
+ */
+export function searchDepartment (searchString, form, promise) {
+	return {
+		type: DEPARTMENT_SEARCH,
+		payload: searchString,
+		form,
+		promise
+	}
+}
+
+/**
+ * Dispatched when Search Department succeeds
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_SEARCH_SUCCESS
+ */
+export function searchDepartmentSuccess (departments) {
+	return {
+		type: DEPARTMENT_SEARCH_SUCCESS,
+		payload: departments
+	}
+}
+
+/**
+ * Dispatched when Search Department fails
+ *
+ * @param  {object} department  The Department object
+ *
+ * @return {object} An action object with type DEPARTMENT_SEARCH_FAIL
+ */
+export function searchDepartmentFail (error) {
+	return {
+		type: DEPARTMENT_SEARCH_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * setLocation Set Location
+ *
+ * @param  {object} location   The location
+ *
+ * @return {object} An action object with type DEPARTMENT_SET_LOCATION_SUCCESS
+ */
+export function setLocation (location) {
+	return {
+		type: DEPARTMENT_SET_LOCATION_SUCCESS,
+		location
+	}
+}
+
+/**
+ * addEmployee Add Employee
+ *
+ * @param  {object} employee   The employee
+ *
+ * @return {object} An action object with type DEPARTMENT_ADD_EMPLOYEE_SUCCESS
+ */
+export function addEmployee (employee) {
+	return {
+		type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS,
+		employee
+	}
 }

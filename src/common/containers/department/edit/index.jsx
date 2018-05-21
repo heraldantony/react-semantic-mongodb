@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,18 +18,17 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
 import {
-	DEPARTMENT_GET,
-	DEPARTMENT_SAVE,
-	DEPARTMENT_SET_LOCATION,
-	DEPARTMENT_ADD_EMPLOYEE
-} from 'actions/department'
+	getDepartment,
+	saveDepartment,
+	setLocation as setLocationAction,
+	addEmployee as addEmployeeAction
+} from 'common/actions/department'
 import { createStructuredSelector } from 'reselect'
 
 import LocationModalSearch from 'containers/location/modal_search'
@@ -36,33 +38,52 @@ import EmployeeModalSearch from 'containers/employee/modal_search'
 import {
 	makeSelectDepartment,
 	makeSelectDepartmentInitialValues
-} from 'selectors/department'
+} from 'common/selectors/department'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveDepartment as saveDepartmentSaga } from './saga'
+import { getDepartment as getDepartmentSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Department Name',
-		name: 'departmentName',
-		label: 'Department Name',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	}
-]
 class DepartmentEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(DEPARTMENT_GET(this.props.match.params.id))
+			this.props.dispatch(getDepartment(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Department Name',
+				name: 'departmentName',
+				label: 'Department Name',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const location = this.props.departmentProps.department.location
@@ -189,11 +210,12 @@ class DepartmentEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -224,21 +246,40 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(DEPARTMENT_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				saveDepartment(data, 'DEPARTMENT_EDIT_FORM', { resolve, reject })
+			)
+		})
 	},
 
 	setLocation (location) {
 		console.log('setLocation')
-		DEPARTMENT_SET_LOCATION(location, dispatch)
+		return dispatch(setLocationAction(location))
 	},
 
 	addEmployee (employee) {
 		console.log('addEmployee')
-		DEPARTMENT_ADD_EMPLOYEE(employee, dispatch)
+		return dispatch(addEmployeeAction(employee))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveDepartmentSaga = injectSaga({
+	key: 'saveDepartment',
+	saga: saveDepartmentSaga
+})
+const withGetDepartmentSaga = injectSaga({
+	key: 'getDepartment',
+	saga: getDepartmentSaga
+})
+
+export default compose(
+	withSaveDepartmentSaga,
+	withGetDepartmentSaga,
+	withConnect
+)(
 	reduxForm({ form: 'DEPARTMENT_EDIT_FORM', enableReinitialize: true })(
 		DepartmentEdit
 	)

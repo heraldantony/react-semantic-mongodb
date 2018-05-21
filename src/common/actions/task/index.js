@@ -1,50 +1,34 @@
 // @flow
-import { awral } from 'actions/utils'
+/*
+ * Constants and actions for entity Task
+ * Action constants and corresponding types
+ *
+*/
 
-import {
-	taskSearchAPI,
-	taskGetAPI,
-	taskAddAPI,
-	taskSaveAPI,
-	taskUpdateAPI
-} from 'api/TaskSvc'
-import { SubmissionError, reset } from 'redux-form'
+export const TASK_ADD = 'task/add'
+export const TASK_ADD_SUCCESS = 'task/add/SUCCESS'
+export const TASK_ADD_FAIL = 'task/add/FAIL'
 
-export const TASK_SEARCH_SUCCESS = 'TASK_SEARCH_SUCCESS'
-export const TASK_SEARCH_FAIL = 'TASK_SEARCH_FAIL'
+export const TASK_SAVE = 'task/save'
+export const TASK_SAVE_SUCCESS = 'task/save/SUCCESS'
+export const TASK_SAVE_FAIL = 'task/save/FAIL'
 
-export const TASK_GET_SUCCESS = 'TASK_GET_SUCCESS'
-export const TASK_GET_FAIL = 'TASK_GET_FAIL'
+export const TASK_UPDATE = 'task/update'
+export const TASK_UPDATE_SUCCESS = 'task/update/SUCCESS'
+export const TASK_UPDATE_FAIL = 'task/update/FAIL'
 
-export const TASK_ADD_SUCCESS = 'TASK_ADD_SUCCESS'
-export const TASK_ADD_FAIL = 'TASK_ADD_FAIL'
+export const TASK_GET = 'task/get'
+export const TASK_GET_SUCCESS = 'task/get/SUCCESS'
+export const TASK_GET_FAIL = 'task/get/FAIL'
 
-export const TASK_SAVE_SUCCESS = 'TASK_SAVE_SUCCESS'
-export const TASK_SAVE_FAIL = 'TASK_SAVE_FAIL'
+export const TASK_SEARCH = 'task/search'
+export const TASK_SEARCH_SUCCESS = 'task/search/SUCCESS'
+export const TASK_SEARCH_FAIL = 'task/search/FAIL'
 
-export const TASK_UPDATE_SUCCESS = 'TASK_UPDATE_SUCCESS'
-export const TASK_UPDATE_FAIL = 'TASK_UPDATE_FAIL'
-
-export const TASK_ADD_JOB_SUCCESS = 'TASK_ADD_JOB_SUCCESS'
-
-export type TASK_SEARCH_SUCCESS_TYPE = {
-  type: TASK_SEARCH_SUCCESS,
-  payload: [Object]
-};
-export type TASK_SEARCH_FAIL_TYPE = {
-  type: TASK_SEARCH_FAIL,
-  payload: { errors: Object }
-};
-
-export type TASK_GET_SUCCESS_TYPE = {
-  type: TASK_GET_SUCCESS,
+export type TASK_ADD_TYPE = {
+  type: TASK_ADD,
   payload: Object
 };
-export type TASK_GET_FAIL_TYPE = {
-  type: TASK_GET_FAIL,
-  payload: { errors: Object }
-};
-
 export type TASK_ADD_SUCCESS_TYPE = {
   type: TASK_ADD_SUCCESS,
   payload: Object
@@ -54,6 +38,10 @@ export type TASK_ADD_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
+export type TASK_SAVE_TYPE = {
+  type: TASK_SAVE,
+  payload: Object
+};
 export type TASK_SAVE_SUCCESS_TYPE = {
   type: TASK_SAVE_SUCCESS,
   payload: Object
@@ -63,6 +51,10 @@ export type TASK_SAVE_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
+export type TASK_UPDATE_TYPE = {
+  type: TASK_UPDATE,
+  payload: Object
+};
 export type TASK_UPDATE_SUCCESS_TYPE = {
   type: TASK_UPDATE_SUCCESS,
   payload: Object
@@ -72,136 +64,271 @@ export type TASK_UPDATE_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
+export type TASK_GET_TYPE = {
+  type: TASK_GET,
+  payload: Object
+};
+export type TASK_GET_SUCCESS_TYPE = {
+  type: TASK_GET_SUCCESS,
+  payload: Object
+};
+export type TASK_GET_FAIL_TYPE = {
+  type: TASK_GET_FAIL,
+  payload: { errors: Object }
+};
+
+export type TASK_SEARCH_TYPE = {
+  type: TASK_SEARCH,
+  payload: Object
+};
+export type TASK_SEARCH_SUCCESS_TYPE = {
+  type: TASK_SEARCH_SUCCESS,
+  payload: [Object]
+};
+export type TASK_SEARCH_FAIL_TYPE = {
+  type: TASK_SEARCH_FAIL,
+  payload: { errors: Object }
+};
+
+export const TASK_ADD_JOB_SUCCESS = 'task/Add_Job/SUCCESS'
+
 export const TASK_ADD_JOB_SUCCESS_TYPE = {
 	type: TASK_ADD_JOB_SUCCESS,
 	payload: Object
 }
 
 /**
-  Awral is not recommended for production usage now
-  But it can make your work with actions even simpler.
-  NOTE: I strongly recommend you check Awral's sources!
-  Awral is 910 bytes gzipped!
-  {@link https://github.com/Metnew/awral}
-*/
-
-const awralTaskSearch = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: TASK_SEARCH_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: TASK_SEARCH_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: TASK_SEARCH_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+ * Add Task
+ *
+ * @param  {object} task  The Task object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type TASK_ADD
+ */
+export function addTask (task, form, promise) {
+	return {
+		type: TASK_ADD,
+		payload: task,
+		form,
+		promise
 	}
-})
+}
 
-export const TASK_SEARCH = awralTaskSearch(taskSearchAPI)('TASK_SEARCH')
-
-const awralTaskGet = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: TASK_GET_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: TASK_GET_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: TASK_GET_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+/**
+ * Dispatched when Add Task succeeds
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_ADD_SUCCESS
+ */
+export function addTaskSuccess (task) {
+	return {
+		type: TASK_ADD_SUCCESS,
+		payload: task
 	}
-})
+}
 
-export const TASK_GET = awralTaskGet(taskGetAPI)('TASK_GET')
-
-const awralTaskAdd = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: TASK_ADD_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: TASK_ADD_SUCCESS, payload })
-
-			dispatch(reset('ADD_FORM'))
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: TASK_ADD_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+/**
+ * Dispatched when Add Task fails
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_ADD_FAIL
+ */
+export function addTaskFail (error) {
+	return {
+		type: TASK_ADD_FAIL,
+		payload: error
 	}
-})
+}
 
-export const TASK_ADD = awralTaskAdd(taskAddAPI)('TASK_ADD')
-
-const awralTaskSave = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: TASK_SAVE_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: TASK_SAVE_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: TASK_SAVE_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+/**
+ * Save Task
+ *
+ * @param  {object} task  The Task object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type TASK_SAVE
+ */
+export function saveTask (task, form, promise) {
+	return {
+		type: TASK_SAVE,
+		payload: task,
+		form,
+		promise
 	}
-})
+}
 
-export const TASK_SAVE = awralTaskSave(taskSaveAPI)('TASK_SAVE')
-
-const awralTaskUpdate = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure' || payload.status === 'error') {
-			dispatch({ type: TASK_UPDATE_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			dispatch({ type: TASK_UPDATE_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: TASK_UPDATE_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+/**
+ * Dispatched when Save Task succeeds
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_SAVE_SUCCESS
+ */
+export function saveTaskSuccess (task) {
+	return {
+		type: TASK_SAVE_SUCCESS,
+		payload: task
 	}
-})
+}
 
-export const TASK_UPDATE = awralTaskUpdate(taskUpdateAPI)('TASK_UPDATE')
+/**
+ * Dispatched when Save Task fails
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_SAVE_FAIL
+ */
+export function saveTaskFail (error) {
+	return {
+		type: TASK_SAVE_FAIL,
+		payload: error
+	}
+}
 
-export const TASK_ADD_JOB = (job, dispatch) => {
-	dispatch({ type: TASK_ADD_JOB_SUCCESS, job })
+/**
+ * Update Task
+ *
+ * @param  {object} task  The Task object
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type TASK_UPDATE
+ */
+export function updateTask (task, form, promise) {
+	return {
+		type: TASK_UPDATE,
+		payload: task,
+		form,
+		promise
+	}
+}
+
+/**
+ * Dispatched when Update Task succeeds
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_UPDATE_SUCCESS
+ */
+export function updateTaskSuccess (task) {
+	return {
+		type: TASK_UPDATE_SUCCESS,
+		payload: task
+	}
+}
+
+/**
+ * Dispatched when Update Task fails
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_UPDATE_FAIL
+ */
+export function updateTaskFail (error) {
+	return {
+		type: TASK_UPDATE_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Get Task
+ *
+ * @param  {string} taskId  Id of  Task object
+ *
+ * @return {object} An action object with type TASK_GET
+ */
+export function getTask (taskId) {
+	return {
+		type: TASK_GET,
+		payload: taskId
+	}
+}
+
+/**
+ * Dispatched when Get Task succeeds
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_GET_SUCCESS
+ */
+export function getTaskSuccess (task) {
+	return {
+		type: TASK_GET_SUCCESS,
+		payload: task
+	}
+}
+
+/**
+ * Dispatched when Get Task fails
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_GET_FAIL
+ */
+export function getTaskFail (error) {
+	return {
+		type: TASK_GET_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Search Task
+ *
+ * @param  {string} searchString   The search string
+ * @param  {string} form Name of the form
+ * @param  {object} promise object with {resolve, reject} functions
+ * @return {object} An action object with type TASK_SEARCH
+ */
+export function searchTask (searchString, form, promise) {
+	return {
+		type: TASK_SEARCH,
+		payload: searchString,
+		form,
+		promise
+	}
+}
+
+/**
+ * Dispatched when Search Task succeeds
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_SEARCH_SUCCESS
+ */
+export function searchTaskSuccess (tasks) {
+	return {
+		type: TASK_SEARCH_SUCCESS,
+		payload: tasks
+	}
+}
+
+/**
+ * Dispatched when Search Task fails
+ *
+ * @param  {object} task  The Task object
+ *
+ * @return {object} An action object with type TASK_SEARCH_FAIL
+ */
+export function searchTaskFail (error) {
+	return {
+		type: TASK_SEARCH_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * addJob Add Job
+ *
+ * @param  {object} job   The job
+ *
+ * @return {object} An action object with type TASK_ADD_JOB_SUCCESS
+ */
+export function addJob (job) {
+	return {
+		type: TASK_ADD_JOB_SUCCESS,
+		job
+	}
 }

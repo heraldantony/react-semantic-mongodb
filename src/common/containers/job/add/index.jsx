@@ -4,52 +4,93 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
-import { Grid, Header, Form, Button, Table, Message } from 'semantic-ui-react'
-import { FormattedMessage } from 'react-intl'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+
+import {
+	Grid,
+	Header,
+	Form,
+	Button,
+	Table,
+	Icon,
+	Modal,
+	Message
+} from 'semantic-ui-react'
+import { FormattedMessage } from 'react-intl'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import InputField from 'components/elements/InputField'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { JOB_ADD } from 'actions/job'
+import { addJob, addTask as addTaskAction } from 'common/actions/job'
+import { createStructuredSelector } from 'reselect'
 
-type Props = FormProps;
+import TaskModalSearch from 'containers/task/modal_search'
 
-const fields = [
-	{
-		placeholder: 'Job Title',
-		name: 'jobTitle',
-		label: 'Job Title',
+import {
+	makeSelectJob,
+	makeSelectJobInitialValues
+} from 'common/selectors/job'
 
-		component: InputField
-	},
+import injectSaga from 'common/utils/injectSaga'
+import { addJob as addJobSaga } from './saga'
 
-	{
-		placeholder: 'Min Salary',
-		name: 'minSalary',
-		label: 'Min Salary',
+type Props = {
+  add: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'Max Salary',
-		name: 'maxSalary',
-		label: 'Max Salary',
-
-		component: InputField
-	}
-]
 class JobAdd extends Component<Props, State> {
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Job Title',
+				name: 'jobTitle',
+				label: 'Job Title',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Min Salary',
+				name: 'minSalary',
+				label: 'Min Salary',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Max Salary',
+				name: 'maxSalary',
+				label: 'Max Salary',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
+
+		const tasks = this.props.jobProps.job.tasks
+		var addTask = this.props.addTask.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -95,16 +136,59 @@ class JobAdd extends Component<Props, State> {
 					</Grid.Row>
 					<Grid.Row centered>
 						<Grid.Column width={16}>
-							<Form>
-								{fields.map((a, i) => <Field key={i} {...a} />)}
+							<Form error={invalid}>
+								<div style={{ textAlign: 'left' }}>
+									{tasks &&
+                    tasks.length > 0 &&
+                    tasks.map((entity, idx) => {
+                    	return (
+                    		<Button
+                    			as={Link}
+                    			key={entity['_id'] + idx}
+                    			to={'/viewTask/' + entity['_id']}
+                    		>
+                    			{entity['title']}
+                    		</Button>
+                    	)
+                    })}
+								</div>
 
+								<div style={{ textAlign: 'right' }}>
+									<TaskModalSearch
+										trigger={<Button>Add Task</Button>}
+										title="Add Task"
+										buttonLabel="Add Task"
+										buttonAction={addTask}
+										closeIcon
+									>
+										<Header icon="archive" content="Add Task" />
+										<Modal.Content>
+											<p>Add Task</p>
+										</Modal.Content>
+										<Modal.Actions>
+											<Button color="red">
+												<Icon name="remove" /> No
+											</Button>
+											<Button color="green">
+												<Icon name="checkmark" /> Yes
+											</Button>
+										</Modal.Actions>
+									</TaskModalSearch>
+								</div>
+
+								{fields.map((a, i) => <Field key={i} {...a} />)}
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Add"
 										icon="add"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.add({
 												...values,
+
+												tasks: tasks,
+
 												action: 'add'
 											})
 										)}
@@ -121,12 +205,23 @@ class JobAdd extends Component<Props, State> {
 const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
-	async add (data) {
+	add (data) {
 		console.log(data)
-		return dispatch(JOB_ADD(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(addJob(data, 'JOB_ADD_FORM', { resolve, reject }))
+		})
+	},
+
+	addTask (task) {
+		console.log('addTask')
+		return dispatch(addTaskAction(task))
 	}
 })
 
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({ key: 'addJob', saga: addJobSaga })
+
 export default reduxForm({ form: 'JOB_ADD_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(JobAdd)
+	compose(withSaga, withConnect)(JobAdd)
 )

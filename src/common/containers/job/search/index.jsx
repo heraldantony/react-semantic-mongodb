@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import Pagination from 'components/Pagination/Pagination'
 import { PAGE_SIZE, PAGE_RANGE_DISPLAYED } from 'common/constants'
 import {
@@ -14,26 +17,24 @@ import {
 	Icon,
 	Label,
 	Menu,
-	Table
+	Table,
+	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
-import { JOB_SEARCH } from 'actions/job'
+import { searchJob } from 'common/actions/job'
 import { createStructuredSelector } from 'reselect'
-import { makeSelectSearchJob } from 'selectors/job'
+import { makeSelectSearchJob } from 'common/selectors/job'
+import injectSaga from 'common/utils/injectSaga'
+import { searchJob as searchJobSaga } from './saga'
 
-type Props = FormProps;
+type Props = {
+  searchSubmit: (data: Object) => Promise,
+  handlePageChange: (pageNumber: Object) => Promise
+} & FormProps;
 
 const headerNames = ['Job Title', 'Min Salary', 'Max Salary']
-const searchFields = [
-	{
-		placeholder: 'Search',
-		name: 'search',
-		label: 'Search',
-		component: InputField
-	}
-]
+
 class JobSearch extends Component<Props, State> {
 	constructor (props) {
 		super(props)
@@ -45,10 +46,36 @@ class JobSearch extends Component<Props, State> {
 		}
 	}
 	render () {
-		const { handleSubmit, searchProps, submitSucceeded } = this.props
+		const searchFields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+			{
+				placeholder: 'Search',
+				name: 'search',
+				label: 'Search',
+				component: InputField
+			}
+		]
+		const {
+			handleSubmit,
+			searchProps,
+			submitSucceeded,
+			submitting,
+			error,
+			invalid
+		} = this.props
 		var handlePageChange = this.props.handlePageChange.bind(this)
 		const { activePage, pageSize, totalItemsCount } = this.state
-		var searchFn = this.props.search.bind(this)
+		var searchFn = this.props.searchSubmit.bind(this)
 		return (
 			<div>
 				<Helmet>
@@ -71,13 +98,14 @@ class JobSearch extends Component<Props, State> {
 					</Grid.Row>
 					<Grid.Row centered>
 						<Grid.Column width={16}>
-							<Form>
+							<Form error={invalid}>
 								{searchFields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Search Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Search"
 										icon="search"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											searchFn({
 												...values,
@@ -160,25 +188,37 @@ const mapStateToProps = state =>
 	})
 
 const mapDispatchToProps = dispatch => ({
-	async search (data) {
+	searchSubmit (data) {
 		// if(data.action == "search") {}
 		console.log(data)
-		this.setState({ activePage: 1, search: data.search })
-		return dispatch(JOB_SEARCH(data))
+		return new Promise((resolve, reject) => {
+			this.setState({ activePage: 1, search: data.search })
+
+			return dispatch(searchJob(data, 'JOB_SEARCH_FORM', { resolve, reject }))
+		})
 	},
 	handlePageChange (pageNumber) {
 		console.log(`active page is ${pageNumber}`)
-		this.setState({ activePage: pageNumber })
-		return dispatch(
-			JOB_SEARCH({
-				search: this.state.search,
-				pageNumber: pageNumber,
-				pageSize: this.state.pageSize
-			})
-		)
+		return new Promise((resolve, reject) => {
+			this.setState({ activePage: pageNumber })
+			return dispatch(
+				searchJob(
+					{
+						search: this.state.search,
+						pageNumber: pageNumber,
+						pageSize: this.state.pageSize
+					},
+					'JOB_SEARCH_FORM',
+					{ resolve, reject }
+				)
+			)
+		})
 	}
 })
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({ key: 'searchJob', saga: searchJobSaga })
 
 export default reduxForm({ form: 'JOB_SEARCH_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(JobSearch)
+	compose(withSaga, withConnect)(JobSearch)
 )

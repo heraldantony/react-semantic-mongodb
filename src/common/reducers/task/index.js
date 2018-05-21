@@ -2,34 +2,34 @@
 import { fromJS } from 'immutable'
 
 import {
-	TASK_SEARCH_SUCCESS,
-	TASK_SEARCH_FAIL,
-	TASK_GET_SUCCESS,
-	TASK_GET_FAIL,
 	TASK_ADD_SUCCESS,
 	TASK_ADD_FAIL,
 	TASK_SAVE_SUCCESS,
 	TASK_SAVE_FAIL,
 	TASK_UPDATE_SUCCESS,
 	TASK_UPDATE_FAIL,
+	TASK_SEARCH_SUCCESS,
+	TASK_SEARCH_FAIL,
+	TASK_GET_SUCCESS,
+	TASK_GET_FAIL,
 	TASK_ADD_JOB_SUCCESS
-} from 'actions/task'
+} from 'common/actions/task'
 
 import { APPLICATION_INIT } from 'actions/common'
 
 import type {
-	TASK_SEARCH_SUCCESS_TYPE,
-	TASK_SEARCH_FAIL_TYPE,
-	TASK_GET_SUCCESS_TYPE,
-	TASK_GET_FAIL_TYPE,
 	TASK_ADD_SUCCESS_TYPE,
 	TASK_ADD_FAIL_TYPE,
 	TASK_SAVE_SUCCESS_TYPE,
 	TASK_SAVE_FAIL_TYPE,
 	TASK_UPDATE_SUCCESS_TYPE,
 	TASK_UPDATE_FAIL_TYPE,
+	TASK_SEARCH_SUCCESS_TYPE,
+	TASK_SEARCH_FAIL_TYPE,
+	TASK_GET_SUCCESS_TYPE,
+	TASK_GET_FAIL_TYPE,
 	TASK_ADD_JOB_SUCCESS_TYPE
-} from 'actions/task'
+} from 'common/actions/task'
 import type { APPLICATION_INIT_TYPE } from 'actions/common'
 
 export type Task = {
@@ -51,16 +51,16 @@ export type State = {
 
 type Action =
   | APPLICATION_INIT_TYPE
-  | TASK_SEARCH_SUCCESS_TYPE
-  | TASK_SEARCH_FAIL_TYPE
-  | TASK_GET_SUCCESS_TYPE
-  | TASK_GET_FAIL_TYPE
   | TASK_ADD_SUCCESS_TYPE
   | TASK_ADD_FAIL_TYPE
   | TASK_SAVE_SUCCESS_TYPE
   | TASK_SAVE_FAIL_TYPE
   | TASK_UPDATE_SUCCESS_TYPE
   | TASK_UPDATE_FAIL_TYPE
+  | TASK_SEARCH_SUCCESS_TYPE
+  | TASK_SEARCH_FAIL_TYPE
+  | TASK_GET_SUCCESS_TYPE
+  | TASK_GET_FAIL_TYPE
   | TASK_ADD_JOB_SUCCESS_TYPE;
 
 export const initialState = {
@@ -80,20 +80,6 @@ export function task (state = initialState, action: Action): State {
 	case APPLICATION_INIT:
 		return { ...initialState, ...state }
 
-	case TASK_SEARCH_SUCCESS: {
-		return { ...state, tasks: action.payload.docs }
-	}
-	case TASK_SEARCH_FAIL: {
-		return { ...state, error: action.error }
-	}
-
-	case TASK_GET_SUCCESS: {
-		return { ...state, task: action.payload }
-	}
-	case TASK_GET_FAIL: {
-		return { ...state, error: action.error }
-	}
-
 	case TASK_ADD_SUCCESS: {
 		return { ...state, task: action.payload }
 	}
@@ -112,6 +98,20 @@ export function task (state = initialState, action: Action): State {
 		return { ...state, task: action.payload }
 	}
 	case TASK_UPDATE_FAIL: {
+		return { ...state, error: action.error }
+	}
+
+	case TASK_SEARCH_SUCCESS: {
+		return { ...state, tasks: action.payload.docs }
+	}
+	case TASK_SEARCH_FAIL: {
+		return { ...state, error: action.error }
+	}
+
+	case TASK_GET_SUCCESS: {
+		return { ...state, task: action.payload }
+	}
+	case TASK_GET_FAIL: {
 		return { ...state, error: action.error }
 	}
 

@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,52 +18,73 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { TASK_GET, TASK_SAVE, TASK_ADD_JOB } from 'actions/task'
+import { getTask, saveTask, addJob as addJobAction } from 'common/actions/task'
 import { createStructuredSelector } from 'reselect'
 
 import JobModalSearch from 'containers/job/modal_search'
 
-import { makeSelectTask, makeSelectTaskInitialValues } from 'selectors/task'
+import {
+	makeSelectTask,
+	makeSelectTaskInitialValues
+} from 'common/selectors/task'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveTask as saveTaskSaga } from './saga'
+import { getTask as getTaskSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Title',
-		name: 'title',
-		label: 'Title',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'Description',
-		name: 'description',
-		label: 'Description',
-
-		component: InputField
-	}
-]
 class TaskEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(TASK_GET(this.props.match.params.id))
+			this.props.dispatch(getTask(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Title',
+				name: 'title',
+				label: 'Title',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Description',
+				name: 'description',
+				label: 'Description',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const jobs = this.props.taskProps.task.jobs
@@ -152,11 +176,12 @@ class TaskEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -185,15 +210,22 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(TASK_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(saveTask(data, 'TASK_EDIT_FORM', { resolve, reject }))
+		})
 	},
 
 	addJob (job) {
 		console.log('addJob')
-		TASK_ADD_JOB(job, dispatch)
+		return dispatch(addJobAction(job))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveTaskSaga = injectSaga({ key: 'saveTask', saga: saveTaskSaga })
+const withGetTaskSaga = injectSaga({ key: 'getTask', saga: getTaskSaga })
+
+export default compose(withSaveTaskSaga, withGetTaskSaga, withConnect)(
 	reduxForm({ form: 'TASK_EDIT_FORM', enableReinitialize: true })(TaskEdit)
 )

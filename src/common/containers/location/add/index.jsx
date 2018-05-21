@@ -4,60 +4,104 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
-import { Grid, Header, Form, Button, Table, Message } from 'semantic-ui-react'
-import { FormattedMessage } from 'react-intl'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+
+import {
+	Grid,
+	Header,
+	Form,
+	Button,
+	Table,
+	Icon,
+	Modal,
+	Message
+} from 'semantic-ui-react'
+import { FormattedMessage } from 'react-intl'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import InputField from 'components/elements/InputField'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { LOCATION_ADD } from 'actions/location'
+import {
+	addLocation,
+	setCountry as setCountryAction
+} from 'common/actions/location'
+import { createStructuredSelector } from 'reselect'
 
-type Props = FormProps;
+import CountryModalSearch from 'containers/country/modal_search'
 
-const fields = [
-	{
-		placeholder: 'Street Address',
-		name: 'streetAddress',
-		label: 'Street Address',
+import {
+	makeSelectLocation,
+	makeSelectLocationInitialValues
+} from 'common/selectors/location'
 
-		component: InputField
-	},
+import injectSaga from 'common/utils/injectSaga'
+import { addLocation as addLocationSaga } from './saga'
 
-	{
-		placeholder: 'Postal Code',
-		name: 'postalCode',
-		label: 'Postal Code',
+type Props = {
+  add: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'City',
-		name: 'city',
-		label: 'City',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'State Province',
-		name: 'stateProvince',
-		label: 'State Province',
-
-		component: InputField
-	}
-]
 class LocationAdd extends Component<Props, State> {
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Street Address',
+				name: 'streetAddress',
+				label: 'Street Address',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Postal Code',
+				name: 'postalCode',
+				label: 'Postal Code',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'City',
+				name: 'city',
+				label: 'City',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'State Province',
+				name: 'stateProvince',
+				label: 'State Province',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
+
+		const country = this.props.locationProps.location.country
+		var setCountry = this.props.setCountry.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -103,16 +147,52 @@ class LocationAdd extends Component<Props, State> {
 					</Grid.Row>
 					<Grid.Row centered>
 						<Grid.Column width={16}>
-							<Form>
-								{fields.map((a, i) => <Field key={i} {...a} />)}
+							<Form error={invalid}>
+								<div style={{ textAlign: 'left' }}>
+									{country &&
+                    country['_id'] && (
+										<Button as={Link} to={'/viewCountry/' + country['_id']}>
+											{country['countryName']}
+										</Button>
+									)}
+								</div>
 
+								<div style={{ textAlign: 'right' }}>
+									<CountryModalSearch
+										trigger={<Button>Set Country</Button>}
+										title="Set Country"
+										buttonLabel="Set Country"
+										buttonAction={setCountry}
+										closeIcon
+									>
+										<Header icon="archive" content="Set Country" />
+										<Modal.Content>
+											<p>Set Country</p>
+										</Modal.Content>
+										<Modal.Actions>
+											<Button color="red">
+												<Icon name="remove" /> No
+											</Button>
+											<Button color="green">
+												<Icon name="checkmark" /> Yes
+											</Button>
+										</Modal.Actions>
+									</CountryModalSearch>
+								</div>
+
+								{fields.map((a, i) => <Field key={i} {...a} />)}
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Add"
 										icon="add"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.add({
 												...values,
+
+												country: country,
+
 												action: 'add'
 											})
 										)}
@@ -129,12 +209,25 @@ class LocationAdd extends Component<Props, State> {
 const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
-	async add (data) {
+	add (data) {
 		console.log(data)
-		return dispatch(LOCATION_ADD(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				addLocation(data, 'LOCATION_ADD_FORM', { resolve, reject })
+			)
+		})
+	},
+
+	setCountry (country) {
+		console.log('setCountry')
+		return dispatch(setCountryAction(country))
 	}
 })
 
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({ key: 'addLocation', saga: addLocationSaga })
+
 export default reduxForm({ form: 'LOCATION_ADD_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(LocationAdd)
+	compose(withSaga, withConnect)(LocationAdd)
 )

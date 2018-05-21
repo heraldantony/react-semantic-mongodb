@@ -4,36 +4,80 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
-import { Grid, Header, Form, Button, Table, Message } from 'semantic-ui-react'
-import { FormattedMessage } from 'react-intl'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+
+import {
+	Grid,
+	Header,
+	Form,
+	Button,
+	Table,
+	Icon,
+	Modal,
+	Message
+} from 'semantic-ui-react'
+import { FormattedMessage } from 'react-intl'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import InputField from 'components/elements/InputField'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { COUNTRY_ADD } from 'actions/country'
+import {
+	addCountry,
+	setRegion as setRegionAction
+} from 'common/actions/country'
+import { createStructuredSelector } from 'reselect'
 
-type Props = FormProps;
+import RegionModalSearch from 'containers/region/modal_search'
 
-const fields = [
-	{
-		placeholder: 'Country Name',
-		name: 'countryName',
-		label: 'Country Name',
+import {
+	makeSelectCountry,
+	makeSelectCountryInitialValues
+} from 'common/selectors/country'
 
-		component: InputField
-	}
-]
+import injectSaga from 'common/utils/injectSaga'
+import { addCountry as addCountrySaga } from './saga'
+
+type Props = {
+  add: (data: Object) => Promise
+} & FormProps;
+
 class CountryAdd extends Component<Props, State> {
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Country Name',
+				name: 'countryName',
+				label: 'Country Name',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
+
+		const region = this.props.countryProps.country.region
+		var setRegion = this.props.setRegion.bind(this)
+
 		return (
 			<div>
 				<Helmet>
@@ -79,16 +123,52 @@ class CountryAdd extends Component<Props, State> {
 					</Grid.Row>
 					<Grid.Row centered>
 						<Grid.Column width={16}>
-							<Form>
-								{fields.map((a, i) => <Field key={i} {...a} />)}
+							<Form error={invalid}>
+								<div style={{ textAlign: 'left' }}>
+									{region &&
+                    region['_id'] && (
+										<Button as={Link} to={'/viewRegion/' + region['_id']}>
+											{region['regionName']}
+										</Button>
+									)}
+								</div>
 
+								<div style={{ textAlign: 'right' }}>
+									<RegionModalSearch
+										trigger={<Button>Set Region</Button>}
+										title="Set Region"
+										buttonLabel="Set Region"
+										buttonAction={setRegion}
+										closeIcon
+									>
+										<Header icon="archive" content="Set Region" />
+										<Modal.Content>
+											<p>Set Region</p>
+										</Modal.Content>
+										<Modal.Actions>
+											<Button color="red">
+												<Icon name="remove" /> No
+											</Button>
+											<Button color="green">
+												<Icon name="checkmark" /> Yes
+											</Button>
+										</Modal.Actions>
+									</RegionModalSearch>
+								</div>
+
+								{fields.map((a, i) => <Field key={i} {...a} />)}
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Add"
 										icon="add"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.add({
 												...values,
+
+												region: region,
+
 												action: 'add'
 											})
 										)}
@@ -105,12 +185,25 @@ class CountryAdd extends Component<Props, State> {
 const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
-	async add (data) {
+	add (data) {
 		console.log(data)
-		return dispatch(COUNTRY_ADD(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				addCountry(data, 'COUNTRY_ADD_FORM', { resolve, reject })
+			)
+		})
+	},
+
+	setRegion (region) {
+		console.log('setRegion')
+		return dispatch(setRegionAction(region))
 	}
 })
 
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({ key: 'addCountry', saga: addCountrySaga })
+
 export default reduxForm({ form: 'COUNTRY_ADD_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(CountryAdd)
+	compose(withSaga, withConnect)(CountryAdd)
 )

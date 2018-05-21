@@ -12,13 +12,11 @@ const Footer = () => {
 				<Grid relaxed>
 					<Grid.Row verticalAlign="middle">
 						<Grid.Column width={12} mobile={16}>
-							<a href="https://github.com/heraldantony/react-semantic-mongodb">
+							<a href="https://github.com/heraldantony/reactsemanticmongo">
 								<Header as="h3" inverted>
 									<Icon name="github" />
 									<Header.Content>
-										<Header.Subheader>
-                      React Semantic MongoDB App
-										</Header.Subheader>
+										<Header.Subheader>React Web App</Header.Subheader>
 									</Header.Content>
 								</Header>
 							</a>

@@ -1,11 +1,11 @@
 // @flow
-import { awral } from 'actions/utils'
-import { loginAPI } from 'api/AuthSvc'
-import { setLocalToken, resetLocalToken } from 'api/LocalStorageCookiesSvc'
-import { SubmissionError } from 'redux-form'
 
+export const LOGIN_AUTH = 'LOGIN_AUTH'
+export const LOGOUT_AUTH = 'LOGOUT_AUTH'
 export const LOGIN_AUTH_SUCCESS = 'LOGIN_AUTH_SUCCESS'
 export const LOGIN_AUTH_FAIL = 'LOGIN_AUTH_FAIL'
+export const LOGOUT_AUTH_SUCCESS = 'LOGOUT_AUTH_SUCCESS'
+export const LOGOUT_AUTH_FAIL = 'LOGOUT_AUTH_FAIL'
 
 export type LOGIN_AUTH_SUCCESS_TYPE = {
   type: "LOGIN_AUTH_SUCCESS",
@@ -16,42 +16,94 @@ export type LOGIN_AUTH_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
-export const LOGOUT_AUTH_SUCCESS = 'LOGOUT_AUTH_SUCCESS'
-export type LOGOUT_AUTH_SUCCESS_TYPE = { type: "LOGOUT_AUTH_SUCCESS" };
+export type LOGOUT_AUTH_SUCCESS_TYPE = {
+  type: "LOGOUT_AUTH_SUCCESS",
+  payload: Object
+};
+export type LOGOUT_AUTH_FAIL_TYPE = {
+  type: "LOGOUT_AUTH_FAIL",
+  payload: { errors: Object }
+};
 
 /**
-  Awral is not recommended for production usage now
-  But it can make your work with actions even simpler.
-  NOTE: I strongly recommend you check Awral's sources!
-  Awral is 910 bytes gzipped!
-  {@link https://github.com/Metnew/awral}
-*/
-const awralLogin = awral.of({
-	pending: null,
-	success ({ payload, dispatch }) {
-		if (payload.status === 'failure') {
-			resetLocalToken()
-			dispatch({ type: LOGIN_AUTH_FAIL, errors: payload.message })
-			throw new SubmissionError({ _error: payload.message })
-		} else {
-			setLocalToken(payload.token)
-			dispatch({ type: LOGIN_AUTH_SUCCESS, payload })
-		}
-	},
-	fail ({ payload, dispatch }) {
-		dispatch({
-			type: LOGIN_AUTH_FAIL,
-			errors: (payload && payload.message) || 'Server Error'
-		})
-		throw new SubmissionError({
-			_error: (payload && payload.message) || 'Server Error'
-		})
+ * Login to system
+ *
+ * @param  {object} loginFormData Login form data (username and password)
+ *
+ * @return {object} An action object with type LOGIN_AUTH
+ */
+export function login (loginFormData, form, promise) {
+	return {
+		type: LOGIN_AUTH,
+		payload: loginFormData,
+		form,
+		promise
 	}
-})
+}
+/**
+ * Logout of the system
+ *
+ *
+ * @return {object} An action object with type LOGIN_AUTH
+ */
+export function logout () {
+	return {
+		type: LOGOUT_AUTH
+	}
+}
 
-export const LOGIN_AUTH = awralLogin(loginAPI)('LOGIN_AUTH')
+/**
+ * Dispatched when login succeeds
+ *
+ * @param  {object} user  The User object with token
+ *
+ * @return {object} An action object with type LOGIN_AUTH_SUCCESS
+ */
+export function loginSuccess (user) {
+	return {
+		type: LOGIN_AUTH_SUCCESS,
+		payload: user
+	}
+}
 
-export const LOGOUT_AUTH = () => dispatch => {
-	resetLocalToken()
-	dispatch({ type: LOGOUT_AUTH_SUCCESS })
+/**
+ * Dispatched when login fails
+ *
+ * @param  {object} error  The error object
+ *
+ * @return {object} An action object with type LOGIN_AUTH_FAIL
+ */
+export function loginFail (error) {
+	return {
+		type: LOGIN_AUTH_FAIL,
+		payload: error
+	}
+}
+
+/**
+ * Dispatched when logout succeeds
+ *
+ * @param  {object} user  The User object with token
+ *
+ * @return {object} An action object with type LOGOUT_AUTH_SUCCESS
+ */
+export function logoutSuccess (user) {
+	return {
+		type: LOGOUT_AUTH_SUCCESS,
+		payload: user
+	}
+}
+
+/**
+ * Dispatched when logout fails
+ *
+ * @param  {object} error  The error object
+ *
+ * @return {object} An action object with type LOGOUT_AUTH_FAIL
+ */
+export function logoutFail (error) {
+	return {
+		type: LOGOUT_AUTH_FAIL,
+		payload: error
+	}
 }

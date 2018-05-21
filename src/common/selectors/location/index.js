@@ -1,6 +1,6 @@
 // @flow
 import { createSelector } from 'reselect'
-import type { State as LocationState } from 'reducers/location'
+import type { State as LocationState } from 'common/reducers/location'
 
 import _ from 'lodash'
 

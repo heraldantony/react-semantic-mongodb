@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,17 +18,16 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
 import {
-	EMPLOYEE_GET,
-	EMPLOYEE_SAVE,
-	EMPLOYEE_ADD_JOB
-} from 'actions/employee'
+	getEmployee,
+	saveEmployee,
+	addJob as addJobAction
+} from 'common/actions/employee'
 import { createStructuredSelector } from 'reselect'
 
 import JobModalSearch from 'containers/job/modal_search'
@@ -33,81 +35,100 @@ import JobModalSearch from 'containers/job/modal_search'
 import {
 	makeSelectEmployee,
 	makeSelectEmployeeInitialValues
-} from 'selectors/employee'
+} from 'common/selectors/employee'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveEmployee as saveEmployeeSaga } from './saga'
+import { getEmployee as getEmployeeSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'First Name',
-		name: 'firstName',
-		label: 'First Name',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'Last Name',
-		name: 'lastName',
-		label: 'Last Name',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'Email',
-		name: 'email',
-		label: 'Email',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'Phone Number',
-		name: 'phoneNumber',
-		label: 'Phone Number',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'Hire Date',
-		name: 'hireDate',
-		label: 'Hire Date',
-
-		component: DateTimeField
-	},
-
-	{
-		placeholder: 'Salary',
-		name: 'salary',
-		label: 'Salary',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'Commission Pct',
-		name: 'commissionPct',
-		label: 'Commission Pct',
-
-		component: InputField
-	}
-]
 class EmployeeEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(EMPLOYEE_GET(this.props.match.params.id))
+			this.props.dispatch(getEmployee(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'First Name',
+				name: 'firstName',
+				label: 'First Name',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Last Name',
+				name: 'lastName',
+				label: 'Last Name',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Email',
+				name: 'email',
+				label: 'Email',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Phone Number',
+				name: 'phoneNumber',
+				label: 'Phone Number',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Hire Date',
+				name: 'hireDate',
+				label: 'Hire Date',
+
+				component: DateTimeField
+			},
+
+			{
+				placeholder: 'Salary',
+				name: 'salary',
+				label: 'Salary',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Commission Pct',
+				name: 'commissionPct',
+				label: 'Commission Pct',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const jobs = this.props.employeeProps.employee.jobs
@@ -199,11 +220,12 @@ class EmployeeEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -232,16 +254,31 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(EMPLOYEE_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				saveEmployee(data, 'EMPLOYEE_EDIT_FORM', { resolve, reject })
+			)
+		})
 	},
 
 	addJob (job) {
 		console.log('addJob')
-		EMPLOYEE_ADD_JOB(job, dispatch)
+		return dispatch(addJobAction(job))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveEmployeeSaga = injectSaga({
+	key: 'saveEmployee',
+	saga: saveEmployeeSaga
+})
+const withGetEmployeeSaga = injectSaga({
+	key: 'getEmployee',
+	saga: getEmployeeSaga
+})
+
+export default compose(withSaveEmployeeSaga, withGetEmployeeSaga, withConnect)(
 	reduxForm({ form: 'EMPLOYEE_EDIT_FORM', enableReinitialize: true })(
 		EmployeeEdit
 	)

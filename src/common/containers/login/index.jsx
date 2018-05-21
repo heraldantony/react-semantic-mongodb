@@ -1,10 +1,10 @@
 // @flow
 import React from 'react'
 import LoginForm from './components/LoginForm'
-import {Helmet} from 'react-helmet'
-import {Grid} from 'semantic-ui-react'
+import { Helmet } from 'react-helmet'
+import { Grid } from 'semantic-ui-react'
 
-const Login = ({login, errors}: Props) => {
+const Login = ({ login, errors }: Props) => {
 	return (
 		<Grid
 			verticalAlign="middle"
@@ -13,7 +13,7 @@ const Login = ({login, errors}: Props) => {
 			textAlign="center"
 			relaxed
 			stretched
-			style={{flexGrow: 1}}
+			style={{ flexGrow: 1 }}
 		>
 			<Helmet>
 				<title>Login</title>

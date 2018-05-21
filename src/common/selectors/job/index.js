@@ -1,6 +1,6 @@
 // @flow
 import { createSelector } from 'reselect'
-import type { State as JobState } from 'reducers/job'
+import type { State as JobState } from 'common/reducers/job'
 
 import _ from 'lodash'
 

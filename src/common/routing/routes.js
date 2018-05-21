@@ -46,7 +46,6 @@ function routingFnCreator (
 		AsyncDashboard,
 		AsyncLogin,
 		AsyncSignup,
-		AsyncLinks,
 		AsyncRegionSearch,
 		AsyncRegionAdd,
 		AsyncRegionEdit,
@@ -80,7 +79,6 @@ function routingFnCreator (
 		'Dashboard',
 		'login',
 		'signup',
-		'Links',
 		'region/search',
 		'region/add',
 		'region/edit',
@@ -112,17 +110,7 @@ function routingFnCreator (
 		'NotFound'
 	].map(a => asyncComponentCreator(a))
 
-	const sidebarExternalLinks = [
-		{
-			external: true,
-			path: 'https://github.com/heraldantony/react-semantic-mongodb',
-			meta: {
-				sidebarVisible: true,
-				icon: 'github',
-				name: 'Github'
-			}
-		}
-	]
+	const sidebarExternalLinks = []
 
 	const routes: Array<RouteItem> = [
 		{
@@ -134,17 +122,6 @@ function routingFnCreator (
 			meta: {
 				icon: 'newspaper',
 				name: 'Dashboard',
-				sidebarVisible: true
-			}
-		},
-		{
-			path: '/links',
-			exact: true,
-			tag: Route,
-			component: AsyncLinks,
-			meta: {
-				name: 'Links',
-				icon: 'bookmark',
 				sidebarVisible: true
 			}
 		},

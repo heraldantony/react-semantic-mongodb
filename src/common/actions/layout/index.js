@@ -13,8 +13,8 @@ export const WINDOW_RESIZE = (innerWidth: number) => ({
 	}
 })
 
-export type UI_TOGGLE_SIDEBAR_TYPE = {type: 'UI_TOGGLE_SIDEBAR'}
+export type UI_TOGGLE_SIDEBAR_TYPE = { type: "UI_TOGGLE_SIDEBAR" };
 export type UI_WINDOW_RESIZE_TYPE = {
-	type: 'UI_WINDOW_RESIZE',
-	payload: {innerWidth: number}
-}
+  type: "UI_WINDOW_RESIZE",
+  payload: { innerWidth: number }
+};

@@ -1,6 +1,6 @@
 // @flow
 import { createSelector } from 'reselect'
-import type { State as TaskState } from 'reducers/task'
+import type { State as TaskState } from 'common/reducers/task'
 
 import _ from 'lodash'
 

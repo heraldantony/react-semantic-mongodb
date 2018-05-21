@@ -3,6 +3,8 @@
  */
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import { withRouter } from 'react-router'
 import { push } from 'react-router-redux'
 import { Route, Redirect } from 'react-router-dom'
@@ -12,7 +14,7 @@ import Footer from 'components/parts/Footer'
 import Header from 'components/parts/Header'
 import RouteAuth from 'components/addons/RouteAuth'
 // Import actions
-import { TOGGLE_SIDEBAR, WINDOW_RESIZE } from 'actions/layout'
+import { TOGGLE_SIDEBAR, WINDOW_RESIZE } from 'common/actions/layout'
 import {
 	getAuthState,
 	getLayoutState,
@@ -31,8 +33,10 @@ import {
 	StyledDimmer
 } from './style'
 import type { RouteItem } from 'types'
-import type { GlobalState } from 'reducers'
+import type { GlobalState } from 'common/reducers'
 import { getRoutes } from 'routing'
+import injectReducer from 'common/utils/injectReducer'
+import injectSaga from 'common/utils/injectSaga'
 
 type Props = {
   children: React$Node,
@@ -194,5 +198,6 @@ function mapDispatchToProps (dispatch) {
 		}
 	}
 }
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
+export default withRouter(compose(withConnect)(App))

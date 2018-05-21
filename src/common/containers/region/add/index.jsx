@@ -4,36 +4,72 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
-import { Grid, Header, Form, Button, Table, Message } from 'semantic-ui-react'
-import { FormattedMessage } from 'react-intl'
 import { connect } from 'react-redux'
+import { compose } from 'redux'
+
+import {
+	Grid,
+	Header,
+	Form,
+	Button,
+	Table,
+	Icon,
+	Modal,
+	Message
+} from 'semantic-ui-react'
+import { FormattedMessage } from 'react-intl'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import InputField from 'components/elements/InputField'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { REGION_ADD } from 'actions/region'
+import { addRegion } from 'common/actions/region'
+import { createStructuredSelector } from 'reselect'
 
-type Props = FormProps;
+import {
+	makeSelectRegion,
+	makeSelectRegionInitialValues
+} from 'common/selectors/region'
 
-const fields = [
-	{
-		placeholder: 'Region Name',
-		name: 'regionName',
-		label: 'Region Name',
+import injectSaga from 'common/utils/injectSaga'
+import { addRegion as addRegionSaga } from './saga'
 
-		component: InputField
-	}
-]
+type Props = {
+  add: (data: Object) => Promise
+} & FormProps;
+
 class RegionAdd extends Component<Props, State> {
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Region Name',
+				name: 'regionName',
+				label: 'Region Name',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
+
 		return (
 			<div>
 				<Helmet>
@@ -79,16 +115,18 @@ class RegionAdd extends Component<Props, State> {
 					</Grid.Row>
 					<Grid.Row centered>
 						<Grid.Column width={16}>
-							<Form>
+							<Form error={invalid}>
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Add"
 										icon="add"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.add({
 												...values,
+
 												action: 'add'
 											})
 										)}
@@ -105,12 +143,18 @@ class RegionAdd extends Component<Props, State> {
 const mapStateToProps = state => ({})
 
 const mapDispatchToProps = dispatch => ({
-	async add (data) {
+	add (data) {
 		console.log(data)
-		return dispatch(REGION_ADD(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(addRegion(data, 'REGION_ADD_FORM', { resolve, reject }))
+		})
 	}
 })
 
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({ key: 'addRegion', saga: addRegionSaga })
+
 export default reduxForm({ form: 'REGION_ADD_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(RegionAdd)
+	compose(withSaga, withConnect)(RegionAdd)
 )

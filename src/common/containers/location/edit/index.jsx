@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,17 +18,16 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
 import {
-	LOCATION_GET,
-	LOCATION_SAVE,
-	LOCATION_SET_COUNTRY
-} from 'actions/location'
+	getLocation,
+	saveLocation,
+	setCountry as setCountryAction
+} from 'common/actions/location'
 import { createStructuredSelector } from 'reselect'
 
 import CountryModalSearch from 'containers/country/modal_search'
@@ -33,57 +35,76 @@ import CountryModalSearch from 'containers/country/modal_search'
 import {
 	makeSelectLocation,
 	makeSelectLocationInitialValues
-} from 'selectors/location'
+} from 'common/selectors/location'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveLocation as saveLocationSaga } from './saga'
+import { getLocation as getLocationSaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Street Address',
-		name: 'streetAddress',
-		label: 'Street Address',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	},
-
-	{
-		placeholder: 'Postal Code',
-		name: 'postalCode',
-		label: 'Postal Code',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'City',
-		name: 'city',
-		label: 'City',
-
-		component: InputField
-	},
-
-	{
-		placeholder: 'State Province',
-		name: 'stateProvince',
-		label: 'State Province',
-
-		component: InputField
-	}
-]
 class LocationEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(LOCATION_GET(this.props.match.params.id))
+			this.props.dispatch(getLocation(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Street Address',
+				name: 'streetAddress',
+				label: 'Street Address',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'Postal Code',
+				name: 'postalCode',
+				label: 'Postal Code',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'City',
+				name: 'city',
+				label: 'City',
+
+				component: InputField
+			},
+
+			{
+				placeholder: 'State Province',
+				name: 'stateProvince',
+				label: 'State Province',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const country = this.props.locationProps.location.country
@@ -168,11 +189,12 @@ class LocationEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -201,16 +223,31 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(LOCATION_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				saveLocation(data, 'LOCATION_EDIT_FORM', { resolve, reject })
+			)
+		})
 	},
 
 	setCountry (country) {
 		console.log('setCountry')
-		LOCATION_SET_COUNTRY(country, dispatch)
+		return dispatch(setCountryAction(country))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveLocationSaga = injectSaga({
+	key: 'saveLocation',
+	saga: saveLocationSaga
+})
+const withGetLocationSaga = injectSaga({
+	key: 'getLocation',
+	saga: getLocationSaga
+})
+
+export default compose(withSaveLocationSaga, withGetLocationSaga, withConnect)(
 	reduxForm({ form: 'LOCATION_EDIT_FORM', enableReinitialize: true })(
 		LocationEdit
 	)

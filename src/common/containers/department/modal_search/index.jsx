@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
+import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
@@ -14,36 +15,23 @@ import {
 	Icon,
 	Label,
 	Menu,
-	Table
+	Table,
+	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
-import { DEPARTMENT_SEARCH } from 'actions/department'
+import { searchDepartment } from 'common/actions/department'
 import { createStructuredSelector } from 'reselect'
-import { makeSelectSearchDepartment } from 'selectors/department'
+import { makeSelectSearchDepartment } from 'common/selectors/department'
 import ModalSearch from 'components/search/ModalSearch'
 import { PAGE_SIZE, PAGE_RANGE_DISPLAYED } from 'common/constants'
+import injectSaga from 'common/utils/injectSaga'
+import { searchDepartment as searchDepartmentSaga } from '../search/saga'
 
 const tableFields = [
 	{ headerName: 'Department Name', fieldName: 'departmentName' }
 ]
-const searchFields = [
-	{
-		placeholder: 'Search',
-		name: 'search',
-		label: 'Search',
-		component: InputField
-	}
-]
 
-const fixedProps = {
-	tableFields: tableFields,
-	searchFields: searchFields,
-	itemName: 'department',
-	itemsName: 'departments',
-	itemNameCaps: 'Department'
-}
 class Search extends Component {
 	constructor (props) {
 		super(props)
@@ -55,22 +43,49 @@ class Search extends Component {
 		}
 	}
 	render () {
+		const searchFields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+			{
+				placeholder: 'Search',
+				name: 'search',
+				label: 'Search',
+				component: InputField
+			}
+		]
+
+		const fixedProps = {
+			tableFields: tableFields,
+			searchFields: searchFields,
+			itemName: 'department',
+			itemsName: 'departments',
+			itemNameCaps: 'Department'
+		}
 		var handlePageChange = this.props.handlePageChange.bind(this)
-		var search = this.props.search.bind(this)
+		var searchFn = this.props.searchSubmit.bind(this)
 		const props = {
 			...fixedProps,
 			buttonIconName: 'object group',
 			title: 'Set Department Parent',
 			...this.props,
 			handlePageChange,
-			search
+			search: searchFn
 		}
 		return <ModalSearch {...props} />
 	}
 }
 Search.propTypes = {
 	setParent: PropTypes.func,
-	search: PropTypes.func,
+	searchSubmit: PropTypes.func,
 	handlePageChange: PropTypes.func
 }
 
@@ -80,11 +95,15 @@ const mapStateToProps = state =>
 	})
 
 const mapDispatchToProps = dispatch => ({
-	async search (data) {
+	searchSubmit (data) {
 		// if(data.action == "search") {}
 		console.log(data)
-		this.setState({ searchString: data.search })
-		return dispatch(DEPARTMENT_SEARCH(data))
+		return new Promise((resolve, reject) => {
+			this.setState({ searchString: data.search })
+			return dispatch(
+				searchDepartment(data, 'DEPARTMENT_SEARCH_FORM', { resolve, reject })
+			)
+		})
 	},
 	setParent (parent) {
 		console.log('parent=', parent)
@@ -92,16 +111,30 @@ const mapDispatchToProps = dispatch => ({
 	handlePageChange (pageNumber) {
 		console.log(`active page is ${pageNumber}`)
 		this.setState({ activePage: pageNumber })
-		return dispatch(
-			DEPARTMENT_SEARCH({
-				search: this.state.searchString,
-				pageNumber: pageNumber,
-				pageSize: this.state.pageSize
-			})
-		)
+		return new Promise((resolve, reject) => {
+			this.setState({ activePage: pageNumber })
+			return dispatch(
+				searchDepartment(
+					{
+						search: this.state.search,
+						pageNumber: pageNumber,
+						pageSize: this.state.pageSize
+					},
+					'DEPARTMENT_SEARCH_FORM',
+					{ resolve, reject }
+				)
+			)
+		})
 	}
 })
 
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaga = injectSaga({
+	key: 'searchDepartment',
+	saga: searchDepartmentSaga
+})
+
 export default reduxForm({ form: 'DEPARTMENT_SEARCH_FORM' })(
-	connect(mapStateToProps, mapDispatchToProps)(Search)
+	compose(withConnect, withSaga)(Search)
 )

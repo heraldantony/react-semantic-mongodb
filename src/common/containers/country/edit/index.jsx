@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet'
 import { reduxForm, Field } from 'redux-form'
 import { Link } from 'react-router-dom'
 import type { FormProps } from 'redux-form'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+
 import {
 	Grid,
 	Header,
@@ -15,13 +18,16 @@ import {
 	Message
 } from 'semantic-ui-react'
 import { FormattedMessage } from 'react-intl'
-import { connect } from 'react-redux'
 import InputField from 'components/elements/InputField'
 import { DateTime } from 'react-datetime'
 import 'react-datetime/css/react-datetime.css'
 import TextAreaField from 'components/elements/TextAreaField'
 import DateTimeField from 'components/elements/DateTimeField'
-import { COUNTRY_GET, COUNTRY_SAVE, COUNTRY_SET_REGION } from 'actions/country'
+import {
+	getCountry,
+	saveCountry,
+	setRegion as setRegionAction
+} from 'common/actions/country'
 import { createStructuredSelector } from 'reselect'
 
 import RegionModalSearch from 'containers/region/modal_search'
@@ -29,33 +35,52 @@ import RegionModalSearch from 'containers/region/modal_search'
 import {
 	makeSelectCountry,
 	makeSelectCountryInitialValues
-} from 'selectors/country'
+} from 'common/selectors/country'
 
-type Props = FormProps;
+import injectSaga from 'common/utils/injectSaga'
+import { saveCountry as saveCountrySaga } from './saga'
+import { getCountry as getCountrySaga } from '../view/saga'
 
-const fields = [
-	{
-		placeholder: 'Country Name',
-		name: 'countryName',
-		label: 'Country Name',
+type Props = {
+  save: (data: Object) => Promise
+} & FormProps;
 
-		component: InputField
-	}
-]
 class CountryEdit extends Component<Props, State> {
 	componentDidMount () {
 		if (this.props.match.params && this.props.match.params.id) {
-			this.props.dispatch(COUNTRY_GET(this.props.match.params.id))
+			this.props.dispatch(getCountry(this.props.match.params.id))
 		}
 	}
 
 	render () {
+		const fields = [
+			{
+				name: 'non_field_errors',
+				component ({ meta: { error } }) {
+					return error ? (
+						<Message error>
+							<Message.Header />
+							<p>{error}</p>
+						</Message>
+					) : null
+				}
+			},
+
+			{
+				placeholder: 'Country Name',
+				name: 'countryName',
+				label: 'Country Name',
+
+				component: InputField
+			}
+		]
 		const {
 			handleSubmit,
 			submitting,
 			submitSucceeded,
 			error,
-			warning
+			warning,
+			invalid
 		} = this.props
 
 		const region = this.props.countryProps.country.region
@@ -140,11 +165,12 @@ class CountryEdit extends Component<Props, State> {
 								</div>
 
 								{fields.map((a, i) => <Field key={i} {...a} />)}
-
+								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
 										content="Save"
 										icon="save"
+										loading={submitting}
 										onClick={handleSubmit(values =>
 											this.props.save({
 												...values,
@@ -173,16 +199,31 @@ const mapStateToProps = state =>
 const mapDispatchToProps = dispatch => ({
 	async save (data) {
 		console.log(data)
-		return dispatch(COUNTRY_SAVE(data))
+		return new Promise((resolve, reject) => {
+			return dispatch(
+				saveCountry(data, 'COUNTRY_EDIT_FORM', { resolve, reject })
+			)
+		})
 	},
 
 	setRegion (region) {
 		console.log('setRegion')
-		COUNTRY_SET_REGION(region, dispatch)
+		return dispatch(setRegionAction(region))
 	}
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(
+const withConnect = connect(mapStateToProps, mapDispatchToProps)
+
+const withSaveCountrySaga = injectSaga({
+	key: 'saveCountry',
+	saga: saveCountrySaga
+})
+const withGetCountrySaga = injectSaga({
+	key: 'getCountry',
+	saga: getCountrySaga
+})
+
+export default compose(withSaveCountrySaga, withGetCountrySaga, withConnect)(
 	reduxForm({ form: 'COUNTRY_EDIT_FORM', enableReinitialize: true })(
 		CountryEdit
 	)
