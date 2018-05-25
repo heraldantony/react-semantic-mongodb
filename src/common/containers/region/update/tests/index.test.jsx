@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import RegionEdit from "./index.jsx";
+import RegionUpdate from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
-describe("<RegionEdit />", () => {
-  it("should render the header", () => {
+describe("<RegionUpdate />", () => {
+  it("should render RegionUpdate", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
-        <RegionEdit />
+        <RegionUpdate />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Region</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<RegionUpdate />)).toBe(true);
   });
 });

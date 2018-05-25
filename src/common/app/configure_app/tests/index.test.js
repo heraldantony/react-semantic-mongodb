@@ -4,8 +4,8 @@ import { getRoutes, history } from "routing";
 
 describe("configureApp", () => {
   const routes = getRoutes();
-  const preloadedState = rootReducer(undefined, {});
   const initialState = {};
+  const preloadedState = rootReducer({})(undefined, {});
   const result = configureApp(initialState);
 
   it("has same history", () => {

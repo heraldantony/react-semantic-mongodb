@@ -151,7 +151,7 @@
     "dev": "cross-env PORT=9600 NODE_ENV=development babel-node ./src/server/index.dev",
     "server_build": "cross-env NODE_ENV=production webpack --config webpack_config/server/webpack.prod.babel.js",
     "frontend_build": "cross-env NODE_ENV=production webpack --config webpack_config/client/webpack.prod.babel.js",
-    "test": "cross-env NODE_ENV=test jest --config=jest_config/jest.config.json --coverage --forceExit || true",
+    "test": "cross-env NODE_ENV=test jest --config=jest_config/jest.config.json --coverage --forceExit",
     "snapshot_update": "cross-env NODE_ENV=test jest --config=jest_config/jest.config.json --coverage --updateSnapshot",
     "start": "node ./dist/server",
     "lint:styles": "stylelint ./src/common/**/*.scss -s scss --config ./.stylelintrc --fix",

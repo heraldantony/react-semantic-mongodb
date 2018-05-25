@@ -5,7 +5,7 @@ import {
   TOGGLE_SIDEBAR,
   UI_WINDOW_RESIZE,
   WINDOW_RESIZE
-} from "actions/layout";
+} from "common/actions/layout";
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 

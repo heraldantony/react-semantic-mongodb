@@ -1,6 +1,7 @@
-import { layout as reducer, initialState } from "reducers/layout";
-import { UI_TOGGLE_SIDEBAR, UI_WINDOW_RESIZE } from "actions/layout";
-import { LOCATION_CHANGE } from "actions/common";
+import { layout as reducer } from "common/reducers/layout";
+import { initialState } from "common/reducers/layout";
+import { UI_TOGGLE_SIDEBAR, UI_WINDOW_RESIZE } from "common/actions/layout";
+import { LOCATION_CHANGE } from "common/actions/common";
 
 const toggleSidebar = {
   type: UI_TOGGLE_SIDEBAR

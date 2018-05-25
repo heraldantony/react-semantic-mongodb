@@ -6,10 +6,10 @@ import {
   LOGIN_AUTH_SUCCESS,
   LOGIN_AUTH_FAIL,
   LOGIN_AUTH_PENDING,
-  LOGIN_AUTH,
   LOGOUT_AUTH_SUCCESS,
-  LOGOUT_AUTH
-} from "actions/auth";
+  login,
+  logout
+} from "common/actions/auth";
 // Add middlewares that our mock store will use
 // It can be redux-thunk or routingMiddleware from `react-router-redux`
 // Or any other middleware that you use in your app
@@ -37,7 +37,7 @@ describe("Auth actions", () => {
       // Create store for testing
       const store = mockStore({});
       // Dispatch action
-      store.dispatch(LOGIN_AUTH()).then(() => {
+      store.dispatch(login()).then(() => {
         // Compare expected and real outputs
         expect(store.getActions()).toEqual(expectedActions);
         // Call `done()` callback, because action is async
@@ -66,7 +66,7 @@ describe("Auth actions", () => {
       // Create store for testing
       const store = mockStore({});
       // Dispatch action
-      store.dispatch(LOGIN_AUTH()).then(res => {
+      store.dispatch(login()).then(res => {
         // Compare expected and real outputs
         expect(store.getActions()).toEqual(expectedActions);
         // Call `done()`, because test is async
@@ -86,7 +86,7 @@ describe("Auth actions", () => {
       // Create store for testing
       const store = mockStore({});
       // Dispatch action
-      store.dispatch(LOGOUT_AUTH());
+      store.dispatch(logout());
       // Compare expected and real outputs
       expect(store.getActions()).toEqual(expectedActions);
     });

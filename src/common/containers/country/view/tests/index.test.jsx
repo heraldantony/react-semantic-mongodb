@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import CountryView from "./index.jsx";
+import CountryView from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
 describe("<CountryView />", () => {
-  it("should render the header", () => {
+  it("should render CountryView", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
         <CountryView />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Country</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<CountryView />)).toBe(true);
   });
 });

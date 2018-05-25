@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import DepartmentEdit from "./index.jsx";
+import DepartmentUpdate from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
-describe("<DepartmentEdit />", () => {
-  it("should render the header", () => {
+describe("<DepartmentUpdate />", () => {
+  it("should render DepartmentUpdate", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
-        <DepartmentEdit />
+        <DepartmentUpdate />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Department</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<DepartmentUpdate />)).toBe(true);
   });
 });

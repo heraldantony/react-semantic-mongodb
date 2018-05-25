@@ -1,19 +1,19 @@
-var mongoose = require('mongoose')
-var mongoosePaginate = require('mongoose-paginate')
-var Schema = mongoose.Schema
+var mongoose = require("mongoose");
+var mongoosePaginate = require("mongoose-paginate");
+var Schema = mongoose.Schema;
 
 var regionSchema = Schema({
-	_id: Schema.Types.ObjectId,
+  _id: Schema.Types.ObjectId,
 
-	regionName: { type: String, index: true }
-})
+  regionName: { type: String, index: true }
+});
 
-regionSchema.query.byRegionName = function (regionName) {
-	return this.find({ regionName: new RegExp(regionName, 'i') })
-}
+regionSchema.query.byRegionName = function(regionName) {
+  return this.find({ regionName: new RegExp(regionName, "i") });
+};
 
-regionSchema.plugin(mongoosePaginate)
+regionSchema.plugin(mongoosePaginate);
 
-var Region = mongoose.model('Region', regionSchema)
+var Region = mongoose.model("Region", regionSchema);
 
-module.exports = Region
+module.exports = Region;

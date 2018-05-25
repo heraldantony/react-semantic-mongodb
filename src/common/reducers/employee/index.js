@@ -1,36 +1,36 @@
 // @flow
-import { fromJS } from 'immutable'
+import { fromJS } from "immutable";
 
 import {
-	EMPLOYEE_ADD_SUCCESS,
-	EMPLOYEE_ADD_FAIL,
-	EMPLOYEE_SAVE_SUCCESS,
-	EMPLOYEE_SAVE_FAIL,
-	EMPLOYEE_UPDATE_SUCCESS,
-	EMPLOYEE_UPDATE_FAIL,
-	EMPLOYEE_SEARCH_SUCCESS,
-	EMPLOYEE_SEARCH_FAIL,
-	EMPLOYEE_GET_SUCCESS,
-	EMPLOYEE_GET_FAIL,
-	EMPLOYEE_ADD_JOB_SUCCESS
-} from 'common/actions/employee'
+  EMPLOYEE_ADD_SUCCESS,
+  EMPLOYEE_ADD_FAIL,
+  EMPLOYEE_SAVE_SUCCESS,
+  EMPLOYEE_SAVE_FAIL,
+  EMPLOYEE_UPDATE_SUCCESS,
+  EMPLOYEE_UPDATE_FAIL,
+  EMPLOYEE_SEARCH_SUCCESS,
+  EMPLOYEE_SEARCH_FAIL,
+  EMPLOYEE_GET_SUCCESS,
+  EMPLOYEE_GET_FAIL,
+  EMPLOYEE_ADD_JOB_SUCCESS
+} from "common/actions/employee";
 
-import { APPLICATION_INIT } from 'actions/common'
+import { APPLICATION_INIT } from "actions/common";
 
 import type {
-	EMPLOYEE_ADD_SUCCESS_TYPE,
-	EMPLOYEE_ADD_FAIL_TYPE,
-	EMPLOYEE_SAVE_SUCCESS_TYPE,
-	EMPLOYEE_SAVE_FAIL_TYPE,
-	EMPLOYEE_UPDATE_SUCCESS_TYPE,
-	EMPLOYEE_UPDATE_FAIL_TYPE,
-	EMPLOYEE_SEARCH_SUCCESS_TYPE,
-	EMPLOYEE_SEARCH_FAIL_TYPE,
-	EMPLOYEE_GET_SUCCESS_TYPE,
-	EMPLOYEE_GET_FAIL_TYPE,
-	EMPLOYEE_ADD_JOB_SUCCESS_TYPE
-} from 'common/actions/employee'
-import type { APPLICATION_INIT_TYPE } from 'actions/common'
+  EMPLOYEE_ADD_SUCCESS_TYPE,
+  EMPLOYEE_ADD_FAIL_TYPE,
+  EMPLOYEE_SAVE_SUCCESS_TYPE,
+  EMPLOYEE_SAVE_FAIL_TYPE,
+  EMPLOYEE_UPDATE_SUCCESS_TYPE,
+  EMPLOYEE_UPDATE_FAIL_TYPE,
+  EMPLOYEE_SEARCH_SUCCESS_TYPE,
+  EMPLOYEE_SEARCH_FAIL_TYPE,
+  EMPLOYEE_GET_SUCCESS_TYPE,
+  EMPLOYEE_GET_FAIL_TYPE,
+  EMPLOYEE_ADD_JOB_SUCCESS_TYPE
+} from "common/actions/employee";
+import type { APPLICATION_INIT_TYPE } from "actions/common";
 
 export type Employee = {
   firstName: string,
@@ -74,68 +74,70 @@ type Action =
   | EMPLOYEE_ADD_JOB_SUCCESS_TYPE;
 
 export const initialState = {
-	search: '',
-	employee: {},
-	employees: [],
-	start: 0,
-	limit: 10,
-	otherSearchStart: 0,
-	otherSearchLimit: 10,
-	otherSearchEmployees: [],
-	error: ''
-}
+  search: "",
+  employee: {},
+  employees: [],
+  start: 0,
+  limit: 10,
+  otherSearchStart: 0,
+  otherSearchLimit: 10,
+  otherSearchEmployees: [],
+  error: ""
+};
 
-export function employee (state = initialState, action: Action): State {
-	switch (action.type) {
-	case APPLICATION_INIT:
-		return { ...initialState, ...state }
+export function employeeReducer(state = initialState, action: Action): State {
+  switch (action.type) {
+    case APPLICATION_INIT:
+      return { ...initialState, ...state };
 
-	case EMPLOYEE_ADD_SUCCESS: {
-		return { ...state, employee: action.payload }
-	}
-	case EMPLOYEE_ADD_FAIL: {
-		return { ...state, error: action.error }
-	}
+    case EMPLOYEE_ADD_SUCCESS: {
+      return { ...state, employee: action.payload };
+    }
+    case EMPLOYEE_ADD_FAIL: {
+      return { ...state, error: action.error };
+    }
 
-	case EMPLOYEE_SAVE_SUCCESS: {
-		return { ...state, employee: action.payload }
-	}
-	case EMPLOYEE_SAVE_FAIL: {
-		return { ...state, error: action.error }
-	}
+    case EMPLOYEE_SAVE_SUCCESS: {
+      return { ...state, employee: action.payload };
+    }
+    case EMPLOYEE_SAVE_FAIL: {
+      return { ...state, error: action.error };
+    }
 
-	case EMPLOYEE_UPDATE_SUCCESS: {
-		return { ...state, employee: action.payload }
-	}
-	case EMPLOYEE_UPDATE_FAIL: {
-		return { ...state, error: action.error }
-	}
+    case EMPLOYEE_UPDATE_SUCCESS: {
+      return { ...state, employee: action.payload };
+    }
+    case EMPLOYEE_UPDATE_FAIL: {
+      return { ...state, error: action.error };
+    }
 
-	case EMPLOYEE_SEARCH_SUCCESS: {
-		return { ...state, employees: action.payload.docs }
-	}
-	case EMPLOYEE_SEARCH_FAIL: {
-		return { ...state, error: action.error }
-	}
+    case EMPLOYEE_SEARCH_SUCCESS: {
+      return { ...state, employees: action.payload };
+    }
+    case EMPLOYEE_SEARCH_FAIL: {
+      return { ...state, error: action.error };
+    }
 
-	case EMPLOYEE_GET_SUCCESS: {
-		return { ...state, employee: action.payload }
-	}
-	case EMPLOYEE_GET_FAIL: {
-		return { ...state, error: action.error }
-	}
+    case EMPLOYEE_GET_SUCCESS: {
+      return { ...state, employee: action.payload };
+    }
+    case EMPLOYEE_GET_FAIL: {
+      return { ...state, error: action.error };
+    }
 
-	case EMPLOYEE_ADD_JOB_SUCCESS: {
-		return {
-			...state,
-			employee: {
-				...state.employee,
-				jobs: [...state.employee.jobs, action.job]
-			}
-		}
-	}
+    case EMPLOYEE_ADD_JOB_SUCCESS: {
+      return {
+        ...state,
+        employee: {
+          ...state.employee,
+          jobs: state.employee.jobs
+            ? [...state.employee.jobs, action.job]
+            : [action.job]
+        }
+      };
+    }
 
-	default:
-		return state
-	}
+    default:
+      return state;
+  }
 }

@@ -1,29 +1,29 @@
 // @flow
 /*
- * Constants and actions for entity Employee
+ * Constants and actions for entity Employee 
  * Action constants and corresponding types
  *
 */
 
-export const EMPLOYEE_ADD = 'employee/add'
-export const EMPLOYEE_ADD_SUCCESS = 'employee/add/SUCCESS'
-export const EMPLOYEE_ADD_FAIL = 'employee/add/FAIL'
+export const EMPLOYEE_ADD = "employee/add";
+export const EMPLOYEE_ADD_SUCCESS = "employee/add/SUCCESS";
+export const EMPLOYEE_ADD_FAIL = "employee/add/FAIL";
 
-export const EMPLOYEE_SAVE = 'employee/save'
-export const EMPLOYEE_SAVE_SUCCESS = 'employee/save/SUCCESS'
-export const EMPLOYEE_SAVE_FAIL = 'employee/save/FAIL'
+export const EMPLOYEE_SAVE = "employee/save";
+export const EMPLOYEE_SAVE_SUCCESS = "employee/save/SUCCESS";
+export const EMPLOYEE_SAVE_FAIL = "employee/save/FAIL";
 
-export const EMPLOYEE_UPDATE = 'employee/update'
-export const EMPLOYEE_UPDATE_SUCCESS = 'employee/update/SUCCESS'
-export const EMPLOYEE_UPDATE_FAIL = 'employee/update/FAIL'
+export const EMPLOYEE_UPDATE = "employee/update";
+export const EMPLOYEE_UPDATE_SUCCESS = "employee/update/SUCCESS";
+export const EMPLOYEE_UPDATE_FAIL = "employee/update/FAIL";
 
-export const EMPLOYEE_GET = 'employee/get'
-export const EMPLOYEE_GET_SUCCESS = 'employee/get/SUCCESS'
-export const EMPLOYEE_GET_FAIL = 'employee/get/FAIL'
+export const EMPLOYEE_GET = "employee/get";
+export const EMPLOYEE_GET_SUCCESS = "employee/get/SUCCESS";
+export const EMPLOYEE_GET_FAIL = "employee/get/FAIL";
 
-export const EMPLOYEE_SEARCH = 'employee/search'
-export const EMPLOYEE_SEARCH_SUCCESS = 'employee/search/SUCCESS'
-export const EMPLOYEE_SEARCH_FAIL = 'employee/search/FAIL'
+export const EMPLOYEE_SEARCH = "employee/search";
+export const EMPLOYEE_SEARCH_SUCCESS = "employee/search/SUCCESS";
+export const EMPLOYEE_SEARCH_FAIL = "employee/search/FAIL";
 
 export type EMPLOYEE_ADD_TYPE = {
   type: EMPLOYEE_ADD,
@@ -90,12 +90,12 @@ export type EMPLOYEE_SEARCH_FAIL_TYPE = {
   payload: { errors: Object }
 };
 
-export const EMPLOYEE_ADD_JOB_SUCCESS = 'employee/Add_Job/SUCCESS'
+export const EMPLOYEE_ADD_JOB_SUCCESS = "employee/Add_Job/SUCCESS";
 
 export const EMPLOYEE_ADD_JOB_SUCCESS_TYPE = {
-	type: EMPLOYEE_ADD_JOB_SUCCESS,
-	payload: Object
-}
+  type: EMPLOYEE_ADD_JOB_SUCCESS,
+  payload: Object
+};
 
 /**
  * Add Employee
@@ -105,13 +105,13 @@ export const EMPLOYEE_ADD_JOB_SUCCESS_TYPE = {
  * @param  {object} promise object with {resolve, reject} functions
  * @return {object} An action object with type EMPLOYEE_ADD
  */
-export function addEmployee (employee, form, promise) {
-	return {
-		type: EMPLOYEE_ADD,
-		payload: employee,
-		form,
-		promise
-	}
+export function addEmployee(employee, form, promise) {
+  return {
+    type: EMPLOYEE_ADD,
+    payload: employee,
+    form,
+    promise
+  };
 }
 
 /**
@@ -121,11 +121,11 @@ export function addEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_SUCCESS
  */
-export function addEmployeeSuccess (employee) {
-	return {
-		type: EMPLOYEE_ADD_SUCCESS,
-		payload: employee
-	}
+export function addEmployeeSuccess(employee) {
+  return {
+    type: EMPLOYEE_ADD_SUCCESS,
+    payload: employee
+  };
 }
 
 /**
@@ -135,11 +135,11 @@ export function addEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_FAIL
  */
-export function addEmployeeFail (error) {
-	return {
-		type: EMPLOYEE_ADD_FAIL,
-		payload: error
-	}
+export function addEmployeeFail(error) {
+  return {
+    type: EMPLOYEE_ADD_FAIL,
+    error: error
+  };
 }
 
 /**
@@ -150,13 +150,13 @@ export function addEmployeeFail (error) {
  * @param  {object} promise object with {resolve, reject} functions
  * @return {object} An action object with type EMPLOYEE_SAVE
  */
-export function saveEmployee (employee, form, promise) {
-	return {
-		type: EMPLOYEE_SAVE,
-		payload: employee,
-		form,
-		promise
-	}
+export function saveEmployee(employee, form, promise) {
+  return {
+    type: EMPLOYEE_SAVE,
+    payload: employee,
+    form,
+    promise
+  };
 }
 
 /**
@@ -166,11 +166,11 @@ export function saveEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_SAVE_SUCCESS
  */
-export function saveEmployeeSuccess (employee) {
-	return {
-		type: EMPLOYEE_SAVE_SUCCESS,
-		payload: employee
-	}
+export function saveEmployeeSuccess(employee) {
+  return {
+    type: EMPLOYEE_SAVE_SUCCESS,
+    payload: employee
+  };
 }
 
 /**
@@ -180,11 +180,11 @@ export function saveEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_SAVE_FAIL
  */
-export function saveEmployeeFail (error) {
-	return {
-		type: EMPLOYEE_SAVE_FAIL,
-		payload: error
-	}
+export function saveEmployeeFail(error) {
+  return {
+    type: EMPLOYEE_SAVE_FAIL,
+    error: error
+  };
 }
 
 /**
@@ -195,13 +195,13 @@ export function saveEmployeeFail (error) {
  * @param  {object} promise object with {resolve, reject} functions
  * @return {object} An action object with type EMPLOYEE_UPDATE
  */
-export function updateEmployee (employee, form, promise) {
-	return {
-		type: EMPLOYEE_UPDATE,
-		payload: employee,
-		form,
-		promise
-	}
+export function updateEmployee(employee, form, promise) {
+  return {
+    type: EMPLOYEE_UPDATE,
+    payload: employee,
+    form,
+    promise
+  };
 }
 
 /**
@@ -211,11 +211,11 @@ export function updateEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_UPDATE_SUCCESS
  */
-export function updateEmployeeSuccess (employee) {
-	return {
-		type: EMPLOYEE_UPDATE_SUCCESS,
-		payload: employee
-	}
+export function updateEmployeeSuccess(employee) {
+  return {
+    type: EMPLOYEE_UPDATE_SUCCESS,
+    payload: employee
+  };
 }
 
 /**
@@ -225,11 +225,11 @@ export function updateEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_UPDATE_FAIL
  */
-export function updateEmployeeFail (error) {
-	return {
-		type: EMPLOYEE_UPDATE_FAIL,
-		payload: error
-	}
+export function updateEmployeeFail(error) {
+  return {
+    type: EMPLOYEE_UPDATE_FAIL,
+    error: error
+  };
 }
 
 /**
@@ -239,11 +239,11 @@ export function updateEmployeeFail (error) {
  *
  * @return {object} An action object with type EMPLOYEE_GET
  */
-export function getEmployee (employeeId) {
-	return {
-		type: EMPLOYEE_GET,
-		payload: employeeId
-	}
+export function getEmployee(employeeId) {
+  return {
+    type: EMPLOYEE_GET,
+    payload: employeeId
+  };
 }
 
 /**
@@ -253,11 +253,11 @@ export function getEmployee (employeeId) {
  *
  * @return {object} An action object with type EMPLOYEE_GET_SUCCESS
  */
-export function getEmployeeSuccess (employee) {
-	return {
-		type: EMPLOYEE_GET_SUCCESS,
-		payload: employee
-	}
+export function getEmployeeSuccess(employee) {
+  return {
+    type: EMPLOYEE_GET_SUCCESS,
+    payload: employee
+  };
 }
 
 /**
@@ -267,11 +267,11 @@ export function getEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_GET_FAIL
  */
-export function getEmployeeFail (error) {
-	return {
-		type: EMPLOYEE_GET_FAIL,
-		payload: error
-	}
+export function getEmployeeFail(error) {
+  return {
+    type: EMPLOYEE_GET_FAIL,
+    error: error
+  };
 }
 
 /**
@@ -282,13 +282,13 @@ export function getEmployeeFail (error) {
  * @param  {object} promise object with {resolve, reject} functions
  * @return {object} An action object with type EMPLOYEE_SEARCH
  */
-export function searchEmployee (searchString, form, promise) {
-	return {
-		type: EMPLOYEE_SEARCH,
-		payload: searchString,
-		form,
-		promise
-	}
+export function searchEmployee(searchString, form, promise) {
+  return {
+    type: EMPLOYEE_SEARCH,
+    payload: searchString,
+    form,
+    promise
+  };
 }
 
 /**
@@ -298,11 +298,11 @@ export function searchEmployee (searchString, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_SEARCH_SUCCESS
  */
-export function searchEmployeeSuccess (employees) {
-	return {
-		type: EMPLOYEE_SEARCH_SUCCESS,
-		payload: employees
-	}
+export function searchEmployeeSuccess(employees) {
+  return {
+    type: EMPLOYEE_SEARCH_SUCCESS,
+    payload: employees
+  };
 }
 
 /**
@@ -312,11 +312,11 @@ export function searchEmployeeSuccess (employees) {
  *
  * @return {object} An action object with type EMPLOYEE_SEARCH_FAIL
  */
-export function searchEmployeeFail (error) {
-	return {
-		type: EMPLOYEE_SEARCH_FAIL,
-		payload: error
-	}
+export function searchEmployeeFail(error) {
+  return {
+    type: EMPLOYEE_SEARCH_FAIL,
+    error: error
+  };
 }
 
 /**
@@ -326,9 +326,9 @@ export function searchEmployeeFail (error) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_JOB_SUCCESS
  */
-export function addJob (job) {
-	return {
-		type: EMPLOYEE_ADD_JOB_SUCCESS,
-		job
-	}
+export function addJob(job) {
+  return {
+    type: EMPLOYEE_ADD_JOB_SUCCESS,
+    job
+  };
 }

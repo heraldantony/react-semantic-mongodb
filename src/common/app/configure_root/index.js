@@ -2,12 +2,12 @@
  * @flow
  * @desc
  */
-import React from 'react'
-import type { RouteItem } from 'types'
+import React from "react";
+import type { RouteItem } from "types";
 // Redux stuff
-import Root from 'components/parts/Root'
+import Root from "components/parts/Root";
 // Styled-components's injectGlobal styles
-import 'styles/global'
+import "styles/global";
 
 type Props = {
   i18n: Object,
@@ -26,15 +26,15 @@ type Props = {
  */
 
 const configureRootComponent = (props: Props) => {
-	if (module.hot) {
-		const { store } = props
-		// Enable Webpack hot module replacement for reducers
-		module.hot.accept('reducers', () => {
-			const nextRootReducer = require('reducers').default
-			store.replaceReducer(nextRootReducer)
-		})
-	}
-	return <Root {...props} />
-}
+  if (module.hot) {
+    const { store } = props;
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept("reducers", () => {
+      const nextRootReducer = require("reducers").default;
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+  return <Root {...props} />;
+};
 
-export default configureRootComponent
+export default configureRootComponent;

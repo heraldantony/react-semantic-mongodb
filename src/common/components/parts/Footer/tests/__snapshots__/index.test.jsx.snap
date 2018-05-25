@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component same snapshot 1`] = `
+<style__StyledFooter>
+  <style__StyledFooterInner>
+    <Grid
+      relaxed={true}
+    >
+      <GridRow
+        verticalAlign="middle"
+      >
+        <GridColumn
+          mobile={16}
+          width={12}
+        >
+          <a
+            href="https://github.com/heraldantony/reactsemanticmongo"
+          >
+            <Header
+              as="h3"
+              inverted={true}
+            >
+              <Icon
+                as="i"
+                name="github"
+              />
+              <HeaderContent>
+                <HeaderSubheader>
+                  React Web App
+                </HeaderSubheader>
+              </HeaderContent>
+            </Header>
+          </a>
+        </GridColumn>
+      </GridRow>
+    </Grid>
+  </style__StyledFooterInner>
+</style__StyledFooter>
+`;

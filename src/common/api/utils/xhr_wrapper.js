@@ -2,9 +2,9 @@
  * @flow
  */
 
-import { resetLocalToken } from 'api/LocalStorageCookiesSvc'
-import fetch from 'isomorphic-fetch'
-import _ from 'lodash'
+import { resetLocalToken } from "api/LocalStorageCookiesSvc";
+import fetch from "isomorphic-fetch";
+import _ from "lodash";
 
 /**
  * Create request wrapper for certain method
@@ -12,9 +12,9 @@ import _ from 'lodash'
  * @return {Function}
  */
 const requestWrapper = (
-	method: "GET" | "POST" | "DELETE" | "HEAD" | "OPTIONS" | "PUT" | "PATCH"
+  method: "GET" | "POST" | "DELETE" | "HEAD" | "OPTIONS" | "PUT" | "PATCH"
 ) => {
-	/**
+  /**
    * Creates request to `url` with `data`
    * @param  {String} 	url        				Request URL
    * @param  {Object} 	[data= null]			Data for Request
@@ -22,30 +22,30 @@ const requestWrapper = (
    * @param  {Function} [cb = (a) => a]		Transform request before it will be sent
    * @return {Object}             				Request response
    */
-	return async (
-		url: string,
-		data: Object | null = null,
-		options: Object = {},
-		cb: (request: Object) => Object = a => a
-	) => {
-		// get decorated url and request params
-		const { requestURL, request } = decorateRequest({
-			method,
-			url,
-			data,
-			options,
-			cb
-		})
+  return async (
+    url: string,
+    data: Object | null = null,
+    options: Object = {},
+    cb: (request: Object) => Object = a => a
+  ) => {
+    // get decorated url and request params
+    const { requestURL, request } = decorateRequest({
+      method,
+      url,
+      data,
+      options,
+      cb
+    });
 
-		return fetch(requestURL, request)
-			.then(checkStatus)
-			.then(parseJSON)
-			.catch((err: string) => {
-				console.error(err)
-				return err
-			})
-	}
-}
+    return fetch(requestURL, request)
+      .then(checkStatus)
+      .then(parseJSON)
+      .catch((err: string) => {
+        console.error(err);
+        return err;
+      });
+  };
+};
 
 /**
  * middlewares
@@ -55,22 +55,22 @@ const requestWrapper = (
  * @param  {Object} res - Response from resource
  * @return {Object} response result with "ok" property
  */
-async function parseJSON (res: Response): Object {
-	let json: Object
-	const { status } = res
-	// status response field in return object
-	try {
-		json = await res.json()
-	} catch (e) {
-		if (res.status === 204) {
-			return { ok: true, data: {}, status }
-		}
-		return { ok: false, status }
-	}
-	if (!res.ok) {
-		return { data: json, ok: false, status }
-	}
-	return { data: json, ok: true, status }
+async function parseJSON(res: Response): Object {
+  let json: Object;
+  const { status } = res;
+  // status response field in return object
+  try {
+    json = await res.json();
+  } catch (e) {
+    if (res.status === 204) {
+      return { ok: true, data: {}, status };
+    }
+    return { ok: false, status };
+  }
+  if (!res.ok) {
+    return { data: json, ok: false, status };
+  }
+  return { data: json, ok: true, status };
 }
 
 /**
@@ -78,29 +78,29 @@ async function parseJSON (res: Response): Object {
  * @param  {Object} response - Response
  * @return {Object}          - Response
  */
-function checkStatus (response: Response): Response {
-	const { status } = response
-	if (status >= 200 && status < 300) {
-		// Everything is ok
-	} else if (status >= 300 && status < 400) {
-		// 300 - Multiple Choices
-		// 301 - Moved Permanently,
-		// 302 - Found, Moved Temporarily
-		// 304 - not modified
-		// 307 - Temporary Redirect
-	} else if (status === 400) {
-		// Probably is a validation error
-	} else if (status === 403 || status === 401) {
-		// 401 - Forbidden
-		// 403 - Unauthorized
-		// remove local token in this case
-		resetLocalToken()
-	} else if (status === 404) {
-		// Not Found
-	} else if (status >= 500) {
-		// Server error
-	}
-	return response
+function checkStatus(response: Response): Response {
+  const { status } = response;
+  if (status >= 200 && status < 300) {
+    // Everything is ok
+  } else if (status >= 300 && status < 400) {
+    // 300 - Multiple Choices
+    // 301 - Moved Permanently,
+    // 302 - Found, Moved Temporarily
+    // 304 - not modified
+    // 307 - Temporary Redirect
+  } else if (status === 400) {
+    // Probably is a validation error
+  } else if (status === 403 || status === 401) {
+    // 401 - Forbidden
+    // 403 - Unauthorized
+    // remove local token in this case
+    resetLocalToken();
+  } else if (status === 404) {
+    // Not Found
+  } else if (status >= 500) {
+    // Server error
+  }
+  return response;
 }
 
 /**
@@ -112,63 +112,63 @@ function checkStatus (response: Response): Response {
  * @param  {Function} [cb = (a) => a]		Transform request before it will be sent
  * @return {Object}             				{URL, request}
  */
-function decorateRequest ({ method, url, data, options, cb }): Object {
-	// Default params for fetch = method + (Content-Type)
-	const defaults = {
-		method,
-		headers: {},
-		mode: process.env.NODE_ENV === 'development' ? 'cors' : 'same-origin'
-	}
-	const isRequestToExternalResource = /(http|https):\/\//.test(url)
-	const requestURL = isRequestToExternalResource
-		? url
-		: process.env.BASE_API + url
+function decorateRequest({ method, url, data, options, cb }): Object {
+  // Default params for fetch = method + (Content-Type)
+  const defaults = {
+    method,
+    headers: {},
+    mode: process.env.NODE_ENV === "development" ? "cors" : "same-origin"
+  };
+  const isRequestToExternalResource = /(http|https):\/\//.test(url);
+  const requestURL = isRequestToExternalResource
+    ? url
+    : process.env.BASE_API + url;
 
-	const requestHeadersDataDecoration = getHeaderDataDecoration(data)
-	const request = cb(
-		_.merge({}, defaults, options, requestHeadersDataDecoration)
-	)
+  const requestHeadersDataDecoration = getHeaderDataDecoration(data);
+  const request = cb(
+    _.merge({}, defaults, options, requestHeadersDataDecoration)
+  );
 
-	return {
-		request,
-		requestURL
-	}
+  return {
+    request,
+    requestURL
+  };
 }
 
-function getHeaderDataDecoration (data): Object {
-	const isDataExist = !!data
-	const isFormData = data instanceof FormData
-	const transform = {
-		formdata (data) {
-			return {
-				body: data
-			}
-		},
-		json (data) {
-			return {
-				headers: { 'Content-Type': 'application/json; charset=UTF-8' },
-				body: JSON.stringify(data)
-			}
-		},
-		noop () {
-			return {}
-		}
-	}
+function getHeaderDataDecoration(data): Object {
+  const isDataExist = !!data;
+  const isFormData = data instanceof FormData;
+  const transform = {
+    formdata(data) {
+      return {
+        body: data
+      };
+    },
+    json(data) {
+      return {
+        headers: { "Content-Type": "application/json; charset=UTF-8" },
+        body: JSON.stringify(data)
+      };
+    },
+    noop() {
+      return {};
+    }
+  };
 
-	// if no data -> return empty obj
-	// if data -> js obj or else?
-	// if isnot obj -> just data
-	// if is js obj => jsonify
-	const type = !isDataExist ? 'noop' : isFormData ? 'formdata' : 'json'
+  // if no data -> return empty obj
+  // if data -> js obj or else?
+  // if isnot obj -> just data
+  // if is js obj => jsonify
+  const type = !isDataExist ? "noop" : isFormData ? "formdata" : "json";
 
-	return transform[type](data)
+  return transform[type](data);
 }
 
-export const get = requestWrapper('GET')
-export const post = requestWrapper('POST')
-export const put = requestWrapper('PUT')
-export const patch = requestWrapper('PATCH')
-export const deleteRequest = requestWrapper('DELETE')
+export const get = requestWrapper("GET");
+export const post = requestWrapper("POST");
+export const put = requestWrapper("PUT");
+export const patch = requestWrapper("PATCH");
+export const deleteRequest = requestWrapper("DELETE");
 // USAGE:
 // get('https://www.google.com', options)
 //

@@ -1,11 +1,12 @@
 // Import `auth` reducer and initialState for this
-import { auth as reducer, initialState } from "reducers/auth";
+import { auth as reducer } from "common/reducers/auth";
+import { initialState } from "common/reducers/auth";
 // Import all actions
 import {
   LOGIN_AUTH_SUCCESS,
   LOGIN_AUTH_FAIL,
   LOGOUT_AUTH_SUCCESS
-} from "actions/auth";
+} from "common/actions/auth";
 
 describe("AUTH REDUCER", () => {
   // Does reducer return `initialState` on empty action type?

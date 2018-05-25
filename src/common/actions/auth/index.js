@@ -1,11 +1,11 @@
 // @flow
 
-export const LOGIN_AUTH = 'LOGIN_AUTH'
-export const LOGOUT_AUTH = 'LOGOUT_AUTH'
-export const LOGIN_AUTH_SUCCESS = 'LOGIN_AUTH_SUCCESS'
-export const LOGIN_AUTH_FAIL = 'LOGIN_AUTH_FAIL'
-export const LOGOUT_AUTH_SUCCESS = 'LOGOUT_AUTH_SUCCESS'
-export const LOGOUT_AUTH_FAIL = 'LOGOUT_AUTH_FAIL'
+export const LOGIN_AUTH = "LOGIN_AUTH";
+export const LOGOUT_AUTH = "LOGOUT_AUTH";
+export const LOGIN_AUTH_SUCCESS = "LOGIN_AUTH_SUCCESS";
+export const LOGIN_AUTH_FAIL = "LOGIN_AUTH_FAIL";
+export const LOGOUT_AUTH_SUCCESS = "LOGOUT_AUTH_SUCCESS";
+export const LOGOUT_AUTH_FAIL = "LOGOUT_AUTH_FAIL";
 
 export type LOGIN_AUTH_SUCCESS_TYPE = {
   type: "LOGIN_AUTH_SUCCESS",
@@ -32,13 +32,13 @@ export type LOGOUT_AUTH_FAIL_TYPE = {
  *
  * @return {object} An action object with type LOGIN_AUTH
  */
-export function login (loginFormData, form, promise) {
-	return {
-		type: LOGIN_AUTH,
-		payload: loginFormData,
-		form,
-		promise
-	}
+export function login(loginFormData, form, promise) {
+  return {
+    type: LOGIN_AUTH,
+    payload: loginFormData,
+    form,
+    promise
+  };
 }
 /**
  * Logout of the system
@@ -46,10 +46,10 @@ export function login (loginFormData, form, promise) {
  *
  * @return {object} An action object with type LOGIN_AUTH
  */
-export function logout () {
-	return {
-		type: LOGOUT_AUTH
-	}
+export function logout() {
+  return {
+    type: LOGOUT_AUTH
+  };
 }
 
 /**
@@ -59,11 +59,11 @@ export function logout () {
  *
  * @return {object} An action object with type LOGIN_AUTH_SUCCESS
  */
-export function loginSuccess (user) {
-	return {
-		type: LOGIN_AUTH_SUCCESS,
-		payload: user
-	}
+export function loginSuccess(user) {
+  return {
+    type: LOGIN_AUTH_SUCCESS,
+    payload: user
+  };
 }
 
 /**
@@ -73,11 +73,11 @@ export function loginSuccess (user) {
  *
  * @return {object} An action object with type LOGIN_AUTH_FAIL
  */
-export function loginFail (error) {
-	return {
-		type: LOGIN_AUTH_FAIL,
-		payload: error
-	}
+export function loginFail(error) {
+  return {
+    type: LOGIN_AUTH_FAIL,
+    payload: error
+  };
 }
 
 /**
@@ -87,11 +87,11 @@ export function loginFail (error) {
  *
  * @return {object} An action object with type LOGOUT_AUTH_SUCCESS
  */
-export function logoutSuccess (user) {
-	return {
-		type: LOGOUT_AUTH_SUCCESS,
-		payload: user
-	}
+export function logoutSuccess(user) {
+  return {
+    type: LOGOUT_AUTH_SUCCESS,
+    payload: user
+  };
 }
 
 /**
@@ -101,9 +101,9 @@ export function logoutSuccess (user) {
  *
  * @return {object} An action object with type LOGOUT_AUTH_FAIL
  */
-export function logoutFail (error) {
-	return {
-		type: LOGOUT_AUTH_FAIL,
-		payload: error
-	}
+export function logoutFail(error) {
+  return {
+    type: LOGOUT_AUTH_FAIL,
+    payload: error
+  };
 }

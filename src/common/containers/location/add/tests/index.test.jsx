@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import LocationAdd from "./index.jsx";
+import LocationAdd from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
 describe("<LocationAdd />", () => {
-  it("should render the header", () => {
+  it("should render LocationAdd", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
         <LocationAdd />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Location</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<LocationAdd />)).toBe(true);
   });
 });

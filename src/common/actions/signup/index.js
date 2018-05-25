@@ -1,10 +1,10 @@
 // @flow
-import { signupAPI } from 'api/SignupSvc'
-import { SubmissionError } from 'redux-form'
+import { signupAPI } from "api/SignupSvc";
+import { SubmissionError } from "redux-form";
 
-export const SIGNUP = 'SIGNUP'
-export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS'
-export const SIGNUP_FAIL = 'SIGNUP_FAIL'
+export const SIGNUP = "SIGNUP";
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNUP_FAIL = "SIGNUP_FAIL";
 
 export type SIGNUP_SUCCESS_TYPE = {
   type: SIGNUP_SUCCESS,
@@ -22,13 +22,13 @@ export type SIGNUP_FAIL_TYPE = {
  *
  * @return {object} An action object with type SIGNUP
  */
-export function signup (signupFormData, form, promise) {
-	return {
-		type: SIGNUP,
-		payload: signupFormData,
-		form,
-		promise
-	}
+export function signup(signupFormData, form, promise) {
+  return {
+    type: SIGNUP,
+    payload: signupFormData,
+    form,
+    promise
+  };
 }
 
 /**
@@ -38,11 +38,11 @@ export function signup (signupFormData, form, promise) {
  *
  * @return {object} An action object with type SIGNUP_SUCCESS
  */
-export function signupSuccess (user) {
-	return {
-		type: SIGNUP_SUCCESS,
-		payload: user
-	}
+export function signupSuccess(user) {
+  return {
+    type: SIGNUP_SUCCESS,
+    payload: user
+  };
 }
 
 /**
@@ -52,9 +52,9 @@ export function signupSuccess (user) {
  *
  * @return {object} An action object with type SIGNUP_FAIL
  */
-export function signupFail (error) {
-	return {
-		type: SIGNUP_FAIL,
-		payload: error
-	}
+export function signupFail(error) {
+  return {
+    type: SIGNUP_FAIL,
+    payload: error
+  };
 }

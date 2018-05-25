@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import TaskEdit from "./index.jsx";
+import TaskEdit from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
 describe("<TaskEdit />", () => {
-  it("should render the header", () => {
+  it("should render the TaskEdit", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
         <TaskEdit />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Task</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<TaskEdit />)).toBe(true);
   });
 });

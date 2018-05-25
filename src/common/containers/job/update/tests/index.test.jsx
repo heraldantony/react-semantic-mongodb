@@ -4,24 +4,18 @@ import { shallow, render } from "enzyme";
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
 
-import JobEdit from "./index.jsx";
+import JobUpdate from "../index.jsx";
 
 const mockStore = configureMockStore();
 const store = mockStore({});
 
-describe("<JobEdit />", () => {
-  it("should render the header", () => {
+describe("<JobUpdate />", () => {
+  it("should render JobUpdate", () => {
     const renderedComponent = shallow(
       <Provider store={store}>
-        <JobEdit />
+        <JobUpdate />
       </Provider>
     );
-    expect(
-      renderedComponent.contains(
-        <Helmet>
-          <title>Job</title>
-        </Helmet>
-      )
-    ).toBe(true);
+    expect(renderedComponent.contains(<JobUpdate />)).toBe(true);
   });
 });
