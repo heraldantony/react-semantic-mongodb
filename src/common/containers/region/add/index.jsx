@@ -144,7 +144,6 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
   add(data) {
-    console.log(data);
     return new Promise((resolve, reject) => {
       return dispatch(addRegion(data, "REGION_ADD_FORM", { resolve, reject }));
     });

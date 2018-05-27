@@ -45,19 +45,19 @@ describe("Department Reducer", () => {
   describe("addDepartmentSuccess", () => {
     it("should update state with add results", () => {
       const department = {
-        _id: "7a20df89-1692-4cca-9eed-1dff9c4a7d59",
-        departmentName: "Marketing",
+        _id: "ead82594-40fe-4e42-a0a3-4dbaf524333b",
+        departmentName: "Communications",
         location: {
-          _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-          streetAddress: "473 Kuhn Plains",
-          postalCode: "09305-0399",
-          city: "Wainoshire",
-          stateProvince: "Wisconsin",
+          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+          streetAddress: "15615 Prosacco Alley",
+          postalCode: "69000",
+          city: "Lake Anaton",
+          stateProvince: "Michigan",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
@@ -86,19 +86,19 @@ describe("Department Reducer", () => {
   describe("saveDepartmentSuccess", () => {
     it("should update state with save results", () => {
       const department = {
-        _id: "7a20df89-1692-4cca-9eed-1dff9c4a7d59",
-        departmentName: "Marketing",
+        _id: "ead82594-40fe-4e42-a0a3-4dbaf524333b",
+        departmentName: "Communications",
         location: {
-          _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-          streetAddress: "473 Kuhn Plains",
-          postalCode: "09305-0399",
-          city: "Wainoshire",
-          stateProvince: "Wisconsin",
+          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+          streetAddress: "15615 Prosacco Alley",
+          postalCode: "69000",
+          city: "Lake Anaton",
+          stateProvince: "Michigan",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
@@ -127,19 +127,19 @@ describe("Department Reducer", () => {
   describe("updateDepartmentSuccess", () => {
     it("should update state with update results", () => {
       const department = {
-        _id: "7a20df89-1692-4cca-9eed-1dff9c4a7d59",
-        departmentName: "Marketing",
+        _id: "ead82594-40fe-4e42-a0a3-4dbaf524333b",
+        departmentName: "Communications",
         location: {
-          _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-          streetAddress: "473 Kuhn Plains",
-          postalCode: "09305-0399",
-          city: "Wainoshire",
-          stateProvince: "Wisconsin",
+          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+          streetAddress: "15615 Prosacco Alley",
+          postalCode: "69000",
+          city: "Lake Anaton",
+          stateProvince: "Michigan",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
@@ -169,39 +169,19 @@ describe("Department Reducer", () => {
     it("should update state with search results", () => {
       const departments = [
         {
-          _id: "7a20df89-1692-4cca-9eed-1dff9c4a7d59",
-          departmentName: "Marketing",
-          location: {
-            _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-            streetAddress: "473 Kuhn Plains",
-            postalCode: "09305-0399",
-            city: "Wainoshire",
-            stateProvince: "Wisconsin",
-            country: {
-              _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-              countryName: "Antigua and Barbuda",
-              region: {
-                _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
-                regionName: "South-east Asia"
-              }
-            }
-          },
-          undefined: []
-        },
-        {
-          _id: "0bd5e5b2-0764-4d80-9f49-3239d38172d9",
+          _id: "ead82594-40fe-4e42-a0a3-4dbaf524333b",
           departmentName: "Communications",
           location: {
-            _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-            streetAddress: "473 Kuhn Plains",
-            postalCode: "09305-0399",
-            city: "Wainoshire",
-            stateProvince: "Wisconsin",
+            _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+            streetAddress: "15615 Prosacco Alley",
+            postalCode: "69000",
+            city: "Lake Anaton",
+            stateProvince: "Michigan",
             country: {
-              _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-              countryName: "Antigua and Barbuda",
+              _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+              countryName: "Aruba",
               region: {
-                _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+                _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
                 regionName: "South-east Asia"
               }
             }
@@ -209,19 +189,39 @@ describe("Department Reducer", () => {
           undefined: []
         },
         {
-          _id: "0f398865-deda-4e35-89f4-9c2ee0a2df59",
-          departmentName: "Program",
+          _id: "577923db-db20-4322-8562-28e08dd28bef",
+          departmentName: "Solutions",
           location: {
-            _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-            streetAddress: "473 Kuhn Plains",
-            postalCode: "09305-0399",
-            city: "Wainoshire",
-            stateProvince: "Wisconsin",
+            _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+            streetAddress: "15615 Prosacco Alley",
+            postalCode: "69000",
+            city: "Lake Anaton",
+            stateProvince: "Michigan",
             country: {
-              _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-              countryName: "Antigua and Barbuda",
+              _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+              countryName: "Aruba",
               region: {
-                _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+                _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+                regionName: "South-east Asia"
+              }
+            }
+          },
+          undefined: []
+        },
+        {
+          _id: "d760be3b-3b1f-42da-9d52-5f0d080a05b6",
+          departmentName: "Group",
+          location: {
+            _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+            streetAddress: "15615 Prosacco Alley",
+            postalCode: "69000",
+            city: "Lake Anaton",
+            stateProvince: "Michigan",
+            country: {
+              _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+              countryName: "Aruba",
+              region: {
+                _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
                 regionName: "South-east Asia"
               }
             }
@@ -251,19 +251,19 @@ describe("Department Reducer", () => {
   describe("getDepartmentSuccess", () => {
     it("should update state with get results", () => {
       const department = {
-        _id: "7a20df89-1692-4cca-9eed-1dff9c4a7d59",
-        departmentName: "Marketing",
+        _id: "ead82594-40fe-4e42-a0a3-4dbaf524333b",
+        departmentName: "Communications",
         location: {
-          _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-          streetAddress: "473 Kuhn Plains",
-          postalCode: "09305-0399",
-          city: "Wainoshire",
-          stateProvince: "Wisconsin",
+          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+          streetAddress: "15615 Prosacco Alley",
+          postalCode: "69000",
+          city: "Lake Anaton",
+          stateProvince: "Michigan",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
@@ -292,16 +292,16 @@ describe("Department Reducer", () => {
   describe("setLocation", () => {
     it("should update state with location", () => {
       const location = {
-        _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-        streetAddress: "473 Kuhn Plains",
-        postalCode: "09305-0399",
-        city: "Wainoshire",
-        stateProvince: "Wisconsin",
+        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+        streetAddress: "15615 Prosacco Alley",
+        postalCode: "69000",
+        city: "Lake Anaton",
+        stateProvince: "Michigan",
         country: {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -324,14 +324,14 @@ describe("Department Reducer", () => {
   describe("addEmployee", () => {
     it("should update state with employee", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
 

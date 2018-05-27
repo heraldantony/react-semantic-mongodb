@@ -43,7 +43,7 @@ describe("Region Reducer", () => {
   describe("addRegionSuccess", () => {
     it("should update state with add results", () => {
       const region = {
-        _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -68,7 +68,7 @@ describe("Region Reducer", () => {
   describe("saveRegionSuccess", () => {
     it("should update state with save results", () => {
       const region = {
-        _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -93,7 +93,7 @@ describe("Region Reducer", () => {
   describe("updateRegionSuccess", () => {
     it("should update state with update results", () => {
       const region = {
-        _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -119,12 +119,12 @@ describe("Region Reducer", () => {
     it("should update state with search results", () => {
       const regions = [
         {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         },
-        { _id: "36d683a3-5cca-4e50-ab21-22e389320751", regionName: "Africa" },
+        { _id: "11bdc542-351f-4844-8768-5f84bd84f5f7", regionName: "Africa" },
         {
-          _id: "cb39471b-3103-4801-8f0d-10618edfc7a7",
+          _id: "83c34b6f-fff9-412a-a8f2-31fb358b2881",
           regionName: "Eastern Europe"
         }
       ];
@@ -150,7 +150,7 @@ describe("Region Reducer", () => {
   describe("getRegionSuccess", () => {
     it("should update state with get results", () => {
       const region = {
-        _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };

@@ -25,16 +25,15 @@ import { jobAddAPI } from "common/api/JobSvc";
  *
  */
 export function* doAddJob(action) {
-  console.log(action);
   const { resolve, reject } = action.promise;
   // Start submitting, won't trigger setSubmitSucceeded()
-  yield put(startSubmit(action.form));
+  yield call(startSubmit, action.form);
   try {
     const result = yield call(jobAddAPI, action.payload);
     if (result.ok) {
       yield put(addJobSuccess(result.data));
-      yield put(reset(action.form));
-      yield put(stopSubmit(action.form));
+      yield call(reset, action.form);
+      yield call(stopSubmit, action.form);
       resolve(true);
     } else {
       yield put(addJobFail(result.data.message || "Failed to add Job"));

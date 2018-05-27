@@ -29,16 +29,15 @@ import { taskSearchAPI } from "common/api/TaskSvc";
  *
  */
 export function* doSearchTask(action) {
-  console.log(action);
   const { resolve, reject } = action.promise;
   // Start submitting, won't trigger setSubmitSucceeded()
-  yield put(startSubmit(action.form));
+  yield call(startSubmit, action.form);
   try {
     const result = yield call(taskSearchAPI, action.payload);
     if (result.ok) {
       yield put(searchTaskSuccess(result.data.docs));
-      yield put(reset(action.form));
-      yield put(stopSubmit(action.form));
+      yield call(reset, action.form);
+      yield call(stopSubmit, action.form);
       resolve(true);
     } else {
       yield put(searchTaskFail(result.data.message || "Failed to search Task"));

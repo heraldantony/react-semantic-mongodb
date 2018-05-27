@@ -61,10 +61,10 @@ describe("Country Actions", () => {
   describe("addCountry", () => {
     it("should return the correct action with add data, form name, and promise", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -84,10 +84,10 @@ describe("Country Actions", () => {
   describe("addCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -115,10 +115,10 @@ describe("Country Actions", () => {
   describe("saveCountry", () => {
     it("should return the correct action with save data, form name, and promise", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -138,10 +138,10 @@ describe("Country Actions", () => {
   describe("saveCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -169,10 +169,10 @@ describe("Country Actions", () => {
   describe("updateCountry", () => {
     it("should return the correct action with update data, form name, and promise", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -192,10 +192,10 @@ describe("Country Actions", () => {
   describe("updateCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -222,7 +222,7 @@ describe("Country Actions", () => {
 
   describe("getCountry", () => {
     it("should return the correct action with Country ID", () => {
-      const countryId = "388be6d8-9bf6-40fa-b7a2-4f323c3d023a";
+      const countryId = "f8057f81-9663-4c01-a556-dfe45c72fb50";
       const expectedResult = {
         type: COUNTRY_GET,
         payload: countryId
@@ -235,10 +235,10 @@ describe("Country Actions", () => {
   describe("getCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };
@@ -282,26 +282,26 @@ describe("Country Actions", () => {
     it("should return the correct action with results", () => {
       const countries = [
         {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "414e1795-c6f1-4029-84d4-5b6226876d67",
-          countryName: "Slovenia",
+          _id: "85557c53-86ff-4b3e-9ef3-80d28ead6984",
+          countryName: "Sri Lanka",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "6131238b-f0b8-4ddf-b48c-44e6ca0e1b7e",
-          countryName: "Costa Rica",
+          _id: "06073e89-83f8-4657-8da1-02a708e328ff",
+          countryName: "Kyrgyz Republic",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -330,7 +330,7 @@ describe("Country Actions", () => {
   describe("setRegion", () => {
     it("should return the correct action with region", () => {
       const region = {
-        _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
         regionName: "South-east Asia"
       };
       const expectedResult = {

@@ -29,16 +29,15 @@ import { regionAddAPI } from "common/api/RegionSvc";
  *
  */
 export function* doAddRegion(action) {
-  console.log(action);
   const { resolve, reject } = action.promise;
   // Start submitting, won't trigger setSubmitSucceeded()
-  yield put(startSubmit(action.form));
+  yield call(startSubmit, action.form);
   try {
     const result = yield call(regionAddAPI, action.payload);
     if (result.ok) {
       yield put(addRegionSuccess(result.data));
-      yield put(reset(action.form));
-      yield put(stopSubmit(action.form));
+      yield call(reset, action.form);
+      yield call(stopSubmit, action.form);
       resolve(true);
     } else {
       yield put(addRegionFail(result.data.message || "Failed to add Region"));

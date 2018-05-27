@@ -61,14 +61,14 @@ describe("Employee Actions", () => {
   describe("addEmployee", () => {
     it("should return the correct action with add data, form name, and promise", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const form = "EMPLOYEE_ADD_FORM";
@@ -87,14 +87,14 @@ describe("Employee Actions", () => {
   describe("addEmployeeSuccess", () => {
     it("should return the correct action with results", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const expectedResult = {
@@ -121,14 +121,14 @@ describe("Employee Actions", () => {
   describe("saveEmployee", () => {
     it("should return the correct action with save data, form name, and promise", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const form = "EMPLOYEE_SAVE_FORM";
@@ -147,14 +147,14 @@ describe("Employee Actions", () => {
   describe("saveEmployeeSuccess", () => {
     it("should return the correct action with results", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const expectedResult = {
@@ -181,14 +181,14 @@ describe("Employee Actions", () => {
   describe("updateEmployee", () => {
     it("should return the correct action with update data, form name, and promise", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const form = "EMPLOYEE_UPDATE_FORM";
@@ -207,14 +207,14 @@ describe("Employee Actions", () => {
   describe("updateEmployeeSuccess", () => {
     it("should return the correct action with results", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const expectedResult = {
@@ -240,7 +240,7 @@ describe("Employee Actions", () => {
 
   describe("getEmployee", () => {
     it("should return the correct action with Employee ID", () => {
-      const employeeId = "7be2a9f1-706a-4105-9f1c-e3f6d8c56504";
+      const employeeId = "595533cc-8c3d-4d69-9106-1e1bc8a0ccda";
       const expectedResult = {
         type: EMPLOYEE_GET,
         payload: employeeId
@@ -253,14 +253,14 @@ describe("Employee Actions", () => {
   describe("getEmployeeSuccess", () => {
     it("should return the correct action with results", () => {
       const employee = {
-        _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-        firstName: "Lawson",
-        lastName: "Mante",
-        email: "Mateo75@gmail.com",
-        phoneNumber: "494-300-7018 x6451",
-        hireDate: "2018-01-24T17:41:26.556Z",
-        salary: 98998,
-        commissionPct: 67245,
+        _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+        firstName: "Wallace",
+        lastName: "Pollich",
+        email: "Kara38@gmail.com",
+        phoneNumber: "1-701-546-0394 x188",
+        hireDate: "2017-10-21T22:25:56.081Z",
+        salary: 6438,
+        commissionPct: 44475,
         undefined: []
       };
       const expectedResult = {
@@ -303,36 +303,36 @@ describe("Employee Actions", () => {
     it("should return the correct action with results", () => {
       const employees = [
         {
-          _id: "7be2a9f1-706a-4105-9f1c-e3f6d8c56504",
-          firstName: "Lawson",
-          lastName: "Mante",
-          email: "Mateo75@gmail.com",
-          phoneNumber: "494-300-7018 x6451",
-          hireDate: "2018-01-24T17:41:26.556Z",
-          salary: 98998,
-          commissionPct: 67245,
+          _id: "595533cc-8c3d-4d69-9106-1e1bc8a0ccda",
+          firstName: "Wallace",
+          lastName: "Pollich",
+          email: "Kara38@gmail.com",
+          phoneNumber: "1-701-546-0394 x188",
+          hireDate: "2017-10-21T22:25:56.081Z",
+          salary: 6438,
+          commissionPct: 44475,
           undefined: []
         },
         {
-          _id: "5081d0e3-6389-4954-b309-303a43bea3c9",
-          firstName: "Malvina",
-          lastName: "Wolf",
-          email: "Nicolas32@gmail.com",
-          phoneNumber: "(493) 651-8635",
-          hireDate: "2017-07-01T02:57:37.629Z",
-          salary: 80030,
-          commissionPct: 27961,
+          _id: "a10c5c2e-1bc4-4420-9e01-9903ff279a07",
+          firstName: "Derick",
+          lastName: "Pfeffer",
+          email: "Felton.Hansen37@yahoo.com",
+          phoneNumber: "759-856-0321 x4561",
+          hireDate: "2017-07-07T18:05:18.274Z",
+          salary: 85216,
+          commissionPct: 95379,
           undefined: []
         },
         {
-          _id: "e0471afb-1c6d-4719-9723-2aa6b7feff75",
-          firstName: "Kim",
-          lastName: "Beier",
-          email: "Hayden64@gmail.com",
-          phoneNumber: "437.658.5812 x4051",
-          hireDate: "2017-12-29T07:39:12.119Z",
-          salary: 3034,
-          commissionPct: 72127,
+          _id: "80e75d2c-1cef-4c5a-bf35-abdd46462568",
+          firstName: "Jaron",
+          lastName: "Koelpin",
+          email: "Watson.Batz@yahoo.com",
+          phoneNumber: "514-926-5302 x1530",
+          hireDate: "2017-06-16T09:49:47.342Z",
+          salary: 83923,
+          commissionPct: 96603,
           undefined: []
         }
       ];
@@ -360,10 +360,10 @@ describe("Employee Actions", () => {
   describe("addJob", () => {
     it("should return the correct action with job", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
       const expectedResult = {

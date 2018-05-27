@@ -1,77 +1,66 @@
-import configureMockStore from "redux-mock-store";
-import thunk from "redux-thunk";
-import nock from "nock";
-// Import all redux actions
+// @flow
+/*
+ * Test user signup actions
+ *
+*/
 import {
-  SIGNUP_SUCCESS,
+  SIGNUP,
   SIGNUP_FAIL,
-  SIGNUP_PENDING,
+  SIGNUP_SUCCESS,
   signup,
   signupSuccess,
   signupFail
 } from "common/actions/signup";
-// Add middlewares that our mock store will use
-// It can be redux-thunk or routingMiddleware from `react-router-redux`
-// Or any other middleware that you use in your app
-const middlewares = [thunk];
-// Create mockStore for testing
-const mockStore = configureMockStore(middlewares);
+
+import type {
+  SIGNUP_SUCCESS_TYPE,
+  SIGNUP_FAIL_TYPE
+} from "common/actions/signup ";
 
 describe("Signup actions", () => {
-  describe("SIGNUP", () => {
-    test("creates SIGNUP_SUCCESS when SIGNUP was successful", done => {
-      const successPayload = {
-        token: "nothing"
+  describe("signup", () => {
+    it("should return the correct action with user signup data, form name, and promise", () => {
+      const user = {
+        username: "test",
+        password: "test123",
+        email: "test@test.test"
+      };
+      const form = "SIGNUP_FORM";
+      const promise = {};
+      const expectedResult = {
+        type: SIGNUP,
+        payload: user,
+        form: form,
+        promise: promise
       };
 
-      nock(process.env.BASE_API)
-        .post("/signup")
-        .reply(200, successPayload);
-      // Create expected output of your action
-      const expectedActions = [
-        {
-          type: SIGNUP_SUCCESS,
-          payload: successPayload
-        }
-      ];
-      // Create store for testing
-      const store = mockStore({});
-      // Dispatch action
-      store.dispatch(signup()).then(() => {
-        // Compare expected and real outputs
-        expect(store.getActions()).toEqual(expectedActions);
-        // Call `done()` callback, because action is async
-        done();
-      });
+      expect(signup(user, form, promise)).toEqual(expectedResult);
     });
+  });
 
-    test("creates SIGNUP_FAIL when SIGNUP was unsuccessful", done => {
-      // Create expected output of your action
-      const errorPayload = {
-        errors: {}
+  describe("signupSuccess", () => {
+    it("should return the correct action with results", () => {
+      const user = {
+        username: "test"
+      };
+      const expectedResult = {
+        type: SIGNUP_SUCCESS,
+        payload: user
       };
 
-      const expectedActions = [
-        {
-          type: SIGNUP_FAIL,
-          error: true,
-          meta: null,
-          payload: errorPayload
-        }
-      ];
+      expect(signupSuccess(user)).toEqual(expectedResult);
+    });
+  });
 
-      nock(process.env.BASE_API)
-        .post("/auth")
-        .reply(400, errorPayload);
-      // Create store for testing
-      const store = mockStore({});
-      // Dispatch action
-      store.dispatch(signup()).then(res => {
-        // Compare expected and real outputs
-        expect(store.getActions()).toEqual(expectedActions);
-        // Call `done()`, because test is async
-        done();
-      });
+  describe("signupFail", () => {
+    it("should return the correct action with error", () => {
+      const error = "Some random error";
+      const expectedResult = {
+        type: SIGNUP_FAIL,
+        error: error
+      };
+
+      expect(signupFail(error)).toEqual(expectedResult);
     });
   });
 });

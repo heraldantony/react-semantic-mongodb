@@ -29,7 +29,6 @@ import { regionGetAPI } from "common/api/RegionSvc";
  *
  */
 export function* doGetRegion(action) {
-  console.log(action);
   try {
     const result = yield call(regionGetAPI, action.payload);
     if (result.ok) {

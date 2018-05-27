@@ -206,14 +206,12 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
   add(data) {
-    console.log(data);
     return new Promise((resolve, reject) => {
       return dispatch(addJob(data, "JOB_ADD_FORM", { resolve, reject }));
     });
   },
 
   addTask(task) {
-    console.log("addTask");
     return dispatch(addTaskAction(task));
   }
 });

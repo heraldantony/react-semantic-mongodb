@@ -29,7 +29,6 @@ import { countryGetAPI } from "common/api/CountrySvc";
  *
  */
 export function* doGetCountry(action) {
-  console.log(action);
   try {
     const result = yield call(countryGetAPI, action.payload);
     if (result.ok) {

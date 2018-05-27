@@ -46,9 +46,10 @@ export function login(loginFormData, form, promise) {
  *
  * @return {object} An action object with type LOGIN_AUTH
  */
-export function logout() {
+export function logout(user) {
   return {
-    type: LOGOUT_AUTH
+    type: LOGOUT_AUTH,
+    payload: user
   };
 }
 
@@ -76,7 +77,7 @@ export function loginSuccess(user) {
 export function loginFail(error) {
   return {
     type: LOGIN_AUTH_FAIL,
-    payload: error
+    error: error
   };
 }
 
@@ -104,6 +105,6 @@ export function logoutSuccess(user) {
 export function logoutFail(error) {
   return {
     type: LOGOUT_AUTH_FAIL,
-    payload: error
+    error: error
   };
 }

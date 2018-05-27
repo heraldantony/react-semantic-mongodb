@@ -1,94 +1,117 @@
-import configureMockStore from "redux-mock-store";
-import thunk from "redux-thunk";
-import nock from "nock";
+// @flow
+/*
+ * Test  login/logout actions
+ *
+*/
+
 // Import all redux actions
 import {
+  LOGIN_AUTH,
   LOGIN_AUTH_SUCCESS,
   LOGIN_AUTH_FAIL,
-  LOGIN_AUTH_PENDING,
+  LOGOUT_AUTH,
   LOGOUT_AUTH_SUCCESS,
+  LOGOUT_AUTH_FAIL,
   login,
-  logout
+  loginSuccess,
+  loginFail,
+  logout,
+  logoutSuccess,
+  logoutFail
 } from "common/actions/auth";
-// Add middlewares that our mock store will use
-// It can be redux-thunk or routingMiddleware from `react-router-redux`
-// Or any other middleware that you use in your app
-const middlewares = [thunk];
-// Create mockStore for testing
-const mockStore = configureMockStore(middlewares);
+import type {
+  LOGIN_AUTH_SUCCESS_TYPE,
+  LOGIN_AUTH_FAIL_TYPE,
+  LOGOUT_AUTH_SUCCESS_TYPE,
+  LOGOUT_AUTH_FAIL_TYPE
+} from "common/actions/auth";
 
 describe("Auth actions", () => {
-  describe("LOGIN_AUTH", () => {
-    test("creates LOGIN_AUTH_SUCCESS when LOGIN_AUTH was successful", done => {
-      const successPayload = {
-        token: "nothing"
+  describe("login", () => {
+    it("should return the correct action with user login data, form name, and promise", () => {
+      const user = {
+        username: "test",
+        password: "test123"
+      };
+      const form = "LOGIN_FORM";
+      const promise = {};
+      const expectedResult = {
+        type: LOGIN_AUTH,
+        payload: user,
+        form: form,
+        promise: promise
       };
 
-      nock(process.env.BASE_API)
-        .post("/auth")
-        .reply(200, successPayload);
-      // Create expected output of your action
-      const expectedActions = [
-        {
-          type: LOGIN_AUTH_SUCCESS,
-          payload: successPayload
-        }
-      ];
-      // Create store for testing
-      const store = mockStore({});
-      // Dispatch action
-      store.dispatch(login()).then(() => {
-        // Compare expected and real outputs
-        expect(store.getActions()).toEqual(expectedActions);
-        // Call `done()` callback, because action is async
-        done();
-      });
-    });
-
-    test("creates LOGIN_AUTH_FAIL when LOGIN_AUTH was unsuccessful", done => {
-      // Create expected output of your action
-      const errorPayload = {
-        errors: {}
-      };
-
-      const expectedActions = [
-        {
-          type: LOGIN_AUTH_FAIL,
-          error: true,
-          meta: null,
-          payload: errorPayload
-        }
-      ];
-
-      nock(process.env.BASE_API)
-        .post("/auth")
-        .reply(400, errorPayload);
-      // Create store for testing
-      const store = mockStore({});
-      // Dispatch action
-      store.dispatch(login()).then(res => {
-        // Compare expected and real outputs
-        expect(store.getActions()).toEqual(expectedActions);
-        // Call `done()`, because test is async
-        done();
-      });
+      expect(login(user, form, promise)).toEqual(expectedResult);
     });
   });
 
-  describe("LOGOUT_AUTH", () => {
-    test("creates LOGOUT_AUTH_SUCCESS on LOGOUT_AUTH", () => {
-      // Create expected output of your action
-      const expectedActions = [
-        {
-          type: LOGOUT_AUTH_SUCCESS
-        }
-      ];
-      // Create store for testing
-      const store = mockStore({});
-      // Dispatch action
-      store.dispatch(logout());
-      // Compare expected and real outputs
-      expect(store.getActions()).toEqual(expectedActions);
+  describe("loginSuccess", () => {
+    it("should return the correct action with results", () => {
+      const user = {
+        username: "test",
+        token: "123456"
+      };
+      const expectedResult = {
+        type: LOGIN_AUTH_SUCCESS,
+        payload: user
+      };
+
+      expect(loginSuccess(user)).toEqual(expectedResult);
+    });
+  });
+
+  describe("loginFail", () => {
+    it("should return the correct action with error", () => {
+      const error = "Some random error";
+      const expectedResult = {
+        type: LOGIN_AUTH_FAIL,
+        error: error
+      };
+
+      expect(loginFail(error)).toEqual(expectedResult);
+    });
+  });
+
+  describe("logout", () => {
+    it("should return the correct action with user data", () => {
+      const user = {
+        username: "test",
+        token: "12345"
+      };
+      const expectedResult = {
+        type: LOGOUT_AUTH,
+        payload: user
+      };
+
+      expect(logout(user)).toEqual(expectedResult);
+    });
+  });
+
+  describe("logoutSuccess", () => {
+    it("should return the correct action with results", () => {
+      const user = {
+        username: "test",
+        token: "123456"
+      };
+      const expectedResult = {
+        type: LOGOUT_AUTH_SUCCESS,
+        payload: user
+      };
+
+      expect(logoutSuccess(user)).toEqual(expectedResult);
+    });
+  });
+
+  describe("loginFail", () => {
+    it("should return the correct action with error", () => {
+      const error = "Some random error";
+      const expectedResult = {
+        type: LOGOUT_AUTH_FAIL,
+        error: error
+      };
+
+      expect(logoutFail(error)).toEqual(expectedResult);
     });
   });
 });

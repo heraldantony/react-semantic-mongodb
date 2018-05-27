@@ -29,7 +29,6 @@ import { departmentGetAPI } from "common/api/DepartmentSvc";
  *
  */
 export function* doGetDepartment(action) {
-  console.log(action);
   try {
     const result = yield call(departmentGetAPI, action.payload);
     if (result.ok) {

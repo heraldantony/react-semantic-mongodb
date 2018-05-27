@@ -233,7 +233,6 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
   add(data) {
-    console.log(data);
     return new Promise((resolve, reject) => {
       return dispatch(
         addDepartment(data, "DEPARTMENT_ADD_FORM", { resolve, reject })
@@ -242,12 +241,10 @@ const mapDispatchToProps = dispatch => ({
   },
 
   setLocation(location) {
-    console.log("setLocation");
     return dispatch(setLocationAction(location));
   },
 
   addEmployee(employee) {
-    console.log("addEmployee");
     return dispatch(addEmployeeAction(employee));
   }
 });

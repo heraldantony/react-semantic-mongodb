@@ -44,16 +44,16 @@ describe("Location Reducer", () => {
   describe("addLocationSuccess", () => {
     it("should update state with add results", () => {
       const location = {
-        _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-        streetAddress: "473 Kuhn Plains",
-        postalCode: "09305-0399",
-        city: "Wainoshire",
-        stateProvince: "Wisconsin",
+        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+        streetAddress: "15615 Prosacco Alley",
+        postalCode: "69000",
+        city: "Lake Anaton",
+        stateProvince: "Michigan",
         country: {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -80,16 +80,16 @@ describe("Location Reducer", () => {
   describe("saveLocationSuccess", () => {
     it("should update state with save results", () => {
       const location = {
-        _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-        streetAddress: "473 Kuhn Plains",
-        postalCode: "09305-0399",
-        city: "Wainoshire",
-        stateProvince: "Wisconsin",
+        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+        streetAddress: "15615 Prosacco Alley",
+        postalCode: "69000",
+        city: "Lake Anaton",
+        stateProvince: "Michigan",
         country: {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -116,16 +116,16 @@ describe("Location Reducer", () => {
   describe("updateLocationSuccess", () => {
     it("should update state with update results", () => {
       const location = {
-        _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-        streetAddress: "473 Kuhn Plains",
-        postalCode: "09305-0399",
-        city: "Wainoshire",
-        stateProvince: "Wisconsin",
+        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+        streetAddress: "15615 Prosacco Alley",
+        postalCode: "69000",
+        city: "Lake Anaton",
+        stateProvince: "Michigan",
         country: {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -153,46 +153,46 @@ describe("Location Reducer", () => {
     it("should update state with search results", () => {
       const locations = [
         {
-          _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-          streetAddress: "473 Kuhn Plains",
-          postalCode: "09305-0399",
-          city: "Wainoshire",
-          stateProvince: "Wisconsin",
-          country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
-            region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
-              regionName: "South-east Asia"
-            }
-          }
-        },
-        {
-          _id: "5d7a3974-f74a-4490-b58c-9bb0349f4da2",
-          streetAddress: "96307 Assunta Row",
-          postalCode: "18946-2615",
-          city: "New Frederick",
+          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+          streetAddress: "15615 Prosacco Alley",
+          postalCode: "69000",
+          city: "Lake Anaton",
           stateProvince: "Michigan",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
         },
         {
-          _id: "8bb8dad9-2a94-4274-8fb9-853d2098727d",
-          streetAddress: "193 Blake Fields",
-          postalCode: "81151",
-          city: "East Chaddfurt",
-          stateProvince: "Arkansas",
+          _id: "e45d6521-c81c-456d-81dc-744594b26184",
+          streetAddress: "6514 Wisoky Cliff",
+          postalCode: "21474-6864",
+          city: "Pollichside",
+          stateProvince: "New Jersey",
           country: {
-            _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-            countryName: "Antigua and Barbuda",
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
             region: {
-              _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+              regionName: "South-east Asia"
+            }
+          }
+        },
+        {
+          _id: "486b4125-2e8b-48f1-acef-feb135593b24",
+          streetAddress: "899 Kassulke Landing",
+          postalCode: "98961",
+          city: "South Adriannastad",
+          stateProvince: "Massachusetts",
+          country: {
+            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+            countryName: "Aruba",
+            region: {
+              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
               regionName: "South-east Asia"
             }
           }
@@ -220,16 +220,16 @@ describe("Location Reducer", () => {
   describe("getLocationSuccess", () => {
     it("should update state with get results", () => {
       const location = {
-        _id: "feaac422-2c05-4217-b331-e4dad3df6e1d",
-        streetAddress: "473 Kuhn Plains",
-        postalCode: "09305-0399",
-        city: "Wainoshire",
-        stateProvince: "Wisconsin",
+        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
+        streetAddress: "15615 Prosacco Alley",
+        postalCode: "69000",
+        city: "Lake Anaton",
+        stateProvince: "Michigan",
         country: {
-          _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-          countryName: "Antigua and Barbuda",
+          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+          countryName: "Aruba",
           region: {
-            _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
             regionName: "South-east Asia"
           }
         }
@@ -256,10 +256,10 @@ describe("Location Reducer", () => {
   describe("setCountry", () => {
     it("should update state with country", () => {
       const country = {
-        _id: "388be6d8-9bf6-40fa-b7a2-4f323c3d023a",
-        countryName: "Antigua and Barbuda",
+        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
+        countryName: "Aruba",
         region: {
-          _id: "e4be3b4c-fd32-4ee1-90f1-448ab389dd53",
+          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
           regionName: "South-east Asia"
         }
       };

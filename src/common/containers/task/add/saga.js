@@ -25,16 +25,15 @@ import { taskAddAPI } from "common/api/TaskSvc";
  *
  */
 export function* doAddTask(action) {
-  console.log(action);
   const { resolve, reject } = action.promise;
   // Start submitting, won't trigger setSubmitSucceeded()
-  yield put(startSubmit(action.form));
+  yield call(startSubmit, action.form);
   try {
     const result = yield call(taskAddAPI, action.payload);
     if (result.ok) {
       yield put(addTaskSuccess(result.data));
-      yield put(reset(action.form));
-      yield put(stopSubmit(action.form));
+      yield call(reset, action.form);
+      yield call(stopSubmit, action.form);
       resolve(true);
     } else {
       yield put(addTaskFail(result.data.message || "Failed to add Task"));

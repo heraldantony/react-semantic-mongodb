@@ -28,7 +28,6 @@ const checkDescriptor = descriptor => {
 
 export function injectSagaFactory(store, isValid) {
   return function injectSaga(key, descriptor = {}, args) {
-    console.log("saga key  = " + key);
     if (!isValid) checkStore(store);
 
     const newDescriptor = {

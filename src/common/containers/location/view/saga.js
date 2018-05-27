@@ -29,7 +29,6 @@ import { locationGetAPI } from "common/api/LocationSvc";
  *
  */
 export function* doGetLocation(action) {
-  console.log(action);
   try {
     const result = yield call(locationGetAPI, action.payload);
     if (result.ok) {

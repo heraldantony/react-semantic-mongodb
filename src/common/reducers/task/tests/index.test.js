@@ -44,11 +44,11 @@ describe("Task Reducer", () => {
   describe("addTaskSuccess", () => {
     it("should update state with add results", () => {
       const task = {
-        _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+        _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
         title:
-          "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+          "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
         description:
-          "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+          "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
         undefined: []
       };
       const expectedResult = { ...state, task: task };
@@ -69,11 +69,11 @@ describe("Task Reducer", () => {
   describe("saveTaskSuccess", () => {
     it("should update state with save results", () => {
       const task = {
-        _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+        _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
         title:
-          "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+          "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
         description:
-          "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+          "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
         undefined: []
       };
       const expectedResult = { ...state, task: task };
@@ -94,11 +94,11 @@ describe("Task Reducer", () => {
   describe("updateTaskSuccess", () => {
     it("should update state with update results", () => {
       const task = {
-        _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+        _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
         title:
-          "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+          "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
         description:
-          "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+          "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
         undefined: []
       };
       const expectedResult = { ...state, task: task };
@@ -122,26 +122,25 @@ describe("Task Reducer", () => {
     it("should update state with search results", () => {
       const tasks = [
         {
-          _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+          _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
           title:
-            "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+            "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
           description:
-            "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+            "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
           undefined: []
         },
         {
-          _id: "0e6c1592-51dc-44b0-b9c3-55babcc3d1b7",
-          title: "vel",
+          _id: "3ddf53d3-ad05-4249-9a1e-8815794ce5bd",
+          title: "Saepe voluptas deserunt illo non.",
           description:
-            "Repudiandae non quis voluptatum. Maiores qui autem error. Unde eum sit nostrum dolore in in hic dolores veniam. Rerum praesentium eaque omnis qui dolorem officiis excepturi. Culpa omnis est harum quae dicta amet labore consequatur exercitationem. Et voluptas necessitatibus asperiores vitae adipisci esse.",
+            "A rerum eos. Dolores minus quae similique labore et itaque necessitatibus. A ipsam ut ratione tempore aut et earum sit. Amet asperiores est ut aspernatur. Atque qui pariatur quia commodi eum. Rerum in autem doloribus sunt cum sequi voluptatem quia.",
           undefined: []
         },
         {
-          _id: "b2d6307c-a62d-4f44-8b9f-9201a376fdfb",
-          title:
-            "Incidunt tempore voluptate deleniti accusantium quis accusamus nostrum. Numquam eum voluptatum aut libero perspiciatis. Totam enim molestiae alias qui est nihil. Est et aliquam mollitia et ducimus nesciunt.\n \rTemporibus fugit odio illum laborum eos a sunt et. Nihil et vitae adipisci sequi velit aliquam et sunt ducimus. Rem quod sit est officia architecto. Iure ducimus quis commodi quos et qui. Perferendis impedit eum eum qui dolorem enim. Iusto suscipit repellat nobis est consectetur cum accusamus.\n \rVel et harum facilis et. Occaecati ratione vero aut. Quis officiis quis qui quia aut reiciendis deleniti aut facere. Beatae sequi sunt ipsum aspernatur et sint inventore.",
+          _id: "0d7f6e50-e5f4-4f71-a9f1-24878b486c15",
+          title: "Ipsum quam distinctio odit voluptas ad voluptate magnam.",
           description:
-            "Odit itaque cum. Qui in fugit qui sunt est repellat. Aliquid temporibus error.",
+            "Doloremque hic amet ullam numquam eveniet. Quo velit officia omnis. Est deleniti consequatur impedit id et.",
           undefined: []
         }
       ];
@@ -165,11 +164,11 @@ describe("Task Reducer", () => {
   describe("getTaskSuccess", () => {
     it("should update state with get results", () => {
       const task = {
-        _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+        _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
         title:
-          "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+          "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
         description:
-          "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+          "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
         undefined: []
       };
       const expectedResult = { ...state, task: task };
@@ -190,10 +189,10 @@ describe("Task Reducer", () => {
   describe("addJob", () => {
     it("should update state with job", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
 

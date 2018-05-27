@@ -28,23 +28,21 @@ describe("AUTH REDUCER", () => {
     // User is logged out after LOGOUT_AUTH_SUCCESS
     expect(reducer(loggedInState, logoutSuccess)).toEqual({
       ...loggedInState,
-      isLoggedIn: false
+      isLoggedIn: false,
+      error: ""
     });
   });
 
   it("should handle LOGIN_AUTH_FAIL if not logged in", () => {
     const action = {
       type: LOGIN_AUTH_FAIL,
-      payload: {
-        errors: {
-          hello: "world"
-        }
-      }
+      error: "Invalid credentials"
     };
     // User is logged out and has `errors` after LOGIN_AUTH_FAIL
     expect(reducer(initialState, action)).toEqual({
       ...initialState,
-      isLoggedIn: false
+      isLoggedIn: false,
+      error: action.error
     });
   });
 

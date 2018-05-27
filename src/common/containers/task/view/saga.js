@@ -25,7 +25,6 @@ import { taskGetAPI } from "common/api/TaskSvc";
  *
  */
 export function* doGetTask(action) {
-  console.log(action);
   try {
     const result = yield call(taskGetAPI, action.payload);
     if (result.ok) {

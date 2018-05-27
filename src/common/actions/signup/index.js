@@ -55,6 +55,6 @@ export function signupSuccess(user) {
 export function signupFail(error) {
   return {
     type: SIGNUP_FAIL,
-    payload: error
+    error: error
   };
 }

@@ -44,10 +44,10 @@ describe("Job Reducer", () => {
   describe("addJobSuccess", () => {
     it("should update state with add results", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
       const expectedResult = { ...state, job: job };
@@ -68,10 +68,10 @@ describe("Job Reducer", () => {
   describe("saveJobSuccess", () => {
     it("should update state with save results", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
       const expectedResult = { ...state, job: job };
@@ -92,10 +92,10 @@ describe("Job Reducer", () => {
   describe("updateJobSuccess", () => {
     it("should update state with update results", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
       const expectedResult = { ...state, job: job };
@@ -117,24 +117,24 @@ describe("Job Reducer", () => {
     it("should update state with search results", () => {
       const jobs = [
         {
-          _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-          jobTitle: "Product Applications Facilitator",
-          minSalary: 79081,
-          maxSalary: 97938,
+          _id: "cc63e617-b34c-4808-a000-7faf49595268",
+          jobTitle: "Central Program Assistant",
+          minSalary: 89368,
+          maxSalary: 13863,
           undefined: []
         },
         {
-          _id: "fac8722e-4a34-48d5-bf5e-6c5d1e6c4fce",
-          jobTitle: "Direct Intranet Representative",
-          minSalary: 52488,
-          maxSalary: 49930,
+          _id: "bf3691ab-a9f4-4c1a-942c-7335ebf10b92",
+          jobTitle: "Regional Assurance Planner",
+          minSalary: 41622,
+          maxSalary: 5260,
           undefined: []
         },
         {
-          _id: "ed50dd81-fe15-456e-9d4f-c548c03c5ed9",
-          jobTitle: "Direct Metrics Executive",
-          minSalary: 77403,
-          maxSalary: 5752,
+          _id: "27cce88f-85d6-43d8-9d7c-87e64938ab85",
+          jobTitle: "Global Web Agent",
+          minSalary: 52327,
+          maxSalary: 11640,
           undefined: []
         }
       ];
@@ -156,10 +156,10 @@ describe("Job Reducer", () => {
   describe("getJobSuccess", () => {
     it("should update state with get results", () => {
       const job = {
-        _id: "acb92846-feaf-4369-a853-e0b6ec3c8716",
-        jobTitle: "Product Applications Facilitator",
-        minSalary: 79081,
-        maxSalary: 97938,
+        _id: "cc63e617-b34c-4808-a000-7faf49595268",
+        jobTitle: "Central Program Assistant",
+        minSalary: 89368,
+        maxSalary: 13863,
         undefined: []
       };
       const expectedResult = { ...state, job: job };
@@ -180,11 +180,11 @@ describe("Job Reducer", () => {
   describe("addTask", () => {
     it("should update state with task", () => {
       const task = {
-        _id: "a5a3dc7a-2ab2-4fda-9e4c-2ce545f3e342",
+        _id: "db5998e1-fb33-446c-b13e-c4eb3a8edcfa",
         title:
-          "Repellat porro velit est. Earum modi voluptate consequuntur. Aut tempore vel ipsum a quo. Architecto pariatur ad et tenetur. Ut impedit voluptate ad ducimus aut. Explicabo totam et tenetur.",
+          "Occaecati assumenda ratione facilis excepturi hic quas recusandae minus voluptas.",
         description:
-          "Non ullam et ut maxime vel autem commodi quia. Quasi eos iure voluptatum veritatis nobis ipsa debitis id. Amet neque voluptatibus placeat dolore minima.",
+          "Consectetur minima quaerat animi velit magnam temporibus debitis rerum earum. Et enim omnis dignissimos quos et et dignissimos possimus. Omnis ea et nihil voluptatem harum incidunt. Quidem minima ut corrupti perspiciatis maxime dolor optio rerum repudiandae. Iusto velit sit saepe vero.",
         undefined: []
       };
 

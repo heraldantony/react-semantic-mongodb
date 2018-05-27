@@ -29,7 +29,6 @@ import { employeeGetAPI } from "common/api/EmployeeSvc";
  *
  */
 export function* doGetEmployee(action) {
-  console.log(action);
   try {
     const result = yield call(employeeGetAPI, action.payload);
     if (result.ok) {

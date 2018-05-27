@@ -210,7 +210,6 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
   add(data) {
-    console.log(data);
     return new Promise((resolve, reject) => {
       return dispatch(
         addLocation(data, "LOCATION_ADD_FORM", { resolve, reject })
@@ -219,7 +218,6 @@ const mapDispatchToProps = dispatch => ({
   },
 
   setCountry(country) {
-    console.log("setCountry");
     return dispatch(setCountryAction(country));
   }
 });

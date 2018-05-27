@@ -29,16 +29,15 @@ import { jobSearchAPI } from "common/api/JobSvc";
  *
  */
 export function* doSearchJob(action) {
-  console.log(action);
   const { resolve, reject } = action.promise;
   // Start submitting, won't trigger setSubmitSucceeded()
-  yield put(startSubmit(action.form));
+  yield call(startSubmit, action.form);
   try {
     const result = yield call(jobSearchAPI, action.payload);
     if (result.ok) {
       yield put(searchJobSuccess(result.data.docs));
-      yield put(reset(action.form));
-      yield put(stopSubmit(action.form));
+      yield call(reset, action.form);
+      yield call(stopSubmit, action.form);
       resolve(true);
     } else {
       yield put(searchJobFail(result.data.message || "Failed to search Job"));
