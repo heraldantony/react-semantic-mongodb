@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { media } from "styles/utils";
-import { Button } from "semantic-ui-react";
+import styled from 'styled-components'
+import { media } from 'styles/utils'
+import { Button } from 'semantic-ui-react'
 export const StyledHeader = styled.header`
   background: ${props => props.theme.primaryColor};
   border-bottom: 1px solid ${props => props.theme.primaryColorDark};
@@ -13,19 +13,19 @@ export const StyledHeader = styled.header`
   width: 100%;
   z-index: 444;
   height: 72px;
-`;
+`
 
 export const HeaderInner = styled.div`
   display: flex;
   padding: 0 15px;
-`;
+`
 
 export const PageTitle = styled.span`
   line-height: 1;
   font-size: 24px;
   align-items: center;
   display: flex;
-`;
+`
 
 export const Navicon = styled.span`
   width: 48px;
@@ -37,7 +37,7 @@ export const Navicon = styled.span`
   ${media.md`
 		display: block;
 	`};
-`;
+`
 
 export const HeaderButton = styled(Button)`
   &#header-button {
@@ -46,4 +46,4 @@ export const HeaderButton = styled(Button)`
     color: ${props => props.theme.primaryColorText}!important;
     background-color: ${props => props.theme.primaryColorDark}!important;
   }
-`;
+`

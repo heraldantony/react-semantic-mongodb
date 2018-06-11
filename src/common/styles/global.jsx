@@ -1,4 +1,4 @@
-import {injectGlobal} from 'styled-components'
+import { injectGlobal } from 'styled-components'
 
 // NOTE: Styles of container elements duplicated to make SSR version without css looks prettier
 injectGlobal`

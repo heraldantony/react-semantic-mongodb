@@ -3,7 +3,7 @@ A non-trivial app using react, redux, redux-form, redux-saga, semantic ui, node,
 
 ## Suicrux
 https://github.com/Metnew/suicrux
-This app uses redux-saga instead of "awrol"
+This app uses redux-saga instead of "awral"
 
 ## Semantic UI
 https://github.com/Semantic-Org/Semantic-UI-React

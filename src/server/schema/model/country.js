@@ -1,21 +1,28 @@
-var mongoose = require("mongoose");
-var mongoosePaginate = require("mongoose-paginate");
-var Schema = mongoose.Schema;
+var mongoose = require('mongoose')
+var mongoosePaginate = require('mongoose-paginate')
+var Schema = mongoose.Schema
 
 var countrySchema = Schema({
-  _id: Schema.Types.ObjectId,
+	_id: Schema.Types.ObjectId,
 
-  countryName: { type: String, index: true },
+	countryName: { type: String },
 
-  region: { type: Schema.Types.ObjectId, ref: "Region" }
-});
+	region: { type: Schema.Types.ObjectId, ref: 'Region' }
+})
 
-countrySchema.query.byCountryName = function(countryName) {
-  return this.find({ countryName: new RegExp(countryName, "i") });
-};
+countrySchema.query.byCountryName = function (countryName) {
+	return this.find({ countryName: new RegExp(countryName, 'i') })
+}
 
-countrySchema.plugin(mongoosePaginate);
+countrySchema.plugin(mongoosePaginate)
 
-var Country = mongoose.model("Country", countrySchema);
+var Country = mongoose.model('Country', countrySchema)
 
-module.exports = Country;
+if (process.env.DBINDEX) {
+	countrySchema.index({
+		countryName: 'text'
+	})
+	Country.ensureIndexes()
+}
+
+module.exports = Country

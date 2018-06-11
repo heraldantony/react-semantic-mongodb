@@ -29,13 +29,13 @@ import 'babel-polyfill'
 import 'isomorphic-fetch'
 // Application
 import React from 'react'
-import {hydrate} from 'react-dom'
-import {AsyncComponentProvider} from 'react-async-component'
+import { hydrate } from 'react-dom'
+import { AsyncComponentProvider } from 'react-async-component'
 import asyncBootstrapper from 'react-async-bootstrapper'
-import {configureApp, configureRootComponent} from 'common/app'
-import {AppContainer} from 'react-hot-loader'
-import type {GlobalState} from 'reducers'
-import type {i18nConfigObject} from 'types'
+import { configureApp, configureRootComponent } from 'common/app'
+import { AppContainer } from 'react-hot-loader'
+import type { GlobalState } from 'reducers'
+import type { i18nConfigObject } from 'types'
 
 if (process.env.NODE_ENV === 'production') {
 	require('common/pwa')
@@ -45,7 +45,7 @@ const initialState: GlobalState = window.__INITIAL_STATE__ || {}
 const i18n: i18nConfigObject = window.__I18N__ || {}
 const asyncState: Object = window.__ASYNC_STATE__ || {}
 
-const {store, routes, history} = configureApp(initialState)
+const { store, routes, history } = configureApp(initialState)
 const RootComponent = configureRootComponent({
 	store,
 	routes,

@@ -1,25 +1,32 @@
-var mongoose = require("mongoose");
-var mongoosePaginate = require("mongoose-paginate");
-var Schema = mongoose.Schema;
+var mongoose = require('mongoose')
+var mongoosePaginate = require('mongoose-paginate')
+var Schema = mongoose.Schema
 
 var jobSchema = Schema({
-  _id: Schema.Types.ObjectId,
+	_id: Schema.Types.ObjectId,
 
-  jobTitle: { type: String, index: true },
+	jobTitle: { type: String },
 
-  minSalary: Number,
+	minSalary: Number,
 
-  maxSalary: Number,
+	maxSalary: Number,
 
-  tasks: [{ type: Schema.Types.ObjectId, ref: "Task" }]
-});
+	tasks: [{ type: Schema.Types.ObjectId, ref: 'Task' }]
+})
 
-jobSchema.query.byJobTitle = function(jobTitle) {
-  return this.find({ jobTitle: new RegExp(jobTitle, "i") });
-};
+jobSchema.query.byJobTitle = function (jobTitle) {
+	return this.find({ jobTitle: new RegExp(jobTitle, 'i') })
+}
 
-jobSchema.plugin(mongoosePaginate);
+jobSchema.plugin(mongoosePaginate)
 
-var Job = mongoose.model("Job", jobSchema);
+var Job = mongoose.model('Job', jobSchema)
 
-module.exports = Job;
+if (process.env.DBINDEX) {
+	jobSchema.index({
+		jobTitle: 'text'
+	})
+	Job.ensureIndexes()
+}
+
+module.exports = Job

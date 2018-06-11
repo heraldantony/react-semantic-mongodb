@@ -1,18 +1,18 @@
 // @flow
-import React, { Component } from "react";
-import { Provider } from "react-redux";
-import { IntlProvider, defineMessages, addLocaleData } from "react-intl";
-import { APPLICATION_INIT } from "actions/common";
-import { ThemeProvider } from "styled-components";
-import theme from "styles/theme";
-import App from "containers/App";
-import RoutingWrapper from "components/addons/RoutingWrapper";
-import { getRouterRoutes } from "routing";
-import type { RouteItem, i18nConfigObject } from "types";
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import { IntlProvider, defineMessages, addLocaleData } from 'react-intl'
+import { APPLICATION_INIT } from 'actions/common'
+import { ThemeProvider } from 'styled-components'
+import theme from 'styles/theme'
+import App from 'containers/App'
+import RoutingWrapper from 'components/addons/RoutingWrapper'
+import { getRouterRoutes } from 'routing'
+import type { RouteItem, i18nConfigObject } from 'types'
 
 const Router = process.env.BROWSER
-  ? require("react-router-redux").ConnectedRouter
-  : require("react-router").StaticRouter;
+	? require('react-router-redux').ConnectedRouter
+	: require('react-router').StaticRouter
 
 type Props = {
   store: Object,
@@ -27,10 +27,11 @@ type Props = {
 
 export default class Root extends Component<Props> {
   static defaultProps = {
-    SSR: {}
+  	SSR: {}
   };
 
-  componentWillMount() {
+  /* eslint-disable */
+  UNSAFE_componentWillMount() {
     const { store, i18n } = this.props;
     store.dispatch({ type: APPLICATION_INIT });
     addLocaleData(i18n.localeData);

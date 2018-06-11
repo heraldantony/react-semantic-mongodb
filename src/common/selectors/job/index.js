@@ -1,13 +1,13 @@
 // @flow
-import { createSelector } from "reselect";
-import type { State as JobState } from "common/reducers/job";
+import { createSelector } from 'reselect'
+import type { State as JobState } from 'common/reducers/job'
 
-import _ from "lodash";
+import _ from 'lodash'
 
 /**
  * Direct selector to the Job domain
  */
-const selectJobDomain = (state): JobState => state["job"];
+const selectJobDomain = (state): JobState => state['job']
 
 /**
  * Other specific selectors
@@ -18,40 +18,40 @@ const selectJobDomain = (state): JobState => state["job"];
  */
 
 const makeSelectJob = () =>
-  createSelector(selectJobDomain, substate => {
-    return {
-      job: substate["job"],
-      message: substate["message"],
-      error: substate["error"]
-    };
-  });
+	createSelector(selectJobDomain, substate => {
+		return {
+			job: substate['job'],
+			message: substate['message'],
+			error: substate['error']
+		}
+	})
 const makeSelectJobInitialValues = () =>
-  createSelector(selectJobDomain, substate => {
-    return substate["job"];
-  });
+	createSelector(selectJobDomain, substate => {
+		return substate['job']
+	})
 const makeSelectSearchJob = () =>
-  createSelector(selectJobDomain, substate => {
-    return {
-      job: substate["job"],
-      jobs: substate["jobs"],
-      message: substate["message"],
-      error: substate["error"]
-    };
-  });
+	createSelector(selectJobDomain, substate => {
+		return {
+			job: substate['job'],
+			jobs: substate['jobs'],
+			message: substate['message'],
+			error: substate['error']
+		}
+	})
 const makeSelectOtherSearchJob = () =>
-  createSelector(selectJobDomain, substate => {
-    return {
-      otherSearchJob: substate["otherSearchJob"],
-      otherSearchJobs: substate["Jobs"],
-      message: substate["message"],
-      error: substate["error"]
-    };
-  });
+	createSelector(selectJobDomain, substate => {
+		return {
+			otherSearchJob: substate['otherSearchJob'],
+			otherSearchJobs: substate['Jobs'],
+			message: substate['message'],
+			error: substate['error']
+		}
+	})
 
 export {
-  selectJobDomain,
-  makeSelectJob,
-  makeSelectJobInitialValues,
-  makeSelectSearchJob,
-  makeSelectOtherSearchJob
-};
+	selectJobDomain,
+	makeSelectJob,
+	makeSelectJobInitialValues,
+	makeSelectSearchJob,
+	makeSelectOtherSearchJob
+}

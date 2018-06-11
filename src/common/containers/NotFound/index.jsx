@@ -1,8 +1,8 @@
 // @flow
 import React from 'react'
-import {Header, Icon} from 'semantic-ui-react'
-import {Link} from 'react-router-dom'
-import {NotFoundLayout} from './style'
+import { Header, Icon } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import { NotFoundLayout } from './style'
 
 const NotFound = () => {
 	return (

@@ -58,7 +58,7 @@ describe("Region Actions", () => {
   describe("addRegion", () => {
     it("should return the correct action with add data, form name, and promise", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const form = "REGION_ADD_FORM";
@@ -77,7 +77,7 @@ describe("Region Actions", () => {
   describe("addRegionSuccess", () => {
     it("should return the correct action with results", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const expectedResult = {
@@ -104,7 +104,7 @@ describe("Region Actions", () => {
   describe("saveRegion", () => {
     it("should return the correct action with save data, form name, and promise", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const form = "REGION_SAVE_FORM";
@@ -123,7 +123,7 @@ describe("Region Actions", () => {
   describe("saveRegionSuccess", () => {
     it("should return the correct action with results", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const expectedResult = {
@@ -150,7 +150,7 @@ describe("Region Actions", () => {
   describe("updateRegion", () => {
     it("should return the correct action with update data, form name, and promise", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const form = "REGION_UPDATE_FORM";
@@ -169,7 +169,7 @@ describe("Region Actions", () => {
   describe("updateRegionSuccess", () => {
     it("should return the correct action with results", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const expectedResult = {
@@ -195,7 +195,7 @@ describe("Region Actions", () => {
 
   describe("getRegion", () => {
     it("should return the correct action with Region ID", () => {
-      const regionId = "95e0e7aa-6679-423b-930a-7c0a284836ec";
+      const regionId = "fd5db0ba-f121-4606-bffc-ef2fda65aa14";
       const expectedResult = {
         type: REGION_GET,
         payload: regionId
@@ -208,7 +208,7 @@ describe("Region Actions", () => {
   describe("getRegionSuccess", () => {
     it("should return the correct action with results", () => {
       const region = {
-        _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
         regionName: "South-east Asia"
       };
       const expectedResult = {
@@ -251,12 +251,12 @@ describe("Region Actions", () => {
     it("should return the correct action with results", () => {
       const regions = [
         {
-          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
           regionName: "South-east Asia"
         },
-        { _id: "11bdc542-351f-4844-8768-5f84bd84f5f7", regionName: "Africa" },
+        { _id: "eedf4124-3976-4e4f-86ba-a7dd7520ee1f", regionName: "Africa" },
         {
-          _id: "83c34b6f-fff9-412a-a8f2-31fb358b2881",
+          _id: "02dc7ad0-7423-42a0-8f33-51f680b95190",
           regionName: "Eastern Europe"
         }
       ];

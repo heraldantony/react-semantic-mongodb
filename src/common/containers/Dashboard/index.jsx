@@ -1,8 +1,8 @@
 // @flow
 import React from 'react'
-import {Helmet} from 'react-helmet'
-import {Grid, Header} from 'semantic-ui-react'
-import {FormattedMessage} from 'react-intl'
+import { Helmet } from 'react-helmet'
+import { Grid, Header } from 'semantic-ui-react'
+import { FormattedMessage } from 'react-intl'
 
 const Dashboard = () => {
 	return (

@@ -44,16 +44,16 @@ describe("Location Reducer", () => {
   describe("addLocationSuccess", () => {
     it("should update state with add results", () => {
       const location = {
-        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
-        streetAddress: "15615 Prosacco Alley",
-        postalCode: "69000",
-        city: "Lake Anaton",
-        stateProvince: "Michigan",
+        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
+        streetAddress: "57916 Johns Wall",
+        postalCode: "06466-7765",
+        city: "Lake Marquesmouth",
+        stateProvince: "Idaho",
         country: {
-          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-          countryName: "Aruba",
+          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+          countryName: "Cyprus",
           region: {
-            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
             regionName: "South-east Asia"
           }
         }
@@ -80,16 +80,16 @@ describe("Location Reducer", () => {
   describe("saveLocationSuccess", () => {
     it("should update state with save results", () => {
       const location = {
-        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
-        streetAddress: "15615 Prosacco Alley",
-        postalCode: "69000",
-        city: "Lake Anaton",
-        stateProvince: "Michigan",
+        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
+        streetAddress: "57916 Johns Wall",
+        postalCode: "06466-7765",
+        city: "Lake Marquesmouth",
+        stateProvince: "Idaho",
         country: {
-          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-          countryName: "Aruba",
+          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+          countryName: "Cyprus",
           region: {
-            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
             regionName: "South-east Asia"
           }
         }
@@ -116,16 +116,16 @@ describe("Location Reducer", () => {
   describe("updateLocationSuccess", () => {
     it("should update state with update results", () => {
       const location = {
-        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
-        streetAddress: "15615 Prosacco Alley",
-        postalCode: "69000",
-        city: "Lake Anaton",
-        stateProvince: "Michigan",
+        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
+        streetAddress: "57916 Johns Wall",
+        postalCode: "06466-7765",
+        city: "Lake Marquesmouth",
+        stateProvince: "Idaho",
         country: {
-          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-          countryName: "Aruba",
+          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+          countryName: "Cyprus",
           region: {
-            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
             regionName: "South-east Asia"
           }
         }
@@ -153,46 +153,46 @@ describe("Location Reducer", () => {
     it("should update state with search results", () => {
       const locations = [
         {
-          _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
-          streetAddress: "15615 Prosacco Alley",
-          postalCode: "69000",
-          city: "Lake Anaton",
-          stateProvince: "Michigan",
+          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
+          streetAddress: "57916 Johns Wall",
+          postalCode: "06466-7765",
+          city: "Lake Marquesmouth",
+          stateProvince: "Idaho",
           country: {
-            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-            countryName: "Aruba",
+            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+            countryName: "Cyprus",
             region: {
-              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
               regionName: "South-east Asia"
             }
           }
         },
         {
-          _id: "e45d6521-c81c-456d-81dc-744594b26184",
-          streetAddress: "6514 Wisoky Cliff",
-          postalCode: "21474-6864",
-          city: "Pollichside",
-          stateProvince: "New Jersey",
+          _id: "0e65ff16-6ede-47d8-9284-5a2d78d25b18",
+          streetAddress: "06057 Feeney Coves",
+          postalCode: "20338",
+          city: "West Aronhaven",
+          stateProvince: "Illinois",
           country: {
-            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-            countryName: "Aruba",
+            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+            countryName: "Cyprus",
             region: {
-              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
               regionName: "South-east Asia"
             }
           }
         },
         {
-          _id: "486b4125-2e8b-48f1-acef-feb135593b24",
-          streetAddress: "899 Kassulke Landing",
-          postalCode: "98961",
-          city: "South Adriannastad",
-          stateProvince: "Massachusetts",
+          _id: "efd08870-8ee7-4a44-a3b6-8bee4eaddb50",
+          streetAddress: "496 Koelpin Isle",
+          postalCode: "89843",
+          city: "O'Connerview",
+          stateProvince: "Tennessee",
           country: {
-            _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-            countryName: "Aruba",
+            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+            countryName: "Cyprus",
             region: {
-              _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
               regionName: "South-east Asia"
             }
           }
@@ -220,16 +220,16 @@ describe("Location Reducer", () => {
   describe("getLocationSuccess", () => {
     it("should update state with get results", () => {
       const location = {
-        _id: "10484fff-9593-4d5b-b26d-f01799c79a3f",
-        streetAddress: "15615 Prosacco Alley",
-        postalCode: "69000",
-        city: "Lake Anaton",
-        stateProvince: "Michigan",
+        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
+        streetAddress: "57916 Johns Wall",
+        postalCode: "06466-7765",
+        city: "Lake Marquesmouth",
+        stateProvince: "Idaho",
         country: {
-          _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-          countryName: "Aruba",
+          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+          countryName: "Cyprus",
           region: {
-            _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
             regionName: "South-east Asia"
           }
         }
@@ -256,10 +256,10 @@ describe("Location Reducer", () => {
   describe("setCountry", () => {
     it("should update state with country", () => {
       const country = {
-        _id: "f8057f81-9663-4c01-a556-dfe45c72fb50",
-        countryName: "Aruba",
+        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
+        countryName: "Cyprus",
         region: {
-          _id: "95e0e7aa-6679-423b-930a-7c0a284836ec",
+          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
           regionName: "South-east Asia"
         }
       };

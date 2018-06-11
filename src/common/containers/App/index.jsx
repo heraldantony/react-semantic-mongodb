@@ -1,42 +1,42 @@
 /**
  * @flow
  */
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { compose } from "redux";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
 
-import { withRouter } from "react-router";
-import { push } from "react-router-redux";
-import { Route, Redirect } from "react-router-dom";
+import { withRouter } from 'react-router'
+import { push } from 'react-router-redux'
+import { Route, Redirect } from 'react-router-dom'
 // Import main views
-import Sidebar from "components/parts/Sidebar";
-import Footer from "components/parts/Footer";
-import Header from "components/parts/Header";
-import RouteAuth from "components/addons/RouteAuth";
+import Sidebar from 'components/parts/Sidebar'
+import Footer from 'components/parts/Footer'
+import Header from 'components/parts/Header'
+import RouteAuth from 'components/addons/RouteAuth'
 // Import actions
-import { TOGGLE_SIDEBAR, WINDOW_RESIZE } from "common/actions/layout";
+import { TOGGLE_SIDEBAR, WINDOW_RESIZE } from 'common/actions/layout'
 import {
-  getAuthState,
-  getLayoutState,
-  getWindowInnerWidth,
-  getLayoutMobileStatuses
-} from "selectors";
-import ReactGA from "react-ga";
+	getAuthState,
+	getLayoutState,
+	getWindowInnerWidth,
+	getLayoutMobileStatuses
+} from 'selectors'
+import ReactGA from 'react-ga'
 // Import styled components
 import {
-  PageLayout,
-  MainLayout,
-  MainContent,
-  SidebarSemanticPusherStyled,
-  SidebarSemanticPushableStyled,
-  MainContainer,
-  StyledDimmer
-} from "./style";
-import type { RouteItem } from "types";
-import type { GlobalState } from "common/reducers";
-import { getRoutes } from "routing";
-import injectReducer from "common/utils/injectReducer";
-import injectSaga from "common/utils/injectSaga";
+	PageLayout,
+	MainLayout,
+	MainContent,
+	SidebarSemanticPusherStyled,
+	SidebarSemanticPushableStyled,
+	MainContainer,
+	StyledDimmer
+} from './style'
+import type { RouteItem } from 'types'
+import type { GlobalState } from 'common/reducers'
+import { getRoutes } from 'routing'
+import injectReducer from 'common/utils/injectReducer'
+import injectSaga from 'common/utils/injectSaga'
 
 type Props = {
   children: React$Node,
@@ -57,7 +57,8 @@ type Props = {
 };
 
 class App extends Component<Props> {
-  componentWillMount() {
+	/* eslint-disable */
+  UNSAFE_componentWillMount() {
     const { isLoggedIn } = this.props;
     if (process.env.BROWSER) {
       const { handleWindowResize } = this.props;
@@ -70,7 +71,8 @@ class App extends Component<Props> {
   /**
    * Check that user is still allowed to visit path after props changed
    */
-  componentWillReceiveProps({ isLoggedIn }: Props) {
+  /* eslint-disable */
+  UNSAFE_componentWillReceiveProps({ isLoggedIn }: Props) {
     this.checkAppAuthLogic(isLoggedIn);
   }
 
