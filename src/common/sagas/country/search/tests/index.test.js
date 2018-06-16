@@ -43,26 +43,26 @@ describe("doSearchCountry Saga", () => {
   it("should search and return  Country List", () => {
     let fakeCountryList = [
       {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "12ba3dec-6a84-4b74-963e-4e6028811605",
-        countryName: "Isle of Man",
+        _id: "5b254369063db83598df2ceb",
+        countryName: "Bahamas",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "18d43e05-d863-413b-9bbb-78bb9f631536",
-        countryName: "Aruba",
+        _id: "5b254369063db83598df2cec",
+        countryName: "Japan",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       }
@@ -91,7 +91,7 @@ describe("doSearchCountry Saga", () => {
   });
   /*
   it('should fail to search for Country with message', () => {
-    let fakeCountryList = [{"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}},{"_id":"12ba3dec-6a84-4b74-963e-4e6028811605","countryName":"Isle of Man","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}},{"_id":"18d43e05-d863-413b-9bbb-78bb9f631536","countryName":"Aruba","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}]
+    let fakeCountryList = [{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}},{"_id":"5b254369063db83598df2ceb","countryName":"Bahamas","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}},{"_id":"5b254369063db83598df2cec","countryName":"Japan","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Country, random error' } }
     return new Promise((resolve, reject) => {
@@ -113,26 +113,26 @@ describe("doSearchCountry Saga", () => {
   it("should handle reducer and store state", () => {
     let fakeCountryList = [
       {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "12ba3dec-6a84-4b74-963e-4e6028811605",
-        countryName: "Isle of Man",
+        _id: "5b254369063db83598df2ceb",
+        countryName: "Bahamas",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "18d43e05-d863-413b-9bbb-78bb9f631536",
-        countryName: "Aruba",
+        _id: "5b254369063db83598df2cec",
+        countryName: "Japan",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       }

@@ -160,6 +160,7 @@ class TaskEdit extends Component<Props, State> {
 
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="save-button"
 										content="Save"
 										icon="save"
 										onClick={handleSubmit(values =>

@@ -44,10 +44,10 @@ describe("Country Reducer", () => {
   describe("addCountrySuccess", () => {
     it("should update state with add results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -73,10 +73,10 @@ describe("Country Reducer", () => {
   describe("saveCountrySuccess", () => {
     it("should update state with save results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -102,10 +102,10 @@ describe("Country Reducer", () => {
   describe("updateCountrySuccess", () => {
     it("should update state with update results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -132,26 +132,26 @@ describe("Country Reducer", () => {
     it("should update state with search results", () => {
       const countries = [
         {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "12ba3dec-6a84-4b74-963e-4e6028811605",
-          countryName: "Isle of Man",
+          _id: "5b254369063db83598df2ceb",
+          countryName: "Bahamas",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "18d43e05-d863-413b-9bbb-78bb9f631536",
-          countryName: "Aruba",
+          _id: "5b254369063db83598df2cec",
+          countryName: "Japan",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
@@ -178,10 +178,10 @@ describe("Country Reducer", () => {
   describe("getCountrySuccess", () => {
     it("should update state with get results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -207,7 +207,7 @@ describe("Country Reducer", () => {
   describe("setRegion", () => {
     it("should update state with region", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
 

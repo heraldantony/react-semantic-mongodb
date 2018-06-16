@@ -61,10 +61,10 @@ describe("Country Actions", () => {
   describe("addCountry", () => {
     it("should return the correct action with add data, form name, and promise", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -84,10 +84,10 @@ describe("Country Actions", () => {
   describe("addCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -115,10 +115,10 @@ describe("Country Actions", () => {
   describe("saveCountry", () => {
     it("should return the correct action with save data, form name, and promise", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -138,10 +138,10 @@ describe("Country Actions", () => {
   describe("saveCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -169,10 +169,10 @@ describe("Country Actions", () => {
   describe("updateCountry", () => {
     it("should return the correct action with update data, form name, and promise", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -192,10 +192,10 @@ describe("Country Actions", () => {
   describe("updateCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -222,7 +222,7 @@ describe("Country Actions", () => {
 
   describe("getCountry", () => {
     it("should return the correct action with Country ID", () => {
-      const countryId = "50dc6101-cdab-44a6-a0ba-1b0d17182a5b";
+      const countryId = "5b254369063db83598df2cea";
       const expectedResult = {
         type: COUNTRY_GET,
         payload: countryId
@@ -235,10 +235,10 @@ describe("Country Actions", () => {
   describe("getCountrySuccess", () => {
     it("should return the correct action with results", () => {
       const country = {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       };
@@ -282,26 +282,26 @@ describe("Country Actions", () => {
     it("should return the correct action with results", () => {
       const countries = [
         {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "12ba3dec-6a84-4b74-963e-4e6028811605",
-          countryName: "Isle of Man",
+          _id: "5b254369063db83598df2ceb",
+          countryName: "Bahamas",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "18d43e05-d863-413b-9bbb-78bb9f631536",
-          countryName: "Aruba",
+          _id: "5b254369063db83598df2cec",
+          countryName: "Japan",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
@@ -330,7 +330,7 @@ describe("Country Actions", () => {
   describe("setRegion", () => {
     it("should return the correct action with region", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
       const expectedResult = {

@@ -37,6 +37,7 @@ import type { GlobalState } from 'common/reducers'
 import { getRoutes } from 'routing'
 import injectReducer from 'common/utils/injectReducer'
 import injectSaga from 'common/utils/injectSaga'
+import { isLoggedIn as checkAuthCookie } from 'common/api/LocalStorageCookiesSvc'
 
 type Props = {
   children: React$Node,
@@ -161,7 +162,8 @@ class App extends Component<Props> {
 
 function mapStateToProps(state: GlobalState) {
   const { sidebarOpened } = getLayoutState(state);
-  const { isLoggedIn } = getAuthState(state);
+  // const { isLoggedIn } = getAuthState(state)
+  const isLoggedIn = checkAuthCookie();
   const { isMobile } = getLayoutMobileStatuses(state);
 
   return {

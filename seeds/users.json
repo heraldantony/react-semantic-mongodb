@@ -1,0 +1,11 @@
+[
+  {
+    "_id": { "$oid": "5b1d690604f3c936b084e45b" },
+    "username": "test",
+    "email": "test@test.test",
+    "password": "test123",
+    "registeredDate": { "$date": { "$numberLong": "1528654086092" } },
+    "active": true,
+    "status": "registered"
+  }
+]

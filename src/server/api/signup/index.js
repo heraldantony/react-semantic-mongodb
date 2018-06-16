@@ -27,7 +27,7 @@ router.post('/', (req, res, next) => {
 		if (err) {
 			// return next(err)
 			console.log(err)
-			res.json({
+			return res.json({
 				status: 'failure',
 				message: 'Could not query the database, system error.'
 			})
@@ -36,8 +36,7 @@ router.post('/', (req, res, next) => {
 
 		const db = client.db(dbName)
 		const collection = db.collection('users')
-		console.log('collection users for ' + username)
-		console.log(collection)
+
 		collection
 			.find({ username: username })
 			.project({ username: 1, email: 1 })
@@ -72,19 +71,26 @@ router.post('/', (req, res, next) => {
 						if (err) {
 							// return next(err)
 							console.log(err)
-							res.json({
+							client.close()
+							return res.json({
 								status: 'failure',
 								message: 'Could not query the database, system error.'
 							})
 						} else if (result.insertedCount !== 1) {
 							console.log('Failed to insert user')
-							res.json({
+							client.close()
+							return res.json({
 								status: 'failure',
 								message:
                   'Could not register user, system error. Please try again.'
 							})
+						} else {
+							client.close()
+							return res.json({
+								status: 'success',
+								message: 'User registered successfully. '
+							})
 						}
-						client.close()
 					})
 				}
 			})

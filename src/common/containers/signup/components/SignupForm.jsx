@@ -14,6 +14,7 @@ import { reduxForm, Field } from 'redux-form'
 import { signup as signupAction } from 'common/actions/signup'
 import type { FormProps } from 'redux-form'
 import { Link } from 'react-router-dom'
+import InputField from 'components/elements/InputField'
 
 type Props = {
   signup: (data: Object) => void
@@ -21,34 +22,6 @@ type Props = {
 
 class SignupComponent extends Component<Props, State> {
 	render () {
-		/* By default we use https://github.com/erikras/redux-form
-    Probably, you'll need: https://github.com/ckshekhar73/react-semantic-redux-form/blob/master/src/index.js
-    (don't install, better copy sources to the project)
-*/
-		const InputField = ({
-			input,
-			label,
-			labelText = null,
-			required,
-			meta: { touched, error },
-			...rest
-		}: any) => (
-			<Form.Field error={!!(touched && error)} required={required}>
-				<label htmlFor={rest.id || rest.name || ''}>{label}</label>
-				<InputComponent
-					label={labelText}
-					required={required}
-					{...input}
-					{...rest}
-				/>
-				{touched && error ? (
-					<Label basic color="red" pointing>
-						{error}
-					</Label>
-				) : null}
-			</Form.Field>
-		)
-
 		const fields = [
 			{
 				name: 'non_field_errors',
@@ -94,12 +67,17 @@ class SignupComponent extends Component<Props, State> {
 			submitSucceeded
 		} = this.props
 		return (
-			<div>
+			<div className="signup-form">
 				<Form onSubmit={handleSubmit(signup)} error={invalid}>
-					{fields.map((a, i) => <Field key={i} {...a} />)}
+					{fields.map((a, i) => <Field key={a.name} {...a} />)}
 					<Message error header="Signup Failed" content={error} />
 					<div style={{ textAlign: 'center' }}>
-						<Button content="Signup" icon="sign in" loading={submitting} />
+						<Button
+							className="signup-button"
+							content="Signup"
+							icon="sign in"
+							loading={submitting}
+						/>
 					</div>
 				</Form>
 				{submitSucceeded ? (

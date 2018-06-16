@@ -117,6 +117,7 @@ class RegionAdd extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="add-button"
 										content="Add"
 										icon="add"
 										loading={submitting}

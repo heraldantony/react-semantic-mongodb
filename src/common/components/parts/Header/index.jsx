@@ -12,6 +12,7 @@ import { Spacer } from 'styles/base'
 import { getMetaRoutes } from 'routing'
 import { getAuthState, getLayoutMobileStatuses } from 'selectors'
 import Headroom from 'react-headroom'
+import { isLoggedIn as checkAuthCookie } from 'api/LocalStorageCookiesSvc'
 
 type Props = {
   title: string,
@@ -44,7 +45,8 @@ const mapStateToProps = (state, props) => {
 	const currentRoute =
     _.find(getMetaRoutes(), a => matchPath(pathname, a)) || {}
 	const title = currentRoute.meta.name
-	const { isLoggedIn } = getAuthState(state)
+	// const { isLoggedIn } = getAuthState(state)
+	const isLoggedIn = checkAuthCookie()
 	const { isMobile } = getLayoutMobileStatuses(state)
 	return {
 		title,

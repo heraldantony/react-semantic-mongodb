@@ -21,12 +21,14 @@ router.post('/', (req: express$Request, res: express$Response) => {
 		username: username,
 		password: password
 	}
+	let maxAge = 30 * 60 * 1000
 	const expires = {
 		expiresIn: '30m'
 	}
 	console.log('username,pass=', username, password)
 	if (rememberme) {
 		expires.expiresIn = '7d'
+		maxAge = 7 * 24 * 60 * 60 * 1000 // 7 days in milliseconds
 	}
 
 	// Use connect method to connect to the Server
@@ -76,6 +78,8 @@ router.post('/', (req: express$Request, res: express$Response) => {
 								console.log(
 									chalk.yellow(`Generated token for user: ${username}`)
 								)
+								res.cookie('JWT_TOKEN', token, { maxAge: maxAge })
+
 								return res.json({
 									username: username,
 									token: token

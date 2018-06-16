@@ -44,17 +44,14 @@ describe("doAddCountry Saga", () => {
 
   it("should add Country", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
     delete fakeCountry["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "8176b299-286d-4f17-be3a-052fb11f7442", ...fakeCountry }
+      data: { _id: "b5688574-8b9d-46b0-8c19-5a2b466204bb", ...fakeCountry }
     };
     return new Promise((resolve, reject) => {
       let action = {
@@ -78,7 +75,7 @@ describe("doAddCountry Saga", () => {
   });
   /*
   it('should fail to add Country with message', () => {
-    let fakeCountry = {"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}
+    let fakeCountry = {"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}
     delete fakeCountry['_id'];
     let fakeResult={ok: false, data: {message: 'Failed to add Country, random error' } }
     return new Promise((resolve, reject) => {
@@ -99,17 +96,14 @@ describe("doAddCountry Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
     delete fakeCountry["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "8a85bc0d-a20a-4fa5-80ed-286eff8cb1a3", ...fakeCountry }
+      data: { _id: "ae3931af-3c6a-49c0-8ef6-97baad526324", ...fakeCountry }
     };
     let finalState = {
       ...initialState,

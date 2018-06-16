@@ -18,7 +18,8 @@ const {
   DBUSER = "empuser",
   DBNAME = "emp",
   DBPASSWORD = "emp123",
-  DBPORT = 27017
+  DBPORT = 27017,
+  DBINDEX = true
 } = process.env;
 
 // Paths
@@ -55,6 +56,7 @@ export default {
   DBNAME,
   DBPASSWORD,
   DBPORT,
+  DBINDEX,
   // It's better to define pathes in one file
   // and then use everywhere across app
   srcPath,

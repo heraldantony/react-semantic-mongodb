@@ -1,0 +1,12 @@
+[
+{"_id":{"$oid":"5b254369063db83598df2cea"},"countryName":"Grenada","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2ceb"},"countryName":"Bahamas","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cec"},"countryName":"Japan","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2ced"},"countryName":"Comoros","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cee"},"countryName":"Madagascar","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cef"},"countryName":"Papua New Guinea","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cf0"},"countryName":"Afghanistan","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cf1"},"countryName":"Marshall Islands","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cf2"},"countryName":"Costa Rica","region":{"$oid":"5b254369063db83598df2ce0"}},
+{"_id":{"$oid":"5b254369063db83598df2cf3"},"countryName":"Georgia","region":{"$oid":"5b254369063db83598df2ce0"}}
+]

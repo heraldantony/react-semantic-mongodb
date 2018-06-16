@@ -148,7 +148,7 @@ class DepartmentEdit extends Component<Props, State> {
 											>
 												{location['streetAddress']}
 											</Button>
-											<Button icon onClick={deleteLocation}>
+											<Button icon onClick={() => deleteLocation(location)}>
 												<Icon name="delete" />
 											</Button>
 										</Button.Group>
@@ -190,7 +190,7 @@ class DepartmentEdit extends Component<Props, State> {
                     			>
                     				{entity['firstName'] + '    ' + entity['lastName']}
                     			</Button>
-                    			<Button icon onClick={deleteEmployee}>
+                    			<Button icon onClick={() => deleteEmployee(entity)}>
                     				<Icon name="delete" />
                     			</Button>
                     		</Button.Group>
@@ -225,6 +225,7 @@ class DepartmentEdit extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="save-button"
 										content="Save"
 										icon="save"
 										loading={submitting}

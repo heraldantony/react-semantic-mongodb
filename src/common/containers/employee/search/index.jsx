@@ -117,6 +117,7 @@ class EmployeeSearch extends Component<Props, State> {
 								<Message error header="Search Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="search-button"
 										content="Search"
 										icon="search"
 										loading={submitting}

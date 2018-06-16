@@ -123,6 +123,7 @@ class RegionEdit extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="save-button"
 										content="Save"
 										icon="save"
 										loading={submitting}

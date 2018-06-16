@@ -64,110 +64,110 @@ describe("Department Actions", () => {
   describe("addDepartment", () => {
     it("should return the correct action with add data, form name, and promise", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -175,39 +175,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -215,70 +215,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -288,76 +287,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -365,41 +363,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -409,86 +405,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -496,41 +491,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -538,69 +531,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -627,110 +618,110 @@ describe("Department Actions", () => {
   describe("addDepartmentSuccess", () => {
     it("should return the correct action with results", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -738,39 +729,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -778,70 +769,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -851,76 +841,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -928,41 +917,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -972,86 +959,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -1059,41 +1045,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -1101,69 +1085,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -1198,110 +1180,110 @@ describe("Department Actions", () => {
   describe("saveDepartment", () => {
     it("should return the correct action with save data, form name, and promise", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -1309,39 +1291,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -1349,70 +1331,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -1422,76 +1403,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -1499,41 +1479,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -1543,86 +1521,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -1630,41 +1607,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -1672,69 +1647,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -1761,110 +1734,110 @@ describe("Department Actions", () => {
   describe("saveDepartmentSuccess", () => {
     it("should return the correct action with results", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -1872,39 +1845,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -1912,70 +1885,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -1985,76 +1957,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -2062,41 +2033,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -2106,86 +2075,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -2193,41 +2161,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -2235,69 +2201,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -2332,110 +2296,110 @@ describe("Department Actions", () => {
   describe("updateDepartment", () => {
     it("should return the correct action with update data, form name, and promise", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -2443,39 +2407,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -2483,70 +2447,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -2556,76 +2519,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -2633,41 +2595,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -2677,86 +2637,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -2764,41 +2723,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -2806,69 +2763,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -2897,110 +2852,110 @@ describe("Department Actions", () => {
   describe("updateDepartmentSuccess", () => {
     it("should return the correct action with results", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -3008,39 +2963,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -3048,70 +3003,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3121,76 +3075,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3198,41 +3151,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -3242,86 +3193,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3329,41 +3279,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -3371,69 +3319,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -3467,7 +3413,7 @@ describe("Department Actions", () => {
 
   describe("getDepartment", () => {
     it("should return the correct action with Department ID", () => {
-      const departmentId = "d519d1c8-65e0-45cd-817d-61e39f760e31";
+      const departmentId = "5b254369063db83598df2cfe";
       const expectedResult = {
         type: DEPARTMENT_GET,
         payload: departmentId
@@ -3480,110 +3426,110 @@ describe("Department Actions", () => {
   describe("getDepartmentSuccess", () => {
     it("should return the correct action with results", () => {
       const department = {
-        _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-        departmentName: "Operations",
+        _id: "5b254369063db83598df2cfe",
+        departmentName: "Optimization",
         location: {
-          _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-          streetAddress: "57916 Johns Wall",
-          postalCode: "06466-7765",
-          city: "Lake Marquesmouth",
-          stateProvince: "Idaho",
+          _id: "5b254369063db83598df2cf4",
+          streetAddress: "0312 Alessandra Loop",
+          postalCode: "97889-8410",
+          city: "East Dejahbury",
+          stateProvince: "Connecticut",
           country: {
-            _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-            countryName: "Cyprus",
+            _id: "5b254369063db83598df2cea",
+            countryName: "Grenada",
             region: {
-              _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+              _id: "5b254369063db83598df2ce0",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-            firstName: "Sabryna",
-            lastName: "Rath",
-            email: "Toney45@yahoo.com",
-            phoneNumber: "(748) 327-3014 x4203",
-            hireDate: "2018-03-07T10:34:04.190Z",
-            salary: 44305,
-            commissionPct: 43826,
+            _id: "5b254369063db83598df2d09",
+            firstName: "Hattie",
+            lastName: "Gusikowski",
+            email: "Lysanne50@yahoo.com",
+            phoneNumber: "1-070-345-3867",
+            hireDate: "2018-02-28T23:33:35.473Z",
+            salary: 86322,
+            commissionPct: 7799,
             jobs: [
               {
-                _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                jobTitle: "Direct Factors Coordinator",
-                minSalary: 8909,
-                maxSalary: 31108,
+                _id: "5b254369063db83598df2d14",
+                jobTitle: "Senior Solutions Administrator",
+                minSalary: 79377,
+                maxSalary: 92116,
                 tasks: [
                   {
-                    _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                    title: "Quo qui labore culpa autem molestiae tempore.",
+                    _id: "5b254369063db83598df2d1f",
+                    title: "Nihil est animi.",
                     description:
-                      "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                     jobs: [
                       {
-                        _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                        jobTitle: "Human Brand Consultant",
-                        minSalary: 25551,
-                        maxSalary: 53722,
+                        _id: "5b254369063db83598df2d16",
+                        jobTitle: "Central Intranet Producer",
+                        minSalary: 11705,
+                        maxSalary: 37904,
                         tasks: [
                           {
-                            _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                            _id: "5b254369063db83598df2d21",
                             title:
-                              "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                              "Mollitia eum magni in quasi nesciunt totam.",
                             description:
-                              "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                             jobs: [
                               {
-                                _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                jobTitle: "Chief Creative Orchestrator",
-                                minSalary: 19158,
-                                maxSalary: 71154,
+                                _id: "5b254369063db83598df2d18",
+                                jobTitle: "National Response Developer",
+                                minSalary: 31152,
+                                maxSalary: 19557,
                                 tasks: [
                                   {
-                                    _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                    _id: "5b254369063db83598df2d23",
                                     title:
-                                      "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                      "Et quia in quis modi minima quod voluptates iste.",
                                     description:
-                                      "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                    _id: "5b254369063db83598df2d24",
                                     title:
-                                      "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                      "Incidunt tenetur quas qui mollitia.",
                                     description:
-                                      "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
@@ -3591,39 +3537,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
@@ -3631,70 +3577,69 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3704,76 +3649,75 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3781,41 +3725,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -3825,86 +3767,85 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-            firstName: "Gustave",
-            lastName: "Gulgowski",
-            email: "Lois.Denesik@hotmail.com",
-            phoneNumber: "1-383-768-8564",
-            hireDate: "2018-03-20T07:11:04.478Z",
-            salary: 73204,
-            commissionPct: 5280,
+            _id: "5b254369063db83598df2d0a",
+            firstName: "Carissa",
+            lastName: "Barrows",
+            email: "Angela15@gmail.com",
+            phoneNumber: "724.764.7759 x90445",
+            hireDate: "2018-05-02T12:48:31.883Z",
+            salary: 31436,
+            commissionPct: 96274,
             jobs: [
               {
-                _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                jobTitle: "Principal Branding Officer",
-                minSalary: 20639,
-                maxSalary: 25412,
+                _id: "5b254369063db83598df2d15",
+                jobTitle: "Corporate Web Liaison",
+                minSalary: 85109,
+                maxSalary: 71038,
                 tasks: [
                   {
-                    _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                    _id: "5b254369063db83598df2d20",
                     title:
-                      "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                     description:
-                      "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                     jobs: [
                       {
-                        _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                        jobTitle: "Dynamic Branding Administrator",
-                        minSalary: 11174,
-                        maxSalary: 34003,
+                        _id: "5b254369063db83598df2d17",
+                        jobTitle: "Principal Configuration Representative",
+                        minSalary: 72156,
+                        maxSalary: 67196,
                         tasks: [
                           {
-                            _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                            title: "Laboriosam vel beatae velit molestiae.",
+                            _id: "5b254369063db83598df2d22",
+                            title: "Et hic eum.",
                             description:
-                              "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                             jobs: [
                               {
-                                _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                jobTitle: "Central Brand Consultant",
-                                minSalary: 30756,
-                                maxSalary: 99908,
+                                _id: "5b254369063db83598df2d19",
+                                jobTitle: "Dynamic Branding Orchestrator",
+                                minSalary: 4723,
+                                maxSalary: 11754,
                                 tasks: []
                               },
                               {
-                                _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                jobTitle: "Internal Brand Producer",
-                                minSalary: 92791,
-                                maxSalary: 93558,
+                                _id: "5b254369063db83598df2d1a",
+                                jobTitle: "Dynamic Brand Consultant",
+                                minSalary: 3532,
+                                maxSalary: 67241,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
@@ -3912,41 +3853,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
@@ -3954,69 +3893,67 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                jobTitle: "Human Brand Consultant",
-                minSalary: 25551,
-                maxSalary: 53722,
+                _id: "5b254369063db83598df2d16",
+                jobTitle: "Central Intranet Producer",
+                minSalary: 11705,
+                maxSalary: 37904,
                 tasks: [
                   {
-                    _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                    title:
-                      "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                    _id: "5b254369063db83598df2d21",
+                    title: "Mollitia eum magni in quasi nesciunt totam.",
                     description:
-                      "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                     jobs: [
                       {
-                        _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                        jobTitle: "Chief Creative Orchestrator",
-                        minSalary: 19158,
-                        maxSalary: 71154,
+                        _id: "5b254369063db83598df2d18",
+                        jobTitle: "National Response Developer",
+                        minSalary: 31152,
+                        maxSalary: 19557,
                         tasks: [
                           {
-                            _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                            _id: "5b254369063db83598df2d23",
                             title:
-                              "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                              "Et quia in quis modi minima quod voluptates iste.",
                             description:
-                              "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                             jobs: []
                           },
                           {
-                            _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                            title:
-                              "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                            _id: "5b254369063db83598df2d24",
+                            title: "Incidunt tenetur quas qui mollitia.",
                             description:
-                              "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                    title: "Laboriosam vel beatae velit molestiae.",
+                    _id: "5b254369063db83598df2d22",
+                    title: "Et hic eum.",
                     description:
-                      "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                     jobs: [
                       {
-                        _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                        jobTitle: "Central Brand Consultant",
-                        minSalary: 30756,
-                        maxSalary: 99908,
+                        _id: "5b254369063db83598df2d19",
+                        jobTitle: "Dynamic Branding Orchestrator",
+                        minSalary: 4723,
+                        maxSalary: 11754,
                         tasks: []
                       },
                       {
-                        _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                        jobTitle: "Internal Brand Producer",
-                        minSalary: 92791,
-                        maxSalary: 93558,
+                        _id: "5b254369063db83598df2d1a",
+                        jobTitle: "Dynamic Brand Consultant",
+                        minSalary: 3532,
+                        maxSalary: 67241,
                         tasks: []
                       }
                     ]
@@ -4067,112 +4004,110 @@ describe("Department Actions", () => {
     it("should return the correct action with results", () => {
       const departments = [
         {
-          _id: "d519d1c8-65e0-45cd-817d-61e39f760e31",
-          departmentName: "Operations",
+          _id: "5b254369063db83598df2cfe",
+          departmentName: "Optimization",
           location: {
-            _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-            streetAddress: "57916 Johns Wall",
-            postalCode: "06466-7765",
-            city: "Lake Marquesmouth",
-            stateProvince: "Idaho",
+            _id: "5b254369063db83598df2cf4",
+            streetAddress: "0312 Alessandra Loop",
+            postalCode: "97889-8410",
+            city: "East Dejahbury",
+            stateProvince: "Connecticut",
             country: {
-              _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-              countryName: "Cyprus",
+              _id: "5b254369063db83598df2cea",
+              countryName: "Grenada",
               region: {
-                _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+                _id: "5b254369063db83598df2ce0",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "576c37f8-641a-4e43-ae92-4cd456edc478",
-              firstName: "Sabryna",
-              lastName: "Rath",
-              email: "Toney45@yahoo.com",
-              phoneNumber: "(748) 327-3014 x4203",
-              hireDate: "2018-03-07T10:34:04.190Z",
-              salary: 44305,
-              commissionPct: 43826,
+              _id: "5b254369063db83598df2d09",
+              firstName: "Hattie",
+              lastName: "Gusikowski",
+              email: "Lysanne50@yahoo.com",
+              phoneNumber: "1-070-345-3867",
+              hireDate: "2018-02-28T23:33:35.473Z",
+              salary: 86322,
+              commissionPct: 7799,
               jobs: [
                 {
-                  _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-                  jobTitle: "Direct Factors Coordinator",
-                  minSalary: 8909,
-                  maxSalary: 31108,
+                  _id: "5b254369063db83598df2d14",
+                  jobTitle: "Senior Solutions Administrator",
+                  minSalary: 79377,
+                  maxSalary: 92116,
                   tasks: [
                     {
-                      _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                      title: "Quo qui labore culpa autem molestiae tempore.",
+                      _id: "5b254369063db83598df2d1f",
+                      title: "Nihil est animi.",
                       description:
-                        "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                        "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                       jobs: [
                         {
-                          _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                          jobTitle: "Human Brand Consultant",
-                          minSalary: 25551,
-                          maxSalary: 53722,
+                          _id: "5b254369063db83598df2d16",
+                          jobTitle: "Central Intranet Producer",
+                          minSalary: 11705,
+                          maxSalary: 37904,
                           tasks: [
                             {
-                              _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
+                              _id: "5b254369063db83598df2d21",
                               title:
-                                "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                                "Mollitia eum magni in quasi nesciunt totam.",
                               description:
-                                "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                                "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                               jobs: [
                                 {
-                                  _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                                  jobTitle: "Chief Creative Orchestrator",
-                                  minSalary: 19158,
-                                  maxSalary: 71154,
+                                  _id: "5b254369063db83598df2d18",
+                                  jobTitle: "National Response Developer",
+                                  minSalary: 31152,
+                                  maxSalary: 19557,
                                   tasks: [
                                     {
-                                      _id:
-                                        "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                      _id: "5b254369063db83598df2d23",
                                       title:
-                                        "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                        "Et quia in quis modi minima quod voluptates iste.",
                                       description:
-                                        "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                       jobs: []
                                     },
                                     {
-                                      _id:
-                                        "4f8804d9-c432-4c5c-8efe-40545426e4b8",
+                                      _id: "5b254369063db83598df2d24",
                                       title:
-                                        "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                        "Incidunt tenetur quas qui mollitia.",
                                       description:
-                                        "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                        "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                       jobs: []
                                     }
                                   ]
                                 },
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
@@ -4180,39 +4115,39 @@ describe("Department Actions", () => {
                           ]
                         },
                         {
-                          _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                          jobTitle: "Dynamic Branding Administrator",
-                          minSalary: 11174,
-                          maxSalary: 34003,
+                          _id: "5b254369063db83598df2d17",
+                          jobTitle: "Principal Configuration Representative",
+                          minSalary: 72156,
+                          maxSalary: 67196,
                           tasks: [
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             }
                           ]
@@ -4220,70 +4155,69 @@ describe("Department Actions", () => {
                       ]
                     },
                     {
-                      _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                      _id: "5b254369063db83598df2d20",
                       title:
-                        "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                       description:
-                        "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                       jobs: [
                         {
-                          _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                          jobTitle: "Dynamic Branding Administrator",
-                          minSalary: 11174,
-                          maxSalary: 34003,
+                          _id: "5b254369063db83598df2d17",
+                          jobTitle: "Principal Configuration Representative",
+                          minSalary: 72156,
+                          maxSalary: 67196,
                           tasks: [
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
@@ -4293,76 +4227,75 @@ describe("Department Actions", () => {
                   ]
                 },
                 {
-                  _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                  jobTitle: "Principal Branding Officer",
-                  minSalary: 20639,
-                  maxSalary: 25412,
+                  _id: "5b254369063db83598df2d15",
+                  jobTitle: "Corporate Web Liaison",
+                  minSalary: 85109,
+                  maxSalary: 71038,
                   tasks: [
                     {
-                      _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                      _id: "5b254369063db83598df2d20",
                       title:
-                        "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                       description:
-                        "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                       jobs: [
                         {
-                          _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                          jobTitle: "Dynamic Branding Administrator",
-                          minSalary: 11174,
-                          maxSalary: 34003,
+                          _id: "5b254369063db83598df2d17",
+                          jobTitle: "Principal Configuration Representative",
+                          minSalary: 72156,
+                          maxSalary: 67196,
                           tasks: [
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
@@ -4370,41 +4303,39 @@ describe("Department Actions", () => {
                       ]
                     },
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
@@ -4414,86 +4345,85 @@ describe("Department Actions", () => {
               ]
             },
             {
-              _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-              firstName: "Gustave",
-              lastName: "Gulgowski",
-              email: "Lois.Denesik@hotmail.com",
-              phoneNumber: "1-383-768-8564",
-              hireDate: "2018-03-20T07:11:04.478Z",
-              salary: 73204,
-              commissionPct: 5280,
+              _id: "5b254369063db83598df2d0a",
+              firstName: "Carissa",
+              lastName: "Barrows",
+              email: "Angela15@gmail.com",
+              phoneNumber: "724.764.7759 x90445",
+              hireDate: "2018-05-02T12:48:31.883Z",
+              salary: 31436,
+              commissionPct: 96274,
               jobs: [
                 {
-                  _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                  jobTitle: "Principal Branding Officer",
-                  minSalary: 20639,
-                  maxSalary: 25412,
+                  _id: "5b254369063db83598df2d15",
+                  jobTitle: "Corporate Web Liaison",
+                  minSalary: 85109,
+                  maxSalary: 71038,
                   tasks: [
                     {
-                      _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                      _id: "5b254369063db83598df2d20",
                       title:
-                        "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                       description:
-                        "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                       jobs: [
                         {
-                          _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                          jobTitle: "Dynamic Branding Administrator",
-                          minSalary: 11174,
-                          maxSalary: 34003,
+                          _id: "5b254369063db83598df2d17",
+                          jobTitle: "Principal Configuration Representative",
+                          minSalary: 72156,
+                          maxSalary: 67196,
                           tasks: [
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
@@ -4501,41 +4431,39 @@ describe("Department Actions", () => {
                       ]
                     },
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
@@ -4543,69 +4471,67 @@ describe("Department Actions", () => {
                   ]
                 },
                 {
-                  _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                  jobTitle: "Human Brand Consultant",
-                  minSalary: 25551,
-                  maxSalary: 53722,
+                  _id: "5b254369063db83598df2d16",
+                  jobTitle: "Central Intranet Producer",
+                  minSalary: 11705,
+                  maxSalary: 37904,
                   tasks: [
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
@@ -4617,105 +4543,104 @@ describe("Department Actions", () => {
           ]
         },
         {
-          _id: "197e842a-dd5c-4d2a-a447-47d4eaf9ab4d",
-          departmentName: "Communications",
+          _id: "5b254369063db83598df2cff",
+          departmentName: "Metrics",
           location: {
-            _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-            streetAddress: "57916 Johns Wall",
-            postalCode: "06466-7765",
-            city: "Lake Marquesmouth",
-            stateProvince: "Idaho",
+            _id: "5b254369063db83598df2cf4",
+            streetAddress: "0312 Alessandra Loop",
+            postalCode: "97889-8410",
+            city: "East Dejahbury",
+            stateProvince: "Connecticut",
             country: {
-              _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-              countryName: "Cyprus",
+              _id: "5b254369063db83598df2cea",
+              countryName: "Grenada",
               region: {
-                _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+                _id: "5b254369063db83598df2ce0",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "fcd38306-72f7-4c1d-a39d-3332b3f3c286",
-              firstName: "Gustave",
-              lastName: "Gulgowski",
-              email: "Lois.Denesik@hotmail.com",
-              phoneNumber: "1-383-768-8564",
-              hireDate: "2018-03-20T07:11:04.478Z",
-              salary: 73204,
-              commissionPct: 5280,
+              _id: "5b254369063db83598df2d0a",
+              firstName: "Carissa",
+              lastName: "Barrows",
+              email: "Angela15@gmail.com",
+              phoneNumber: "724.764.7759 x90445",
+              hireDate: "2018-05-02T12:48:31.883Z",
+              salary: 31436,
+              commissionPct: 96274,
               jobs: [
                 {
-                  _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                  jobTitle: "Principal Branding Officer",
-                  minSalary: 20639,
-                  maxSalary: 25412,
+                  _id: "5b254369063db83598df2d15",
+                  jobTitle: "Corporate Web Liaison",
+                  minSalary: 85109,
+                  maxSalary: 71038,
                   tasks: [
                     {
-                      _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                      _id: "5b254369063db83598df2d20",
                       title:
-                        "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                       description:
-                        "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                       jobs: [
                         {
-                          _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                          jobTitle: "Dynamic Branding Administrator",
-                          minSalary: 11174,
-                          maxSalary: 34003,
+                          _id: "5b254369063db83598df2d17",
+                          jobTitle: "Principal Configuration Representative",
+                          minSalary: 72156,
+                          maxSalary: 67196,
                           tasks: [
                             {
-                              _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                              title: "Laboriosam vel beatae velit molestiae.",
+                              _id: "5b254369063db83598df2d22",
+                              title: "Et hic eum.",
                               description:
-                                "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                               jobs: [
                                 {
-                                  _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                  jobTitle: "Central Brand Consultant",
-                                  minSalary: 30756,
-                                  maxSalary: 99908,
+                                  _id: "5b254369063db83598df2d19",
+                                  jobTitle: "Dynamic Branding Orchestrator",
+                                  minSalary: 4723,
+                                  maxSalary: 11754,
                                   tasks: []
                                 },
                                 {
-                                  _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                  jobTitle: "Internal Brand Producer",
-                                  minSalary: 92791,
-                                  maxSalary: 93558,
+                                  _id: "5b254369063db83598df2d1a",
+                                  jobTitle: "Dynamic Brand Consultant",
+                                  minSalary: 3532,
+                                  maxSalary: 67241,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
@@ -4723,41 +4648,39 @@ describe("Department Actions", () => {
                       ]
                     },
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
@@ -4765,69 +4688,67 @@ describe("Department Actions", () => {
                   ]
                 },
                 {
-                  _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                  jobTitle: "Human Brand Consultant",
-                  minSalary: 25551,
-                  maxSalary: 53722,
+                  _id: "5b254369063db83598df2d16",
+                  jobTitle: "Central Intranet Producer",
+                  minSalary: 11705,
+                  maxSalary: 37904,
                   tasks: [
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
@@ -4837,79 +4758,77 @@ describe("Department Actions", () => {
               ]
             },
             {
-              _id: "448a6286-98e2-4193-9ae1-a2fc40a42ae2",
-              firstName: "Okey",
-              lastName: "Renner",
-              email: "Elias.Medhurst58@hotmail.com",
-              phoneNumber: "(589) 350-2925",
-              hireDate: "2017-08-28T07:19:57.286Z",
-              salary: 86439,
-              commissionPct: 86559,
+              _id: "5b254369063db83598df2d0b",
+              firstName: "Narciso",
+              lastName: "Christiansen",
+              email: "Howard_Hoeger@gmail.com",
+              phoneNumber: "851-669-0469 x0139",
+              hireDate: "2017-10-27T03:35:56.028Z",
+              salary: 42970,
+              commissionPct: 61213,
               jobs: [
                 {
-                  _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                  jobTitle: "Human Brand Consultant",
-                  minSalary: 25551,
-                  maxSalary: 53722,
+                  _id: "5b254369063db83598df2d16",
+                  jobTitle: "Central Intranet Producer",
+                  minSalary: 11705,
+                  maxSalary: 37904,
                   tasks: [
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
@@ -4917,39 +4836,39 @@ describe("Department Actions", () => {
                   ]
                 },
                 {
-                  _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                  jobTitle: "Dynamic Branding Administrator",
-                  minSalary: 11174,
-                  maxSalary: 34003,
+                  _id: "5b254369063db83598df2d17",
+                  jobTitle: "Principal Configuration Representative",
+                  minSalary: 72156,
+                  maxSalary: 67196,
                   tasks: [
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                      _id: "5b254369063db83598df2d23",
                       title:
-                        "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                        "Et quia in quis modi minima quod voluptates iste.",
                       description:
-                        "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                       jobs: []
                     }
                   ]
@@ -4959,98 +4878,96 @@ describe("Department Actions", () => {
           ]
         },
         {
-          _id: "6648f731-0338-4efc-b9de-7878687363cd",
-          departmentName: "Infrastructure",
+          _id: "5b254369063db83598df2d00",
+          departmentName: "Mobility",
           location: {
-            _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-            streetAddress: "57916 Johns Wall",
-            postalCode: "06466-7765",
-            city: "Lake Marquesmouth",
-            stateProvince: "Idaho",
+            _id: "5b254369063db83598df2cf4",
+            streetAddress: "0312 Alessandra Loop",
+            postalCode: "97889-8410",
+            city: "East Dejahbury",
+            stateProvince: "Connecticut",
             country: {
-              _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-              countryName: "Cyprus",
+              _id: "5b254369063db83598df2cea",
+              countryName: "Grenada",
               region: {
-                _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+                _id: "5b254369063db83598df2ce0",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "448a6286-98e2-4193-9ae1-a2fc40a42ae2",
-              firstName: "Okey",
-              lastName: "Renner",
-              email: "Elias.Medhurst58@hotmail.com",
-              phoneNumber: "(589) 350-2925",
-              hireDate: "2017-08-28T07:19:57.286Z",
-              salary: 86439,
-              commissionPct: 86559,
+              _id: "5b254369063db83598df2d0b",
+              firstName: "Narciso",
+              lastName: "Christiansen",
+              email: "Howard_Hoeger@gmail.com",
+              phoneNumber: "851-669-0469 x0139",
+              hireDate: "2017-10-27T03:35:56.028Z",
+              salary: 42970,
+              commissionPct: 61213,
               jobs: [
                 {
-                  _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                  jobTitle: "Human Brand Consultant",
-                  minSalary: 25551,
-                  maxSalary: 53722,
+                  _id: "5b254369063db83598df2d16",
+                  jobTitle: "Central Intranet Producer",
+                  minSalary: 11705,
+                  maxSalary: 37904,
                   tasks: [
                     {
-                      _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                      title:
-                        "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                      _id: "5b254369063db83598df2d21",
+                      title: "Mollitia eum magni in quasi nesciunt totam.",
                       description:
-                        "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                       jobs: [
                         {
-                          _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                          jobTitle: "Chief Creative Orchestrator",
-                          minSalary: 19158,
-                          maxSalary: 71154,
+                          _id: "5b254369063db83598df2d18",
+                          jobTitle: "National Response Developer",
+                          minSalary: 31152,
+                          maxSalary: 19557,
                           tasks: [
                             {
-                              _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                              _id: "5b254369063db83598df2d23",
                               title:
-                                "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                "Et quia in quis modi minima quod voluptates iste.",
                               description:
-                                "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                               jobs: []
                             },
                             {
-                              _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                              title:
-                                "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                              _id: "5b254369063db83598df2d24",
+                              title: "Incidunt tenetur quas qui mollitia.",
                               description:
-                                "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
@@ -5058,39 +4975,39 @@ describe("Department Actions", () => {
                   ]
                 },
                 {
-                  _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                  jobTitle: "Dynamic Branding Administrator",
-                  minSalary: 11174,
-                  maxSalary: 34003,
+                  _id: "5b254369063db83598df2d17",
+                  jobTitle: "Principal Configuration Representative",
+                  minSalary: 72156,
+                  maxSalary: 67196,
                   tasks: [
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                      _id: "5b254369063db83598df2d23",
                       title:
-                        "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                        "Et quia in quis modi minima quod voluptates iste.",
                       description:
-                        "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                       jobs: []
                     }
                   ]
@@ -5098,73 +5015,72 @@ describe("Department Actions", () => {
               ]
             },
             {
-              _id: "d2e542cc-19e5-4709-b806-acc25703de93",
-              firstName: "Adela",
-              lastName: "Klein",
-              email: "Lera.Emard49@hotmail.com",
-              phoneNumber: "070.748.8067 x3905",
-              hireDate: "2018-04-09T22:24:07.904Z",
-              salary: 71455,
-              commissionPct: 95498,
+              _id: "5b254369063db83598df2d0c",
+              firstName: "Dillan",
+              lastName: "Larkin",
+              email: "Monica.Oberbrunner@yahoo.com",
+              phoneNumber: "(660) 956-0818",
+              hireDate: "2017-08-15T15:22:26.449Z",
+              salary: 43152,
+              commissionPct: 51668,
               jobs: [
                 {
-                  _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                  jobTitle: "Dynamic Branding Administrator",
-                  minSalary: 11174,
-                  maxSalary: 34003,
+                  _id: "5b254369063db83598df2d17",
+                  jobTitle: "Principal Configuration Representative",
+                  minSalary: 72156,
+                  maxSalary: 67196,
                   tasks: [
                     {
-                      _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                      title: "Laboriosam vel beatae velit molestiae.",
+                      _id: "5b254369063db83598df2d22",
+                      title: "Et hic eum.",
                       description:
-                        "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                       jobs: [
                         {
-                          _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                          jobTitle: "Central Brand Consultant",
-                          minSalary: 30756,
-                          maxSalary: 99908,
+                          _id: "5b254369063db83598df2d19",
+                          jobTitle: "Dynamic Branding Orchestrator",
+                          minSalary: 4723,
+                          maxSalary: 11754,
                           tasks: []
                         },
                         {
-                          _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                          jobTitle: "Internal Brand Producer",
-                          minSalary: 92791,
-                          maxSalary: 93558,
+                          _id: "5b254369063db83598df2d1a",
+                          jobTitle: "Dynamic Brand Consultant",
+                          minSalary: 3532,
+                          maxSalary: 67241,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                      _id: "5b254369063db83598df2d23",
                       title:
-                        "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                        "Et quia in quis modi minima quod voluptates iste.",
                       description:
-                        "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                       jobs: []
                     }
                   ]
                 },
                 {
-                  _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                  jobTitle: "Chief Creative Orchestrator",
-                  minSalary: 19158,
-                  maxSalary: 71154,
+                  _id: "5b254369063db83598df2d18",
+                  jobTitle: "National Response Developer",
+                  minSalary: 31152,
+                  maxSalary: 19557,
                   tasks: [
                     {
-                      _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                      _id: "5b254369063db83598df2d23",
                       title:
-                        "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                        "Et quia in quis modi minima quod voluptates iste.",
                       description:
-                        "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                       jobs: []
                     },
                     {
-                      _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                      title:
-                        "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                      _id: "5b254369063db83598df2d24",
+                      title: "Incidunt tenetur quas qui mollitia.",
                       description:
-                        "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                        "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                       jobs: []
                     }
                   ]
@@ -5198,16 +5114,16 @@ describe("Department Actions", () => {
   describe("setLocation", () => {
     it("should return the correct action with location", () => {
       const location = {
-        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-        streetAddress: "57916 Johns Wall",
-        postalCode: "06466-7765",
-        city: "Lake Marquesmouth",
-        stateProvince: "Idaho",
+        _id: "5b254369063db83598df2cf4",
+        streetAddress: "0312 Alessandra Loop",
+        postalCode: "97889-8410",
+        city: "East Dejahbury",
+        stateProvince: "Connecticut",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
@@ -5224,99 +5140,97 @@ describe("Department Actions", () => {
   describe("addEmployee", () => {
     it("should return the correct action with employee", () => {
       const employee = {
-        _id: "24a75870-5892-4692-aff9-5624a0722f8d",
-        firstName: "Karlee",
-        lastName: "Buckridge",
-        email: "Nelle94@hotmail.com",
-        phoneNumber: "366.961.8398",
-        hireDate: "2017-07-29T21:34:53.570Z",
-        salary: 77443,
-        commissionPct: 65591,
+        _id: "5b254369063db83598df2d08",
+        firstName: "Addie",
+        lastName: "Collins",
+        email: "Dedrick_DuBuque@yahoo.com",
+        phoneNumber: "961.198.0838",
+        hireDate: "2017-07-23T13:58:11.883Z",
+        salary: 76298,
+        commissionPct: 38779,
         jobs: [
           {
-            _id: "481dcac5-cb01-42cf-a58b-c236c394c429",
-            jobTitle: "International Integration Consultant",
-            minSalary: 39687,
-            maxSalary: 52084,
+            _id: "5b254369063db83598df2d13",
+            jobTitle: "Central Metrics Administrator",
+            minSalary: 78472,
+            maxSalary: 53709,
             tasks: [
               {
-                _id: "903555da-167e-44bb-b2f0-32dd75e96847",
-                title:
-                  "Eaque ipsum minima natus iste voluptatem tempora nam dolores.",
+                _id: "5b254369063db83598df2d1e",
+                title: "Iure dolores beatae qui et beatae et sed.",
                 description:
-                  "Aut nostrum eius a dolores amet ad excepturi. Non deleniti sed reiciendis harum molestiae fugit quam occaecati deserunt. Dolores harum blanditiis. Magnam laudantium quisquam mollitia praesentium.",
+                  "Repudiandae beatae eius omnis impedit voluptate voluptates accusantium. Voluptatem necessitatibus repellat voluptas corporis voluptas est odio incidunt totam. Exercitationem id libero quam neque. Consectetur quas debitis occaecati modi magnam consequuntur est vero. Sequi corrupti et maiores culpa quisquam excepturi voluptatum qui maiores.",
                 jobs: [
                   {
-                    _id: "688b8a39-f2d8-493d-b71d-e91c2b4ac873",
-                    jobTitle: "Principal Branding Officer",
-                    minSalary: 20639,
-                    maxSalary: 25412,
+                    _id: "5b254369063db83598df2d15",
+                    jobTitle: "Corporate Web Liaison",
+                    minSalary: 85109,
+                    maxSalary: 71038,
                     tasks: [
                       {
-                        _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                        _id: "5b254369063db83598df2d20",
                         title:
-                          "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                          "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                         description:
-                          "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                          "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                         jobs: [
                           {
-                            _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                            jobTitle: "Dynamic Branding Administrator",
-                            minSalary: 11174,
-                            maxSalary: 34003,
+                            _id: "5b254369063db83598df2d17",
+                            jobTitle: "Principal Configuration Representative",
+                            minSalary: 72156,
+                            maxSalary: 67196,
                             tasks: [
                               {
-                                _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                                title: "Laboriosam vel beatae velit molestiae.",
+                                _id: "5b254369063db83598df2d22",
+                                title: "Et hic eum.",
                                 description:
-                                  "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                                  "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                                 jobs: [
                                   {
-                                    _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                                    jobTitle: "Central Brand Consultant",
-                                    minSalary: 30756,
-                                    maxSalary: 99908,
+                                    _id: "5b254369063db83598df2d19",
+                                    jobTitle: "Dynamic Branding Orchestrator",
+                                    minSalary: 4723,
+                                    maxSalary: 11754,
                                     tasks: []
                                   },
                                   {
-                                    _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                                    jobTitle: "Internal Brand Producer",
-                                    minSalary: 92791,
-                                    maxSalary: 93558,
+                                    _id: "5b254369063db83598df2d1a",
+                                    jobTitle: "Dynamic Brand Consultant",
+                                    minSalary: 3532,
+                                    maxSalary: 67241,
                                     tasks: []
                                   }
                                 ]
                               },
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                            jobTitle: "Chief Creative Orchestrator",
-                            minSalary: 19158,
-                            maxSalary: 71154,
+                            _id: "5b254369063db83598df2d18",
+                            jobTitle: "National Response Developer",
+                            minSalary: 31152,
+                            maxSalary: 19557,
                             tasks: [
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               },
                               {
-                                _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                                title:
-                                  "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                _id: "5b254369063db83598df2d24",
+                                title: "Incidunt tenetur quas qui mollitia.",
                                 description:
-                                  "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                 jobs: []
                               }
                             ]
@@ -5324,41 +5238,39 @@ describe("Department Actions", () => {
                         ]
                       },
                       {
-                        _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                        title:
-                          "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                        _id: "5b254369063db83598df2d21",
+                        title: "Mollitia eum magni in quasi nesciunt totam.",
                         description:
-                          "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                         jobs: [
                           {
-                            _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                            jobTitle: "Chief Creative Orchestrator",
-                            minSalary: 19158,
-                            maxSalary: 71154,
+                            _id: "5b254369063db83598df2d18",
+                            jobTitle: "National Response Developer",
+                            minSalary: 31152,
+                            maxSalary: 19557,
                             tasks: [
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               },
                               {
-                                _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                                title:
-                                  "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                _id: "5b254369063db83598df2d24",
+                                title: "Incidunt tenetur quas qui mollitia.",
                                 description:
-                                  "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           }
                         ]
@@ -5366,69 +5278,67 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                    jobTitle: "Human Brand Consultant",
-                    minSalary: 25551,
-                    maxSalary: 53722,
+                    _id: "5b254369063db83598df2d16",
+                    jobTitle: "Central Intranet Producer",
+                    minSalary: 11705,
+                    maxSalary: 37904,
                     tasks: [
                       {
-                        _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                        title:
-                          "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                        _id: "5b254369063db83598df2d21",
+                        title: "Mollitia eum magni in quasi nesciunt totam.",
                         description:
-                          "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                         jobs: [
                           {
-                            _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                            jobTitle: "Chief Creative Orchestrator",
-                            minSalary: 19158,
-                            maxSalary: 71154,
+                            _id: "5b254369063db83598df2d18",
+                            jobTitle: "National Response Developer",
+                            minSalary: 31152,
+                            maxSalary: 19557,
                             tasks: [
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               },
                               {
-                                _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                                title:
-                                  "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                _id: "5b254369063db83598df2d24",
+                                title: "Incidunt tenetur quas qui mollitia.",
                                 description:
-                                  "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
@@ -5438,75 +5348,73 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                title: "Quo qui labore culpa autem molestiae tempore.",
+                _id: "5b254369063db83598df2d1f",
+                title: "Nihil est animi.",
                 description:
-                  "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                  "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                 jobs: [
                   {
-                    _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                    jobTitle: "Human Brand Consultant",
-                    minSalary: 25551,
-                    maxSalary: 53722,
+                    _id: "5b254369063db83598df2d16",
+                    jobTitle: "Central Intranet Producer",
+                    minSalary: 11705,
+                    maxSalary: 37904,
                     tasks: [
                       {
-                        _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                        title:
-                          "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                        _id: "5b254369063db83598df2d21",
+                        title: "Mollitia eum magni in quasi nesciunt totam.",
                         description:
-                          "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                         jobs: [
                           {
-                            _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                            jobTitle: "Chief Creative Orchestrator",
-                            minSalary: 19158,
-                            maxSalary: 71154,
+                            _id: "5b254369063db83598df2d18",
+                            jobTitle: "National Response Developer",
+                            minSalary: 31152,
+                            maxSalary: 19557,
                             tasks: [
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               },
                               {
-                                _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                                title:
-                                  "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                _id: "5b254369063db83598df2d24",
+                                title: "Incidunt tenetur quas qui mollitia.",
                                 description:
-                                  "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
@@ -5514,39 +5422,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                    jobTitle: "Dynamic Branding Administrator",
-                    minSalary: 11174,
-                    maxSalary: 34003,
+                    _id: "5b254369063db83598df2d17",
+                    jobTitle: "Principal Configuration Representative",
+                    minSalary: 72156,
+                    maxSalary: 67196,
                     tasks: [
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                        _id: "5b254369063db83598df2d23",
                         title:
-                          "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                          "Et quia in quis modi minima quod voluptates iste.",
                         description:
-                          "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                         jobs: []
                       }
                     ]
@@ -5556,81 +5464,79 @@ describe("Department Actions", () => {
             ]
           },
           {
-            _id: "78cac805-f0c9-4bfc-a509-98adc419ccc7",
-            jobTitle: "Direct Factors Coordinator",
-            minSalary: 8909,
-            maxSalary: 31108,
+            _id: "5b254369063db83598df2d14",
+            jobTitle: "Senior Solutions Administrator",
+            minSalary: 79377,
+            maxSalary: 92116,
             tasks: [
               {
-                _id: "eab1382d-b41a-4bd0-85fc-01c3fa1ecdf0",
-                title: "Quo qui labore culpa autem molestiae tempore.",
+                _id: "5b254369063db83598df2d1f",
+                title: "Nihil est animi.",
                 description:
-                  "Officia quidem est rerum maiores. Et nesciunt aut quis sed aut veritatis magni. Illo atque autem quia perspiciatis id voluptate. Nesciunt illo omnis nostrum ut. Ullam praesentium praesentium dolores voluptas aut quia molestiae.",
+                  "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
                 jobs: [
                   {
-                    _id: "11cb274b-184c-46b0-89ac-500ba6c95d15",
-                    jobTitle: "Human Brand Consultant",
-                    minSalary: 25551,
-                    maxSalary: 53722,
+                    _id: "5b254369063db83598df2d16",
+                    jobTitle: "Central Intranet Producer",
+                    minSalary: 11705,
+                    maxSalary: 37904,
                     tasks: [
                       {
-                        _id: "a3729636-f5d9-43d9-8571-55b476f6bb75",
-                        title:
-                          "In voluptatibus et iusto consequuntur sed velit reiciendis commodi.",
+                        _id: "5b254369063db83598df2d21",
+                        title: "Mollitia eum magni in quasi nesciunt totam.",
                         description:
-                          "Rerum ut aperiam amet molestiae. Sed maiores nostrum. Excepturi delectus maxime tempora inventore quia sint voluptatem error. Aut impedit nihil nihil iusto placeat culpa. Quia numquam est impedit hic doloremque.",
+                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
                         jobs: [
                           {
-                            _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                            jobTitle: "Chief Creative Orchestrator",
-                            minSalary: 19158,
-                            maxSalary: 71154,
+                            _id: "5b254369063db83598df2d18",
+                            jobTitle: "National Response Developer",
+                            minSalary: 31152,
+                            maxSalary: 19557,
                             tasks: [
                               {
-                                _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                                _id: "5b254369063db83598df2d23",
                                 title:
-                                  "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                                  "Et quia in quis modi minima quod voluptates iste.",
                                 description:
-                                  "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                                 jobs: []
                               },
                               {
-                                _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                                title:
-                                  "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                                _id: "5b254369063db83598df2d24",
+                                title: "Incidunt tenetur quas qui mollitia.",
                                 description:
-                                  "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
@@ -5638,39 +5544,39 @@ describe("Department Actions", () => {
                     ]
                   },
                   {
-                    _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                    jobTitle: "Dynamic Branding Administrator",
-                    minSalary: 11174,
-                    maxSalary: 34003,
+                    _id: "5b254369063db83598df2d17",
+                    jobTitle: "Principal Configuration Representative",
+                    minSalary: 72156,
+                    maxSalary: 67196,
                     tasks: [
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                        _id: "5b254369063db83598df2d23",
                         title:
-                          "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                          "Et quia in quis modi minima quod voluptates iste.",
                         description:
-                          "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                         jobs: []
                       }
                     ]
@@ -5678,70 +5584,69 @@ describe("Department Actions", () => {
                 ]
               },
               {
-                _id: "2430c74b-2f25-465e-ab7c-23d77c98abbe",
+                _id: "5b254369063db83598df2d20",
                 title:
-                  "Et mollitia aliquid eius minima expedita corrupti laborum sed modi.",
+                  "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
                 description:
-                  "Saepe cumque ut temporibus harum sed et eos qui. Hic voluptatibus eum. Et aut dolores repellendus doloribus quam ut reprehenderit. Beatae voluptas sunt nam qui enim et quis. Odio recusandae officiis rerum ad. Veritatis qui enim minus iusto ratione autem dolorem consequatur.",
+                  "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
                 jobs: [
                   {
-                    _id: "1f403133-072b-4a27-8926-2bf3efb71fb0",
-                    jobTitle: "Dynamic Branding Administrator",
-                    minSalary: 11174,
-                    maxSalary: 34003,
+                    _id: "5b254369063db83598df2d17",
+                    jobTitle: "Principal Configuration Representative",
+                    minSalary: 72156,
+                    maxSalary: 67196,
                     tasks: [
                       {
-                        _id: "0f0c64cf-1622-4921-b28b-c2c453bc4dd4",
-                        title: "Laboriosam vel beatae velit molestiae.",
+                        _id: "5b254369063db83598df2d22",
+                        title: "Et hic eum.",
                         description:
-                          "Voluptatem aut alias ut perspiciatis sit modi non. Voluptatem illo esse et amet aut veritatis ipsam. Exercitationem non et temporibus accusamus. Iure aspernatur aspernatur ab perspiciatis necessitatibus.",
+                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
                         jobs: [
                           {
-                            _id: "32698f19-b49e-4525-919f-a1b1fc217a37",
-                            jobTitle: "Central Brand Consultant",
-                            minSalary: 30756,
-                            maxSalary: 99908,
+                            _id: "5b254369063db83598df2d19",
+                            jobTitle: "Dynamic Branding Orchestrator",
+                            minSalary: 4723,
+                            maxSalary: 11754,
                             tasks: []
                           },
                           {
-                            _id: "52e18726-cf2a-430a-8186-2277ddf5ff80",
-                            jobTitle: "Internal Brand Producer",
-                            minSalary: 92791,
-                            maxSalary: 93558,
+                            _id: "5b254369063db83598df2d1a",
+                            jobTitle: "Dynamic Brand Consultant",
+                            minSalary: 3532,
+                            maxSalary: 67241,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                        _id: "5b254369063db83598df2d23",
                         title:
-                          "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                          "Et quia in quis modi minima quod voluptates iste.",
                         description:
-                          "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                         jobs: []
                       }
                     ]
                   },
                   {
-                    _id: "28fbe05a-5337-4677-b2d8-48c226bd9e99",
-                    jobTitle: "Chief Creative Orchestrator",
-                    minSalary: 19158,
-                    maxSalary: 71154,
+                    _id: "5b254369063db83598df2d18",
+                    jobTitle: "National Response Developer",
+                    minSalary: 31152,
+                    maxSalary: 19557,
                     tasks: [
                       {
-                        _id: "3d36c7e3-c9c3-4681-84e8-5541f6c5b62a",
+                        _id: "5b254369063db83598df2d23",
                         title:
-                          "Recusandae perferendis vitae perspiciatis voluptates cumque beatae illum dolorem aut.",
+                          "Et quia in quis modi minima quod voluptates iste.",
                         description:
-                          "Dolorum sit necessitatibus ab tenetur quo omnis pariatur. Sapiente recusandae eaque ab unde sint quod dignissimos. Quo qui aliquam dolore consequatur sequi ut et. Iure et eligendi quas quam officia. Dicta eaque ut vero voluptatem nemo quidem.",
+                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
                         jobs: []
                       },
                       {
-                        _id: "4f8804d9-c432-4c5c-8efe-40545426e4b8",
-                        title:
-                          "Deserunt mollitia molestias voluptas sint animi et rerum molestiae.",
+                        _id: "5b254369063db83598df2d24",
+                        title: "Incidunt tenetur quas qui mollitia.",
                         description:
-                          "Temporibus ratione laborum odit. Vel consectetur sunt est et eum eveniet molestias corporis nam. Rerum fugiat natus et. Delectus corrupti illum quos perferendis maiores iusto.",
+                          "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
                         jobs: []
                       }
                     ]

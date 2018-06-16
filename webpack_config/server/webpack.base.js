@@ -5,7 +5,7 @@ import rimraf from 'rimraf'
 import config from '../config'
 import isomorphicWebpackConfig from '../webpack.isomorphic'
 const {SENTRY_DSN, CLIENT_DIST_PATH, JWT_SECRET, PORT, publicPath, BASE_API_SSR, API_PREFIX, 
-    DBHOST, DBUSER, DBNAME, DBPASSWORD, DBPORT, isProduction} = config
+   DBHOST, DBUSER, DBNAME, DBPASSWORD, DBPORT, DBINDEX, isProduction} = config
 
 // Clear dist dir before run
 rimraf(`${config.distPath}/server`, {}, () => {})
@@ -28,7 +28,8 @@ const definePluginArgs = {
 	'process.env.DBUSER': JSON.stringify(DBUSER),
 	'process.env.DBNAME': JSON.stringify(DBNAME),
 	'process.env.DBPASSWORD': JSON.stringify(DBPASSWORD),
-	'process.env.DBPORT': JSON.stringify(DBPORT),
+    'process.env.DBPORT': JSON.stringify(DBPORT),
+    'process.env.DBINDEX': JSON.stringify(DBINDEX)
 }
 
 let nodeModules = {}

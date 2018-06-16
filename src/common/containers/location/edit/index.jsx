@@ -161,7 +161,7 @@ class LocationEdit extends Component<Props, State> {
 											<Button as={Link} to={'/viewCountry/' + country['_id']}>
 												{country['countryName']}
 											</Button>
-											<Button icon onClick={deleteCountry}>
+											<Button icon onClick={() => deleteCountry(country)}>
 												<Icon name="delete" />
 											</Button>
 										</Button.Group>
@@ -195,6 +195,7 @@ class LocationEdit extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="save-button"
 										content="Save"
 										icon="save"
 										loading={submitting}

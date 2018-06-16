@@ -132,7 +132,7 @@ class CountryAdd extends Component<Props, State> {
 											<Button as={Link} to={'/viewRegion/' + region['_id']}>
 												{region['regionName']}
 											</Button>
-											<Button icon onClick={deleteRegion}>
+											<Button icon onClick={() => deleteRegion(region)}>
 												<Icon name="delete" />
 											</Button>
 										</Button.Group>
@@ -166,6 +166,7 @@ class CountryAdd extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="add-button"
 										content="Add"
 										icon="add"
 										loading={submitting}

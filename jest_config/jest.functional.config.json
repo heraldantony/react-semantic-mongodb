@@ -1,5 +1,5 @@
 {
-	"moduleFileExtensions": ["js", "jsx"],
+	"moduleFileExtensions": ["js", "jsx", "json"],
 	"rootDir": "../",
 	"setupFiles": ["<rootDir>/jest_config/shim.js","<rootDir>/jest_config/setupJest.js"],
 	"automock": false,
@@ -9,5 +9,5 @@
 	},
     "coveragePathIgnorePatterns": [ "style.jsx", "/styles" ],
     "modulePaths": ["<rootDir>/src","<rootDir>/src/common"],
-    "testMatch": [ "**/__functional_tests__/**/*.js?(x)", "**/functional_tests/?(*.)+(spec|test).js?(x)" ]
+    "testMatch": [ "**/__functional_tests__/**/*.js?(x)", "**/functional_tests/**/?(*.)+(spec|test).js?(x)" ]
 }

@@ -43,7 +43,7 @@ describe("Region Reducer", () => {
   describe("addRegionSuccess", () => {
     it("should update state with add results", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -68,7 +68,7 @@ describe("Region Reducer", () => {
   describe("saveRegionSuccess", () => {
     it("should update state with save results", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -93,7 +93,7 @@ describe("Region Reducer", () => {
   describe("updateRegionSuccess", () => {
     it("should update state with update results", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -118,15 +118,9 @@ describe("Region Reducer", () => {
   describe("searchRegionSuccess", () => {
     it("should update state with search results", () => {
       const regions = [
-        {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-          regionName: "South-east Asia"
-        },
-        { _id: "eedf4124-3976-4e4f-86ba-a7dd7520ee1f", regionName: "Africa" },
-        {
-          _id: "02dc7ad0-7423-42a0-8f33-51f680b95190",
-          regionName: "Eastern Europe"
-        }
+        { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
+        { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
+        { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
       ];
       const expectedResult = { ...state, regions: regions };
 
@@ -150,7 +144,7 @@ describe("Region Reducer", () => {
   describe("getRegionSuccess", () => {
     it("should update state with get results", () => {
       const region = {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+        _id: "5b254369063db83598df2ce0",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };

@@ -42,16 +42,16 @@ describe("doGetLocation Saga", () => {
 
   it("should get Location ", () => {
     let fakeLocation = {
-      _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-      streetAddress: "57916 Johns Wall",
-      postalCode: "06466-7765",
-      city: "Lake Marquesmouth",
-      stateProvince: "Idaho",
+      _id: "5b254369063db83598df2cf4",
+      streetAddress: "0312 Alessandra Loop",
+      postalCode: "97889-8410",
+      city: "East Dejahbury",
+      stateProvince: "Connecticut",
       country: {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       }
@@ -69,16 +69,16 @@ describe("doGetLocation Saga", () => {
   });
   it("should fail to get Location with message", () => {
     let fakeLocation = {
-      _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-      streetAddress: "57916 Johns Wall",
-      postalCode: "06466-7765",
-      city: "Lake Marquesmouth",
-      stateProvince: "Idaho",
+      _id: "5b254369063db83598df2cf4",
+      streetAddress: "0312 Alessandra Loop",
+      postalCode: "97889-8410",
+      city: "East Dejahbury",
+      stateProvince: "Connecticut",
       country: {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       }
@@ -104,16 +104,16 @@ describe("doGetLocation Saga", () => {
   });
   it("should handle reducer and store state", () => {
     let fakeLocation = {
-      _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-      streetAddress: "57916 Johns Wall",
-      postalCode: "06466-7765",
-      city: "Lake Marquesmouth",
-      stateProvince: "Idaho",
+      _id: "5b254369063db83598df2cf4",
+      streetAddress: "0312 Alessandra Loop",
+      postalCode: "97889-8410",
+      city: "East Dejahbury",
+      stateProvince: "Connecticut",
       country: {
-        _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-        countryName: "Cyprus",
+        _id: "5b254369063db83598df2cea",
+        countryName: "Grenada",
         region: {
-          _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+          _id: "5b254369063db83598df2ce0",
           regionName: "South-east Asia"
         }
       }

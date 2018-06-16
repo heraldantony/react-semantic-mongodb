@@ -1,5 +1,8 @@
 // @flow
-import { isLoggedIn as hasLocalToken } from 'api/LocalStorageCookiesSvc'
+import {
+	isLoggedIn as hasLocalToken,
+	setLocalToken
+} from 'api/LocalStorageCookiesSvc'
 import {
 	LOGIN_AUTH_FAIL,
 	LOGIN_AUTH_SUCCESS,
@@ -59,6 +62,12 @@ export function auth (state: State = initialState, action: Action): State {
 		}
 	}
 	case LOGIN_AUTH_SUCCESS: {
+		// temp fix for localhost, since set-cookie header from server response after login
+		// doesn't seem to set the cookie
+		const hostname = window && window.location && window.location.hostname
+		if (hostname === 'localhost' || hostname === '127.0.0.1') {
+			setLocalToken(action.payload.token, 1800)
+		}
 		return {
 			...state,
 			isLoggedIn: true,

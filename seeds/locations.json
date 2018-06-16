@@ -1,0 +1,12 @@
+[
+{"_id":{"$oid":"5b254369063db83598df2cf4"},"streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cf5"},"streetAddress":"718 Mayert Crossroad","postalCode":"88688-0229","city":"Ondrickafort","stateProvince":"Illinois","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cf6"},"streetAddress":"605 Shyanne Inlet","postalCode":"55668","city":"North Lucius","stateProvince":"Tennessee","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cf7"},"streetAddress":"62066 Lavada Street","postalCode":"76724","city":"East Elody","stateProvince":"Idaho","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cf8"},"streetAddress":"940 O'Keefe Vista","postalCode":"01167","city":"West Jaquanport","stateProvince":"Illinois","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cf9"},"streetAddress":"695 Jast Plain","postalCode":"84784-5278","city":"East Kody","stateProvince":"Hawaii","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cfa"},"streetAddress":"9534 Ledner Mission","postalCode":"90794","city":"Stromanchester","stateProvince":"New Mexico","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cfb"},"streetAddress":"01401 Kessler Square","postalCode":"89735-3073","city":"Port Roslyn","stateProvince":"Nevada","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cfc"},"streetAddress":"277 Conn Mill","postalCode":"57687","city":"Lake Kiley","stateProvince":"Maryland","country":{"$oid":"5b254369063db83598df2cea"}},
+{"_id":{"$oid":"5b254369063db83598df2cfd"},"streetAddress":"4080 D'Amore Pine","postalCode":"66611-8400","city":"Jalynchester","stateProvince":"Arizona","country":{"$oid":"5b254369063db83598df2cea"}}
+]

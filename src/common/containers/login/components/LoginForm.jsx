@@ -58,13 +58,18 @@ class LoginComponent extends Component<Props, State> {
 		const { error, handleSubmit, login, invalid, submitting } = this.props
 
 		return (
-			<div>
+			<div className="login-form">
 				<Form onSubmit={handleSubmit(login)} error={invalid}>
 					{fields.map((a, i) => <Field key={i} {...a} />)}
 					<Message error header="Login Failed" content={error} />
 
 					<div style={{ textAlign: 'center' }}>
-						<Button content="Login" icon="sign in" loading={submitting} />
+						<Button
+							className="login-button"
+							content="Login"
+							icon="sign in"
+							loading={submitting}
+						/>
 					</div>
 				</Form>
 				<div>

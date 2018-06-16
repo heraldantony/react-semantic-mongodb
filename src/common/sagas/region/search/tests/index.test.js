@@ -42,15 +42,9 @@ describe("doSearchRegion Saga", () => {
 
   it("should search and return  Region List", () => {
     let fakeRegionList = [
-      {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      },
-      { _id: "eedf4124-3976-4e4f-86ba-a7dd7520ee1f", regionName: "Africa" },
-      {
-        _id: "02dc7ad0-7423-42a0-8f33-51f680b95190",
-        regionName: "Eastern Europe"
-      }
+      { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
+      { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
+      { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
     ];
     let searchFormData = { search: "test", pageNumber: 1, pageSize: 10 };
     let fakeResult = { ok: true, data: fakeRegionList };
@@ -76,7 +70,7 @@ describe("doSearchRegion Saga", () => {
   });
   /*
   it('should fail to search for Region with message', () => {
-    let fakeRegionList = [{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"},{"_id":"eedf4124-3976-4e4f-86ba-a7dd7520ee1f","regionName":"Africa"},{"_id":"02dc7ad0-7423-42a0-8f33-51f680b95190","regionName":"Eastern Europe"}]
+    let fakeRegionList = [{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"},{"_id":"5b254369063db83598df2ce1","regionName":"Africa"},{"_id":"5b254369063db83598df2ce2","regionName":"Eastern Europe"}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Region, random error' } }
     return new Promise((resolve, reject) => {
@@ -97,15 +91,9 @@ describe("doSearchRegion Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeRegionList = [
-      {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      },
-      { _id: "eedf4124-3976-4e4f-86ba-a7dd7520ee1f", regionName: "Africa" },
-      {
-        _id: "02dc7ad0-7423-42a0-8f33-51f680b95190",
-        regionName: "Eastern Europe"
-      }
+      { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
+      { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
+      { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
     ];
     let searchFormData = { search: "test", pageNumber: 1, pageSize: 10 };
     let fakeResult = { ok: true, data: { docs: fakeRegionList } };

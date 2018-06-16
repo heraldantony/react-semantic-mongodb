@@ -12,8 +12,8 @@ export function resetLocalToken () {
 	Cookies.remove(JWT_TOKEN)
 }
 
-export function setLocalToken (token: string) {
-	Cookies.set(JWT_TOKEN, token, { expires: 365 })
+export function setLocalToken (token: string, maxAge: number) {
+	Cookies.set(JWT_TOKEN, token, { maxAge: maxAge })
 }
 
 export const isLoggedIn = () => !!getLocalToken()

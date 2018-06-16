@@ -142,7 +142,7 @@ class TaskAdd extends Component<Props, State> {
                     			<Button as={Link} to={'/viewJob/' + entity['_id']}>
                     				{entity['jobTitle']}
                     			</Button>
-                    			<Button icon onClick={deleteJob}>
+                    			<Button icon onClick={() => deleteJob(entity)}>
                     				<Icon name="delete" />
                     			</Button>
                     		</Button.Group>
@@ -177,6 +177,7 @@ class TaskAdd extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="add-button"
 										content="Add"
 										icon="add"
 										loading={submitting}

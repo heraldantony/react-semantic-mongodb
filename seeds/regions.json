@@ -1,0 +1,12 @@
+[
+{"_id":{"$oid":"5b254369063db83598df2ce0"},"regionName":"South-east Asia"},
+{"_id":{"$oid":"5b254369063db83598df2ce1"},"regionName":"Africa"},
+{"_id":{"$oid":"5b254369063db83598df2ce2"},"regionName":"Eastern Europe"},
+{"_id":{"$oid":"5b254369063db83598df2ce3"},"regionName":"South-east Asia"},
+{"_id":{"$oid":"5b254369063db83598df2ce4"},"regionName":"Africa"},
+{"_id":{"$oid":"5b254369063db83598df2ce5"},"regionName":"Eastern Europe"},
+{"_id":{"$oid":"5b254369063db83598df2ce6"},"regionName":"South-east Asia"},
+{"_id":{"$oid":"5b254369063db83598df2ce7"},"regionName":"Africa"},
+{"_id":{"$oid":"5b254369063db83598df2ce8"},"regionName":"Eastern Europe"},
+{"_id":{"$oid":"5b254369063db83598df2ce9"},"regionName":"South-east Asia"}
+]

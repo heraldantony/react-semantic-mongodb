@@ -9,7 +9,7 @@ import { getAuthState } from 'selectors'
 import _ from 'lodash'
 import RouteAuth from 'components/addons/RouteAuth'
 import type { RouteItem } from 'types'
-
+import { isLoggedIn as checkAuthCookie } from 'api/LocalStorageCookiesSvc'
 type Props = {
   routesToRender: RouteItem[],
   routes: RouteItem[]
@@ -35,7 +35,9 @@ const RoutingWrapper = (props: Props) => {
 
 function mapStateToProps (state, props) {
 	const { routes } = props
-	const { isLoggedIn } = getAuthState(state)
+	// check the cookie instead of app state, to make it easier for integration testing
+	// const { isLoggedIn } = getAuthState(state)
+	const isLoggedIn = checkAuthCookie()
 
 	/**
    * Checks Auth logic. Is user allowed to visit certain path?

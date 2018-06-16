@@ -42,7 +42,7 @@ describe("doUpdateRegion Saga", () => {
 
   it("should update Region", () => {
     let fakeRegion = {
-      _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+      _id: "5b254369063db83598df2ce0",
       regionName: "South-east Asia"
     };
 
@@ -71,7 +71,7 @@ describe("doUpdateRegion Saga", () => {
   });
   /*
   it('should fail to update Region with message', () => {
-    let fakeRegion = {"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}
+    let fakeRegion = {"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}
     let fakeResult={ok: false, data: {message: 'Failed to update Region, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeRegion, form: 'REGION_UPDATE_FORM', promise: {resolve, reject} }
@@ -91,7 +91,7 @@ describe("doUpdateRegion Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeRegion = {
-      _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+      _id: "5b254369063db83598df2ce0",
       regionName: "South-east Asia"
     };
 

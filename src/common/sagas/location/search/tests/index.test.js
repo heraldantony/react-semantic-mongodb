@@ -43,46 +43,46 @@ describe("doSearchLocation Saga", () => {
   it("should search and return  Location List", () => {
     let fakeLocationList = [
       {
-        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-        streetAddress: "57916 Johns Wall",
-        postalCode: "06466-7765",
-        city: "Lake Marquesmouth",
-        stateProvince: "Idaho",
+        _id: "5b254369063db83598df2cf4",
+        streetAddress: "0312 Alessandra Loop",
+        postalCode: "97889-8410",
+        city: "East Dejahbury",
+        stateProvince: "Connecticut",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "0e65ff16-6ede-47d8-9284-5a2d78d25b18",
-        streetAddress: "06057 Feeney Coves",
-        postalCode: "20338",
-        city: "West Aronhaven",
+        _id: "5b254369063db83598df2cf5",
+        streetAddress: "718 Mayert Crossroad",
+        postalCode: "88688-0229",
+        city: "Ondrickafort",
         stateProvince: "Illinois",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "efd08870-8ee7-4a44-a3b6-8bee4eaddb50",
-        streetAddress: "496 Koelpin Isle",
-        postalCode: "89843",
-        city: "O'Connerview",
+        _id: "5b254369063db83598df2cf6",
+        streetAddress: "605 Shyanne Inlet",
+        postalCode: "55668",
+        city: "North Lucius",
         stateProvince: "Tennessee",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
@@ -112,7 +112,7 @@ describe("doSearchLocation Saga", () => {
   });
   /*
   it('should fail to search for Location with message', () => {
-    let fakeLocationList = [{"_id":"36848807-a4cd-43ec-8773-cffff9525cfc","streetAddress":"57916 Johns Wall","postalCode":"06466-7765","city":"Lake Marquesmouth","stateProvince":"Idaho","country":{"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}},{"_id":"0e65ff16-6ede-47d8-9284-5a2d78d25b18","streetAddress":"06057 Feeney Coves","postalCode":"20338","city":"West Aronhaven","stateProvince":"Illinois","country":{"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}},{"_id":"efd08870-8ee7-4a44-a3b6-8bee4eaddb50","streetAddress":"496 Koelpin Isle","postalCode":"89843","city":"O'Connerview","stateProvince":"Tennessee","country":{"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}}]
+    let fakeLocationList = [{"_id":"5b254369063db83598df2cf4","streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}},{"_id":"5b254369063db83598df2cf5","streetAddress":"718 Mayert Crossroad","postalCode":"88688-0229","city":"Ondrickafort","stateProvince":"Illinois","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}},{"_id":"5b254369063db83598df2cf6","streetAddress":"605 Shyanne Inlet","postalCode":"55668","city":"North Lucius","stateProvince":"Tennessee","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Location, random error' } }
     return new Promise((resolve, reject) => {
@@ -134,46 +134,46 @@ describe("doSearchLocation Saga", () => {
   it("should handle reducer and store state", () => {
     let fakeLocationList = [
       {
-        _id: "36848807-a4cd-43ec-8773-cffff9525cfc",
-        streetAddress: "57916 Johns Wall",
-        postalCode: "06466-7765",
-        city: "Lake Marquesmouth",
-        stateProvince: "Idaho",
+        _id: "5b254369063db83598df2cf4",
+        streetAddress: "0312 Alessandra Loop",
+        postalCode: "97889-8410",
+        city: "East Dejahbury",
+        stateProvince: "Connecticut",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "0e65ff16-6ede-47d8-9284-5a2d78d25b18",
-        streetAddress: "06057 Feeney Coves",
-        postalCode: "20338",
-        city: "West Aronhaven",
+        _id: "5b254369063db83598df2cf5",
+        streetAddress: "718 Mayert Crossroad",
+        postalCode: "88688-0229",
+        city: "Ondrickafort",
         stateProvince: "Illinois",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "efd08870-8ee7-4a44-a3b6-8bee4eaddb50",
-        streetAddress: "496 Koelpin Isle",
-        postalCode: "89843",
-        city: "O'Connerview",
+        _id: "5b254369063db83598df2cf6",
+        streetAddress: "605 Shyanne Inlet",
+        postalCode: "55668",
+        city: "North Lucius",
         stateProvince: "Tennessee",
         country: {
-          _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-          countryName: "Cyprus",
+          _id: "5b254369063db83598df2cea",
+          countryName: "Grenada",
           region: {
-            _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
+            _id: "5b254369063db83598df2ce0",
             regionName: "South-east Asia"
           }
         }

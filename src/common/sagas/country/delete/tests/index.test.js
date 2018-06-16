@@ -42,12 +42,9 @@ describe("doDeleteCountry Saga", () => {
 
   it("should delete Country ", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = { ok: true, data: fakeCountry };
@@ -62,12 +59,9 @@ describe("doDeleteCountry Saga", () => {
   });
   it("should fail to delete Country with message", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = {
@@ -90,12 +84,9 @@ describe("doDeleteCountry Saga", () => {
   });
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = { ok: true, data: fakeCountry };

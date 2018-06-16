@@ -155,7 +155,7 @@ class JobEdit extends Component<Props, State> {
                     			<Button as={Link} to={'/viewTask/' + entity['_id']}>
                     				{entity['title']}
                     			</Button>
-                    			<Button icon onClick={deleteTask}>
+                    			<Button icon onClick={() => deleteTask(entity)}>
                     				<Icon name="delete" />
                     			</Button>
                     		</Button.Group>
@@ -190,6 +190,7 @@ class JobEdit extends Component<Props, State> {
 								<Message error header="Add Failed" content={error} />
 								<div style={{ textAlign: 'right' }}>
 									<Button
+										className="save-button"
 										content="Save"
 										icon="save"
 										loading={submitting}

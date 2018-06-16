@@ -42,15 +42,12 @@ describe("doSaveCountry Saga", () => {
 
   it("should save Country", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
 
-    fakeCountry["countryName"] = "China";
+    fakeCountry["countryName"] = "Malawi";
 
     let fakeResult = { ok: true, data: fakeCountry };
     return new Promise((resolve, reject) => {
@@ -75,7 +72,7 @@ describe("doSaveCountry Saga", () => {
   });
   /*
   it('should fail to save Country with message', () => {
-    let fakeCountry = {"_id":"50dc6101-cdab-44a6-a0ba-1b0d17182a5b","countryName":"Cyprus","region":{"_id":"fd5db0ba-f121-4606-bffc-ef2fda65aa14","regionName":"South-east Asia"}}
+    let fakeCountry = {"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}
     let fakeResult={ok: false, data: {message: 'Failed to save Country, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeCountry, form: 'COUNTRY_EDIT_FORM', promise: {resolve, reject} }
@@ -95,15 +92,12 @@ describe("doSaveCountry Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "50dc6101-cdab-44a6-a0ba-1b0d17182a5b",
-      countryName: "Cyprus",
-      region: {
-        _id: "fd5db0ba-f121-4606-bffc-ef2fda65aa14",
-        regionName: "South-east Asia"
-      }
+      _id: "5b254369063db83598df2cea",
+      countryName: "Grenada",
+      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
     };
 
-    fakeCountry["countryName"] = "Georgia";
+    fakeCountry["countryName"] = "Hong Kong";
 
     let fakeResult = { ok: true, data: fakeCountry };
     let finalState = { ...initialState, country: fakeCountry };

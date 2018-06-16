@@ -1,0 +1,12 @@
+[
+{"_id":{"$oid":"5b254369063db83598df2cfe"},"departmentName":"Optimization","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d09"},{"$oid":"5b254369063db83598df2d0a"}]},
+{"_id":{"$oid":"5b254369063db83598df2cff"},"departmentName":"Metrics","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0a"},{"$oid":"5b254369063db83598df2d0b"}]},
+{"_id":{"$oid":"5b254369063db83598df2d00"},"departmentName":"Mobility","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0b"},{"$oid":"5b254369063db83598df2d0c"}]},
+{"_id":{"$oid":"5b254369063db83598df2d01"},"departmentName":"Paradigm","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0c"},{"$oid":"5b254369063db83598df2d0d"}]},
+{"_id":{"$oid":"5b254369063db83598df2d02"},"departmentName":"Accounts","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0d"},{"$oid":"5b254369063db83598df2d0e"}]},
+{"_id":{"$oid":"5b254369063db83598df2d03"},"departmentName":"Marketing","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0e"},{"$oid":"5b254369063db83598df2d0f"}]},
+{"_id":{"$oid":"5b254369063db83598df2d04"},"departmentName":"Markets","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[{"$oid":"5b254369063db83598df2d0f"},{"$oid":"5b254369063db83598df2d10"}]},
+{"_id":{"$oid":"5b254369063db83598df2d05"},"departmentName":"Program","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[]},
+{"_id":{"$oid":"5b254369063db83598df2d06"},"departmentName":"Applications","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[]},
+{"_id":{"$oid":"5b254369063db83598df2d07"},"departmentName":"Directives","location":{"$oid":"5b254369063db83598df2cf4"},"employees":[]}
+]

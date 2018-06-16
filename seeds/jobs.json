@@ -1,0 +1,12 @@
+[
+{"_id":{"$oid":"5b254369063db83598df2d12"},"jobTitle":"Internal Factors Facilitator","minSalary":53407,"maxSalary":8906,"tasks":[{"$oid":"5b254369063db83598df2d1d"},{"$oid":"5b254369063db83598df2d1e"}]},
+{"_id":{"$oid":"5b254369063db83598df2d13"},"jobTitle":"Central Metrics Administrator","minSalary":78472,"maxSalary":53709,"tasks":[{"$oid":"5b254369063db83598df2d1e"},{"$oid":"5b254369063db83598df2d1f"}]},
+{"_id":{"$oid":"5b254369063db83598df2d14"},"jobTitle":"Senior Solutions Administrator","minSalary":79377,"maxSalary":92116,"tasks":[{"$oid":"5b254369063db83598df2d1f"},{"$oid":"5b254369063db83598df2d20"}]},
+{"_id":{"$oid":"5b254369063db83598df2d15"},"jobTitle":"Corporate Web Liaison","minSalary":85109,"maxSalary":71038,"tasks":[{"$oid":"5b254369063db83598df2d20"},{"$oid":"5b254369063db83598df2d21"}]},
+{"_id":{"$oid":"5b254369063db83598df2d16"},"jobTitle":"Central Intranet Producer","minSalary":11705,"maxSalary":37904,"tasks":[{"$oid":"5b254369063db83598df2d21"},{"$oid":"5b254369063db83598df2d22"}]},
+{"_id":{"$oid":"5b254369063db83598df2d17"},"jobTitle":"Principal Configuration Representative","minSalary":72156,"maxSalary":67196,"tasks":[{"$oid":"5b254369063db83598df2d22"},{"$oid":"5b254369063db83598df2d23"}]},
+{"_id":{"$oid":"5b254369063db83598df2d18"},"jobTitle":"National Response Developer","minSalary":31152,"maxSalary":19557,"tasks":[{"$oid":"5b254369063db83598df2d23"},{"$oid":"5b254369063db83598df2d24"}]},
+{"_id":{"$oid":"5b254369063db83598df2d19"},"jobTitle":"Dynamic Branding Orchestrator","minSalary":4723,"maxSalary":11754,"tasks":[]},
+{"_id":{"$oid":"5b254369063db83598df2d1a"},"jobTitle":"Dynamic Brand Consultant","minSalary":3532,"maxSalary":67241,"tasks":[]},
+{"_id":{"$oid":"5b254369063db83598df2d1b"},"jobTitle":"International Data Associate","minSalary":54068,"maxSalary":43883,"tasks":[]}
+]
