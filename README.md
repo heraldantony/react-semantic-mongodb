@@ -25,11 +25,14 @@ npm run dev
 
 
 ### Config changes
-The following values have to be changed in webpack_config/config.js
+The following values have to be changed in webpack_config/config.js. You could also pass the DBNAME in package.json as an env variable, so if you don't change anything, it defaults to the value in package.json, which is `empdev`.
 
  > DBHOST='localhost',
+ 
  > DBUSER='empuser',
+ 
  > DBNAME='emp',
+ 
  > DBPORT=27017
  
 
