@@ -43,7 +43,7 @@ The following values have to be changed in webpack_config/config.js. You could a
 
 ## Integration/e2e testing with Cypress
 Before running the integration tests, the database needs to be populated with test data. The sample data is in the `seeds` folder, and could be imported using one of the two approaches below.
-1. If using https://github.com/toymachiner62/node-mongo-seeds, change the DBNAME in seed.js in project root folder, replace "emp" with whatever is your DBNAME
+1. If using https://github.com/toymachiner62/node-mongo-seeds, change the DBNAME in seed.js in project root folder, replace "emp" with whatever is your DBNAME. If you don't change anything, `emptest` will be used.
 ```
 module.exports = {
   undefined: "localhost/emptest",
