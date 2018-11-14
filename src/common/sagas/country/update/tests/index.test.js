@@ -42,12 +42,12 @@ describe("doUpdateCountry Saga", () => {
 
   it("should update Country", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
 
-    fakeCountry["countryName"] = "Guam";
+    fakeCountry["countryName"] = "Malta";
 
     let fakeResult = { ok: true, data: fakeCountry };
     return new Promise((resolve, reject) => {
@@ -72,7 +72,7 @@ describe("doUpdateCountry Saga", () => {
   });
   /*
   it('should fail to update Country with message', () => {
-    let fakeCountry = {"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}
+    let fakeCountry = {"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}
     let fakeResult={ok: false, data: {message: 'Failed to update Country, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeCountry, form: 'COUNTRY_UPDATE_FORM', promise: {resolve, reject} }
@@ -92,12 +92,12 @@ describe("doUpdateCountry Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
 
-    fakeCountry["countryName"] = "Marshall Islands";
+    fakeCountry["countryName"] = "Myanmar";
 
     let fakeResult = { ok: true, data: fakeCountry };
     let finalState = { ...initialState, country: fakeCountry };

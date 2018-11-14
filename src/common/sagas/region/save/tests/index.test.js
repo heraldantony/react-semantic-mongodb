@@ -42,7 +42,7 @@ describe("doSaveRegion Saga", () => {
 
   it("should save Region", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
 
@@ -71,7 +71,7 @@ describe("doSaveRegion Saga", () => {
   });
   /*
   it('should fail to save Region with message', () => {
-    let fakeRegion = {"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}
+    let fakeRegion = {"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}
     let fakeResult={ok: false, data: {message: 'Failed to save Region, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeRegion, form: 'REGION_EDIT_FORM', promise: {resolve, reject} }
@@ -91,7 +91,7 @@ describe("doSaveRegion Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
 

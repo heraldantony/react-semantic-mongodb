@@ -49,8 +49,10 @@ export type State = {
   tasks: [Task],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchTasks: [Task],
   error: Object
 };
@@ -78,8 +80,10 @@ export const initialState = {
 	tasks: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchTasks: [],
 	error: ''
 }
@@ -111,7 +115,7 @@ export function taskReducer (state = initialState, action: Action): State {
 	}
 
 	case TASK_SEARCH_SUCCESS: {
-		return { ...state, tasks: action.payload }
+		return { ...state, tasks: action.payload, totalItemsCount: action.total }
 	}
 	case TASK_SEARCH_FAIL: {
 		return { ...state, error: action.error }

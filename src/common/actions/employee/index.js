@@ -39,7 +39,7 @@ export type EMPLOYEE_ADD_SUCCESS_TYPE = {
 };
 export type EMPLOYEE_ADD_FAIL_TYPE = {
   type: EMPLOYEE_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type EMPLOYEE_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type EMPLOYEE_SAVE_SUCCESS_TYPE = {
 };
 export type EMPLOYEE_SAVE_FAIL_TYPE = {
   type: EMPLOYEE_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type EMPLOYEE_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type EMPLOYEE_UPDATE_SUCCESS_TYPE = {
 };
 export type EMPLOYEE_UPDATE_FAIL_TYPE = {
   type: EMPLOYEE_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type EMPLOYEE_GET_TYPE = {
@@ -78,7 +78,7 @@ export type EMPLOYEE_GET_SUCCESS_TYPE = {
 };
 export type EMPLOYEE_GET_FAIL_TYPE = {
   type: EMPLOYEE_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type EMPLOYEE_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type EMPLOYEE_DELETE_SUCCESS_TYPE = {
 };
 export type EMPLOYEE_DELETE_FAIL_TYPE = {
   type: EMPLOYEE_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type EMPLOYEE_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type EMPLOYEE_SEARCH_TYPE = {
 };
 export type EMPLOYEE_SEARCH_SUCCESS_TYPE = {
   type: EMPLOYEE_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type EMPLOYEE_SEARCH_FAIL_TYPE = {
   type: EMPLOYEE_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const EMPLOYEE_ADD_JOB_SUCCESS = 'employee/Add_Job/SUCCESS'
@@ -112,11 +114,11 @@ export const EMPLOYEE_DELETE_JOB_SUCCESS = 'employee/Delete_Job/SUCCESS'
 
 export const EMPLOYEE_ADD_JOB_SUCCESS_TYPE = {
 	type: EMPLOYEE_ADD_JOB_SUCCESS,
-	payload: Object
+	job: Object
 }
 export const EMPLOYEE_DELETE_JOB_SUCCESS_TYPE = {
 	type: EMPLOYEE_DELETE_JOB_SUCCESS,
-	payload: Object
+	job: Object
 }
 
 /**
@@ -143,7 +145,7 @@ export function addEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_SUCCESS
  */
-export function addEmployeeSuccess (employee) {
+export function addEmployeeSuccess (employee): EMPLOYEE_ADD_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_ADD_SUCCESS,
 		payload: employee
@@ -157,7 +159,7 @@ export function addEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_FAIL
  */
-export function addEmployeeFail (error) {
+export function addEmployeeFail (error): EMPLOYEE_ADD_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_ADD_FAIL,
 		error: error
@@ -188,7 +190,7 @@ export function saveEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_SAVE_SUCCESS
  */
-export function saveEmployeeSuccess (employee) {
+export function saveEmployeeSuccess (employee): EMPLOYEE_SAVE_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_SAVE_SUCCESS,
 		payload: employee
@@ -202,7 +204,7 @@ export function saveEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_SAVE_FAIL
  */
-export function saveEmployeeFail (error) {
+export function saveEmployeeFail (error): EMPLOYEE_SAVE_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_SAVE_FAIL,
 		error: error
@@ -233,7 +235,7 @@ export function updateEmployee (employee, form, promise) {
  *
  * @return {object} An action object with type EMPLOYEE_UPDATE_SUCCESS
  */
-export function updateEmployeeSuccess (employee) {
+export function updateEmployeeSuccess (employee): EMPLOYEE_UPDATE_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_UPDATE_SUCCESS,
 		payload: employee
@@ -247,7 +249,7 @@ export function updateEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_UPDATE_FAIL
  */
-export function updateEmployeeFail (error) {
+export function updateEmployeeFail (error): EMPLOYEE_UPDATE_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_UPDATE_FAIL,
 		error: error
@@ -261,7 +263,7 @@ export function updateEmployeeFail (error) {
  *
  * @return {object} An action object with type EMPLOYEE_GET
  */
-export function getEmployee (employeeId) {
+export function getEmployee (employeeId): EMPLOYEE_GET_TYPE {
 	return {
 		type: EMPLOYEE_GET,
 		payload: employeeId
@@ -275,7 +277,7 @@ export function getEmployee (employeeId) {
  *
  * @return {object} An action object with type EMPLOYEE_GET_SUCCESS
  */
-export function getEmployeeSuccess (employee) {
+export function getEmployeeSuccess (employee): EMPLOYEE_GET_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_GET_SUCCESS,
 		payload: employee
@@ -289,7 +291,7 @@ export function getEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_GET_FAIL
  */
-export function getEmployeeFail (error) {
+export function getEmployeeFail (error): EMPLOYEE_GET_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_GET_FAIL,
 		error: error
@@ -303,7 +305,7 @@ export function getEmployeeFail (error) {
  *
  * @return {object} An action object with type EMPLOYEE_DELETE
  */
-export function deleteEmployee (employeeId) {
+export function deleteEmployee (employeeId): EMPLOYEE_DELETE_TYPE {
 	return {
 		type: EMPLOYEE_DELETE,
 		payload: employeeId
@@ -317,7 +319,7 @@ export function deleteEmployee (employeeId) {
  *
  * @return {object} An action object with type EMPLOYEE_DELETE_SUCCESS
  */
-export function deleteEmployeeSuccess (employee) {
+export function deleteEmployeeSuccess (employee): EMPLOYEE_DELETE_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_DELETE_SUCCESS,
 		payload: employee
@@ -331,7 +333,7 @@ export function deleteEmployeeSuccess (employee) {
  *
  * @return {object} An action object with type EMPLOYEE_DELETE_FAIL
  */
-export function deleteEmployeeFail (error) {
+export function deleteEmployeeFail (error): EMPLOYEE_DELETE_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_DELETE_FAIL,
 		error: error
@@ -358,14 +360,19 @@ export function searchEmployee (searchString, form, promise) {
 /**
  * Dispatched when Search Employee succeeds
  *
- * @param  {object} employee  The Employee object
+ * @param  {object} employees  List of employees
+ * @param  {number} total Total number of employees
  *
  * @return {object} An action object with type EMPLOYEE_SEARCH_SUCCESS
  */
-export function searchEmployeeSuccess (employees) {
+export function searchEmployeeSuccess (
+	employees,
+	total
+): EMPLOYEE_SEARCH_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_SEARCH_SUCCESS,
-		payload: employees
+		payload: employees,
+		total: total
 	}
 }
 
@@ -376,7 +383,7 @@ export function searchEmployeeSuccess (employees) {
  *
  * @return {object} An action object with type EMPLOYEE_SEARCH_FAIL
  */
-export function searchEmployeeFail (error) {
+export function searchEmployeeFail (error): EMPLOYEE_SEARCH_FAIL_TYPE {
 	return {
 		type: EMPLOYEE_SEARCH_FAIL,
 		error: error
@@ -390,7 +397,7 @@ export function searchEmployeeFail (error) {
  *
  * @return {object} An action object with type EMPLOYEE_ADD_JOB_SUCCESS
  */
-export function addJob (job) {
+export function addJob (job): EMPLOYEE_ADD_JOB_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_ADD_JOB_SUCCESS,
 		job
@@ -403,7 +410,7 @@ export function addJob (job) {
  *
  * @return {object} An action object with type EMPLOYEE_DELETE_JOB_SUCCESS
  */
-export function deleteJob (job) {
+export function deleteJob (job): EMPLOYEE_DELETE_JOB_SUCCESS_TYPE {
 	return {
 		type: EMPLOYEE_DELETE_JOB_SUCCESS,
 		job

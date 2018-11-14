@@ -34,6 +34,7 @@ const makeSelectSearchCountry = () =>
 		return {
 			country: substate['country'],
 			countries: substate['countries'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchCountry = () =>
 		return {
 			otherSearchCountry: substate['otherSearchCountry'],
 			otherSearchCountries: substate['Countries'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

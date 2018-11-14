@@ -51,8 +51,10 @@ export type State = {
   jobs: [Job],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchJobs: [Job],
   error: Object
 };
@@ -80,8 +82,10 @@ export const initialState = {
 	jobs: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchJobs: [],
 	error: ''
 }
@@ -113,7 +117,7 @@ export function jobReducer (state = initialState, action: Action): State {
 	}
 
 	case JOB_SEARCH_SUCCESS: {
-		return { ...state, jobs: action.payload }
+		return { ...state, jobs: action.payload, totalItemsCount: action.total }
 	}
 	case JOB_SEARCH_FAIL: {
 		return { ...state, error: action.error }

@@ -34,6 +34,7 @@ const makeSelectSearchTask = () =>
 		return {
 			task: substate['task'],
 			tasks: substate['tasks'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchTask = () =>
 		return {
 			otherSearchTask: substate['otherSearchTask'],
 			otherSearchTasks: substate['Tasks'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

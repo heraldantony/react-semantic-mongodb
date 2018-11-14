@@ -39,7 +39,7 @@ export type TASK_ADD_SUCCESS_TYPE = {
 };
 export type TASK_ADD_FAIL_TYPE = {
   type: TASK_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type TASK_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type TASK_SAVE_SUCCESS_TYPE = {
 };
 export type TASK_SAVE_FAIL_TYPE = {
   type: TASK_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type TASK_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type TASK_UPDATE_SUCCESS_TYPE = {
 };
 export type TASK_UPDATE_FAIL_TYPE = {
   type: TASK_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type TASK_GET_TYPE = {
@@ -78,7 +78,7 @@ export type TASK_GET_SUCCESS_TYPE = {
 };
 export type TASK_GET_FAIL_TYPE = {
   type: TASK_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type TASK_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type TASK_DELETE_SUCCESS_TYPE = {
 };
 export type TASK_DELETE_FAIL_TYPE = {
   type: TASK_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type TASK_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type TASK_SEARCH_TYPE = {
 };
 export type TASK_SEARCH_SUCCESS_TYPE = {
   type: TASK_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type TASK_SEARCH_FAIL_TYPE = {
   type: TASK_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const TASK_ADD_JOB_SUCCESS = 'task/Add_Job/SUCCESS'
@@ -112,11 +114,11 @@ export const TASK_DELETE_JOB_SUCCESS = 'task/Delete_Job/SUCCESS'
 
 export const TASK_ADD_JOB_SUCCESS_TYPE = {
 	type: TASK_ADD_JOB_SUCCESS,
-	payload: Object
+	job: Object
 }
 export const TASK_DELETE_JOB_SUCCESS_TYPE = {
 	type: TASK_DELETE_JOB_SUCCESS,
-	payload: Object
+	job: Object
 }
 
 /**
@@ -143,7 +145,7 @@ export function addTask (task, form, promise) {
  *
  * @return {object} An action object with type TASK_ADD_SUCCESS
  */
-export function addTaskSuccess (task) {
+export function addTaskSuccess (task): TASK_ADD_SUCCESS_TYPE {
 	return {
 		type: TASK_ADD_SUCCESS,
 		payload: task
@@ -157,7 +159,7 @@ export function addTaskSuccess (task) {
  *
  * @return {object} An action object with type TASK_ADD_FAIL
  */
-export function addTaskFail (error) {
+export function addTaskFail (error): TASK_ADD_FAIL_TYPE {
 	return {
 		type: TASK_ADD_FAIL,
 		error: error
@@ -188,7 +190,7 @@ export function saveTask (task, form, promise) {
  *
  * @return {object} An action object with type TASK_SAVE_SUCCESS
  */
-export function saveTaskSuccess (task) {
+export function saveTaskSuccess (task): TASK_SAVE_SUCCESS_TYPE {
 	return {
 		type: TASK_SAVE_SUCCESS,
 		payload: task
@@ -202,7 +204,7 @@ export function saveTaskSuccess (task) {
  *
  * @return {object} An action object with type TASK_SAVE_FAIL
  */
-export function saveTaskFail (error) {
+export function saveTaskFail (error): TASK_SAVE_FAIL_TYPE {
 	return {
 		type: TASK_SAVE_FAIL,
 		error: error
@@ -233,7 +235,7 @@ export function updateTask (task, form, promise) {
  *
  * @return {object} An action object with type TASK_UPDATE_SUCCESS
  */
-export function updateTaskSuccess (task) {
+export function updateTaskSuccess (task): TASK_UPDATE_SUCCESS_TYPE {
 	return {
 		type: TASK_UPDATE_SUCCESS,
 		payload: task
@@ -247,7 +249,7 @@ export function updateTaskSuccess (task) {
  *
  * @return {object} An action object with type TASK_UPDATE_FAIL
  */
-export function updateTaskFail (error) {
+export function updateTaskFail (error): TASK_UPDATE_FAIL_TYPE {
 	return {
 		type: TASK_UPDATE_FAIL,
 		error: error
@@ -261,7 +263,7 @@ export function updateTaskFail (error) {
  *
  * @return {object} An action object with type TASK_GET
  */
-export function getTask (taskId) {
+export function getTask (taskId): TASK_GET_TYPE {
 	return {
 		type: TASK_GET,
 		payload: taskId
@@ -275,7 +277,7 @@ export function getTask (taskId) {
  *
  * @return {object} An action object with type TASK_GET_SUCCESS
  */
-export function getTaskSuccess (task) {
+export function getTaskSuccess (task): TASK_GET_SUCCESS_TYPE {
 	return {
 		type: TASK_GET_SUCCESS,
 		payload: task
@@ -289,7 +291,7 @@ export function getTaskSuccess (task) {
  *
  * @return {object} An action object with type TASK_GET_FAIL
  */
-export function getTaskFail (error) {
+export function getTaskFail (error): TASK_GET_FAIL_TYPE {
 	return {
 		type: TASK_GET_FAIL,
 		error: error
@@ -303,7 +305,7 @@ export function getTaskFail (error) {
  *
  * @return {object} An action object with type TASK_DELETE
  */
-export function deleteTask (taskId) {
+export function deleteTask (taskId): TASK_DELETE_TYPE {
 	return {
 		type: TASK_DELETE,
 		payload: taskId
@@ -317,7 +319,7 @@ export function deleteTask (taskId) {
  *
  * @return {object} An action object with type TASK_DELETE_SUCCESS
  */
-export function deleteTaskSuccess (task) {
+export function deleteTaskSuccess (task): TASK_DELETE_SUCCESS_TYPE {
 	return {
 		type: TASK_DELETE_SUCCESS,
 		payload: task
@@ -331,7 +333,7 @@ export function deleteTaskSuccess (task) {
  *
  * @return {object} An action object with type TASK_DELETE_FAIL
  */
-export function deleteTaskFail (error) {
+export function deleteTaskFail (error): TASK_DELETE_FAIL_TYPE {
 	return {
 		type: TASK_DELETE_FAIL,
 		error: error
@@ -358,14 +360,16 @@ export function searchTask (searchString, form, promise) {
 /**
  * Dispatched when Search Task succeeds
  *
- * @param  {object} task  The Task object
+ * @param  {object} tasks  List of tasks
+ * @param  {number} total Total number of tasks
  *
  * @return {object} An action object with type TASK_SEARCH_SUCCESS
  */
-export function searchTaskSuccess (tasks) {
+export function searchTaskSuccess (tasks, total): TASK_SEARCH_SUCCESS_TYPE {
 	return {
 		type: TASK_SEARCH_SUCCESS,
-		payload: tasks
+		payload: tasks,
+		total: total
 	}
 }
 
@@ -376,7 +380,7 @@ export function searchTaskSuccess (tasks) {
  *
  * @return {object} An action object with type TASK_SEARCH_FAIL
  */
-export function searchTaskFail (error) {
+export function searchTaskFail (error): TASK_SEARCH_FAIL_TYPE {
 	return {
 		type: TASK_SEARCH_FAIL,
 		error: error
@@ -390,7 +394,7 @@ export function searchTaskFail (error) {
  *
  * @return {object} An action object with type TASK_ADD_JOB_SUCCESS
  */
-export function addJob (job) {
+export function addJob (job): TASK_ADD_JOB_SUCCESS_TYPE {
 	return {
 		type: TASK_ADD_JOB_SUCCESS,
 		job
@@ -403,7 +407,7 @@ export function addJob (job) {
  *
  * @return {object} An action object with type TASK_DELETE_JOB_SUCCESS
  */
-export function deleteJob (job) {
+export function deleteJob (job): TASK_DELETE_JOB_SUCCESS_TYPE {
 	return {
 		type: TASK_DELETE_JOB_SUCCESS,
 		job

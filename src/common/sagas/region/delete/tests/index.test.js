@@ -42,7 +42,7 @@ describe("doDeleteRegion Saga", () => {
 
   it("should delete Region ", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
     let regionId = fakeRegion._id;
@@ -58,7 +58,7 @@ describe("doDeleteRegion Saga", () => {
   });
   it("should fail to delete Region with message", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
     let regionId = fakeRegion._id;
@@ -82,7 +82,7 @@ describe("doDeleteRegion Saga", () => {
   });
   it("should handle reducer and store state", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
     let regionId = fakeRegion._id;

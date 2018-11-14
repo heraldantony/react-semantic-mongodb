@@ -42,9 +42,9 @@ describe("doGetCountry Saga", () => {
 
   it("should get Country ", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = { ok: true, data: fakeCountry };
@@ -59,9 +59,9 @@ describe("doGetCountry Saga", () => {
   });
   it("should fail to get Country with message", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = {
@@ -84,9 +84,9 @@ describe("doGetCountry Saga", () => {
   });
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
     let countryId = fakeCountry._id;
     let fakeResult = { ok: true, data: fakeCountry };

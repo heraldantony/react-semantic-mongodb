@@ -59,8 +59,10 @@ export type State = {
   employees: [Employee],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchEmployees: [Employee],
   error: Object
 };
@@ -88,8 +90,10 @@ export const initialState = {
 	employees: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchEmployees: [],
 	error: ''
 }
@@ -121,7 +125,11 @@ export function employeeReducer (state = initialState, action: Action): State {
 	}
 
 	case EMPLOYEE_SEARCH_SUCCESS: {
-		return { ...state, employees: action.payload }
+		return {
+			...state,
+			employees: action.payload,
+			totalItemsCount: action.total
+		}
 	}
 	case EMPLOYEE_SEARCH_FAIL: {
 		return { ...state, error: action.error }

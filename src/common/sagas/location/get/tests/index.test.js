@@ -42,16 +42,16 @@ describe("doGetLocation Saga", () => {
 
   it("should get Location ", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
@@ -69,16 +69,16 @@ describe("doGetLocation Saga", () => {
   });
   it("should fail to get Location with message", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
@@ -104,16 +104,16 @@ describe("doGetLocation Saga", () => {
   });
   it("should handle reducer and store state", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }

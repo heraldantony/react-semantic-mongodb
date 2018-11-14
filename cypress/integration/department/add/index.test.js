@@ -25,7 +25,7 @@ describe("Department", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@departmentName").type("Optimization", { force: true });
+    cy.get("@departmentName").type("Configuration", { force: true });
 
     cy
       .get("button.ui.button")
@@ -33,9 +33,7 @@ describe("Department", () => {
       .click({ force: true });
 
     //search and set location
-    cy
-      .get("input[name=search]")
-      .type('"718 Mayert Crossroad"', { force: true });
+    cy.get("input[name=search]").type('"15333 Lyric Radial"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -44,16 +42,16 @@ describe("Department", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Set Location")
       .click({ force: true });
-    cy.get("a.ui.button").contains("718 Mayert Crossroad");
+    cy.get("a.ui.button").contains("15333 Lyric Radial");
     //remove location and put it back
     cy
       .get("a.ui.button")
-      .contains("718 Mayert Crossroad")
+      .contains("15333 Lyric Radial")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains("718 Mayert Crossroad")
+      .contains("15333 Lyric Radial")
       .should("not.exist");
     cy
       .get("button.ui.button")
@@ -67,7 +65,7 @@ describe("Department", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Set Location")
       .click({ force: true });
-    cy.get("a.ui.button").contains("718 Mayert Crossroad");
+    cy.get("a.ui.button").contains("15333 Lyric Radial");
 
     cy
       .get("button.ui.button")
@@ -75,7 +73,7 @@ describe("Department", () => {
       .click({ force: true });
 
     cy.get("input[name=search]").clear({ force: true });
-    cy.get("input[name=search]").type('"Hattie"', { force: true });
+    cy.get("input[name=search]").type('"Emilie"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -84,13 +82,13 @@ describe("Department", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Employee")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Hattie,Gusikowski");
+    cy.get("a.ui.button").contains("Emilie,Ratke");
     cy
       .get("button.ui.button")
       .contains("Add Employee")
       .click({ force: true });
     cy.get("input[name=search]").clear({ force: true });
-    cy.get("input[name=search]").type('"Carissa"', { force: true });
+    cy.get("input[name=search]").type('"Lincoln"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -99,22 +97,22 @@ describe("Department", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Employee")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Carissa,Barrows");
+    cy.get("a.ui.button").contains("Lincoln,Davis");
     cy
       .get("a.ui.button")
-      .contains("Hattie,Gusikowski")
+      .contains("Emilie,Ratke")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains("Hattie,Gusikowski")
+      .contains("Emilie,Ratke")
       .should("not.exist");
     cy
       .get("button.ui.button")
       .contains("Add Employee")
       .click({ force: true });
     cy.get("input[name=search]").clear({ force: true });
-    cy.get("input[name=search]").type('"Hattie"', { force: true });
+    cy.get("input[name=search]").type('"Emilie"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -123,7 +121,7 @@ describe("Department", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Employee")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Hattie,Gusikowski");
+    cy.get("a.ui.button").contains("Emilie,Ratke");
 
     //save Department
     cy.get("button.add-button").click({ force: true });

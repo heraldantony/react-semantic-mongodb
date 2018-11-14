@@ -86,8 +86,10 @@ router.post('/', (req, res, next) => {
 		countryName: countryName
 	}
 
-	if (req.body.hasOwnProperty('region')) {
-		countryObj.region = req.body.region['_id']
+	if (req.body.hasOwnProperty('region') && req.body.region) {
+		countryObj.region = req.body.region['_id'] || req.body.region
+	} else {
+		countryObj.region = null
 	}
 
 	CountryModel.create(countryObj, (createErr, newCountry) => {
@@ -125,8 +127,10 @@ router.put('/:countryId', (req, res, next) => {
 			country.countryName = req.body.countryName
 		}
 
-		if (req.body.hasOwnProperty('region')) {
-			country.region = req.body.region['_id']
+		if (req.body.hasOwnProperty('region') && req.body.region) {
+			country.region = req.body.region['_id'] || req.body.region
+		} else {
+			country.region = null
 		}
 
 		country.save(function (saveError, savedCountry) {
@@ -163,8 +167,10 @@ router.patch('/:countryId', (req, res, next) => {
 			country.countryName = req.body.countryName
 		}
 
-		if (req.body.hasOwnProperty('region')) {
-			country.region = req.body.region['_id']
+		if (req.body.hasOwnProperty('region') && req.body.region) {
+			country.region = req.body.region['_id'] || req.body.region
+		} else {
+			country.region = null
 		}
 
 		country.save(function (saveError, savedCountry) {

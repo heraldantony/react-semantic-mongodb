@@ -17,7 +17,7 @@ const Footer = () => {
 									<Icon name="github" />
 									<Header.Content>
 										<Header.Subheader>
-                      React Semantic UI MongoDB
+                      React Semantic MongoDB App
 										</Header.Subheader>
 									</Header.Content>
 								</Header>

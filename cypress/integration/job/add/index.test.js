@@ -25,15 +25,15 @@ describe("Job", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@jobTitle").type("Internal Factors Facilitator", { force: true });
+    cy.get("@jobTitle").type("Product Brand Architect", { force: true });
 
     cy.get("input[name=minSalary]").as("minSalary");
 
-    cy.get("@minSalary").type("53407", { force: true });
+    cy.get("@minSalary").type("89948", { force: true });
 
     cy.get("input[name=maxSalary]").as("maxSalary");
 
-    cy.get("@maxSalary").type("8906", { force: true });
+    cy.get("@maxSalary").type("69568", { force: true });
 
     cy
       .get("button.ui.button")
@@ -43,10 +43,7 @@ describe("Job", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type(
-        '"Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."',
-        { force: true }
-      );
+      .type('"Quis minima asperiores ipsam vitae."', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -55,19 +52,13 @@ describe("Job", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Task")
       .click({ force: true });
-    cy
-      .get("a.ui.button")
-      .contains(
-        "Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."
-      );
+    cy.get("a.ui.button").contains("Quis minima asperiores ipsam vitae.");
     cy
       .get("button.ui.button")
       .contains("Add Task")
       .click({ force: true });
     cy.get("input[name=search]").clear({ force: true });
-    cy
-      .get("input[name=search]")
-      .type('"Iure dolores beatae qui et beatae et sed."', { force: true });
+    cy.get("input[name=search]").type('"Omnis aliquam non."', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -76,19 +67,15 @@ describe("Job", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Task")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Iure dolores beatae qui et beatae et sed.");
+    cy.get("a.ui.button").contains("Omnis aliquam non.");
     cy
       .get("a.ui.button")
-      .contains(
-        "Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."
-      )
+      .contains("Quis minima asperiores ipsam vitae.")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains(
-        "Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."
-      )
+      .contains("Quis minima asperiores ipsam vitae.")
       .should("not.exist");
     cy
       .get("button.ui.button")
@@ -97,10 +84,7 @@ describe("Job", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type(
-        '"Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."',
-        { force: true }
-      );
+      .type('"Quis minima asperiores ipsam vitae."', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -109,11 +93,7 @@ describe("Job", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Task")
       .click({ force: true });
-    cy
-      .get("a.ui.button")
-      .contains(
-        "Totam culpa aut qui vel consequatur quod voluptatum aspernatur odio."
-      );
+    cy.get("a.ui.button").contains("Quis minima asperiores ipsam vitae.");
 
     //save Job
     cy.get("button.add-button").click({ force: true });

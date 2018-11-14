@@ -34,6 +34,7 @@ const makeSelectSearchLocation = () =>
 		return {
 			location: substate['location'],
 			locations: substate['locations'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchLocation = () =>
 		return {
 			otherSearchLocation: substate['otherSearchLocation'],
 			otherSearchLocations: substate['Locations'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

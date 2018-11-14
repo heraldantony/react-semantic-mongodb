@@ -88,8 +88,10 @@ router.post('/', (req, res, next) => {
 		departmentName: departmentName
 	}
 
-	if (req.body.hasOwnProperty('location')) {
-		departmentObj.location = req.body.location['_id']
+	if (req.body.hasOwnProperty('location') && req.body.location) {
+		departmentObj.location = req.body.location['_id'] || req.body.location
+	} else {
+		departmentObj.location = null
 	}
 
 	if (req.body.hasOwnProperty('employees')) {
@@ -138,8 +140,10 @@ router.put('/:departmentId', (req, res, next) => {
 			department.departmentName = req.body.departmentName
 		}
 
-		if (req.body.hasOwnProperty('location')) {
-			department.location = req.body.location['_id']
+		if (req.body.hasOwnProperty('location') && req.body.location) {
+			department.location = req.body.location['_id'] || req.body.location
+		} else {
+			department.location = null
 		}
 
 		if (req.body.hasOwnProperty('employees')) {
@@ -187,8 +191,10 @@ router.patch('/:departmentId', (req, res, next) => {
 			department.departmentName = req.body.departmentName
 		}
 
-		if (req.body.hasOwnProperty('location')) {
-			department.location = req.body.location['_id']
+		if (req.body.hasOwnProperty('location') && req.body.location) {
+			department.location = req.body.location['_id'] || req.body.location
+		} else {
+			department.location = null
 		}
 
 		if (req.body.hasOwnProperty('employees')) {

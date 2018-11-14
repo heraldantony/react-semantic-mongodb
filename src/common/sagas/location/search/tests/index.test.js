@@ -43,46 +43,46 @@ describe("doSearchLocation Saga", () => {
   it("should search and return  Location List", () => {
     let fakeLocationList = [
       {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "5b254369063db83598df2cf5",
-        streetAddress: "718 Mayert Crossroad",
-        postalCode: "88688-0229",
-        city: "Ondrickafort",
-        stateProvince: "Illinois",
+        _id: "5beba8c9d42cea39441eb483",
+        streetAddress: "15333 Lyric Radial",
+        postalCode: "92238-3778",
+        city: "Eltamouth",
+        stateProvince: "Mississippi",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "5b254369063db83598df2cf6",
-        streetAddress: "605 Shyanne Inlet",
-        postalCode: "55668",
-        city: "North Lucius",
-        stateProvince: "Tennessee",
+        _id: "5beba8c9d42cea39441eb484",
+        streetAddress: "140 Hickle Rapids",
+        postalCode: "81543",
+        city: "Keelingborough",
+        stateProvince: "Iowa",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -112,7 +112,7 @@ describe("doSearchLocation Saga", () => {
   });
   /*
   it('should fail to search for Location with message', () => {
-    let fakeLocationList = [{"_id":"5b254369063db83598df2cf4","streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}},{"_id":"5b254369063db83598df2cf5","streetAddress":"718 Mayert Crossroad","postalCode":"88688-0229","city":"Ondrickafort","stateProvince":"Illinois","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}},{"_id":"5b254369063db83598df2cf6","streetAddress":"605 Shyanne Inlet","postalCode":"55668","city":"North Lucius","stateProvince":"Tennessee","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}}]
+    let fakeLocationList = [{"_id":"5beba8c9d42cea39441eb482","streetAddress":"07240 Barrows Lakes","postalCode":"24105-1029","city":"South Guadalupe","stateProvince":"Maine","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}},{"_id":"5beba8c9d42cea39441eb483","streetAddress":"15333 Lyric Radial","postalCode":"92238-3778","city":"Eltamouth","stateProvince":"Mississippi","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}},{"_id":"5beba8c9d42cea39441eb484","streetAddress":"140 Hickle Rapids","postalCode":"81543","city":"Keelingborough","stateProvince":"Iowa","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Location, random error' } }
     return new Promise((resolve, reject) => {
@@ -134,46 +134,46 @@ describe("doSearchLocation Saga", () => {
   it("should handle reducer and store state", () => {
     let fakeLocationList = [
       {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "5b254369063db83598df2cf5",
-        streetAddress: "718 Mayert Crossroad",
-        postalCode: "88688-0229",
-        city: "Ondrickafort",
-        stateProvince: "Illinois",
+        _id: "5beba8c9d42cea39441eb483",
+        streetAddress: "15333 Lyric Radial",
+        postalCode: "92238-3778",
+        city: "Eltamouth",
+        stateProvince: "Mississippi",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
       },
       {
-        _id: "5b254369063db83598df2cf6",
-        streetAddress: "605 Shyanne Inlet",
-        postalCode: "55668",
-        city: "North Lucius",
-        stateProvince: "Tennessee",
+        _id: "5beba8c9d42cea39441eb484",
+        streetAddress: "140 Hickle Rapids",
+        postalCode: "81543",
+        city: "Keelingborough",
+        stateProvince: "Iowa",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }

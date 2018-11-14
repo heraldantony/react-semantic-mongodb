@@ -35,7 +35,7 @@ export function * doSearchRegion (action) {
 	try {
 		const result = yield call(regionSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchRegionSuccess(result.data.docs))
+			yield put(searchRegionSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

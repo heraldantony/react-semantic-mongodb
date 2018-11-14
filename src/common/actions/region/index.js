@@ -39,7 +39,7 @@ export type REGION_ADD_SUCCESS_TYPE = {
 };
 export type REGION_ADD_FAIL_TYPE = {
   type: REGION_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type REGION_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type REGION_SAVE_SUCCESS_TYPE = {
 };
 export type REGION_SAVE_FAIL_TYPE = {
   type: REGION_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type REGION_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type REGION_UPDATE_SUCCESS_TYPE = {
 };
 export type REGION_UPDATE_FAIL_TYPE = {
   type: REGION_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type REGION_GET_TYPE = {
@@ -78,7 +78,7 @@ export type REGION_GET_SUCCESS_TYPE = {
 };
 export type REGION_GET_FAIL_TYPE = {
   type: REGION_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type REGION_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type REGION_DELETE_SUCCESS_TYPE = {
 };
 export type REGION_DELETE_FAIL_TYPE = {
   type: REGION_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type REGION_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type REGION_SEARCH_TYPE = {
 };
 export type REGION_SEARCH_SUCCESS_TYPE = {
   type: REGION_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type REGION_SEARCH_FAIL_TYPE = {
   type: REGION_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 /**
@@ -131,7 +133,7 @@ export function addRegion (region, form, promise) {
  *
  * @return {object} An action object with type REGION_ADD_SUCCESS
  */
-export function addRegionSuccess (region) {
+export function addRegionSuccess (region): REGION_ADD_SUCCESS_TYPE {
 	return {
 		type: REGION_ADD_SUCCESS,
 		payload: region
@@ -145,7 +147,7 @@ export function addRegionSuccess (region) {
  *
  * @return {object} An action object with type REGION_ADD_FAIL
  */
-export function addRegionFail (error) {
+export function addRegionFail (error): REGION_ADD_FAIL_TYPE {
 	return {
 		type: REGION_ADD_FAIL,
 		error: error
@@ -176,7 +178,7 @@ export function saveRegion (region, form, promise) {
  *
  * @return {object} An action object with type REGION_SAVE_SUCCESS
  */
-export function saveRegionSuccess (region) {
+export function saveRegionSuccess (region): REGION_SAVE_SUCCESS_TYPE {
 	return {
 		type: REGION_SAVE_SUCCESS,
 		payload: region
@@ -190,7 +192,7 @@ export function saveRegionSuccess (region) {
  *
  * @return {object} An action object with type REGION_SAVE_FAIL
  */
-export function saveRegionFail (error) {
+export function saveRegionFail (error): REGION_SAVE_FAIL_TYPE {
 	return {
 		type: REGION_SAVE_FAIL,
 		error: error
@@ -221,7 +223,7 @@ export function updateRegion (region, form, promise) {
  *
  * @return {object} An action object with type REGION_UPDATE_SUCCESS
  */
-export function updateRegionSuccess (region) {
+export function updateRegionSuccess (region): REGION_UPDATE_SUCCESS_TYPE {
 	return {
 		type: REGION_UPDATE_SUCCESS,
 		payload: region
@@ -235,7 +237,7 @@ export function updateRegionSuccess (region) {
  *
  * @return {object} An action object with type REGION_UPDATE_FAIL
  */
-export function updateRegionFail (error) {
+export function updateRegionFail (error): REGION_UPDATE_FAIL_TYPE {
 	return {
 		type: REGION_UPDATE_FAIL,
 		error: error
@@ -249,7 +251,7 @@ export function updateRegionFail (error) {
  *
  * @return {object} An action object with type REGION_GET
  */
-export function getRegion (regionId) {
+export function getRegion (regionId): REGION_GET_TYPE {
 	return {
 		type: REGION_GET,
 		payload: regionId
@@ -263,7 +265,7 @@ export function getRegion (regionId) {
  *
  * @return {object} An action object with type REGION_GET_SUCCESS
  */
-export function getRegionSuccess (region) {
+export function getRegionSuccess (region): REGION_GET_SUCCESS_TYPE {
 	return {
 		type: REGION_GET_SUCCESS,
 		payload: region
@@ -277,7 +279,7 @@ export function getRegionSuccess (region) {
  *
  * @return {object} An action object with type REGION_GET_FAIL
  */
-export function getRegionFail (error) {
+export function getRegionFail (error): REGION_GET_FAIL_TYPE {
 	return {
 		type: REGION_GET_FAIL,
 		error: error
@@ -291,7 +293,7 @@ export function getRegionFail (error) {
  *
  * @return {object} An action object with type REGION_DELETE
  */
-export function deleteRegion (regionId) {
+export function deleteRegion (regionId): REGION_DELETE_TYPE {
 	return {
 		type: REGION_DELETE,
 		payload: regionId
@@ -305,7 +307,7 @@ export function deleteRegion (regionId) {
  *
  * @return {object} An action object with type REGION_DELETE_SUCCESS
  */
-export function deleteRegionSuccess (region) {
+export function deleteRegionSuccess (region): REGION_DELETE_SUCCESS_TYPE {
 	return {
 		type: REGION_DELETE_SUCCESS,
 		payload: region
@@ -319,7 +321,7 @@ export function deleteRegionSuccess (region) {
  *
  * @return {object} An action object with type REGION_DELETE_FAIL
  */
-export function deleteRegionFail (error) {
+export function deleteRegionFail (error): REGION_DELETE_FAIL_TYPE {
 	return {
 		type: REGION_DELETE_FAIL,
 		error: error
@@ -346,14 +348,19 @@ export function searchRegion (searchString, form, promise) {
 /**
  * Dispatched when Search Region succeeds
  *
- * @param  {object} region  The Region object
+ * @param  {object} regions  List of regions
+ * @param  {number} total Total number of regions
  *
  * @return {object} An action object with type REGION_SEARCH_SUCCESS
  */
-export function searchRegionSuccess (regions) {
+export function searchRegionSuccess (
+	regions,
+	total
+): REGION_SEARCH_SUCCESS_TYPE {
 	return {
 		type: REGION_SEARCH_SUCCESS,
-		payload: regions
+		payload: regions,
+		total: total
 	}
 }
 
@@ -364,7 +371,7 @@ export function searchRegionSuccess (regions) {
  *
  * @return {object} An action object with type REGION_SEARCH_FAIL
  */
-export function searchRegionFail (error) {
+export function searchRegionFail (error): REGION_SEARCH_FAIL_TYPE {
 	return {
 		type: REGION_SEARCH_FAIL,
 		error: error

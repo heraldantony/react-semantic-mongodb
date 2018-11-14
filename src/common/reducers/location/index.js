@@ -53,8 +53,10 @@ export type State = {
   locations: [Location],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchLocations: [Location],
   error: Object
 };
@@ -82,8 +84,10 @@ export const initialState = {
 	locations: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchLocations: [],
 	error: ''
 }
@@ -115,7 +119,11 @@ export function locationReducer (state = initialState, action: Action): State {
 	}
 
 	case LOCATION_SEARCH_SUCCESS: {
-		return { ...state, locations: action.payload }
+		return {
+			...state,
+			locations: action.payload,
+			totalItemsCount: action.total
+		}
 	}
 	case LOCATION_SEARCH_FAIL: {
 		return { ...state, error: action.error }

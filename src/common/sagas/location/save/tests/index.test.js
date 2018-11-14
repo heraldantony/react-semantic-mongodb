@@ -42,28 +42,28 @@ describe("doSaveLocation Saga", () => {
 
   it("should save Location", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
     };
 
-    fakeLocation["streetAddress"] = "35722 Heaven Cape";
+    fakeLocation["streetAddress"] = "068 Greg Courts";
 
-    fakeLocation["postalCode"] = "53277";
+    fakeLocation["postalCode"] = "73012-3924";
 
-    fakeLocation["city"] = "Lake Selinabury";
+    fakeLocation["city"] = "Raynorburgh";
 
-    fakeLocation["stateProvince"] = "West Virginia";
+    fakeLocation["stateProvince"] = "Kentucky";
 
     let fakeResult = { ok: true, data: fakeLocation };
     return new Promise((resolve, reject) => {
@@ -88,7 +88,7 @@ describe("doSaveLocation Saga", () => {
   });
   /*
   it('should fail to save Location with message', () => {
-    let fakeLocation = {"_id":"5b254369063db83598df2cf4","streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}}
+    let fakeLocation = {"_id":"5beba8c9d42cea39441eb482","streetAddress":"07240 Barrows Lakes","postalCode":"24105-1029","city":"South Guadalupe","stateProvince":"Maine","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}}
     let fakeResult={ok: false, data: {message: 'Failed to save Location, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeLocation, form: 'LOCATION_EDIT_FORM', promise: {resolve, reject} }
@@ -108,28 +108,28 @@ describe("doSaveLocation Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
     };
 
-    fakeLocation["streetAddress"] = "337 Ziemann Wall";
+    fakeLocation["streetAddress"] = "689 O&#39;Reilly Mall";
 
-    fakeLocation["postalCode"] = "86084-0706";
+    fakeLocation["postalCode"] = "83585-7499";
 
-    fakeLocation["city"] = "West Neldamouth";
+    fakeLocation["city"] = "Huelmouth";
 
-    fakeLocation["stateProvince"] = "Pennsylvania";
+    fakeLocation["stateProvince"] = "Massachusetts";
 
     let fakeResult = { ok: true, data: fakeLocation };
     let finalState = { ...initialState, location: fakeLocation };

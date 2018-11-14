@@ -34,6 +34,7 @@ const makeSelectSearchJob = () =>
 		return {
 			job: substate['job'],
 			jobs: substate['jobs'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchJob = () =>
 		return {
 			otherSearchJob: substate['otherSearchJob'],
 			otherSearchJobs: substate['Jobs'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

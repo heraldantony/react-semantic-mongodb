@@ -35,7 +35,7 @@ export function * doSearchLocation (action) {
 	try {
 		const result = yield call(locationSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchLocationSuccess(result.data.docs))
+			yield put(searchLocationSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

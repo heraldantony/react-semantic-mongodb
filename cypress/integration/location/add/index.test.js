@@ -25,19 +25,19 @@ describe("Location", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@streetAddress").type("0312 Alessandra Loop", { force: true });
+    cy.get("@streetAddress").type("07240 Barrows Lakes", { force: true });
 
     cy.get("input[name=postalCode]").as("postalCode");
 
-    cy.get("@postalCode").type("97889-8410", { force: true });
+    cy.get("@postalCode").type("24105-1029", { force: true });
 
     cy.get("input[name=city]").as("city");
 
-    cy.get("@city").type("East Dejahbury", { force: true });
+    cy.get("@city").type("South Guadalupe", { force: true });
 
     cy.get("input[name=stateProvince]").as("stateProvince");
 
-    cy.get("@stateProvince").type("Connecticut", { force: true });
+    cy.get("@stateProvince").type("Maine", { force: true });
 
     cy
       .get("button.ui.button")
@@ -45,7 +45,7 @@ describe("Location", () => {
       .click({ force: true });
 
     //search and set country
-    cy.get("input[name=search]").type('"Bahamas"', { force: true });
+    cy.get("input[name=search]").type('"Seychelles"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -54,16 +54,16 @@ describe("Location", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Set Country")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Bahamas");
+    cy.get("a.ui.button").contains("Seychelles");
     //remove country and put it back
     cy
       .get("a.ui.button")
-      .contains("Bahamas")
+      .contains("Seychelles")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains("Bahamas")
+      .contains("Seychelles")
       .should("not.exist");
     cy
       .get("button.ui.button")
@@ -77,7 +77,7 @@ describe("Location", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Set Country")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Bahamas");
+    cy.get("a.ui.button").contains("Seychelles");
 
     //save Location
     cy.get("button.add-button").click({ force: true });

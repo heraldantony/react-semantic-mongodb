@@ -47,8 +47,10 @@ export type State = {
   countries: [Country],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchCountries: [Country],
   error: Object
 };
@@ -76,8 +78,10 @@ export const initialState = {
 	countries: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchCountries: [],
 	error: ''
 }
@@ -109,7 +113,11 @@ export function countryReducer (state = initialState, action: Action): State {
 	}
 
 	case COUNTRY_SEARCH_SUCCESS: {
-		return { ...state, countries: action.payload }
+		return {
+			...state,
+			countries: action.payload,
+			totalItemsCount: action.total
+		}
 	}
 	case COUNTRY_SEARCH_FAIL: {
 		return { ...state, error: action.error }

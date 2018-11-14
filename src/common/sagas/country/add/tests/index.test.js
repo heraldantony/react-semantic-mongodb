@@ -44,14 +44,14 @@ describe("doAddCountry Saga", () => {
 
   it("should add Country", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
     delete fakeCountry["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "b5688574-8b9d-46b0-8c19-5a2b466204bb", ...fakeCountry }
+      data: { _id: "770ec8eb-ec13-47ca-8713-3ef153269ad7", ...fakeCountry }
     };
     return new Promise((resolve, reject) => {
       let action = {
@@ -75,7 +75,7 @@ describe("doAddCountry Saga", () => {
   });
   /*
   it('should fail to add Country with message', () => {
-    let fakeCountry = {"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}
+    let fakeCountry = {"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}
     delete fakeCountry['_id'];
     let fakeResult={ok: false, data: {message: 'Failed to add Country, random error' } }
     return new Promise((resolve, reject) => {
@@ -96,14 +96,14 @@ describe("doAddCountry Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeCountry = {
-      _id: "5b254369063db83598df2cea",
-      countryName: "Grenada",
-      region: { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" }
+      _id: "5beba8c9d42cea39441eb478",
+      countryName: "Bermuda",
+      region: { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" }
     };
     delete fakeCountry["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "ae3931af-3c6a-49c0-8ef6-97baad526324", ...fakeCountry }
+      data: { _id: "ab9239b8-b371-4703-a9cf-eeeca6616c68", ...fakeCountry }
     };
     let finalState = {
       ...initialState,

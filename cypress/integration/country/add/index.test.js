@@ -25,7 +25,7 @@ describe("Country", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@countryName").type("Grenada", { force: true });
+    cy.get("@countryName").type("Bermuda", { force: true });
 
     cy
       .get("button.ui.button")

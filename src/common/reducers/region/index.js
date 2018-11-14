@@ -43,8 +43,10 @@ export type State = {
   regions: [Region],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchRegions: [Region],
   error: Object
 };
@@ -70,8 +72,10 @@ export const initialState = {
 	regions: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchRegions: [],
 	error: ''
 }
@@ -103,7 +107,11 @@ export function regionReducer (state = initialState, action: Action): State {
 	}
 
 	case REGION_SEARCH_SUCCESS: {
-		return { ...state, regions: action.payload }
+		return {
+			...state,
+			regions: action.payload,
+			totalItemsCount: action.total
+		}
 	}
 	case REGION_SEARCH_FAIL: {
 		return { ...state, error: action.error }

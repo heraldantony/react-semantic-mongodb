@@ -34,6 +34,7 @@ const makeSelectSearchRegion = () =>
 		return {
 			region: substate['region'],
 			regions: substate['regions'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchRegion = () =>
 		return {
 			otherSearchRegion: substate['otherSearchRegion'],
 			otherSearchRegions: substate['Regions'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

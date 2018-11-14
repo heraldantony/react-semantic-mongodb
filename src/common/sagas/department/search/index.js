@@ -35,7 +35,7 @@ export function * doSearchDepartment (action) {
 	try {
 		const result = yield call(departmentSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchDepartmentSuccess(result.data.docs))
+			yield put(searchDepartmentSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

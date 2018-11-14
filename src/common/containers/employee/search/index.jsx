@@ -54,7 +54,6 @@ class EmployeeSearch extends Component<Props, State> {
 		this.state = {
 			activePage: 1,
 			pageSize: PAGE_SIZE,
-			totalItemsCount: 0,
 			search: ''
 		}
 	}
@@ -86,8 +85,9 @@ class EmployeeSearch extends Component<Props, State> {
 			error,
 			invalid
 		} = this.props
+		const totalItemsCount = (searchProps && searchProps.totalItemsCount) || 0
 		var handlePageChange = this.props.handlePageChange.bind(this)
-		const { activePage, pageSize, totalItemsCount } = this.state
+		const { activePage, pageSize } = this.state
 		var searchFn = this.props.searchSubmit.bind(this)
 		var deleteEntity = this.props.deleteEntity.bind(this)
 		return (

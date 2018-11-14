@@ -25,14 +25,14 @@ describe("Task", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@title").type("Sit aut dolores modi aut.", { force: true });
+    cy.get("@title").type("Quo aperiam soluta est dolorem.", { force: true });
 
     cy.get("textarea[name=description]").as("description");
 
     cy
       .get("@description")
       .type(
-        "Odit non neque culpa inventore deserunt illum natus reiciendis. Soluta eos consequuntur qui hic reprehenderit ea aliquam delectus sit. Ea est aut quis non temporibus sunt laborum accusamus. Et tempore ea velit enim alias aut sit. Quam qui sit. Voluptates sapiente nisi minus nihil quae.",
+        "Et quae explicabo qui dolorem exercitationem. Et incidunt sed est provident distinctio exercitationem vitae. Temporibus sed similique. Officiis ex officiis. Enim placeat nesciunt consequatur ex omnis nihil omnis. Pariatur et repellat debitis consequuntur.",
         { force: true }
       );
 
@@ -44,7 +44,7 @@ describe("Task", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Central Metrics Administrator"', { force: true });
+      .type('"Legacy Division Technician"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -53,7 +53,7 @@ describe("Task", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Central Metrics Administrator");
+    cy.get("a.ui.button").contains("Legacy Division Technician");
     cy
       .get("button.ui.button")
       .contains("Add Job")
@@ -61,7 +61,7 @@ describe("Task", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Senior Solutions Administrator"', { force: true });
+      .type('"Dynamic Assurance Strategist"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -70,15 +70,15 @@ describe("Task", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Senior Solutions Administrator");
+    cy.get("a.ui.button").contains("Dynamic Assurance Strategist");
     cy
       .get("a.ui.button")
-      .contains("Central Metrics Administrator")
+      .contains("Legacy Division Technician")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains("Central Metrics Administrator")
+      .contains("Legacy Division Technician")
       .should("not.exist");
     cy
       .get("button.ui.button")
@@ -87,7 +87,7 @@ describe("Task", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Central Metrics Administrator"', { force: true });
+      .type('"Legacy Division Technician"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -96,7 +96,7 @@ describe("Task", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Central Metrics Administrator");
+    cy.get("a.ui.button").contains("Legacy Division Technician");
 
     //save Task
     cy.get("button.add-button").click({ force: true });

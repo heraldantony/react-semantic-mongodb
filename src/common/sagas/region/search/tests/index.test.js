@@ -42,9 +42,9 @@ describe("doSearchRegion Saga", () => {
 
   it("should search and return  Region List", () => {
     let fakeRegionList = [
-      { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
-      { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
-      { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
+      { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" },
+      { _id: "5beba8c9d42cea39441eb46f", regionName: "Africa" },
+      { _id: "5beba8c9d42cea39441eb470", regionName: "Eastern Europe" }
     ];
     let searchFormData = { search: "test", pageNumber: 1, pageSize: 10 };
     let fakeResult = { ok: true, data: fakeRegionList };
@@ -70,7 +70,7 @@ describe("doSearchRegion Saga", () => {
   });
   /*
   it('should fail to search for Region with message', () => {
-    let fakeRegionList = [{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"},{"_id":"5b254369063db83598df2ce1","regionName":"Africa"},{"_id":"5b254369063db83598df2ce2","regionName":"Eastern Europe"}]
+    let fakeRegionList = [{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"},{"_id":"5beba8c9d42cea39441eb46f","regionName":"Africa"},{"_id":"5beba8c9d42cea39441eb470","regionName":"Eastern Europe"}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Region, random error' } }
     return new Promise((resolve, reject) => {
@@ -91,9 +91,9 @@ describe("doSearchRegion Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeRegionList = [
-      { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
-      { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
-      { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
+      { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" },
+      { _id: "5beba8c9d42cea39441eb46f", regionName: "Africa" },
+      { _id: "5beba8c9d42cea39441eb470", regionName: "Eastern Europe" }
     ];
     let searchFormData = { search: "test", pageNumber: 1, pageSize: 10 };
     let fakeResult = { ok: true, data: { docs: fakeRegionList } };

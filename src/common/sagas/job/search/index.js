@@ -35,7 +35,7 @@ export function * doSearchJob (action) {
 	try {
 		const result = yield call(jobSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchJobSuccess(result.data.docs))
+			yield put(searchJobSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

@@ -35,7 +35,7 @@ export function * doSearchEmployee (action) {
 	try {
 		const result = yield call(employeeSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchEmployeeSuccess(result.data.docs))
+			yield put(searchEmployeeSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

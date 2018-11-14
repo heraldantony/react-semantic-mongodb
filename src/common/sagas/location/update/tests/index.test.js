@@ -42,28 +42,28 @@ describe("doUpdateLocation Saga", () => {
 
   it("should update Location", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
     };
 
-    fakeLocation["streetAddress"] = "29025 Gibson Gardens";
+    fakeLocation["streetAddress"] = "125 Rowe Drive";
 
-    fakeLocation["postalCode"] = "18660";
+    fakeLocation["postalCode"] = "99448-3428";
 
-    fakeLocation["city"] = "North Hayleyfurt";
+    fakeLocation["city"] = "South Era";
 
-    fakeLocation["stateProvince"] = "Utah";
+    fakeLocation["stateProvince"] = "Ohio";
 
     let fakeResult = { ok: true, data: fakeLocation };
     return new Promise((resolve, reject) => {
@@ -88,7 +88,7 @@ describe("doUpdateLocation Saga", () => {
   });
   /*
   it('should fail to update Location with message', () => {
-    let fakeLocation = {"_id":"5b254369063db83598df2cf4","streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}}
+    let fakeLocation = {"_id":"5beba8c9d42cea39441eb482","streetAddress":"07240 Barrows Lakes","postalCode":"24105-1029","city":"South Guadalupe","stateProvince":"Maine","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}}
     let fakeResult={ok: false, data: {message: 'Failed to update Location, random error' } }
     return new Promise((resolve, reject) => {
        let action = {payload: fakeLocation, form: 'LOCATION_UPDATE_FORM', promise: {resolve, reject} }
@@ -108,28 +108,28 @@ describe("doUpdateLocation Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
     };
 
-    fakeLocation["streetAddress"] = "9955 Eino Divide";
+    fakeLocation["streetAddress"] = "54978 Stehr Lakes";
 
-    fakeLocation["postalCode"] = "26094";
+    fakeLocation["postalCode"] = "84549";
 
-    fakeLocation["city"] = "Port Savanahside";
+    fakeLocation["city"] = "Funkhaven";
 
-    fakeLocation["stateProvince"] = "Virginia";
+    fakeLocation["stateProvince"] = "Kentucky";
 
     let fakeResult = { ok: true, data: fakeLocation };
     let finalState = { ...initialState, location: fakeLocation };

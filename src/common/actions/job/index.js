@@ -39,7 +39,7 @@ export type JOB_ADD_SUCCESS_TYPE = {
 };
 export type JOB_ADD_FAIL_TYPE = {
   type: JOB_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type JOB_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type JOB_SAVE_SUCCESS_TYPE = {
 };
 export type JOB_SAVE_FAIL_TYPE = {
   type: JOB_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type JOB_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type JOB_UPDATE_SUCCESS_TYPE = {
 };
 export type JOB_UPDATE_FAIL_TYPE = {
   type: JOB_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type JOB_GET_TYPE = {
@@ -78,7 +78,7 @@ export type JOB_GET_SUCCESS_TYPE = {
 };
 export type JOB_GET_FAIL_TYPE = {
   type: JOB_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type JOB_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type JOB_DELETE_SUCCESS_TYPE = {
 };
 export type JOB_DELETE_FAIL_TYPE = {
   type: JOB_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type JOB_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type JOB_SEARCH_TYPE = {
 };
 export type JOB_SEARCH_SUCCESS_TYPE = {
   type: JOB_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type JOB_SEARCH_FAIL_TYPE = {
   type: JOB_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const JOB_ADD_TASK_SUCCESS = 'job/Add_Task/SUCCESS'
@@ -112,11 +114,11 @@ export const JOB_DELETE_TASK_SUCCESS = 'job/Delete_Task/SUCCESS'
 
 export const JOB_ADD_TASK_SUCCESS_TYPE = {
 	type: JOB_ADD_TASK_SUCCESS,
-	payload: Object
+	task: Object
 }
 export const JOB_DELETE_TASK_SUCCESS_TYPE = {
 	type: JOB_DELETE_TASK_SUCCESS,
-	payload: Object
+	task: Object
 }
 
 /**
@@ -143,7 +145,7 @@ export function addJob (job, form, promise) {
  *
  * @return {object} An action object with type JOB_ADD_SUCCESS
  */
-export function addJobSuccess (job) {
+export function addJobSuccess (job): JOB_ADD_SUCCESS_TYPE {
 	return {
 		type: JOB_ADD_SUCCESS,
 		payload: job
@@ -157,7 +159,7 @@ export function addJobSuccess (job) {
  *
  * @return {object} An action object with type JOB_ADD_FAIL
  */
-export function addJobFail (error) {
+export function addJobFail (error): JOB_ADD_FAIL_TYPE {
 	return {
 		type: JOB_ADD_FAIL,
 		error: error
@@ -188,7 +190,7 @@ export function saveJob (job, form, promise) {
  *
  * @return {object} An action object with type JOB_SAVE_SUCCESS
  */
-export function saveJobSuccess (job) {
+export function saveJobSuccess (job): JOB_SAVE_SUCCESS_TYPE {
 	return {
 		type: JOB_SAVE_SUCCESS,
 		payload: job
@@ -202,7 +204,7 @@ export function saveJobSuccess (job) {
  *
  * @return {object} An action object with type JOB_SAVE_FAIL
  */
-export function saveJobFail (error) {
+export function saveJobFail (error): JOB_SAVE_FAIL_TYPE {
 	return {
 		type: JOB_SAVE_FAIL,
 		error: error
@@ -233,7 +235,7 @@ export function updateJob (job, form, promise) {
  *
  * @return {object} An action object with type JOB_UPDATE_SUCCESS
  */
-export function updateJobSuccess (job) {
+export function updateJobSuccess (job): JOB_UPDATE_SUCCESS_TYPE {
 	return {
 		type: JOB_UPDATE_SUCCESS,
 		payload: job
@@ -247,7 +249,7 @@ export function updateJobSuccess (job) {
  *
  * @return {object} An action object with type JOB_UPDATE_FAIL
  */
-export function updateJobFail (error) {
+export function updateJobFail (error): JOB_UPDATE_FAIL_TYPE {
 	return {
 		type: JOB_UPDATE_FAIL,
 		error: error
@@ -261,7 +263,7 @@ export function updateJobFail (error) {
  *
  * @return {object} An action object with type JOB_GET
  */
-export function getJob (jobId) {
+export function getJob (jobId): JOB_GET_TYPE {
 	return {
 		type: JOB_GET,
 		payload: jobId
@@ -275,7 +277,7 @@ export function getJob (jobId) {
  *
  * @return {object} An action object with type JOB_GET_SUCCESS
  */
-export function getJobSuccess (job) {
+export function getJobSuccess (job): JOB_GET_SUCCESS_TYPE {
 	return {
 		type: JOB_GET_SUCCESS,
 		payload: job
@@ -289,7 +291,7 @@ export function getJobSuccess (job) {
  *
  * @return {object} An action object with type JOB_GET_FAIL
  */
-export function getJobFail (error) {
+export function getJobFail (error): JOB_GET_FAIL_TYPE {
 	return {
 		type: JOB_GET_FAIL,
 		error: error
@@ -303,7 +305,7 @@ export function getJobFail (error) {
  *
  * @return {object} An action object with type JOB_DELETE
  */
-export function deleteJob (jobId) {
+export function deleteJob (jobId): JOB_DELETE_TYPE {
 	return {
 		type: JOB_DELETE,
 		payload: jobId
@@ -317,7 +319,7 @@ export function deleteJob (jobId) {
  *
  * @return {object} An action object with type JOB_DELETE_SUCCESS
  */
-export function deleteJobSuccess (job) {
+export function deleteJobSuccess (job): JOB_DELETE_SUCCESS_TYPE {
 	return {
 		type: JOB_DELETE_SUCCESS,
 		payload: job
@@ -331,7 +333,7 @@ export function deleteJobSuccess (job) {
  *
  * @return {object} An action object with type JOB_DELETE_FAIL
  */
-export function deleteJobFail (error) {
+export function deleteJobFail (error): JOB_DELETE_FAIL_TYPE {
 	return {
 		type: JOB_DELETE_FAIL,
 		error: error
@@ -358,14 +360,16 @@ export function searchJob (searchString, form, promise) {
 /**
  * Dispatched when Search Job succeeds
  *
- * @param  {object} job  The Job object
+ * @param  {object} jobs  List of jobs
+ * @param  {number} total Total number of jobs
  *
  * @return {object} An action object with type JOB_SEARCH_SUCCESS
  */
-export function searchJobSuccess (jobs) {
+export function searchJobSuccess (jobs, total): JOB_SEARCH_SUCCESS_TYPE {
 	return {
 		type: JOB_SEARCH_SUCCESS,
-		payload: jobs
+		payload: jobs,
+		total: total
 	}
 }
 
@@ -376,7 +380,7 @@ export function searchJobSuccess (jobs) {
  *
  * @return {object} An action object with type JOB_SEARCH_FAIL
  */
-export function searchJobFail (error) {
+export function searchJobFail (error): JOB_SEARCH_FAIL_TYPE {
 	return {
 		type: JOB_SEARCH_FAIL,
 		error: error
@@ -390,7 +394,7 @@ export function searchJobFail (error) {
  *
  * @return {object} An action object with type JOB_ADD_TASK_SUCCESS
  */
-export function addTask (task) {
+export function addTask (task): JOB_ADD_TASK_SUCCESS_TYPE {
 	return {
 		type: JOB_ADD_TASK_SUCCESS,
 		task
@@ -403,7 +407,7 @@ export function addTask (task) {
  *
  * @return {object} An action object with type JOB_DELETE_TASK_SUCCESS
  */
-export function deleteTask (task) {
+export function deleteTask (task): JOB_DELETE_TASK_SUCCESS_TYPE {
 	return {
 		type: JOB_DELETE_TASK_SUCCESS,
 		task

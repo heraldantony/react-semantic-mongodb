@@ -34,6 +34,7 @@ const makeSelectSearchDepartment = () =>
 		return {
 			department: substate['department'],
 			departments: substate['departments'],
+			totalItemsCount: substate['totalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}
@@ -43,6 +44,7 @@ const makeSelectOtherSearchDepartment = () =>
 		return {
 			otherSearchDepartment: substate['otherSearchDepartment'],
 			otherSearchDepartments: substate['Departments'],
+			otherSearchTotalItemsCount: substate['otherSearchTotalItemsCount'],
 			message: substate['message'],
 			error: substate['error']
 		}

@@ -31,8 +31,10 @@ describe("Department Reducer", () => {
       departments: [],
       start: 0,
       limit: 10,
+      totalItemsCount: 0,
       otherSearchStart: 0,
       otherSearchLimit: 10,
+      otherSearchTotalItemsCount: 0,
       otherSearchDepartments: [],
       error: ""
     };
@@ -45,110 +47,110 @@ describe("Department Reducer", () => {
   describe("addDepartmentSuccess", () => {
     it("should update state with add results", () => {
       const department = {
-        _id: "5b254369063db83598df2cfe",
-        departmentName: "Optimization",
+        _id: "5beba8c9d42cea39441eb48c",
+        departmentName: "Configuration",
         location: {
-          _id: "5b254369063db83598df2cf4",
-          streetAddress: "0312 Alessandra Loop",
-          postalCode: "97889-8410",
-          city: "East Dejahbury",
-          stateProvince: "Connecticut",
+          _id: "5beba8c9d42cea39441eb482",
+          streetAddress: "07240 Barrows Lakes",
+          postalCode: "24105-1029",
+          city: "South Guadalupe",
+          stateProvince: "Maine",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "5b254369063db83598df2d09",
-            firstName: "Hattie",
-            lastName: "Gusikowski",
-            email: "Lysanne50@yahoo.com",
-            phoneNumber: "1-070-345-3867",
-            hireDate: "2018-02-28T23:33:35.473Z",
-            salary: 86322,
-            commissionPct: 7799,
+            _id: "5beba8c9d42cea39441eb497",
+            firstName: "Emilie",
+            lastName: "Ratke",
+            email: "Laverne_Lowe@gmail.com",
+            phoneNumber: "222.889.6926",
+            hireDate: "2018-01-10T01:40:11.143Z",
+            salary: 94629,
+            commissionPct: 63967,
             jobs: [
               {
-                _id: "5b254369063db83598df2d14",
-                jobTitle: "Senior Solutions Administrator",
-                minSalary: 79377,
-                maxSalary: 92116,
+                _id: "5beba8c9d42cea39441eb4a2",
+                jobTitle: "Dynamic Assurance Strategist",
+                minSalary: 14323,
+                maxSalary: 6302,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d1f",
-                    title: "Nihil est animi.",
+                    _id: "5beba8c9d42cea39441eb4ad",
+                    title: "Nam est sed non esse est commodi alias recusandae.",
                     description:
-                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                      "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d16",
-                        jobTitle: "Central Intranet Producer",
-                        minSalary: 11705,
-                        maxSalary: 37904,
+                        _id: "5beba8c9d42cea39441eb4a4",
+                        jobTitle: "Global Metrics Associate",
+                        minSalary: 43734,
+                        maxSalary: 54679,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d21",
+                            _id: "5beba8c9d42cea39441eb4af",
                             title:
-                              "Mollitia eum magni in quasi nesciunt totam.",
+                              "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                             description:
-                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                              "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d18",
-                                jobTitle: "National Response Developer",
-                                minSalary: 31152,
-                                maxSalary: 19557,
+                                _id: "5beba8c9d42cea39441eb4a6",
+                                jobTitle: "Human Accountability Specialist",
+                                minSalary: 45401,
+                                maxSalary: 45097,
                                 tasks: [
                                   {
-                                    _id: "5b254369063db83598df2d23",
+                                    _id: "5beba8c9d42cea39441eb4b1",
                                     title:
-                                      "Et quia in quis modi minima quod voluptates iste.",
+                                      "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                     description:
-                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                      "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "5b254369063db83598df2d24",
+                                    _id: "5beba8c9d42cea39441eb4b2",
                                     title:
-                                      "Incidunt tenetur quas qui mollitia.",
+                                      "Nulla quos labore eos repellendus neque quibusdam.",
                                     description:
-                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                      "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
@@ -156,39 +158,39 @@ describe("Department Reducer", () => {
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
@@ -196,69 +198,69 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -268,75 +270,75 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -344,39 +346,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -386,85 +390,85 @@ describe("Department Reducer", () => {
             ]
           },
           {
-            _id: "5b254369063db83598df2d0a",
-            firstName: "Carissa",
-            lastName: "Barrows",
-            email: "Angela15@gmail.com",
-            phoneNumber: "724.764.7759 x90445",
-            hireDate: "2018-05-02T12:48:31.883Z",
-            salary: 31436,
-            commissionPct: 96274,
+            _id: "5beba8c9d42cea39441eb498",
+            firstName: "Lincoln",
+            lastName: "Davis",
+            email: "Nels24@hotmail.com",
+            phoneNumber: "(311) 656-5404",
+            hireDate: "2017-12-10T16:46:11.344Z",
+            salary: 93540,
+            commissionPct: 75723,
             jobs: [
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -472,39 +476,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -512,67 +518,69 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d16",
-                jobTitle: "Central Intranet Producer",
-                minSalary: 11705,
-                maxSalary: 37904,
+                _id: "5beba8c9d42cea39441eb4a4",
+                jobTitle: "Global Metrics Associate",
+                minSalary: 43734,
+                maxSalary: 54679,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d22",
-                    title: "Et hic eum.",
+                    _id: "5beba8c9d42cea39441eb4b0",
+                    title: "Nam aut placeat et est sunt aut.",
                     description:
-                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                      "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       },
                       {
-                        _id: "5b254369063db83598df2d1a",
-                        jobTitle: "Dynamic Brand Consultant",
-                        minSalary: 3532,
-                        maxSalary: 67241,
+                        _id: "5beba8c9d42cea39441eb4a8",
+                        jobTitle: "National Infrastructure Executive",
+                        minSalary: 37266,
+                        maxSalary: 21003,
                         tasks: []
                       }
                     ]
@@ -605,110 +613,110 @@ describe("Department Reducer", () => {
   describe("saveDepartmentSuccess", () => {
     it("should update state with save results", () => {
       const department = {
-        _id: "5b254369063db83598df2cfe",
-        departmentName: "Optimization",
+        _id: "5beba8c9d42cea39441eb48c",
+        departmentName: "Configuration",
         location: {
-          _id: "5b254369063db83598df2cf4",
-          streetAddress: "0312 Alessandra Loop",
-          postalCode: "97889-8410",
-          city: "East Dejahbury",
-          stateProvince: "Connecticut",
+          _id: "5beba8c9d42cea39441eb482",
+          streetAddress: "07240 Barrows Lakes",
+          postalCode: "24105-1029",
+          city: "South Guadalupe",
+          stateProvince: "Maine",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "5b254369063db83598df2d09",
-            firstName: "Hattie",
-            lastName: "Gusikowski",
-            email: "Lysanne50@yahoo.com",
-            phoneNumber: "1-070-345-3867",
-            hireDate: "2018-02-28T23:33:35.473Z",
-            salary: 86322,
-            commissionPct: 7799,
+            _id: "5beba8c9d42cea39441eb497",
+            firstName: "Emilie",
+            lastName: "Ratke",
+            email: "Laverne_Lowe@gmail.com",
+            phoneNumber: "222.889.6926",
+            hireDate: "2018-01-10T01:40:11.143Z",
+            salary: 94629,
+            commissionPct: 63967,
             jobs: [
               {
-                _id: "5b254369063db83598df2d14",
-                jobTitle: "Senior Solutions Administrator",
-                minSalary: 79377,
-                maxSalary: 92116,
+                _id: "5beba8c9d42cea39441eb4a2",
+                jobTitle: "Dynamic Assurance Strategist",
+                minSalary: 14323,
+                maxSalary: 6302,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d1f",
-                    title: "Nihil est animi.",
+                    _id: "5beba8c9d42cea39441eb4ad",
+                    title: "Nam est sed non esse est commodi alias recusandae.",
                     description:
-                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                      "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d16",
-                        jobTitle: "Central Intranet Producer",
-                        minSalary: 11705,
-                        maxSalary: 37904,
+                        _id: "5beba8c9d42cea39441eb4a4",
+                        jobTitle: "Global Metrics Associate",
+                        minSalary: 43734,
+                        maxSalary: 54679,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d21",
+                            _id: "5beba8c9d42cea39441eb4af",
                             title:
-                              "Mollitia eum magni in quasi nesciunt totam.",
+                              "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                             description:
-                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                              "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d18",
-                                jobTitle: "National Response Developer",
-                                minSalary: 31152,
-                                maxSalary: 19557,
+                                _id: "5beba8c9d42cea39441eb4a6",
+                                jobTitle: "Human Accountability Specialist",
+                                minSalary: 45401,
+                                maxSalary: 45097,
                                 tasks: [
                                   {
-                                    _id: "5b254369063db83598df2d23",
+                                    _id: "5beba8c9d42cea39441eb4b1",
                                     title:
-                                      "Et quia in quis modi minima quod voluptates iste.",
+                                      "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                     description:
-                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                      "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "5b254369063db83598df2d24",
+                                    _id: "5beba8c9d42cea39441eb4b2",
                                     title:
-                                      "Incidunt tenetur quas qui mollitia.",
+                                      "Nulla quos labore eos repellendus neque quibusdam.",
                                     description:
-                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                      "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
@@ -716,39 +724,39 @@ describe("Department Reducer", () => {
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
@@ -756,69 +764,69 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -828,75 +836,75 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -904,39 +912,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -946,85 +956,85 @@ describe("Department Reducer", () => {
             ]
           },
           {
-            _id: "5b254369063db83598df2d0a",
-            firstName: "Carissa",
-            lastName: "Barrows",
-            email: "Angela15@gmail.com",
-            phoneNumber: "724.764.7759 x90445",
-            hireDate: "2018-05-02T12:48:31.883Z",
-            salary: 31436,
-            commissionPct: 96274,
+            _id: "5beba8c9d42cea39441eb498",
+            firstName: "Lincoln",
+            lastName: "Davis",
+            email: "Nels24@hotmail.com",
+            phoneNumber: "(311) 656-5404",
+            hireDate: "2017-12-10T16:46:11.344Z",
+            salary: 93540,
+            commissionPct: 75723,
             jobs: [
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -1032,39 +1042,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -1072,67 +1084,69 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d16",
-                jobTitle: "Central Intranet Producer",
-                minSalary: 11705,
-                maxSalary: 37904,
+                _id: "5beba8c9d42cea39441eb4a4",
+                jobTitle: "Global Metrics Associate",
+                minSalary: 43734,
+                maxSalary: 54679,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d22",
-                    title: "Et hic eum.",
+                    _id: "5beba8c9d42cea39441eb4b0",
+                    title: "Nam aut placeat et est sunt aut.",
                     description:
-                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                      "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       },
                       {
-                        _id: "5b254369063db83598df2d1a",
-                        jobTitle: "Dynamic Brand Consultant",
-                        minSalary: 3532,
-                        maxSalary: 67241,
+                        _id: "5beba8c9d42cea39441eb4a8",
+                        jobTitle: "National Infrastructure Executive",
+                        minSalary: 37266,
+                        maxSalary: 21003,
                         tasks: []
                       }
                     ]
@@ -1165,110 +1179,110 @@ describe("Department Reducer", () => {
   describe("updateDepartmentSuccess", () => {
     it("should update state with update results", () => {
       const department = {
-        _id: "5b254369063db83598df2cfe",
-        departmentName: "Optimization",
+        _id: "5beba8c9d42cea39441eb48c",
+        departmentName: "Configuration",
         location: {
-          _id: "5b254369063db83598df2cf4",
-          streetAddress: "0312 Alessandra Loop",
-          postalCode: "97889-8410",
-          city: "East Dejahbury",
-          stateProvince: "Connecticut",
+          _id: "5beba8c9d42cea39441eb482",
+          streetAddress: "07240 Barrows Lakes",
+          postalCode: "24105-1029",
+          city: "South Guadalupe",
+          stateProvince: "Maine",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "5b254369063db83598df2d09",
-            firstName: "Hattie",
-            lastName: "Gusikowski",
-            email: "Lysanne50@yahoo.com",
-            phoneNumber: "1-070-345-3867",
-            hireDate: "2018-02-28T23:33:35.473Z",
-            salary: 86322,
-            commissionPct: 7799,
+            _id: "5beba8c9d42cea39441eb497",
+            firstName: "Emilie",
+            lastName: "Ratke",
+            email: "Laverne_Lowe@gmail.com",
+            phoneNumber: "222.889.6926",
+            hireDate: "2018-01-10T01:40:11.143Z",
+            salary: 94629,
+            commissionPct: 63967,
             jobs: [
               {
-                _id: "5b254369063db83598df2d14",
-                jobTitle: "Senior Solutions Administrator",
-                minSalary: 79377,
-                maxSalary: 92116,
+                _id: "5beba8c9d42cea39441eb4a2",
+                jobTitle: "Dynamic Assurance Strategist",
+                minSalary: 14323,
+                maxSalary: 6302,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d1f",
-                    title: "Nihil est animi.",
+                    _id: "5beba8c9d42cea39441eb4ad",
+                    title: "Nam est sed non esse est commodi alias recusandae.",
                     description:
-                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                      "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d16",
-                        jobTitle: "Central Intranet Producer",
-                        minSalary: 11705,
-                        maxSalary: 37904,
+                        _id: "5beba8c9d42cea39441eb4a4",
+                        jobTitle: "Global Metrics Associate",
+                        minSalary: 43734,
+                        maxSalary: 54679,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d21",
+                            _id: "5beba8c9d42cea39441eb4af",
                             title:
-                              "Mollitia eum magni in quasi nesciunt totam.",
+                              "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                             description:
-                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                              "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d18",
-                                jobTitle: "National Response Developer",
-                                minSalary: 31152,
-                                maxSalary: 19557,
+                                _id: "5beba8c9d42cea39441eb4a6",
+                                jobTitle: "Human Accountability Specialist",
+                                minSalary: 45401,
+                                maxSalary: 45097,
                                 tasks: [
                                   {
-                                    _id: "5b254369063db83598df2d23",
+                                    _id: "5beba8c9d42cea39441eb4b1",
                                     title:
-                                      "Et quia in quis modi minima quod voluptates iste.",
+                                      "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                     description:
-                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                      "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "5b254369063db83598df2d24",
+                                    _id: "5beba8c9d42cea39441eb4b2",
                                     title:
-                                      "Incidunt tenetur quas qui mollitia.",
+                                      "Nulla quos labore eos repellendus neque quibusdam.",
                                     description:
-                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                      "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
@@ -1276,39 +1290,39 @@ describe("Department Reducer", () => {
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
@@ -1316,69 +1330,69 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -1388,75 +1402,75 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -1464,39 +1478,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -1506,85 +1522,85 @@ describe("Department Reducer", () => {
             ]
           },
           {
-            _id: "5b254369063db83598df2d0a",
-            firstName: "Carissa",
-            lastName: "Barrows",
-            email: "Angela15@gmail.com",
-            phoneNumber: "724.764.7759 x90445",
-            hireDate: "2018-05-02T12:48:31.883Z",
-            salary: 31436,
-            commissionPct: 96274,
+            _id: "5beba8c9d42cea39441eb498",
+            firstName: "Lincoln",
+            lastName: "Davis",
+            email: "Nels24@hotmail.com",
+            phoneNumber: "(311) 656-5404",
+            hireDate: "2017-12-10T16:46:11.344Z",
+            salary: 93540,
+            commissionPct: 75723,
             jobs: [
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -1592,39 +1608,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -1632,67 +1650,69 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d16",
-                jobTitle: "Central Intranet Producer",
-                minSalary: 11705,
-                maxSalary: 37904,
+                _id: "5beba8c9d42cea39441eb4a4",
+                jobTitle: "Global Metrics Associate",
+                minSalary: 43734,
+                maxSalary: 54679,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d22",
-                    title: "Et hic eum.",
+                    _id: "5beba8c9d42cea39441eb4b0",
+                    title: "Nam aut placeat et est sunt aut.",
                     description:
-                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                      "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       },
                       {
-                        _id: "5b254369063db83598df2d1a",
-                        jobTitle: "Dynamic Brand Consultant",
-                        minSalary: 3532,
-                        maxSalary: 67241,
+                        _id: "5beba8c9d42cea39441eb4a8",
+                        jobTitle: "National Infrastructure Executive",
+                        minSalary: 37266,
+                        maxSalary: 21003,
                         tasks: []
                       }
                     ]
@@ -1726,110 +1746,113 @@ describe("Department Reducer", () => {
     it("should update state with search results", () => {
       const departments = [
         {
-          _id: "5b254369063db83598df2cfe",
-          departmentName: "Optimization",
+          _id: "5beba8c9d42cea39441eb48c",
+          departmentName: "Configuration",
           location: {
-            _id: "5b254369063db83598df2cf4",
-            streetAddress: "0312 Alessandra Loop",
-            postalCode: "97889-8410",
-            city: "East Dejahbury",
-            stateProvince: "Connecticut",
+            _id: "5beba8c9d42cea39441eb482",
+            streetAddress: "07240 Barrows Lakes",
+            postalCode: "24105-1029",
+            city: "South Guadalupe",
+            stateProvince: "Maine",
             country: {
-              _id: "5b254369063db83598df2cea",
-              countryName: "Grenada",
+              _id: "5beba8c9d42cea39441eb478",
+              countryName: "Bermuda",
               region: {
-                _id: "5b254369063db83598df2ce0",
+                _id: "5beba8c9d42cea39441eb46e",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "5b254369063db83598df2d09",
-              firstName: "Hattie",
-              lastName: "Gusikowski",
-              email: "Lysanne50@yahoo.com",
-              phoneNumber: "1-070-345-3867",
-              hireDate: "2018-02-28T23:33:35.473Z",
-              salary: 86322,
-              commissionPct: 7799,
+              _id: "5beba8c9d42cea39441eb497",
+              firstName: "Emilie",
+              lastName: "Ratke",
+              email: "Laverne_Lowe@gmail.com",
+              phoneNumber: "222.889.6926",
+              hireDate: "2018-01-10T01:40:11.143Z",
+              salary: 94629,
+              commissionPct: 63967,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d14",
-                  jobTitle: "Senior Solutions Administrator",
-                  minSalary: 79377,
-                  maxSalary: 92116,
+                  _id: "5beba8c9d42cea39441eb4a2",
+                  jobTitle: "Dynamic Assurance Strategist",
+                  minSalary: 14323,
+                  maxSalary: 6302,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d1f",
-                      title: "Nihil est animi.",
+                      _id: "5beba8c9d42cea39441eb4ad",
+                      title:
+                        "Nam est sed non esse est commodi alias recusandae.",
                       description:
-                        "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                        "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d16",
-                          jobTitle: "Central Intranet Producer",
-                          minSalary: 11705,
-                          maxSalary: 37904,
+                          _id: "5beba8c9d42cea39441eb4a4",
+                          jobTitle: "Global Metrics Associate",
+                          minSalary: 43734,
+                          maxSalary: 54679,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d21",
+                              _id: "5beba8c9d42cea39441eb4af",
                               title:
-                                "Mollitia eum magni in quasi nesciunt totam.",
+                                "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                               description:
-                                "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                                "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d18",
-                                  jobTitle: "National Response Developer",
-                                  minSalary: 31152,
-                                  maxSalary: 19557,
+                                  _id: "5beba8c9d42cea39441eb4a6",
+                                  jobTitle: "Human Accountability Specialist",
+                                  minSalary: 45401,
+                                  maxSalary: 45097,
                                   tasks: [
                                     {
-                                      _id: "5b254369063db83598df2d23",
+                                      _id: "5beba8c9d42cea39441eb4b1",
                                       title:
-                                        "Et quia in quis modi minima quod voluptates iste.",
+                                        "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                       description:
-                                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                        "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                       jobs: []
                                     },
                                     {
-                                      _id: "5b254369063db83598df2d24",
+                                      _id: "5beba8c9d42cea39441eb4b2",
                                       title:
-                                        "Incidunt tenetur quas qui mollitia.",
+                                        "Nulla quos labore eos repellendus neque quibusdam.",
                                       description:
-                                        "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                        "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                       jobs: []
                                     }
                                   ]
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
@@ -1837,39 +1860,40 @@ describe("Department Reducer", () => {
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d17",
-                          jobTitle: "Principal Configuration Representative",
-                          minSalary: 72156,
-                          maxSalary: 67196,
+                          _id: "5beba8c9d42cea39441eb4a5",
+                          jobTitle: "Global Accountability Assistant",
+                          minSalary: 48138,
+                          maxSalary: 67852,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             }
                           ]
@@ -1877,69 +1901,70 @@ describe("Department Reducer", () => {
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d20",
-                      title:
-                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                      _id: "5beba8c9d42cea39441eb4ae",
+                      title: "Vel qui nostrum explicabo magnam officia.",
                       description:
-                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                        "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d17",
-                          jobTitle: "Principal Configuration Representative",
-                          minSalary: 72156,
-                          maxSalary: 67196,
+                          _id: "5beba8c9d42cea39441eb4a5",
+                          jobTitle: "Global Accountability Assistant",
+                          minSalary: 48138,
+                          maxSalary: 67852,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
@@ -1949,75 +1974,76 @@ describe("Department Reducer", () => {
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d15",
-                  jobTitle: "Corporate Web Liaison",
-                  minSalary: 85109,
-                  maxSalary: 71038,
+                  _id: "5beba8c9d42cea39441eb4a3",
+                  jobTitle: "Human Infrastructure Administrator",
+                  minSalary: 90425,
+                  maxSalary: 51311,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d20",
-                      title:
-                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                      _id: "5beba8c9d42cea39441eb4ae",
+                      title: "Vel qui nostrum explicabo magnam officia.",
                       description:
-                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                        "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d17",
-                          jobTitle: "Principal Configuration Representative",
-                          minSalary: 72156,
-                          maxSalary: 67196,
+                          _id: "5beba8c9d42cea39441eb4a5",
+                          jobTitle: "Global Accountability Assistant",
+                          minSalary: 48138,
+                          maxSalary: 67852,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
@@ -2025,39 +2051,41 @@ describe("Department Reducer", () => {
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
@@ -2067,85 +2095,86 @@ describe("Department Reducer", () => {
               ]
             },
             {
-              _id: "5b254369063db83598df2d0a",
-              firstName: "Carissa",
-              lastName: "Barrows",
-              email: "Angela15@gmail.com",
-              phoneNumber: "724.764.7759 x90445",
-              hireDate: "2018-05-02T12:48:31.883Z",
-              salary: 31436,
-              commissionPct: 96274,
+              _id: "5beba8c9d42cea39441eb498",
+              firstName: "Lincoln",
+              lastName: "Davis",
+              email: "Nels24@hotmail.com",
+              phoneNumber: "(311) 656-5404",
+              hireDate: "2017-12-10T16:46:11.344Z",
+              salary: 93540,
+              commissionPct: 75723,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d15",
-                  jobTitle: "Corporate Web Liaison",
-                  minSalary: 85109,
-                  maxSalary: 71038,
+                  _id: "5beba8c9d42cea39441eb4a3",
+                  jobTitle: "Human Infrastructure Administrator",
+                  minSalary: 90425,
+                  maxSalary: 51311,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d20",
-                      title:
-                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                      _id: "5beba8c9d42cea39441eb4ae",
+                      title: "Vel qui nostrum explicabo magnam officia.",
                       description:
-                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                        "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d17",
-                          jobTitle: "Principal Configuration Representative",
-                          minSalary: 72156,
-                          maxSalary: 67196,
+                          _id: "5beba8c9d42cea39441eb4a5",
+                          jobTitle: "Global Accountability Assistant",
+                          minSalary: 48138,
+                          maxSalary: 67852,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
@@ -2153,39 +2182,41 @@ describe("Department Reducer", () => {
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
@@ -2193,67 +2224,69 @@ describe("Department Reducer", () => {
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d16",
-                  jobTitle: "Central Intranet Producer",
-                  minSalary: 11705,
-                  maxSalary: 37904,
+                  _id: "5beba8c9d42cea39441eb4a4",
+                  jobTitle: "Global Metrics Associate",
+                  minSalary: 43734,
+                  maxSalary: 54679,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
@@ -2265,104 +2298,105 @@ describe("Department Reducer", () => {
           ]
         },
         {
-          _id: "5b254369063db83598df2cff",
-          departmentName: "Metrics",
+          _id: "5beba8c9d42cea39441eb48d",
+          departmentName: "Usability",
           location: {
-            _id: "5b254369063db83598df2cf4",
-            streetAddress: "0312 Alessandra Loop",
-            postalCode: "97889-8410",
-            city: "East Dejahbury",
-            stateProvince: "Connecticut",
+            _id: "5beba8c9d42cea39441eb482",
+            streetAddress: "07240 Barrows Lakes",
+            postalCode: "24105-1029",
+            city: "South Guadalupe",
+            stateProvince: "Maine",
             country: {
-              _id: "5b254369063db83598df2cea",
-              countryName: "Grenada",
+              _id: "5beba8c9d42cea39441eb478",
+              countryName: "Bermuda",
               region: {
-                _id: "5b254369063db83598df2ce0",
+                _id: "5beba8c9d42cea39441eb46e",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "5b254369063db83598df2d0a",
-              firstName: "Carissa",
-              lastName: "Barrows",
-              email: "Angela15@gmail.com",
-              phoneNumber: "724.764.7759 x90445",
-              hireDate: "2018-05-02T12:48:31.883Z",
-              salary: 31436,
-              commissionPct: 96274,
+              _id: "5beba8c9d42cea39441eb498",
+              firstName: "Lincoln",
+              lastName: "Davis",
+              email: "Nels24@hotmail.com",
+              phoneNumber: "(311) 656-5404",
+              hireDate: "2017-12-10T16:46:11.344Z",
+              salary: 93540,
+              commissionPct: 75723,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d15",
-                  jobTitle: "Corporate Web Liaison",
-                  minSalary: 85109,
-                  maxSalary: 71038,
+                  _id: "5beba8c9d42cea39441eb4a3",
+                  jobTitle: "Human Infrastructure Administrator",
+                  minSalary: 90425,
+                  maxSalary: 51311,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d20",
-                      title:
-                        "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                      _id: "5beba8c9d42cea39441eb4ae",
+                      title: "Vel qui nostrum explicabo magnam officia.",
                       description:
-                        "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                        "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d17",
-                          jobTitle: "Principal Configuration Representative",
-                          minSalary: 72156,
-                          maxSalary: 67196,
+                          _id: "5beba8c9d42cea39441eb4a5",
+                          jobTitle: "Global Accountability Assistant",
+                          minSalary: 48138,
+                          maxSalary: 67852,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d22",
-                              title: "Et hic eum.",
+                              _id: "5beba8c9d42cea39441eb4b0",
+                              title: "Nam aut placeat et est sunt aut.",
                               description:
-                                "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                               jobs: [
                                 {
-                                  _id: "5b254369063db83598df2d19",
-                                  jobTitle: "Dynamic Branding Orchestrator",
-                                  minSalary: 4723,
-                                  maxSalary: 11754,
+                                  _id: "5beba8c9d42cea39441eb4a7",
+                                  jobTitle:
+                                    "Direct Interactions Representative",
+                                  minSalary: 41265,
+                                  maxSalary: 31800,
                                   tasks: []
                                 },
                                 {
-                                  _id: "5b254369063db83598df2d1a",
-                                  jobTitle: "Dynamic Brand Consultant",
-                                  minSalary: 3532,
-                                  maxSalary: 67241,
+                                  _id: "5beba8c9d42cea39441eb4a8",
+                                  jobTitle: "National Infrastructure Executive",
+                                  minSalary: 37266,
+                                  maxSalary: 21003,
                                   tasks: []
                                 }
                               ]
                             },
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
@@ -2370,39 +2404,41 @@ describe("Department Reducer", () => {
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
@@ -2410,67 +2446,69 @@ describe("Department Reducer", () => {
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d16",
-                  jobTitle: "Central Intranet Producer",
-                  minSalary: 11705,
-                  maxSalary: 37904,
+                  _id: "5beba8c9d42cea39441eb4a4",
+                  jobTitle: "Global Metrics Associate",
+                  minSalary: 43734,
+                  maxSalary: 54679,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
@@ -2480,77 +2518,79 @@ describe("Department Reducer", () => {
               ]
             },
             {
-              _id: "5b254369063db83598df2d0b",
-              firstName: "Narciso",
-              lastName: "Christiansen",
-              email: "Howard_Hoeger@gmail.com",
-              phoneNumber: "851-669-0469 x0139",
-              hireDate: "2017-10-27T03:35:56.028Z",
-              salary: 42970,
-              commissionPct: 61213,
+              _id: "5beba8c9d42cea39441eb499",
+              firstName: "Bell",
+              lastName: "Reilly",
+              email: "Dina_Abbott@yahoo.com",
+              phoneNumber: "1-804-709-2420 x731",
+              hireDate: "2018-05-20T14:33:31.373Z",
+              salary: 98179,
+              commissionPct: 76056,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d16",
-                  jobTitle: "Central Intranet Producer",
-                  minSalary: 11705,
-                  maxSalary: 37904,
+                  _id: "5beba8c9d42cea39441eb4a4",
+                  jobTitle: "Global Metrics Associate",
+                  minSalary: 43734,
+                  maxSalary: 54679,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
@@ -2558,39 +2598,39 @@ describe("Department Reducer", () => {
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d17",
-                  jobTitle: "Principal Configuration Representative",
-                  minSalary: 72156,
-                  maxSalary: 67196,
+                  _id: "5beba8c9d42cea39441eb4a5",
+                  jobTitle: "Global Accountability Assistant",
+                  minSalary: 48138,
+                  maxSalary: 67852,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d23",
+                      _id: "5beba8c9d42cea39441eb4b1",
                       title:
-                        "Et quia in quis modi minima quod voluptates iste.",
+                        "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                       description:
-                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                        "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                       jobs: []
                     }
                   ]
@@ -2600,96 +2640,98 @@ describe("Department Reducer", () => {
           ]
         },
         {
-          _id: "5b254369063db83598df2d00",
-          departmentName: "Mobility",
+          _id: "5beba8c9d42cea39441eb48e",
+          departmentName: "Accounts",
           location: {
-            _id: "5b254369063db83598df2cf4",
-            streetAddress: "0312 Alessandra Loop",
-            postalCode: "97889-8410",
-            city: "East Dejahbury",
-            stateProvince: "Connecticut",
+            _id: "5beba8c9d42cea39441eb482",
+            streetAddress: "07240 Barrows Lakes",
+            postalCode: "24105-1029",
+            city: "South Guadalupe",
+            stateProvince: "Maine",
             country: {
-              _id: "5b254369063db83598df2cea",
-              countryName: "Grenada",
+              _id: "5beba8c9d42cea39441eb478",
+              countryName: "Bermuda",
               region: {
-                _id: "5b254369063db83598df2ce0",
+                _id: "5beba8c9d42cea39441eb46e",
                 regionName: "South-east Asia"
               }
             }
           },
           employees: [
             {
-              _id: "5b254369063db83598df2d0b",
-              firstName: "Narciso",
-              lastName: "Christiansen",
-              email: "Howard_Hoeger@gmail.com",
-              phoneNumber: "851-669-0469 x0139",
-              hireDate: "2017-10-27T03:35:56.028Z",
-              salary: 42970,
-              commissionPct: 61213,
+              _id: "5beba8c9d42cea39441eb499",
+              firstName: "Bell",
+              lastName: "Reilly",
+              email: "Dina_Abbott@yahoo.com",
+              phoneNumber: "1-804-709-2420 x731",
+              hireDate: "2018-05-20T14:33:31.373Z",
+              salary: 98179,
+              commissionPct: 76056,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d16",
-                  jobTitle: "Central Intranet Producer",
-                  minSalary: 11705,
-                  maxSalary: 37904,
+                  _id: "5beba8c9d42cea39441eb4a4",
+                  jobTitle: "Global Metrics Associate",
+                  minSalary: 43734,
+                  maxSalary: 54679,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d21",
-                      title: "Mollitia eum magni in quasi nesciunt totam.",
+                      _id: "5beba8c9d42cea39441eb4af",
+                      title:
+                        "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                       description:
-                        "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                        "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d18",
-                          jobTitle: "National Response Developer",
-                          minSalary: 31152,
-                          maxSalary: 19557,
+                          _id: "5beba8c9d42cea39441eb4a6",
+                          jobTitle: "Human Accountability Specialist",
+                          minSalary: 45401,
+                          maxSalary: 45097,
                           tasks: [
                             {
-                              _id: "5b254369063db83598df2d23",
+                              _id: "5beba8c9d42cea39441eb4b1",
                               title:
-                                "Et quia in quis modi minima quod voluptates iste.",
+                                "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                               description:
-                                "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                               jobs: []
                             },
                             {
-                              _id: "5b254369063db83598df2d24",
-                              title: "Incidunt tenetur quas qui mollitia.",
+                              _id: "5beba8c9d42cea39441eb4b2",
+                              title:
+                                "Nulla quos labore eos repellendus neque quibusdam.",
                               description:
-                                "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                               jobs: []
                             }
                           ]
                         },
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
@@ -2697,39 +2739,39 @@ describe("Department Reducer", () => {
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d17",
-                  jobTitle: "Principal Configuration Representative",
-                  minSalary: 72156,
-                  maxSalary: 67196,
+                  _id: "5beba8c9d42cea39441eb4a5",
+                  jobTitle: "Global Accountability Assistant",
+                  minSalary: 48138,
+                  maxSalary: 67852,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d23",
+                      _id: "5beba8c9d42cea39441eb4b1",
                       title:
-                        "Et quia in quis modi minima quod voluptates iste.",
+                        "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                       description:
-                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                        "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                       jobs: []
                     }
                   ]
@@ -2737,72 +2779,73 @@ describe("Department Reducer", () => {
               ]
             },
             {
-              _id: "5b254369063db83598df2d0c",
-              firstName: "Dillan",
-              lastName: "Larkin",
-              email: "Monica.Oberbrunner@yahoo.com",
-              phoneNumber: "(660) 956-0818",
-              hireDate: "2017-08-15T15:22:26.449Z",
-              salary: 43152,
-              commissionPct: 51668,
+              _id: "5beba8c9d42cea39441eb49a",
+              firstName: "Kurt",
+              lastName: "Metz",
+              email: "Barney66@gmail.com",
+              phoneNumber: "(021) 847-3082 x521",
+              hireDate: "2018-01-20T22:25:32.769Z",
+              salary: 88452,
+              commissionPct: 20038,
               jobs: [
                 {
-                  _id: "5b254369063db83598df2d17",
-                  jobTitle: "Principal Configuration Representative",
-                  minSalary: 72156,
-                  maxSalary: 67196,
+                  _id: "5beba8c9d42cea39441eb4a5",
+                  jobTitle: "Global Accountability Assistant",
+                  minSalary: 48138,
+                  maxSalary: 67852,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d22",
-                      title: "Et hic eum.",
+                      _id: "5beba8c9d42cea39441eb4b0",
+                      title: "Nam aut placeat et est sunt aut.",
                       description:
-                        "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                        "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                       jobs: [
                         {
-                          _id: "5b254369063db83598df2d19",
-                          jobTitle: "Dynamic Branding Orchestrator",
-                          minSalary: 4723,
-                          maxSalary: 11754,
+                          _id: "5beba8c9d42cea39441eb4a7",
+                          jobTitle: "Direct Interactions Representative",
+                          minSalary: 41265,
+                          maxSalary: 31800,
                           tasks: []
                         },
                         {
-                          _id: "5b254369063db83598df2d1a",
-                          jobTitle: "Dynamic Brand Consultant",
-                          minSalary: 3532,
-                          maxSalary: 67241,
+                          _id: "5beba8c9d42cea39441eb4a8",
+                          jobTitle: "National Infrastructure Executive",
+                          minSalary: 37266,
+                          maxSalary: 21003,
                           tasks: []
                         }
                       ]
                     },
                     {
-                      _id: "5b254369063db83598df2d23",
+                      _id: "5beba8c9d42cea39441eb4b1",
                       title:
-                        "Et quia in quis modi minima quod voluptates iste.",
+                        "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                       description:
-                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                        "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                       jobs: []
                     }
                   ]
                 },
                 {
-                  _id: "5b254369063db83598df2d18",
-                  jobTitle: "National Response Developer",
-                  minSalary: 31152,
-                  maxSalary: 19557,
+                  _id: "5beba8c9d42cea39441eb4a6",
+                  jobTitle: "Human Accountability Specialist",
+                  minSalary: 45401,
+                  maxSalary: 45097,
                   tasks: [
                     {
-                      _id: "5b254369063db83598df2d23",
+                      _id: "5beba8c9d42cea39441eb4b1",
                       title:
-                        "Et quia in quis modi minima quod voluptates iste.",
+                        "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                       description:
-                        "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                        "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                       jobs: []
                     },
                     {
-                      _id: "5b254369063db83598df2d24",
-                      title: "Incidunt tenetur quas qui mollitia.",
+                      _id: "5beba8c9d42cea39441eb4b2",
+                      title:
+                        "Nulla quos labore eos repellendus neque quibusdam.",
                       description:
-                        "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                        "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                       jobs: []
                     }
                   ]
@@ -2812,10 +2855,17 @@ describe("Department Reducer", () => {
           ]
         }
       ];
-      const expectedResult = { ...state, departments: departments };
+      const expectedResult = {
+        ...state,
+        departments: departments,
+        totalItemsCount: departments.length
+      };
 
       expect(
-        departmentReducer(state, searchDepartmentSuccess(departments))
+        departmentReducer(
+          state,
+          searchDepartmentSuccess(departments, departments.length)
+        )
       ).toEqual(expectedResult);
     });
   });
@@ -2834,110 +2884,110 @@ describe("Department Reducer", () => {
   describe("getDepartmentSuccess", () => {
     it("should update state with get results", () => {
       const department = {
-        _id: "5b254369063db83598df2cfe",
-        departmentName: "Optimization",
+        _id: "5beba8c9d42cea39441eb48c",
+        departmentName: "Configuration",
         location: {
-          _id: "5b254369063db83598df2cf4",
-          streetAddress: "0312 Alessandra Loop",
-          postalCode: "97889-8410",
-          city: "East Dejahbury",
-          stateProvince: "Connecticut",
+          _id: "5beba8c9d42cea39441eb482",
+          streetAddress: "07240 Barrows Lakes",
+          postalCode: "24105-1029",
+          city: "South Guadalupe",
+          stateProvince: "Maine",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         employees: [
           {
-            _id: "5b254369063db83598df2d09",
-            firstName: "Hattie",
-            lastName: "Gusikowski",
-            email: "Lysanne50@yahoo.com",
-            phoneNumber: "1-070-345-3867",
-            hireDate: "2018-02-28T23:33:35.473Z",
-            salary: 86322,
-            commissionPct: 7799,
+            _id: "5beba8c9d42cea39441eb497",
+            firstName: "Emilie",
+            lastName: "Ratke",
+            email: "Laverne_Lowe@gmail.com",
+            phoneNumber: "222.889.6926",
+            hireDate: "2018-01-10T01:40:11.143Z",
+            salary: 94629,
+            commissionPct: 63967,
             jobs: [
               {
-                _id: "5b254369063db83598df2d14",
-                jobTitle: "Senior Solutions Administrator",
-                minSalary: 79377,
-                maxSalary: 92116,
+                _id: "5beba8c9d42cea39441eb4a2",
+                jobTitle: "Dynamic Assurance Strategist",
+                minSalary: 14323,
+                maxSalary: 6302,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d1f",
-                    title: "Nihil est animi.",
+                    _id: "5beba8c9d42cea39441eb4ad",
+                    title: "Nam est sed non esse est commodi alias recusandae.",
                     description:
-                      "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                      "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d16",
-                        jobTitle: "Central Intranet Producer",
-                        minSalary: 11705,
-                        maxSalary: 37904,
+                        _id: "5beba8c9d42cea39441eb4a4",
+                        jobTitle: "Global Metrics Associate",
+                        minSalary: 43734,
+                        maxSalary: 54679,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d21",
+                            _id: "5beba8c9d42cea39441eb4af",
                             title:
-                              "Mollitia eum magni in quasi nesciunt totam.",
+                              "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                             description:
-                              "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                              "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d18",
-                                jobTitle: "National Response Developer",
-                                minSalary: 31152,
-                                maxSalary: 19557,
+                                _id: "5beba8c9d42cea39441eb4a6",
+                                jobTitle: "Human Accountability Specialist",
+                                minSalary: 45401,
+                                maxSalary: 45097,
                                 tasks: [
                                   {
-                                    _id: "5b254369063db83598df2d23",
+                                    _id: "5beba8c9d42cea39441eb4b1",
                                     title:
-                                      "Et quia in quis modi minima quod voluptates iste.",
+                                      "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                     description:
-                                      "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                      "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                     jobs: []
                                   },
                                   {
-                                    _id: "5b254369063db83598df2d24",
+                                    _id: "5beba8c9d42cea39441eb4b2",
                                     title:
-                                      "Incidunt tenetur quas qui mollitia.",
+                                      "Nulla quos labore eos repellendus neque quibusdam.",
                                     description:
-                                      "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                      "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                     jobs: []
                                   }
                                 ]
                               },
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
@@ -2945,39 +2995,39 @@ describe("Department Reducer", () => {
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
@@ -2985,69 +3035,69 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -3057,75 +3107,75 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -3133,39 +3183,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -3175,85 +3227,85 @@ describe("Department Reducer", () => {
             ]
           },
           {
-            _id: "5b254369063db83598df2d0a",
-            firstName: "Carissa",
-            lastName: "Barrows",
-            email: "Angela15@gmail.com",
-            phoneNumber: "724.764.7759 x90445",
-            hireDate: "2018-05-02T12:48:31.883Z",
-            salary: 31436,
-            commissionPct: 96274,
+            _id: "5beba8c9d42cea39441eb498",
+            firstName: "Lincoln",
+            lastName: "Davis",
+            email: "Nels24@hotmail.com",
+            phoneNumber: "(311) 656-5404",
+            hireDate: "2017-12-10T16:46:11.344Z",
+            salary: 93540,
+            commissionPct: 75723,
             jobs: [
               {
-                _id: "5b254369063db83598df2d15",
-                jobTitle: "Corporate Web Liaison",
-                minSalary: 85109,
-                maxSalary: 71038,
+                _id: "5beba8c9d42cea39441eb4a3",
+                jobTitle: "Human Infrastructure Administrator",
+                minSalary: 90425,
+                maxSalary: 51311,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d20",
-                    title:
-                      "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                    _id: "5beba8c9d42cea39441eb4ae",
+                    title: "Vel qui nostrum explicabo magnam officia.",
                     description:
-                      "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                      "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d17",
-                        jobTitle: "Principal Configuration Representative",
-                        minSalary: 72156,
-                        maxSalary: 67196,
+                        _id: "5beba8c9d42cea39441eb4a5",
+                        jobTitle: "Global Accountability Assistant",
+                        minSalary: 48138,
+                        maxSalary: 67852,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d22",
-                            title: "Et hic eum.",
+                            _id: "5beba8c9d42cea39441eb4b0",
+                            title: "Nam aut placeat et est sunt aut.",
                             description:
-                              "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                              "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                             jobs: [
                               {
-                                _id: "5b254369063db83598df2d19",
-                                jobTitle: "Dynamic Branding Orchestrator",
-                                minSalary: 4723,
-                                maxSalary: 11754,
+                                _id: "5beba8c9d42cea39441eb4a7",
+                                jobTitle: "Direct Interactions Representative",
+                                minSalary: 41265,
+                                maxSalary: 31800,
                                 tasks: []
                               },
                               {
-                                _id: "5b254369063db83598df2d1a",
-                                jobTitle: "Dynamic Brand Consultant",
-                                minSalary: 3532,
-                                maxSalary: 67241,
+                                _id: "5beba8c9d42cea39441eb4a8",
+                                jobTitle: "National Infrastructure Executive",
+                                minSalary: 37266,
+                                maxSalary: 21003,
                                 tasks: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
@@ -3261,39 +3313,41 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
@@ -3301,67 +3355,69 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d16",
-                jobTitle: "Central Intranet Producer",
-                minSalary: 11705,
-                maxSalary: 37904,
+                _id: "5beba8c9d42cea39441eb4a4",
+                jobTitle: "Global Metrics Associate",
+                minSalary: 43734,
+                maxSalary: 54679,
                 tasks: [
                   {
-                    _id: "5b254369063db83598df2d21",
-                    title: "Mollitia eum magni in quasi nesciunt totam.",
+                    _id: "5beba8c9d42cea39441eb4af",
+                    title:
+                      "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                     description:
-                      "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                      "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d18",
-                        jobTitle: "National Response Developer",
-                        minSalary: 31152,
-                        maxSalary: 19557,
+                        _id: "5beba8c9d42cea39441eb4a6",
+                        jobTitle: "Human Accountability Specialist",
+                        minSalary: 45401,
+                        maxSalary: 45097,
                         tasks: [
                           {
-                            _id: "5b254369063db83598df2d23",
+                            _id: "5beba8c9d42cea39441eb4b1",
                             title:
-                              "Et quia in quis modi minima quod voluptates iste.",
+                              "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                             description:
-                              "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                              "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                             jobs: []
                           },
                           {
-                            _id: "5b254369063db83598df2d24",
-                            title: "Incidunt tenetur quas qui mollitia.",
+                            _id: "5beba8c9d42cea39441eb4b2",
+                            title:
+                              "Nulla quos labore eos repellendus neque quibusdam.",
                             description:
-                              "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                              "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                             jobs: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       }
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d22",
-                    title: "Et hic eum.",
+                    _id: "5beba8c9d42cea39441eb4b0",
+                    title: "Nam aut placeat et est sunt aut.",
                     description:
-                      "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                      "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                     jobs: [
                       {
-                        _id: "5b254369063db83598df2d19",
-                        jobTitle: "Dynamic Branding Orchestrator",
-                        minSalary: 4723,
-                        maxSalary: 11754,
+                        _id: "5beba8c9d42cea39441eb4a7",
+                        jobTitle: "Direct Interactions Representative",
+                        minSalary: 41265,
+                        maxSalary: 31800,
                         tasks: []
                       },
                       {
-                        _id: "5b254369063db83598df2d1a",
-                        jobTitle: "Dynamic Brand Consultant",
-                        minSalary: 3532,
-                        maxSalary: 67241,
+                        _id: "5beba8c9d42cea39441eb4a8",
+                        jobTitle: "National Infrastructure Executive",
+                        minSalary: 37266,
+                        maxSalary: 21003,
                         tasks: []
                       }
                     ]
@@ -3394,16 +3450,16 @@ describe("Department Reducer", () => {
   describe("setLocation", () => {
     it("should update state with location", () => {
       const location = {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -3426,97 +3482,99 @@ describe("Department Reducer", () => {
   describe("addEmployee", () => {
     it("should update state with employee", () => {
       const employee = {
-        _id: "5b254369063db83598df2d08",
-        firstName: "Addie",
-        lastName: "Collins",
-        email: "Dedrick_DuBuque@yahoo.com",
-        phoneNumber: "961.198.0838",
-        hireDate: "2017-07-23T13:58:11.883Z",
-        salary: 76298,
-        commissionPct: 38779,
+        _id: "5beba8c9d42cea39441eb496",
+        firstName: "Trinity",
+        lastName: "Funk",
+        email: "Therese99@hotmail.com",
+        phoneNumber: "219.777.3989 x405",
+        hireDate: "2018-04-09T20:17:10.530Z",
+        salary: 18043,
+        commissionPct: 72958,
         jobs: [
           {
-            _id: "5b254369063db83598df2d13",
-            jobTitle: "Central Metrics Administrator",
-            minSalary: 78472,
-            maxSalary: 53709,
+            _id: "5beba8c9d42cea39441eb4a1",
+            jobTitle: "Legacy Division Technician",
+            minSalary: 39598,
+            maxSalary: 6067,
             tasks: [
               {
-                _id: "5b254369063db83598df2d1e",
-                title: "Iure dolores beatae qui et beatae et sed.",
+                _id: "5beba8c9d42cea39441eb4ac",
+                title: "Omnis aliquam non.",
                 description:
-                  "Repudiandae beatae eius omnis impedit voluptate voluptates accusantium. Voluptatem necessitatibus repellat voluptas corporis voluptas est odio incidunt totam. Exercitationem id libero quam neque. Consectetur quas debitis occaecati modi magnam consequuntur est vero. Sequi corrupti et maiores culpa quisquam excepturi voluptatum qui maiores.",
+                  "Est voluptatem distinctio quidem. Distinctio maxime omnis est sint laboriosam blanditiis. Nam facilis ullam saepe et ab libero excepturi sequi omnis. Nemo et eaque sit. Nam sed facere voluptas facilis et et quibusdam. Id aut quibusdam odit alias voluptas in quia.",
                 jobs: [
                   {
-                    _id: "5b254369063db83598df2d15",
-                    jobTitle: "Corporate Web Liaison",
-                    minSalary: 85109,
-                    maxSalary: 71038,
+                    _id: "5beba8c9d42cea39441eb4a3",
+                    jobTitle: "Human Infrastructure Administrator",
+                    minSalary: 90425,
+                    maxSalary: 51311,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d20",
-                        title:
-                          "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                        _id: "5beba8c9d42cea39441eb4ae",
+                        title: "Vel qui nostrum explicabo magnam officia.",
                         description:
-                          "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                          "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d17",
-                            jobTitle: "Principal Configuration Representative",
-                            minSalary: 72156,
-                            maxSalary: 67196,
+                            _id: "5beba8c9d42cea39441eb4a5",
+                            jobTitle: "Global Accountability Assistant",
+                            minSalary: 48138,
+                            maxSalary: 67852,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d22",
-                                title: "Et hic eum.",
+                                _id: "5beba8c9d42cea39441eb4b0",
+                                title: "Nam aut placeat et est sunt aut.",
                                 description:
-                                  "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                                  "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                                 jobs: [
                                   {
-                                    _id: "5b254369063db83598df2d19",
-                                    jobTitle: "Dynamic Branding Orchestrator",
-                                    minSalary: 4723,
-                                    maxSalary: 11754,
+                                    _id: "5beba8c9d42cea39441eb4a7",
+                                    jobTitle:
+                                      "Direct Interactions Representative",
+                                    minSalary: 41265,
+                                    maxSalary: 31800,
                                     tasks: []
                                   },
                                   {
-                                    _id: "5b254369063db83598df2d1a",
-                                    jobTitle: "Dynamic Brand Consultant",
-                                    minSalary: 3532,
-                                    maxSalary: 67241,
+                                    _id: "5beba8c9d42cea39441eb4a8",
+                                    jobTitle:
+                                      "National Infrastructure Executive",
+                                    minSalary: 37266,
+                                    maxSalary: 21003,
                                     tasks: []
                                   }
                                 ]
                               },
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d18",
-                            jobTitle: "National Response Developer",
-                            minSalary: 31152,
-                            maxSalary: 19557,
+                            _id: "5beba8c9d42cea39441eb4a6",
+                            jobTitle: "Human Accountability Specialist",
+                            minSalary: 45401,
+                            maxSalary: 45097,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               },
                               {
-                                _id: "5b254369063db83598df2d24",
-                                title: "Incidunt tenetur quas qui mollitia.",
+                                _id: "5beba8c9d42cea39441eb4b2",
+                                title:
+                                  "Nulla quos labore eos repellendus neque quibusdam.",
                                 description:
-                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                  "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                 jobs: []
                               }
                             ]
@@ -3524,39 +3582,41 @@ describe("Department Reducer", () => {
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d21",
-                        title: "Mollitia eum magni in quasi nesciunt totam.",
+                        _id: "5beba8c9d42cea39441eb4af",
+                        title:
+                          "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                         description:
-                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                          "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d18",
-                            jobTitle: "National Response Developer",
-                            minSalary: 31152,
-                            maxSalary: 19557,
+                            _id: "5beba8c9d42cea39441eb4a6",
+                            jobTitle: "Human Accountability Specialist",
+                            minSalary: 45401,
+                            maxSalary: 45097,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               },
                               {
-                                _id: "5b254369063db83598df2d24",
-                                title: "Incidunt tenetur quas qui mollitia.",
+                                _id: "5beba8c9d42cea39441eb4b2",
+                                title:
+                                  "Nulla quos labore eos repellendus neque quibusdam.",
                                 description:
-                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                  "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           }
                         ]
@@ -3564,67 +3624,69 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d16",
-                    jobTitle: "Central Intranet Producer",
-                    minSalary: 11705,
-                    maxSalary: 37904,
+                    _id: "5beba8c9d42cea39441eb4a4",
+                    jobTitle: "Global Metrics Associate",
+                    minSalary: 43734,
+                    maxSalary: 54679,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d21",
-                        title: "Mollitia eum magni in quasi nesciunt totam.",
+                        _id: "5beba8c9d42cea39441eb4af",
+                        title:
+                          "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                         description:
-                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                          "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d18",
-                            jobTitle: "National Response Developer",
-                            minSalary: 31152,
-                            maxSalary: 19557,
+                            _id: "5beba8c9d42cea39441eb4a6",
+                            jobTitle: "Human Accountability Specialist",
+                            minSalary: 45401,
+                            maxSalary: 45097,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               },
                               {
-                                _id: "5b254369063db83598df2d24",
-                                title: "Incidunt tenetur quas qui mollitia.",
+                                _id: "5beba8c9d42cea39441eb4b2",
+                                title:
+                                  "Nulla quos labore eos repellendus neque quibusdam.",
                                 description:
-                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                  "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
@@ -3634,73 +3696,75 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d1f",
-                title: "Nihil est animi.",
+                _id: "5beba8c9d42cea39441eb4ad",
+                title: "Nam est sed non esse est commodi alias recusandae.",
                 description:
-                  "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                  "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                 jobs: [
                   {
-                    _id: "5b254369063db83598df2d16",
-                    jobTitle: "Central Intranet Producer",
-                    minSalary: 11705,
-                    maxSalary: 37904,
+                    _id: "5beba8c9d42cea39441eb4a4",
+                    jobTitle: "Global Metrics Associate",
+                    minSalary: 43734,
+                    maxSalary: 54679,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d21",
-                        title: "Mollitia eum magni in quasi nesciunt totam.",
+                        _id: "5beba8c9d42cea39441eb4af",
+                        title:
+                          "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                         description:
-                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                          "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d18",
-                            jobTitle: "National Response Developer",
-                            minSalary: 31152,
-                            maxSalary: 19557,
+                            _id: "5beba8c9d42cea39441eb4a6",
+                            jobTitle: "Human Accountability Specialist",
+                            minSalary: 45401,
+                            maxSalary: 45097,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               },
                               {
-                                _id: "5b254369063db83598df2d24",
-                                title: "Incidunt tenetur quas qui mollitia.",
+                                _id: "5beba8c9d42cea39441eb4b2",
+                                title:
+                                  "Nulla quos labore eos repellendus neque quibusdam.",
                                 description:
-                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                  "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
@@ -3708,39 +3772,39 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d17",
-                    jobTitle: "Principal Configuration Representative",
-                    minSalary: 72156,
-                    maxSalary: 67196,
+                    _id: "5beba8c9d42cea39441eb4a5",
+                    jobTitle: "Global Accountability Assistant",
+                    minSalary: 48138,
+                    maxSalary: 67852,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d23",
+                        _id: "5beba8c9d42cea39441eb4b1",
                         title:
-                          "Et quia in quis modi minima quod voluptates iste.",
+                          "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                         description:
-                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                          "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                         jobs: []
                       }
                     ]
@@ -3750,79 +3814,81 @@ describe("Department Reducer", () => {
             ]
           },
           {
-            _id: "5b254369063db83598df2d14",
-            jobTitle: "Senior Solutions Administrator",
-            minSalary: 79377,
-            maxSalary: 92116,
+            _id: "5beba8c9d42cea39441eb4a2",
+            jobTitle: "Dynamic Assurance Strategist",
+            minSalary: 14323,
+            maxSalary: 6302,
             tasks: [
               {
-                _id: "5b254369063db83598df2d1f",
-                title: "Nihil est animi.",
+                _id: "5beba8c9d42cea39441eb4ad",
+                title: "Nam est sed non esse est commodi alias recusandae.",
                 description:
-                  "Accusamus quibusdam animi eius sint consequuntur aliquam nostrum facere maiores. Eum hic quo impedit. Unde dolor eius. Velit omnis commodi ipsam sint nostrum id perspiciatis quia eveniet. Magnam assumenda ipsam numquam occaecati quaerat distinctio dolores et id. Voluptatum beatae delectus aliquam non illum quia omnis.",
+                  "Dolores aut distinctio fugiat quam aperiam aut reiciendis voluptatibus doloremque. Et sit rerum. Sequi incidunt maxime velit. Eos dolor deleniti dolorem voluptatibus suscipit eveniet necessitatibus aut quia. In quasi et repellendus et molestiae et reprehenderit. Minus minima et.",
                 jobs: [
                   {
-                    _id: "5b254369063db83598df2d16",
-                    jobTitle: "Central Intranet Producer",
-                    minSalary: 11705,
-                    maxSalary: 37904,
+                    _id: "5beba8c9d42cea39441eb4a4",
+                    jobTitle: "Global Metrics Associate",
+                    minSalary: 43734,
+                    maxSalary: 54679,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d21",
-                        title: "Mollitia eum magni in quasi nesciunt totam.",
+                        _id: "5beba8c9d42cea39441eb4af",
+                        title:
+                          "Consequatur molestiae iste ipsa quasi a tenetur quam aut.",
                         description:
-                          "Corrupti voluptatem sequi quia. Molestiae aut dolor. Eos corporis repellat. Ab molestiae molestiae.",
+                          "Cumque atque quisquam. Iusto deserunt occaecati ut autem ut temporibus possimus saepe voluptas. Laudantium sunt molestias fugiat maxime ut sunt unde amet voluptatem.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d18",
-                            jobTitle: "National Response Developer",
-                            minSalary: 31152,
-                            maxSalary: 19557,
+                            _id: "5beba8c9d42cea39441eb4a6",
+                            jobTitle: "Human Accountability Specialist",
+                            minSalary: 45401,
+                            maxSalary: 45097,
                             tasks: [
                               {
-                                _id: "5b254369063db83598df2d23",
+                                _id: "5beba8c9d42cea39441eb4b1",
                                 title:
-                                  "Et quia in quis modi minima quod voluptates iste.",
+                                  "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                                 description:
-                                  "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                                  "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                                 jobs: []
                               },
                               {
-                                _id: "5b254369063db83598df2d24",
-                                title: "Incidunt tenetur quas qui mollitia.",
+                                _id: "5beba8c9d42cea39441eb4b2",
+                                title:
+                                  "Nulla quos labore eos repellendus neque quibusdam.",
                                 description:
-                                  "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                                  "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                                 jobs: []
                               }
                             ]
                           },
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
@@ -3830,39 +3896,39 @@ describe("Department Reducer", () => {
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d17",
-                    jobTitle: "Principal Configuration Representative",
-                    minSalary: 72156,
-                    maxSalary: 67196,
+                    _id: "5beba8c9d42cea39441eb4a5",
+                    jobTitle: "Global Accountability Assistant",
+                    minSalary: 48138,
+                    maxSalary: 67852,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d23",
+                        _id: "5beba8c9d42cea39441eb4b1",
                         title:
-                          "Et quia in quis modi minima quod voluptates iste.",
+                          "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                         description:
-                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                          "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                         jobs: []
                       }
                     ]
@@ -3870,69 +3936,69 @@ describe("Department Reducer", () => {
                 ]
               },
               {
-                _id: "5b254369063db83598df2d20",
-                title:
-                  "Excepturi esse cumque aut quisquam consequatur rerum et dolore doloremque.",
+                _id: "5beba8c9d42cea39441eb4ae",
+                title: "Vel qui nostrum explicabo magnam officia.",
                 description:
-                  "Ab modi temporibus sed corrupti vero iste dolorem. Consequatur perspiciatis alias dolores dolores laboriosam minima. Vel dolor quaerat quis numquam iure ut voluptatibus. Reiciendis error voluptas voluptas.",
+                  "Aliquid dolore qui quod minus pariatur est quidem. Temporibus nisi ab cupiditate adipisci. Deleniti autem voluptatem blanditiis ullam.",
                 jobs: [
                   {
-                    _id: "5b254369063db83598df2d17",
-                    jobTitle: "Principal Configuration Representative",
-                    minSalary: 72156,
-                    maxSalary: 67196,
+                    _id: "5beba8c9d42cea39441eb4a5",
+                    jobTitle: "Global Accountability Assistant",
+                    minSalary: 48138,
+                    maxSalary: 67852,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d22",
-                        title: "Et hic eum.",
+                        _id: "5beba8c9d42cea39441eb4b0",
+                        title: "Nam aut placeat et est sunt aut.",
                         description:
-                          "Accusantium eum eos iusto. Vero exercitationem saepe doloribus architecto et voluptatem reprehenderit. Qui asperiores temporibus. Perferendis et amet dolore sit neque est possimus. Temporibus voluptatum voluptatem voluptatem voluptas est at aperiam nam perspiciatis.",
+                          "Est rerum eos. Harum inventore et aspernatur quo eaque. Alias sed iure vel nisi. Iusto praesentium animi voluptatibus eaque voluptatem nihil est dolore dolorem. Quia consequatur id minus inventore velit consequatur quibusdam amet nemo.",
                         jobs: [
                           {
-                            _id: "5b254369063db83598df2d19",
-                            jobTitle: "Dynamic Branding Orchestrator",
-                            minSalary: 4723,
-                            maxSalary: 11754,
+                            _id: "5beba8c9d42cea39441eb4a7",
+                            jobTitle: "Direct Interactions Representative",
+                            minSalary: 41265,
+                            maxSalary: 31800,
                             tasks: []
                           },
                           {
-                            _id: "5b254369063db83598df2d1a",
-                            jobTitle: "Dynamic Brand Consultant",
-                            minSalary: 3532,
-                            maxSalary: 67241,
+                            _id: "5beba8c9d42cea39441eb4a8",
+                            jobTitle: "National Infrastructure Executive",
+                            minSalary: 37266,
+                            maxSalary: 21003,
                             tasks: []
                           }
                         ]
                       },
                       {
-                        _id: "5b254369063db83598df2d23",
+                        _id: "5beba8c9d42cea39441eb4b1",
                         title:
-                          "Et quia in quis modi minima quod voluptates iste.",
+                          "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                         description:
-                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                          "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                         jobs: []
                       }
                     ]
                   },
                   {
-                    _id: "5b254369063db83598df2d18",
-                    jobTitle: "National Response Developer",
-                    minSalary: 31152,
-                    maxSalary: 19557,
+                    _id: "5beba8c9d42cea39441eb4a6",
+                    jobTitle: "Human Accountability Specialist",
+                    minSalary: 45401,
+                    maxSalary: 45097,
                     tasks: [
                       {
-                        _id: "5b254369063db83598df2d23",
+                        _id: "5beba8c9d42cea39441eb4b1",
                         title:
-                          "Et quia in quis modi minima quod voluptates iste.",
+                          "Non rerum fuga qui eaque rerum sunt repudiandae dolores.",
                         description:
-                          "Eaque alias ratione et aspernatur rerum. Ab ex adipisci ab architecto ut fugit nam. Consequuntur qui consequatur tempore voluptatem. Sequi voluptas non est quae officiis. Cupiditate aspernatur eum. Dolore ut distinctio in quia omnis et atque.",
+                          "Deserunt nesciunt placeat et similique et explicabo. Deleniti veniam beatae corrupti et. Voluptatibus dolor nobis illo ut aspernatur.",
                         jobs: []
                       },
                       {
-                        _id: "5b254369063db83598df2d24",
-                        title: "Incidunt tenetur quas qui mollitia.",
+                        _id: "5beba8c9d42cea39441eb4b2",
+                        title:
+                          "Nulla quos labore eos repellendus neque quibusdam.",
                         description:
-                          "Eos repellat incidunt modi. Ducimus qui veritatis rerum amet iusto iure velit ea. Eum optio dolorem voluptas suscipit doloremque suscipit. Provident repellat animi repellendus qui assumenda. Rerum vero quasi corporis necessitatibus perferendis beatae exercitationem. Nulla ullam deleniti sunt et qui quaerat blanditiis in eveniet.",
+                          "Quia dolor id dolores atque qui sit voluptatem animi. Totam omnis consectetur. Quidem aspernatur ab cupiditate inventore eum sed ullam. Quia sequi veritatis rerum possimus praesentium quisquam tempora nulla aut.",
                         jobs: []
                       }
                     ]

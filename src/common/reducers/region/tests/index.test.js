@@ -29,8 +29,10 @@ describe("Region Reducer", () => {
       regions: [],
       start: 0,
       limit: 10,
+      totalItemsCount: 0,
       otherSearchStart: 0,
       otherSearchLimit: 10,
+      otherSearchTotalItemsCount: 0,
       otherSearchRegions: [],
       error: ""
     };
@@ -43,7 +45,7 @@ describe("Region Reducer", () => {
   describe("addRegionSuccess", () => {
     it("should update state with add results", () => {
       const region = {
-        _id: "5b254369063db83598df2ce0",
+        _id: "5beba8c9d42cea39441eb46e",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -68,7 +70,7 @@ describe("Region Reducer", () => {
   describe("saveRegionSuccess", () => {
     it("should update state with save results", () => {
       const region = {
-        _id: "5b254369063db83598df2ce0",
+        _id: "5beba8c9d42cea39441eb46e",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -93,7 +95,7 @@ describe("Region Reducer", () => {
   describe("updateRegionSuccess", () => {
     it("should update state with update results", () => {
       const region = {
-        _id: "5b254369063db83598df2ce0",
+        _id: "5beba8c9d42cea39441eb46e",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };
@@ -118,15 +120,19 @@ describe("Region Reducer", () => {
   describe("searchRegionSuccess", () => {
     it("should update state with search results", () => {
       const regions = [
-        { _id: "5b254369063db83598df2ce0", regionName: "South-east Asia" },
-        { _id: "5b254369063db83598df2ce1", regionName: "Africa" },
-        { _id: "5b254369063db83598df2ce2", regionName: "Eastern Europe" }
+        { _id: "5beba8c9d42cea39441eb46e", regionName: "South-east Asia" },
+        { _id: "5beba8c9d42cea39441eb46f", regionName: "Africa" },
+        { _id: "5beba8c9d42cea39441eb470", regionName: "Eastern Europe" }
       ];
-      const expectedResult = { ...state, regions: regions };
+      const expectedResult = {
+        ...state,
+        regions: regions,
+        totalItemsCount: regions.length
+      };
 
-      expect(regionReducer(state, searchRegionSuccess(regions))).toEqual(
-        expectedResult
-      );
+      expect(
+        regionReducer(state, searchRegionSuccess(regions, regions.length))
+      ).toEqual(expectedResult);
     });
   });
 
@@ -144,7 +150,7 @@ describe("Region Reducer", () => {
   describe("getRegionSuccess", () => {
     it("should update state with get results", () => {
       const region = {
-        _id: "5b254369063db83598df2ce0",
+        _id: "5beba8c9d42cea39441eb46e",
         regionName: "South-east Asia"
       };
       const expectedResult = { ...state, region: region };

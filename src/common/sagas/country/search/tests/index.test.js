@@ -43,26 +43,26 @@ describe("doSearchCountry Saga", () => {
   it("should search and return  Country List", () => {
     let fakeCountryList = [
       {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "5b254369063db83598df2ceb",
-        countryName: "Bahamas",
+        _id: "5beba8c9d42cea39441eb479",
+        countryName: "Seychelles",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "5b254369063db83598df2cec",
-        countryName: "Japan",
+        _id: "5beba8c9d42cea39441eb47a",
+        countryName: "Sri Lanka",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
@@ -91,7 +91,7 @@ describe("doSearchCountry Saga", () => {
   });
   /*
   it('should fail to search for Country with message', () => {
-    let fakeCountryList = [{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}},{"_id":"5b254369063db83598df2ceb","countryName":"Bahamas","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}},{"_id":"5b254369063db83598df2cec","countryName":"Japan","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}]
+    let fakeCountryList = [{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}},{"_id":"5beba8c9d42cea39441eb479","countryName":"Seychelles","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}},{"_id":"5beba8c9d42cea39441eb47a","countryName":"Sri Lanka","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}]
     let searchFormData = {search: 'test', pageNumber: 1, pageSize: 10}
     let fakeResult={ok: false, data: {message: 'Failed to search for Country, random error' } }
     return new Promise((resolve, reject) => {
@@ -113,26 +113,26 @@ describe("doSearchCountry Saga", () => {
   it("should handle reducer and store state", () => {
     let fakeCountryList = [
       {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "5b254369063db83598df2ceb",
-        countryName: "Bahamas",
+        _id: "5beba8c9d42cea39441eb479",
+        countryName: "Seychelles",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       },
       {
-        _id: "5b254369063db83598df2cec",
-        countryName: "Japan",
+        _id: "5beba8c9d42cea39441eb47a",
+        countryName: "Sri Lanka",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }

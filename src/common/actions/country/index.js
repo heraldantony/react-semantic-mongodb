@@ -39,7 +39,7 @@ export type COUNTRY_ADD_SUCCESS_TYPE = {
 };
 export type COUNTRY_ADD_FAIL_TYPE = {
   type: COUNTRY_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type COUNTRY_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type COUNTRY_SAVE_SUCCESS_TYPE = {
 };
 export type COUNTRY_SAVE_FAIL_TYPE = {
   type: COUNTRY_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type COUNTRY_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type COUNTRY_UPDATE_SUCCESS_TYPE = {
 };
 export type COUNTRY_UPDATE_FAIL_TYPE = {
   type: COUNTRY_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type COUNTRY_GET_TYPE = {
@@ -78,7 +78,7 @@ export type COUNTRY_GET_SUCCESS_TYPE = {
 };
 export type COUNTRY_GET_FAIL_TYPE = {
   type: COUNTRY_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type COUNTRY_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type COUNTRY_DELETE_SUCCESS_TYPE = {
 };
 export type COUNTRY_DELETE_FAIL_TYPE = {
   type: COUNTRY_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type COUNTRY_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type COUNTRY_SEARCH_TYPE = {
 };
 export type COUNTRY_SEARCH_SUCCESS_TYPE = {
   type: COUNTRY_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type COUNTRY_SEARCH_FAIL_TYPE = {
   type: COUNTRY_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const COUNTRY_SET_REGION_SUCCESS = 'country/Set_Region/SUCCESS'
@@ -112,11 +114,11 @@ export const COUNTRY_DELETE_REGION_SUCCESS = 'country/Delete_Region/SUCCESS'
 
 export const COUNTRY_SET_REGION_SUCCESS_TYPE = {
 	type: COUNTRY_SET_REGION_SUCCESS,
-	payload: Object
+	region: Object
 }
 export const COUNTRY_DELETE_REGION_SUCCESS_TYPE = {
 	type: COUNTRY_DELETE_REGION_SUCCESS,
-	payload: Object
+	region: Object
 }
 
 /**
@@ -143,7 +145,7 @@ export function addCountry (country, form, promise) {
  *
  * @return {object} An action object with type COUNTRY_ADD_SUCCESS
  */
-export function addCountrySuccess (country) {
+export function addCountrySuccess (country): COUNTRY_ADD_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_ADD_SUCCESS,
 		payload: country
@@ -157,7 +159,7 @@ export function addCountrySuccess (country) {
  *
  * @return {object} An action object with type COUNTRY_ADD_FAIL
  */
-export function addCountryFail (error) {
+export function addCountryFail (error): COUNTRY_ADD_FAIL_TYPE {
 	return {
 		type: COUNTRY_ADD_FAIL,
 		error: error
@@ -188,7 +190,7 @@ export function saveCountry (country, form, promise) {
  *
  * @return {object} An action object with type COUNTRY_SAVE_SUCCESS
  */
-export function saveCountrySuccess (country) {
+export function saveCountrySuccess (country): COUNTRY_SAVE_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_SAVE_SUCCESS,
 		payload: country
@@ -202,7 +204,7 @@ export function saveCountrySuccess (country) {
  *
  * @return {object} An action object with type COUNTRY_SAVE_FAIL
  */
-export function saveCountryFail (error) {
+export function saveCountryFail (error): COUNTRY_SAVE_FAIL_TYPE {
 	return {
 		type: COUNTRY_SAVE_FAIL,
 		error: error
@@ -233,7 +235,7 @@ export function updateCountry (country, form, promise) {
  *
  * @return {object} An action object with type COUNTRY_UPDATE_SUCCESS
  */
-export function updateCountrySuccess (country) {
+export function updateCountrySuccess (country): COUNTRY_UPDATE_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_UPDATE_SUCCESS,
 		payload: country
@@ -247,7 +249,7 @@ export function updateCountrySuccess (country) {
  *
  * @return {object} An action object with type COUNTRY_UPDATE_FAIL
  */
-export function updateCountryFail (error) {
+export function updateCountryFail (error): COUNTRY_UPDATE_FAIL_TYPE {
 	return {
 		type: COUNTRY_UPDATE_FAIL,
 		error: error
@@ -261,7 +263,7 @@ export function updateCountryFail (error) {
  *
  * @return {object} An action object with type COUNTRY_GET
  */
-export function getCountry (countryId) {
+export function getCountry (countryId): COUNTRY_GET_TYPE {
 	return {
 		type: COUNTRY_GET,
 		payload: countryId
@@ -275,7 +277,7 @@ export function getCountry (countryId) {
  *
  * @return {object} An action object with type COUNTRY_GET_SUCCESS
  */
-export function getCountrySuccess (country) {
+export function getCountrySuccess (country): COUNTRY_GET_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_GET_SUCCESS,
 		payload: country
@@ -289,7 +291,7 @@ export function getCountrySuccess (country) {
  *
  * @return {object} An action object with type COUNTRY_GET_FAIL
  */
-export function getCountryFail (error) {
+export function getCountryFail (error): COUNTRY_GET_FAIL_TYPE {
 	return {
 		type: COUNTRY_GET_FAIL,
 		error: error
@@ -303,7 +305,7 @@ export function getCountryFail (error) {
  *
  * @return {object} An action object with type COUNTRY_DELETE
  */
-export function deleteCountry (countryId) {
+export function deleteCountry (countryId): COUNTRY_DELETE_TYPE {
 	return {
 		type: COUNTRY_DELETE,
 		payload: countryId
@@ -317,7 +319,7 @@ export function deleteCountry (countryId) {
  *
  * @return {object} An action object with type COUNTRY_DELETE_SUCCESS
  */
-export function deleteCountrySuccess (country) {
+export function deleteCountrySuccess (country): COUNTRY_DELETE_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_DELETE_SUCCESS,
 		payload: country
@@ -331,7 +333,7 @@ export function deleteCountrySuccess (country) {
  *
  * @return {object} An action object with type COUNTRY_DELETE_FAIL
  */
-export function deleteCountryFail (error) {
+export function deleteCountryFail (error): COUNTRY_DELETE_FAIL_TYPE {
 	return {
 		type: COUNTRY_DELETE_FAIL,
 		error: error
@@ -358,14 +360,19 @@ export function searchCountry (searchString, form, promise) {
 /**
  * Dispatched when Search Country succeeds
  *
- * @param  {object} country  The Country object
+ * @param  {object} countries  List of countries
+ * @param  {number} total Total number of countries
  *
  * @return {object} An action object with type COUNTRY_SEARCH_SUCCESS
  */
-export function searchCountrySuccess (countries) {
+export function searchCountrySuccess (
+	countries,
+	total
+): COUNTRY_SEARCH_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_SEARCH_SUCCESS,
-		payload: countries
+		payload: countries,
+		total: total
 	}
 }
 
@@ -376,7 +383,7 @@ export function searchCountrySuccess (countries) {
  *
  * @return {object} An action object with type COUNTRY_SEARCH_FAIL
  */
-export function searchCountryFail (error) {
+export function searchCountryFail (error): COUNTRY_SEARCH_FAIL_TYPE {
 	return {
 		type: COUNTRY_SEARCH_FAIL,
 		error: error
@@ -390,7 +397,7 @@ export function searchCountryFail (error) {
  *
  * @return {object} An action object with type COUNTRY_SET_REGION_SUCCESS
  */
-export function setRegion (region) {
+export function setRegion (region): COUNTRY_SET_REGION_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_SET_REGION_SUCCESS,
 		region
@@ -403,7 +410,7 @@ export function setRegion (region) {
  *
  * @return {object} An action object with type COUNTRY_DELETE_REGION_SUCCESS
  */
-export function deleteRegion (region) {
+export function deleteRegion (region): COUNTRY_DELETE_REGION_SUCCESS_TYPE {
 	return {
 		type: COUNTRY_DELETE_REGION_SUCCESS,
 		region

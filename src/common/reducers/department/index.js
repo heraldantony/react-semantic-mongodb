@@ -51,8 +51,10 @@ export type State = {
   departments: [Department],
   start: number,
   limit: number,
+  totalItemsCount: number,
   otherSearchStart: number,
   otherSearchLimit: number,
+  otherSearchTotalItemsCount: number,
   otherSearchDepartments: [Department],
   error: Object
 };
@@ -82,8 +84,10 @@ export const initialState = {
 	departments: [],
 	start: 0,
 	limit: 10,
+	totalItemsCount: 0,
 	otherSearchStart: 0,
 	otherSearchLimit: 10,
+	otherSearchTotalItemsCount: 0,
 	otherSearchDepartments: [],
 	error: ''
 }
@@ -115,7 +119,11 @@ export function departmentReducer (state = initialState, action: Action): State 
 	}
 
 	case DEPARTMENT_SEARCH_SUCCESS: {
-		return { ...state, departments: action.payload }
+		return {
+			...state,
+			departments: action.payload,
+			totalItemsCount: action.total
+		}
 	}
 	case DEPARTMENT_SEARCH_FAIL: {
 		return { ...state, error: action.error }

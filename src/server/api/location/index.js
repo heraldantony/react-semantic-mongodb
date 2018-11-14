@@ -100,8 +100,10 @@ router.post('/', (req, res, next) => {
 		stateProvince: stateProvince
 	}
 
-	if (req.body.hasOwnProperty('country')) {
-		locationObj.country = req.body.country['_id']
+	if (req.body.hasOwnProperty('country') && req.body.country) {
+		locationObj.country = req.body.country['_id'] || req.body.country
+	} else {
+		locationObj.country = null
 	}
 
 	LocationModel.create(locationObj, (createErr, newLocation) => {
@@ -151,8 +153,10 @@ router.put('/:locationId', (req, res, next) => {
 			location.stateProvince = req.body.stateProvince
 		}
 
-		if (req.body.hasOwnProperty('country')) {
-			location.country = req.body.country['_id']
+		if (req.body.hasOwnProperty('country') && req.body.country) {
+			location.country = req.body.country['_id'] || req.body.country
+		} else {
+			location.country = null
 		}
 
 		location.save(function (saveError, savedLocation) {
@@ -201,8 +205,10 @@ router.patch('/:locationId', (req, res, next) => {
 			location.stateProvince = req.body.stateProvince
 		}
 
-		if (req.body.hasOwnProperty('country')) {
-			location.country = req.body.country['_id']
+		if (req.body.hasOwnProperty('country') && req.body.country) {
+			location.country = req.body.country['_id'] || req.body.country
+		} else {
+			location.country = null
 		}
 
 		location.save(function (saveError, savedLocation) {

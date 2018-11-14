@@ -39,7 +39,7 @@ export type DEPARTMENT_ADD_SUCCESS_TYPE = {
 };
 export type DEPARTMENT_ADD_FAIL_TYPE = {
   type: DEPARTMENT_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type DEPARTMENT_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type DEPARTMENT_SAVE_SUCCESS_TYPE = {
 };
 export type DEPARTMENT_SAVE_FAIL_TYPE = {
   type: DEPARTMENT_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type DEPARTMENT_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type DEPARTMENT_UPDATE_SUCCESS_TYPE = {
 };
 export type DEPARTMENT_UPDATE_FAIL_TYPE = {
   type: DEPARTMENT_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type DEPARTMENT_GET_TYPE = {
@@ -78,7 +78,7 @@ export type DEPARTMENT_GET_SUCCESS_TYPE = {
 };
 export type DEPARTMENT_GET_FAIL_TYPE = {
   type: DEPARTMENT_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type DEPARTMENT_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type DEPARTMENT_DELETE_SUCCESS_TYPE = {
 };
 export type DEPARTMENT_DELETE_FAIL_TYPE = {
   type: DEPARTMENT_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type DEPARTMENT_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type DEPARTMENT_SEARCH_TYPE = {
 };
 export type DEPARTMENT_SEARCH_SUCCESS_TYPE = {
   type: DEPARTMENT_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type DEPARTMENT_SEARCH_FAIL_TYPE = {
   type: DEPARTMENT_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const DEPARTMENT_SET_LOCATION_SUCCESS =
@@ -119,20 +121,20 @@ export const DEPARTMENT_DELETE_EMPLOYEE_SUCCESS =
 
 export const DEPARTMENT_SET_LOCATION_SUCCESS_TYPE = {
 	type: DEPARTMENT_SET_LOCATION_SUCCESS,
-	payload: Object
+	location: Object
 }
 export const DEPARTMENT_DELETE_LOCATION_SUCCESS_TYPE = {
 	type: DEPARTMENT_DELETE_LOCATION_SUCCESS,
-	payload: Object
+	location: Object
 }
 
 export const DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE = {
 	type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS,
-	payload: Object
+	employee: Object
 }
 export const DEPARTMENT_DELETE_EMPLOYEE_SUCCESS_TYPE = {
 	type: DEPARTMENT_DELETE_EMPLOYEE_SUCCESS,
-	payload: Object
+	employee: Object
 }
 
 /**
@@ -159,7 +161,7 @@ export function addDepartment (department, form, promise) {
  *
  * @return {object} An action object with type DEPARTMENT_ADD_SUCCESS
  */
-export function addDepartmentSuccess (department) {
+export function addDepartmentSuccess (department): DEPARTMENT_ADD_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_ADD_SUCCESS,
 		payload: department
@@ -173,7 +175,7 @@ export function addDepartmentSuccess (department) {
  *
  * @return {object} An action object with type DEPARTMENT_ADD_FAIL
  */
-export function addDepartmentFail (error) {
+export function addDepartmentFail (error): DEPARTMENT_ADD_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_ADD_FAIL,
 		error: error
@@ -204,7 +206,9 @@ export function saveDepartment (department, form, promise) {
  *
  * @return {object} An action object with type DEPARTMENT_SAVE_SUCCESS
  */
-export function saveDepartmentSuccess (department) {
+export function saveDepartmentSuccess (
+	department
+): DEPARTMENT_SAVE_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_SAVE_SUCCESS,
 		payload: department
@@ -218,7 +222,7 @@ export function saveDepartmentSuccess (department) {
  *
  * @return {object} An action object with type DEPARTMENT_SAVE_FAIL
  */
-export function saveDepartmentFail (error) {
+export function saveDepartmentFail (error): DEPARTMENT_SAVE_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_SAVE_FAIL,
 		error: error
@@ -249,7 +253,9 @@ export function updateDepartment (department, form, promise) {
  *
  * @return {object} An action object with type DEPARTMENT_UPDATE_SUCCESS
  */
-export function updateDepartmentSuccess (department) {
+export function updateDepartmentSuccess (
+	department
+): DEPARTMENT_UPDATE_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_UPDATE_SUCCESS,
 		payload: department
@@ -263,7 +269,7 @@ export function updateDepartmentSuccess (department) {
  *
  * @return {object} An action object with type DEPARTMENT_UPDATE_FAIL
  */
-export function updateDepartmentFail (error) {
+export function updateDepartmentFail (error): DEPARTMENT_UPDATE_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_UPDATE_FAIL,
 		error: error
@@ -277,7 +283,7 @@ export function updateDepartmentFail (error) {
  *
  * @return {object} An action object with type DEPARTMENT_GET
  */
-export function getDepartment (departmentId) {
+export function getDepartment (departmentId): DEPARTMENT_GET_TYPE {
 	return {
 		type: DEPARTMENT_GET,
 		payload: departmentId
@@ -291,7 +297,7 @@ export function getDepartment (departmentId) {
  *
  * @return {object} An action object with type DEPARTMENT_GET_SUCCESS
  */
-export function getDepartmentSuccess (department) {
+export function getDepartmentSuccess (department): DEPARTMENT_GET_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_GET_SUCCESS,
 		payload: department
@@ -305,7 +311,7 @@ export function getDepartmentSuccess (department) {
  *
  * @return {object} An action object with type DEPARTMENT_GET_FAIL
  */
-export function getDepartmentFail (error) {
+export function getDepartmentFail (error): DEPARTMENT_GET_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_GET_FAIL,
 		error: error
@@ -319,7 +325,7 @@ export function getDepartmentFail (error) {
  *
  * @return {object} An action object with type DEPARTMENT_DELETE
  */
-export function deleteDepartment (departmentId) {
+export function deleteDepartment (departmentId): DEPARTMENT_DELETE_TYPE {
 	return {
 		type: DEPARTMENT_DELETE,
 		payload: departmentId
@@ -333,7 +339,9 @@ export function deleteDepartment (departmentId) {
  *
  * @return {object} An action object with type DEPARTMENT_DELETE_SUCCESS
  */
-export function deleteDepartmentSuccess (department) {
+export function deleteDepartmentSuccess (
+	department
+): DEPARTMENT_DELETE_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_DELETE_SUCCESS,
 		payload: department
@@ -347,7 +355,7 @@ export function deleteDepartmentSuccess (department) {
  *
  * @return {object} An action object with type DEPARTMENT_DELETE_FAIL
  */
-export function deleteDepartmentFail (error) {
+export function deleteDepartmentFail (error): DEPARTMENT_DELETE_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_DELETE_FAIL,
 		error: error
@@ -374,14 +382,19 @@ export function searchDepartment (searchString, form, promise) {
 /**
  * Dispatched when Search Department succeeds
  *
- * @param  {object} department  The Department object
+ * @param  {object} departments  List of departments
+ * @param  {number} total Total number of departments
  *
  * @return {object} An action object with type DEPARTMENT_SEARCH_SUCCESS
  */
-export function searchDepartmentSuccess (departments) {
+export function searchDepartmentSuccess (
+	departments,
+	total
+): DEPARTMENT_SEARCH_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_SEARCH_SUCCESS,
-		payload: departments
+		payload: departments,
+		total: total
 	}
 }
 
@@ -392,7 +405,7 @@ export function searchDepartmentSuccess (departments) {
  *
  * @return {object} An action object with type DEPARTMENT_SEARCH_FAIL
  */
-export function searchDepartmentFail (error) {
+export function searchDepartmentFail (error): DEPARTMENT_SEARCH_FAIL_TYPE {
 	return {
 		type: DEPARTMENT_SEARCH_FAIL,
 		error: error
@@ -406,7 +419,7 @@ export function searchDepartmentFail (error) {
  *
  * @return {object} An action object with type DEPARTMENT_SET_LOCATION_SUCCESS
  */
-export function setLocation (location) {
+export function setLocation (location): DEPARTMENT_SET_LOCATION_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_SET_LOCATION_SUCCESS,
 		location
@@ -419,7 +432,9 @@ export function setLocation (location) {
  *
  * @return {object} An action object with type DEPARTMENT_DELETE_LOCATION_SUCCESS
  */
-export function deleteLocation (location) {
+export function deleteLocation (
+	location
+): DEPARTMENT_DELETE_LOCATION_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_DELETE_LOCATION_SUCCESS,
 		location
@@ -433,7 +448,7 @@ export function deleteLocation (location) {
  *
  * @return {object} An action object with type DEPARTMENT_ADD_EMPLOYEE_SUCCESS
  */
-export function addEmployee (employee) {
+export function addEmployee (employee): DEPARTMENT_ADD_EMPLOYEE_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_ADD_EMPLOYEE_SUCCESS,
 		employee
@@ -446,7 +461,9 @@ export function addEmployee (employee) {
  *
  * @return {object} An action object with type DEPARTMENT_DELETE_EMPLOYEE_SUCCESS
  */
-export function deleteEmployee (employee) {
+export function deleteEmployee (
+	employee
+): DEPARTMENT_DELETE_EMPLOYEE_SUCCESS_TYPE {
 	return {
 		type: DEPARTMENT_DELETE_EMPLOYEE_SUCCESS,
 		employee

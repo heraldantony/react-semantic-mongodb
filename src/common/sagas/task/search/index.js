@@ -35,7 +35,7 @@ export function * doSearchTask (action) {
 	try {
 		const result = yield call(taskSearchAPI, action.payload)
 		if (result.ok) {
-			yield put(searchTaskSuccess(result.data.docs))
+			yield put(searchTaskSuccess(result.data.docs, result.data.total))
 			yield call(reset, action.form)
 			yield call(stopSubmit, action.form)
 			resolve(true)

@@ -44,16 +44,16 @@ describe("doAddLocation Saga", () => {
 
   it("should add Location", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
@@ -61,7 +61,7 @@ describe("doAddLocation Saga", () => {
     delete fakeLocation["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "dc80c754-9ecc-47d0-ba7e-b72b92e34764", ...fakeLocation }
+      data: { _id: "032835a0-1462-4f86-86c6-9b4fa1d858c7", ...fakeLocation }
     };
     return new Promise((resolve, reject) => {
       let action = {
@@ -85,7 +85,7 @@ describe("doAddLocation Saga", () => {
   });
   /*
   it('should fail to add Location with message', () => {
-    let fakeLocation = {"_id":"5b254369063db83598df2cf4","streetAddress":"0312 Alessandra Loop","postalCode":"97889-8410","city":"East Dejahbury","stateProvince":"Connecticut","country":{"_id":"5b254369063db83598df2cea","countryName":"Grenada","region":{"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}}}
+    let fakeLocation = {"_id":"5beba8c9d42cea39441eb482","streetAddress":"07240 Barrows Lakes","postalCode":"24105-1029","city":"South Guadalupe","stateProvince":"Maine","country":{"_id":"5beba8c9d42cea39441eb478","countryName":"Bermuda","region":{"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}}}
     delete fakeLocation['_id'];
     let fakeResult={ok: false, data: {message: 'Failed to add Location, random error' } }
     return new Promise((resolve, reject) => {
@@ -106,16 +106,16 @@ describe("doAddLocation Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeLocation = {
-      _id: "5b254369063db83598df2cf4",
-      streetAddress: "0312 Alessandra Loop",
-      postalCode: "97889-8410",
-      city: "East Dejahbury",
-      stateProvince: "Connecticut",
+      _id: "5beba8c9d42cea39441eb482",
+      streetAddress: "07240 Barrows Lakes",
+      postalCode: "24105-1029",
+      city: "South Guadalupe",
+      stateProvince: "Maine",
       country: {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       }
@@ -123,7 +123,7 @@ describe("doAddLocation Saga", () => {
     delete fakeLocation["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "a0177f1a-9c1c-45e6-9fc2-18826422dbd3", ...fakeLocation }
+      data: { _id: "c40d8e7c-c0ae-4337-bad6-d5d5f087976a", ...fakeLocation }
     };
     let finalState = {
       ...initialState,

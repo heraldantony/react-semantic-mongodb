@@ -44,13 +44,13 @@ describe("doAddRegion Saga", () => {
 
   it("should add Region", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
     delete fakeRegion["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "3ebe6779-a45f-48b4-ad6c-2dda31b585c4", ...fakeRegion }
+      data: { _id: "56735db5-d704-4982-bef0-f8f40ca2047a", ...fakeRegion }
     };
     return new Promise((resolve, reject) => {
       let action = {
@@ -74,7 +74,7 @@ describe("doAddRegion Saga", () => {
   });
   /*
   it('should fail to add Region with message', () => {
-    let fakeRegion = {"_id":"5b254369063db83598df2ce0","regionName":"South-east Asia"}
+    let fakeRegion = {"_id":"5beba8c9d42cea39441eb46e","regionName":"South-east Asia"}
     delete fakeRegion['_id'];
     let fakeResult={ok: false, data: {message: 'Failed to add Region, random error' } }
     return new Promise((resolve, reject) => {
@@ -95,13 +95,13 @@ describe("doAddRegion Saga", () => {
 */
   it("should handle reducer and store state", () => {
     let fakeRegion = {
-      _id: "5b254369063db83598df2ce0",
+      _id: "5beba8c9d42cea39441eb46e",
       regionName: "South-east Asia"
     };
     delete fakeRegion["_id"];
     let fakeResult = {
       ok: true,
-      data: { _id: "6b157a2c-a06b-4f8a-8638-c85160bbe6ec", ...fakeRegion }
+      data: { _id: "aa47d4d0-423a-484e-baaa-0084f97eab54", ...fakeRegion }
     };
     let finalState = {
       ...initialState,

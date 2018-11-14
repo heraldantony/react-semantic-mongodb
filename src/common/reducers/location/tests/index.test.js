@@ -30,8 +30,10 @@ describe("Location Reducer", () => {
       locations: [],
       start: 0,
       limit: 10,
+      totalItemsCount: 0,
       otherSearchStart: 0,
       otherSearchLimit: 10,
+      otherSearchTotalItemsCount: 0,
       otherSearchLocations: [],
       error: ""
     };
@@ -44,16 +46,16 @@ describe("Location Reducer", () => {
   describe("addLocationSuccess", () => {
     it("should update state with add results", () => {
       const location = {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -80,16 +82,16 @@ describe("Location Reducer", () => {
   describe("saveLocationSuccess", () => {
     it("should update state with save results", () => {
       const location = {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -116,16 +118,16 @@ describe("Location Reducer", () => {
   describe("updateLocationSuccess", () => {
     it("should update state with update results", () => {
       const location = {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -153,56 +155,63 @@ describe("Location Reducer", () => {
     it("should update state with search results", () => {
       const locations = [
         {
-          _id: "5b254369063db83598df2cf4",
-          streetAddress: "0312 Alessandra Loop",
-          postalCode: "97889-8410",
-          city: "East Dejahbury",
-          stateProvince: "Connecticut",
+          _id: "5beba8c9d42cea39441eb482",
+          streetAddress: "07240 Barrows Lakes",
+          postalCode: "24105-1029",
+          city: "South Guadalupe",
+          stateProvince: "Maine",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         {
-          _id: "5b254369063db83598df2cf5",
-          streetAddress: "718 Mayert Crossroad",
-          postalCode: "88688-0229",
-          city: "Ondrickafort",
-          stateProvince: "Illinois",
+          _id: "5beba8c9d42cea39441eb483",
+          streetAddress: "15333 Lyric Radial",
+          postalCode: "92238-3778",
+          city: "Eltamouth",
+          stateProvince: "Mississippi",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         },
         {
-          _id: "5b254369063db83598df2cf6",
-          streetAddress: "605 Shyanne Inlet",
-          postalCode: "55668",
-          city: "North Lucius",
-          stateProvince: "Tennessee",
+          _id: "5beba8c9d42cea39441eb484",
+          streetAddress: "140 Hickle Rapids",
+          postalCode: "81543",
+          city: "Keelingborough",
+          stateProvince: "Iowa",
           country: {
-            _id: "5b254369063db83598df2cea",
-            countryName: "Grenada",
+            _id: "5beba8c9d42cea39441eb478",
+            countryName: "Bermuda",
             region: {
-              _id: "5b254369063db83598df2ce0",
+              _id: "5beba8c9d42cea39441eb46e",
               regionName: "South-east Asia"
             }
           }
         }
       ];
-      const expectedResult = { ...state, locations: locations };
+      const expectedResult = {
+        ...state,
+        locations: locations,
+        totalItemsCount: locations.length
+      };
 
-      expect(locationReducer(state, searchLocationSuccess(locations))).toEqual(
-        expectedResult
-      );
+      expect(
+        locationReducer(
+          state,
+          searchLocationSuccess(locations, locations.length)
+        )
+      ).toEqual(expectedResult);
     });
   });
 
@@ -220,16 +229,16 @@ describe("Location Reducer", () => {
   describe("getLocationSuccess", () => {
     it("should update state with get results", () => {
       const location = {
-        _id: "5b254369063db83598df2cf4",
-        streetAddress: "0312 Alessandra Loop",
-        postalCode: "97889-8410",
-        city: "East Dejahbury",
-        stateProvince: "Connecticut",
+        _id: "5beba8c9d42cea39441eb482",
+        streetAddress: "07240 Barrows Lakes",
+        postalCode: "24105-1029",
+        city: "South Guadalupe",
+        stateProvince: "Maine",
         country: {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
@@ -256,10 +265,10 @@ describe("Location Reducer", () => {
   describe("setCountry", () => {
     it("should update state with country", () => {
       const country = {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       };

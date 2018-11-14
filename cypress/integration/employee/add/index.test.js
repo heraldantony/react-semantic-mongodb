@@ -25,19 +25,19 @@ describe("Employee", () => {
       .invoke("width")
       .should("be.gt", 0);
 
-    cy.get("@firstName").type("Addie", { force: true });
+    cy.get("@firstName").type("Trinity", { force: true });
 
     cy.get("input[name=lastName]").as("lastName");
 
-    cy.get("@lastName").type("Collins", { force: true });
+    cy.get("@lastName").type("Funk", { force: true });
 
     cy.get("input[name=email]").as("email");
 
-    cy.get("@email").type("Dedrick_DuBuque@yahoo.com", { force: true });
+    cy.get("@email").type("Therese99@hotmail.com", { force: true });
 
     cy.get("input[name=phoneNumber]").as("phoneNumber");
 
-    cy.get("@phoneNumber").type("961.198.0838", { force: true });
+    cy.get("@phoneNumber").type("219.777.3989 x405", { force: true });
 
     cy
       .get("div.form-group label[for=hireDate]")
@@ -46,15 +46,15 @@ describe("Employee", () => {
       .first()
       .as("hireDate");
 
-    cy.get("@hireDate").type("16/06/2018 10:35:54 pm", { force: true });
+    cy.get("@hireDate").type("14/11/2018 10:17:11 am", { force: true });
 
     cy.get("input[name=salary]").as("salary");
 
-    cy.get("@salary").type("76298", { force: true });
+    cy.get("@salary").type("18043", { force: true });
 
     cy.get("input[name=commissionPct]").as("commissionPct");
 
-    cy.get("@commissionPct").type("38779", { force: true });
+    cy.get("@commissionPct").type("72958", { force: true });
 
     cy
       .get("button.ui.button")
@@ -64,7 +64,7 @@ describe("Employee", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Central Metrics Administrator"', { force: true });
+      .type('"Legacy Division Technician"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -73,7 +73,7 @@ describe("Employee", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Central Metrics Administrator");
+    cy.get("a.ui.button").contains("Legacy Division Technician");
     cy
       .get("button.ui.button")
       .contains("Add Job")
@@ -81,7 +81,7 @@ describe("Employee", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Senior Solutions Administrator"', { force: true });
+      .type('"Dynamic Assurance Strategist"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -90,15 +90,15 @@ describe("Employee", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Senior Solutions Administrator");
+    cy.get("a.ui.button").contains("Dynamic Assurance Strategist");
     cy
       .get("a.ui.button")
-      .contains("Central Metrics Administrator")
+      .contains("Legacy Division Technician")
       .next()
       .click({ force: true });
     cy
       .get("form.ui.form div")
-      .contains("Central Metrics Administrator")
+      .contains("Legacy Division Technician")
       .should("not.exist");
     cy
       .get("button.ui.button")
@@ -107,7 +107,7 @@ describe("Employee", () => {
     cy.get("input[name=search]").clear({ force: true });
     cy
       .get("input[name=search]")
-      .type('"Central Metrics Administrator"', { force: true });
+      .type('"Legacy Division Technician"', { force: true });
     cy
       .get("div.modal button.ui.button")
       .contains("Search")
@@ -116,7 +116,7 @@ describe("Employee", () => {
       .get("div.modal td button.ui.icon.button")
       .contains("Add Job")
       .click({ force: true });
-    cy.get("a.ui.button").contains("Central Metrics Administrator");
+    cy.get("a.ui.button").contains("Legacy Division Technician");
 
     //save Employee
     cy.get("button.add-button").click({ force: true });

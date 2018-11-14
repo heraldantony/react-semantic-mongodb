@@ -30,8 +30,10 @@ describe("Country Reducer", () => {
       countries: [],
       start: 0,
       limit: 10,
+      totalItemsCount: 0,
       otherSearchStart: 0,
       otherSearchLimit: 10,
+      otherSearchTotalItemsCount: 0,
       otherSearchCountries: [],
       error: ""
     };
@@ -44,10 +46,10 @@ describe("Country Reducer", () => {
   describe("addCountrySuccess", () => {
     it("should update state with add results", () => {
       const country = {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       };
@@ -73,10 +75,10 @@ describe("Country Reducer", () => {
   describe("saveCountrySuccess", () => {
     it("should update state with save results", () => {
       const country = {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       };
@@ -102,10 +104,10 @@ describe("Country Reducer", () => {
   describe("updateCountrySuccess", () => {
     it("should update state with update results", () => {
       const country = {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       };
@@ -132,35 +134,39 @@ describe("Country Reducer", () => {
     it("should update state with search results", () => {
       const countries = [
         {
-          _id: "5b254369063db83598df2cea",
-          countryName: "Grenada",
+          _id: "5beba8c9d42cea39441eb478",
+          countryName: "Bermuda",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "5b254369063db83598df2ceb",
-          countryName: "Bahamas",
+          _id: "5beba8c9d42cea39441eb479",
+          countryName: "Seychelles",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         },
         {
-          _id: "5b254369063db83598df2cec",
-          countryName: "Japan",
+          _id: "5beba8c9d42cea39441eb47a",
+          countryName: "Sri Lanka",
           region: {
-            _id: "5b254369063db83598df2ce0",
+            _id: "5beba8c9d42cea39441eb46e",
             regionName: "South-east Asia"
           }
         }
       ];
-      const expectedResult = { ...state, countries: countries };
+      const expectedResult = {
+        ...state,
+        countries: countries,
+        totalItemsCount: countries.length
+      };
 
-      expect(countryReducer(state, searchCountrySuccess(countries))).toEqual(
-        expectedResult
-      );
+      expect(
+        countryReducer(state, searchCountrySuccess(countries, countries.length))
+      ).toEqual(expectedResult);
     });
   });
 
@@ -178,10 +184,10 @@ describe("Country Reducer", () => {
   describe("getCountrySuccess", () => {
     it("should update state with get results", () => {
       const country = {
-        _id: "5b254369063db83598df2cea",
-        countryName: "Grenada",
+        _id: "5beba8c9d42cea39441eb478",
+        countryName: "Bermuda",
         region: {
-          _id: "5b254369063db83598df2ce0",
+          _id: "5beba8c9d42cea39441eb46e",
           regionName: "South-east Asia"
         }
       };
@@ -207,7 +213,7 @@ describe("Country Reducer", () => {
   describe("setRegion", () => {
     it("should update state with region", () => {
       const region = {
-        _id: "5b254369063db83598df2ce0",
+        _id: "5beba8c9d42cea39441eb46e",
         regionName: "South-east Asia"
       };
 

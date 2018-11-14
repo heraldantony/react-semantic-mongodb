@@ -39,7 +39,7 @@ export type LOCATION_ADD_SUCCESS_TYPE = {
 };
 export type LOCATION_ADD_FAIL_TYPE = {
   type: LOCATION_ADD_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type LOCATION_SAVE_TYPE = {
@@ -52,7 +52,7 @@ export type LOCATION_SAVE_SUCCESS_TYPE = {
 };
 export type LOCATION_SAVE_FAIL_TYPE = {
   type: LOCATION_SAVE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type LOCATION_UPDATE_TYPE = {
@@ -65,7 +65,7 @@ export type LOCATION_UPDATE_SUCCESS_TYPE = {
 };
 export type LOCATION_UPDATE_FAIL_TYPE = {
   type: LOCATION_UPDATE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type LOCATION_GET_TYPE = {
@@ -78,7 +78,7 @@ export type LOCATION_GET_SUCCESS_TYPE = {
 };
 export type LOCATION_GET_FAIL_TYPE = {
   type: LOCATION_GET_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type LOCATION_DELETE_TYPE = {
@@ -91,7 +91,7 @@ export type LOCATION_DELETE_SUCCESS_TYPE = {
 };
 export type LOCATION_DELETE_FAIL_TYPE = {
   type: LOCATION_DELETE_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export type LOCATION_SEARCH_TYPE = {
@@ -100,11 +100,13 @@ export type LOCATION_SEARCH_TYPE = {
 };
 export type LOCATION_SEARCH_SUCCESS_TYPE = {
   type: LOCATION_SEARCH_SUCCESS,
-  payload: [Object]
+  payload: [Object],
+
+  total: number
 };
 export type LOCATION_SEARCH_FAIL_TYPE = {
   type: LOCATION_SEARCH_FAIL,
-  payload: { errors: Object }
+  error: { errors: Object }
 };
 
 export const LOCATION_SET_COUNTRY_SUCCESS = 'location/Set_Country/SUCCESS'
@@ -113,11 +115,11 @@ export const LOCATION_DELETE_COUNTRY_SUCCESS =
 
 export const LOCATION_SET_COUNTRY_SUCCESS_TYPE = {
 	type: LOCATION_SET_COUNTRY_SUCCESS,
-	payload: Object
+	country: Object
 }
 export const LOCATION_DELETE_COUNTRY_SUCCESS_TYPE = {
 	type: LOCATION_DELETE_COUNTRY_SUCCESS,
-	payload: Object
+	country: Object
 }
 
 /**
@@ -144,7 +146,7 @@ export function addLocation (location, form, promise) {
  *
  * @return {object} An action object with type LOCATION_ADD_SUCCESS
  */
-export function addLocationSuccess (location) {
+export function addLocationSuccess (location): LOCATION_ADD_SUCCESS_TYPE {
 	return {
 		type: LOCATION_ADD_SUCCESS,
 		payload: location
@@ -158,7 +160,7 @@ export function addLocationSuccess (location) {
  *
  * @return {object} An action object with type LOCATION_ADD_FAIL
  */
-export function addLocationFail (error) {
+export function addLocationFail (error): LOCATION_ADD_FAIL_TYPE {
 	return {
 		type: LOCATION_ADD_FAIL,
 		error: error
@@ -189,7 +191,7 @@ export function saveLocation (location, form, promise) {
  *
  * @return {object} An action object with type LOCATION_SAVE_SUCCESS
  */
-export function saveLocationSuccess (location) {
+export function saveLocationSuccess (location): LOCATION_SAVE_SUCCESS_TYPE {
 	return {
 		type: LOCATION_SAVE_SUCCESS,
 		payload: location
@@ -203,7 +205,7 @@ export function saveLocationSuccess (location) {
  *
  * @return {object} An action object with type LOCATION_SAVE_FAIL
  */
-export function saveLocationFail (error) {
+export function saveLocationFail (error): LOCATION_SAVE_FAIL_TYPE {
 	return {
 		type: LOCATION_SAVE_FAIL,
 		error: error
@@ -234,7 +236,7 @@ export function updateLocation (location, form, promise) {
  *
  * @return {object} An action object with type LOCATION_UPDATE_SUCCESS
  */
-export function updateLocationSuccess (location) {
+export function updateLocationSuccess (location): LOCATION_UPDATE_SUCCESS_TYPE {
 	return {
 		type: LOCATION_UPDATE_SUCCESS,
 		payload: location
@@ -248,7 +250,7 @@ export function updateLocationSuccess (location) {
  *
  * @return {object} An action object with type LOCATION_UPDATE_FAIL
  */
-export function updateLocationFail (error) {
+export function updateLocationFail (error): LOCATION_UPDATE_FAIL_TYPE {
 	return {
 		type: LOCATION_UPDATE_FAIL,
 		error: error
@@ -262,7 +264,7 @@ export function updateLocationFail (error) {
  *
  * @return {object} An action object with type LOCATION_GET
  */
-export function getLocation (locationId) {
+export function getLocation (locationId): LOCATION_GET_TYPE {
 	return {
 		type: LOCATION_GET,
 		payload: locationId
@@ -276,7 +278,7 @@ export function getLocation (locationId) {
  *
  * @return {object} An action object with type LOCATION_GET_SUCCESS
  */
-export function getLocationSuccess (location) {
+export function getLocationSuccess (location): LOCATION_GET_SUCCESS_TYPE {
 	return {
 		type: LOCATION_GET_SUCCESS,
 		payload: location
@@ -290,7 +292,7 @@ export function getLocationSuccess (location) {
  *
  * @return {object} An action object with type LOCATION_GET_FAIL
  */
-export function getLocationFail (error) {
+export function getLocationFail (error): LOCATION_GET_FAIL_TYPE {
 	return {
 		type: LOCATION_GET_FAIL,
 		error: error
@@ -304,7 +306,7 @@ export function getLocationFail (error) {
  *
  * @return {object} An action object with type LOCATION_DELETE
  */
-export function deleteLocation (locationId) {
+export function deleteLocation (locationId): LOCATION_DELETE_TYPE {
 	return {
 		type: LOCATION_DELETE,
 		payload: locationId
@@ -318,7 +320,7 @@ export function deleteLocation (locationId) {
  *
  * @return {object} An action object with type LOCATION_DELETE_SUCCESS
  */
-export function deleteLocationSuccess (location) {
+export function deleteLocationSuccess (location): LOCATION_DELETE_SUCCESS_TYPE {
 	return {
 		type: LOCATION_DELETE_SUCCESS,
 		payload: location
@@ -332,7 +334,7 @@ export function deleteLocationSuccess (location) {
  *
  * @return {object} An action object with type LOCATION_DELETE_FAIL
  */
-export function deleteLocationFail (error) {
+export function deleteLocationFail (error): LOCATION_DELETE_FAIL_TYPE {
 	return {
 		type: LOCATION_DELETE_FAIL,
 		error: error
@@ -359,14 +361,19 @@ export function searchLocation (searchString, form, promise) {
 /**
  * Dispatched when Search Location succeeds
  *
- * @param  {object} location  The Location object
+ * @param  {object} locations  List of locations
+ * @param  {number} total Total number of locations
  *
  * @return {object} An action object with type LOCATION_SEARCH_SUCCESS
  */
-export function searchLocationSuccess (locations) {
+export function searchLocationSuccess (
+	locations,
+	total
+): LOCATION_SEARCH_SUCCESS_TYPE {
 	return {
 		type: LOCATION_SEARCH_SUCCESS,
-		payload: locations
+		payload: locations,
+		total: total
 	}
 }
 
@@ -377,7 +384,7 @@ export function searchLocationSuccess (locations) {
  *
  * @return {object} An action object with type LOCATION_SEARCH_FAIL
  */
-export function searchLocationFail (error) {
+export function searchLocationFail (error): LOCATION_SEARCH_FAIL_TYPE {
 	return {
 		type: LOCATION_SEARCH_FAIL,
 		error: error
@@ -391,7 +398,7 @@ export function searchLocationFail (error) {
  *
  * @return {object} An action object with type LOCATION_SET_COUNTRY_SUCCESS
  */
-export function setCountry (country) {
+export function setCountry (country): LOCATION_SET_COUNTRY_SUCCESS_TYPE {
 	return {
 		type: LOCATION_SET_COUNTRY_SUCCESS,
 		country
@@ -404,7 +411,7 @@ export function setCountry (country) {
  *
  * @return {object} An action object with type LOCATION_DELETE_COUNTRY_SUCCESS
  */
-export function deleteCountry (country) {
+export function deleteCountry (country): LOCATION_DELETE_COUNTRY_SUCCESS_TYPE {
 	return {
 		type: LOCATION_DELETE_COUNTRY_SUCCESS,
 		country
